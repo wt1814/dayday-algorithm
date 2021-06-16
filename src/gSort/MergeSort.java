@@ -3,16 +3,8 @@ package gSort;
 import java.util.Arrays;
 
 /**
- * @ProjectName：dayday-algorithm
- * @ClassName: MergeSort
- * @Description: TODO  归并排序
- * @Author: wt 
- * @CreateDate: 5/13/21 3:16 PM
- * @UpdateUser: 
- * @UpdateDate:   
- * @UpdateRemark:
- * @Version: V1.0
- **/
+ * 归并排序
+ */
 public class MergeSort {
 
 

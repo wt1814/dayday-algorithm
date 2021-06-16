@@ -5,7 +5,6 @@ package dLinked;
  */
 public class aInvertLinkedList {
 
-    // xxxxxxxx
 
     public static void main(String[] args) {
 

@@ -1,16 +1,8 @@
 package hSearch;
 
 /**
- * @ProjectName：dayday-algorithm
- * @ClassName: cRotatedBinarySearch
- * @Description: TODO  “旋转数组”中的二分查找
- * @Author: wt 
- * @CreateDate: 5/11/21 4:48 PM
- * @UpdateUser: 
- * @UpdateDate:   
- * @UpdateRemark:
- * @Version: V1.0
- **/
+ * “旋转数组”中的二分查找
+ */
 public class cRotatedBinarySearch {
 
 

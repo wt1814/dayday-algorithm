@@ -38,7 +38,7 @@ public class dQuickSort {
         count++;
 
         // 递归，继续向基准的左右两边执行和上面同样的操作
-        // i的索引处为上面已确定好的基准值的位置，无需再处理
+        // todo i的索引处为上面已确定好的基准值的位置，无需再处理， 所以左边界i-1，右边界i+1
         quickSort2(array, left, i - 1);
         quickSort2(array, i + 1, right);
 
@@ -46,6 +46,10 @@ public class dQuickSort {
 
     /**
      * 获取基准位置
+     * todo 两个交换
+     * todo 1. 上面的循环结束表示找到了位置或者(i>=j)了，交换两个数在数组中的位置
+     * todo 2. 将基准数和左右指针重合点位置的数进行交换
+     * todo 返回的其实是相撞指针重合位置
      * @param array
      * @param left
      * @param right
@@ -81,7 +85,7 @@ public class dQuickSort {
         // todo 将基准数和左右指针重合点位置的数进行交换
         array[left] = array[i];
         array[i] = base;
-        return i;
+        return i;   // todo 返回的其实是相撞指针重合位置
     }
 
 

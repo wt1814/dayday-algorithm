@@ -30,7 +30,7 @@ public class cSelectionSort {
         }
 
         for (int i = 0; i < array.length; i++) {
-            int minIndex = i;    // todo  保存索引信息
+            int minIndex = i;                    //todo 保存索引信息
             for (int j = i; j < array.length; j++) {
                 if (array[j] < array[minIndex]) //找到最小的数
                     minIndex = j; //将最小数的索引保存
@@ -41,6 +41,7 @@ public class cSelectionSort {
             array[i] = temp;
         }
         return array;
+
     }
 
 
@@ -91,4 +92,5 @@ public class cSelectionSort {
             counter++;
         }
     }
+
 }

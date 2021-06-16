@@ -29,7 +29,7 @@ public class bInsertionSort {
             return;
         }
 
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) { // todo i=1，默认第一个元素有序
             for (int j = i;j>0;j--){
                 if (array[j]< array[j-1]){
                     int temp = array[j-1];
@@ -38,6 +38,7 @@ public class bInsertionSort {
                 }
             }
         }
+
     }
 
     /**

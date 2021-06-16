@@ -3,16 +3,8 @@ package gSort;
 import java.util.Arrays;
 
 /**
- * @ProjectName：java-algorithm
- * @ClassName: heapSort
- * @Description: 最大堆排序 
- * @Author: wt 
- * @CreateDate: 2020-05-19 16:06
- * @UpdateUser: 
- * @UpdateDate:   
- * @UpdateRemark:
- * @Version: V1.0
- **/
+ * 最大堆排序
+ */
 public class HeapSort {
 
     public static void main(String[] args) {

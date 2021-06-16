@@ -47,12 +47,9 @@ public class eShellSort {
                         array[k] = array[k-i];
                         array[k-i] = temp;
                     }
-
                 }
                 System.out.println("---每组后 "+Arrays.toString(array));
-
             }
-
             System.out.println("++++++一趟后："+Arrays.toString(array));
         }
         return array;
@@ -110,9 +107,5 @@ public class eShellSort {
             }
         }
     }
-
-
-
-
 
 }
