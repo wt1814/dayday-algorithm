@@ -66,7 +66,7 @@ public class dQuickSort {
         //todo 左右相撞指针，结束条件
         while(i != j) {
             // todo 顺序很重要，先从右边开始往左找，直到找到比base值小的数
-            while(i < j && array[j] >= base ) {
+            while(i < j && array[j] >= base ) {  // todo i<j是为了防止新的一轮循环中 数组array[j]下标越界
                 j--;
             }
             // 再从左往右边找，直到找到比base值大的数
