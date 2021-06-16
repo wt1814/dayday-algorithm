@@ -1,0 +1,88 @@
+package lTree;
+
+import java.util.*;
+
+/**
+ * 层序遍历
+ */
+public class dLevelOrderTraversal {
+
+    public static void main(String[] args) {
+        TreeNode TreeNode = new TreeNode(1);
+        TreeNode treeNode1 = new TreeNode(2);
+        TreeNode treeNode2 = new TreeNode(3);
+        TreeNode.left = treeNode1;
+        TreeNode.right = treeNode2;
+
+
+        List<List<Integer>> lists = levelOrder(TreeNode);
+        for (List<Integer> list:lists){
+            for (Integer integer:list){
+                System.out.print(integer+" ");
+            }
+        }
+
+    }
+
+    /**
+     * 层序遍历
+     * 类似前序遍历，借用队列数据结构， 1). 弹就打印； 2). 如有左，压入左；3). 如有右，压入右
+     * @param root
+     */
+    public static void level(TreeNode root){
+
+        if (root == null){
+            return;
+        }
+        Queue<TreeNode> queue = new LinkedList<>(); //todo 创建队列，使用链表这种队列
+        queue.add(root);
+
+        while (!queue.isEmpty()){
+            TreeNode cur = queue.poll();
+            System.out.print(cur.val + " "); // 弹就打印
+            if (cur.left != null){
+                queue.add(cur.left);  // todo 如有左，压入左
+            }
+            if (cur.right != null){
+                queue.add(cur.right); // todo 如有右，压入右
+            }
+        }
+
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    /**
+     * 层序遍历
+     * @param root
+     * @return
+     */
+    public static List<List<Integer>> levelOrder(TreeNode root) {
+        // 结果集
+        List result = new ArrayList();
+        // 待遍历的层级节点列表
+        LinkedList<TreeNode> list = new LinkedList();
+
+        if (root != null) {
+            list.add(root);
+        }
+
+        int size = list.size();
+        while (size > 0) {
+            // 创建保存当前层序的结果集列表
+            List item = new ArrayList();
+            // 遍历当前层序，加入结果集及获取下一层级的节点
+            for (int i = 0; i < size; i++) {
+                TreeNode node = list.remove();
+                item.add(node.val);
+                if (node.left != null) list.add(node.left);
+                if (node.right != null) list.add(node.right);
+            }
+            size = list.size();
+            result.add(item);
+        }
+        return result;
+    }
+
+
+}
