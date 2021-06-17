@@ -1,4 +1,4 @@
-package kDP;
+package kDP.string.two;
 
 /**
  * 两个字符串的最长公共子串

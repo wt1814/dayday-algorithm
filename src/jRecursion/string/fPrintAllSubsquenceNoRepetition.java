@@ -1,4 +1,4 @@
-package jRecursion;
+package jRecursion.string;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 字符串的所有子序列(字符串的组合) 去重
  */
-public class cPrintAllSubsquenceNoRepetition {
+public class fPrintAllSubsquenceNoRepetition {
 
     public static void main(String[] args) {
         String test = "acccc";

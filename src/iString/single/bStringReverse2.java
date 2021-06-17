@@ -1,9 +1,9 @@
-package iString;
+package iString.single;
 
 /**
  * 考虑字符串开头有空格，单词间有多个空格空格的情况
  */
-public class StringReverse2 {
+public class bStringReverse2 {
 
     public static void main(String[] args){
         String aa = " java and python ";

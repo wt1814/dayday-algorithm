@@ -1,4 +1,4 @@
-package jRecursion;
+package jRecursion.string;
 
 import java.util.ArrayList;
 
@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * 字符串全排列
  * todo 双指针交换
  */
-public class dPrientAllSort {
+public class gPrientAllSort {
 
 
     public static void main(String[] args) {

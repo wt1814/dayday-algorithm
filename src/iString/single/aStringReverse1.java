@@ -1,9 +1,9 @@
-package iString;
+package iString.single;
 
 /**
  * 不考虑字符串开头有空格，单词间有多个空格空格的情况
  */
-public class StringReverse1 {
+public class aStringReverse1 {
 
 
     public static void main(String[] args){

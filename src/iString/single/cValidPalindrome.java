@@ -1,9 +1,9 @@
-package iString;
+package iString.single;
 
 /**
  * 验证回文串
  */
-public class ValidPalindrome {
+public class cValidPalindrome {
 
     // 反转字符串。如果是回文串，则它的反转字符串等于它本身
 

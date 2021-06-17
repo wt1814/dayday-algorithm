@@ -1,4 +1,4 @@
-package kDP;
+package kDP.string.single;
 
 /**
  * 最长回文子串

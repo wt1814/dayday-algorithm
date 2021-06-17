@@ -1,9 +1,9 @@
-package iString;
+package iString.single;
 
 /**
  * 回文子串的个数
  */
-public class PalindromeSubstring {
+public class dPalindromeSubstring {
 
 
     public static void main(String[] args) {

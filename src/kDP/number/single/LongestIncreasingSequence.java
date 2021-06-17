@@ -1,11 +1,11 @@
-package kDP;
+package kDP.number.single;
 
 import java.util.Arrays;
 
 /**
  * 最长递增子序列
  */
-public class GenerateLIS {
+public class LongestIncreasingSequence {
 
     // https://blog.csdn.net/u012505432/article/details/52228945
 

@@ -1,4 +1,4 @@
-package kDP;
+package kDP.number.single;
 
 /**
  * 最大子序和

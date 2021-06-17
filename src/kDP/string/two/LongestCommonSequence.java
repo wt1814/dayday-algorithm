@@ -1,4 +1,4 @@
-package kDP;
+package kDP.string.two;
 
 /**
  * 最长公共子序列
