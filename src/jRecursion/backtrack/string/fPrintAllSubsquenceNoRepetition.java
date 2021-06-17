@@ -1,4 +1,4 @@
-package jRecursion.string;
+package jRecursion.backtrack.string;
 
 import java.util.ArrayList;
 import java.util.HashSet;

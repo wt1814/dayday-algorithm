@@ -1,4 +1,4 @@
-package jRecursion.string;
+package jRecursion.backtrack.string;
 
 /**
  * 字符串的所有子序列(字符串的组合)

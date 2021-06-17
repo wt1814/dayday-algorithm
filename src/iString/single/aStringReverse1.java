@@ -33,7 +33,7 @@ public class aStringReverse1 {
         // 字符串转换为字节数组
         char[] charArr = s.toCharArray();
 
-        // 以空格为单位反转单个单词
+        //todo 以空格为单位反转单个单词
         int begin = 0;
         //todo 从右往左遍历
         for (int i = charArr.length-1; i > 0; --i) {
@@ -51,6 +51,7 @@ public class aStringReverse1 {
 
     // 翻转一段字符串
     public static void swapStr(char[] arr, int begin, int end) {
+        System.out.println("begin is "+begin+" end is "+end);
         while (begin < end) {
             char tmp = arr[begin];
             arr[begin] = arr[end];

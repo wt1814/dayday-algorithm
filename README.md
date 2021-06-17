@@ -13,6 +13,7 @@
 &emsp; [动态规划](/docs/function/dynamic.md)  
 &emsp; &emsp; [备忘录与动态规划](/docs/function/MemorandumAndDynamic.md)  
 &emsp; &emsp; [动态规划解题](/docs/function/DynamicSolve.md)  
+&emsp; [回溯](/docs/function/recall.md)  
 [基本数据结构](/docs/function/structure/structure.md)  
 &emsp; [数组和链表](/docs/function/structure/array.md)  
 &emsp; [栈与队列](/docs/function/structure/stack.md)  
