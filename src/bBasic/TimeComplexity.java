@@ -17,8 +17,6 @@ public class TimeComplexity {
 
     }
 
-
-
     /**
      * 线性阶   O(n)
      */
@@ -29,8 +27,6 @@ public class TimeComplexity {
         }
 
     }
-
-
 
     /**
      * 平方阶   O(n^2)
@@ -44,9 +40,6 @@ public class TimeComplexity {
         }
     }
 
-
-
-
     /**
      * 对数阶   O(logN)
      */
@@ -59,8 +52,6 @@ public class TimeComplexity {
         System.out.println(i);
 
     }
-
-
 
     /**
      * 线性对数阶   O(nlogN)
@@ -76,14 +67,10 @@ public class TimeComplexity {
 
     }
 
-
-
     /**
      * 指数阶   O(2^n)
      */
     public void ExponentialOrder(int n){
-
-
 
     }
 
