@@ -11,7 +11,6 @@ public class dPalindromeSubstring {
         System.out.println("回文子字符串的个数为："+palindromeSubstring(str));
     }
 
-
     /**
      * 回文子串的个数
      * @param str
@@ -26,7 +25,6 @@ public class dPalindromeSubstring {
             for(int j=i+2;j<=str.length();j++){
                 //不要忘记j是<=str.lenth()，否则会丢失一个本身的回文字符串，因为substring(i,j)是截取i到j-1的字符串的
                 String temp = str.substring(i,j);
-
                 boolean b =isHuiWen(temp);
                 if(b){
                     System.out.println(temp);
@@ -36,6 +34,12 @@ public class dPalindromeSubstring {
         }
         return num;
     }
+
+    /**
+     * 判断是否回文串
+     * @param str
+     * @return
+     */
     public static boolean isHuiWen(String str){
         //true:回文  false：非回文
         boolean flag = true;

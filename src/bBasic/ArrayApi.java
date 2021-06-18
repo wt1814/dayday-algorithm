@@ -8,9 +8,6 @@ import java.util.Arrays;
 public class ArrayApi {
 
 
-
-
-
     /**
      * 删除指定位置的元素
      * @param index
