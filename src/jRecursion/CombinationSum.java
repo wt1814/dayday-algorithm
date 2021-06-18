@@ -1,4 +1,4 @@
-package mRecall;
+package jRecursion;
 
 /**
  * 组合总和

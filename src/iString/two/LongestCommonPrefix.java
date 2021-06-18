@@ -5,57 +5,52 @@ package iString.two;
  */
 public class LongestCommonPrefix {
 
-
     public static void main(String[] args){
-        String[] arr = {"baaa","baab","baac","abaac"};
+        String[] arr = {"baaa","baab","baac","abaa"};
         System.out.println(longestCommonPrefix(arr));
         System.out.println(longestCommontPrefix6(arr));
 
     }
 
     /**
-     * 暴力递归解 "最长公共前缀"
+     * 最长公共前缀
      * @param strs
      * @return
      */
-    public static String longestCommonPrefix(String[] strs) {
-        if(strs.length==0){
-            return "";
-        }
-
-        // 求解最小字符串的长度
-        String minLengthString = strs[0];
-        int minlength = minLengthString.length();
-        for(int i=1; i<strs.length; i++) {
-            if(minlength>strs[i].length()){
-                minLengthString = strs[i];
-                minlength = strs[i].length();
-            }
-        }
-
-        // 以最短字符串为基础求解最长公共前缀
-        int index = minlength;
+    public static String longestCommonPrefix (String[] strs) {
+        // write code here
         String result = "";
-        while(index>0){
-            // 1. 计算 "最长公共前缀"
-            String subString = minLengthString.substring(0, index);
-            boolean isMax = true;
-            for(int i=1; i<strs.length; i++){
-                // 2. 遍历每个字符串判断是否包含 "最长公共前缀"
-                if(strs[i].startsWith(subString) == false){
-                    isMax = false;
-                    break;
-                }
-            }
-            if(isMax){
-                result = subString;
-                break;
-            }
-            index --;
+
+        if(strs.length == 0){
+            return result;
+        }else if(strs.length == 1){
+            return strs[0];
+        }
+
+        result = strs[0];
+        for(int i = 1;i<strs.length;i++){ //todo 两两比较
+            result = longestCommonPrefix(result,strs[i]);
         }
         return result;
     }
 
+    /**
+     * 计算两个字符的公共前缀
+     * @param str1
+     * @param str2
+     * @return
+     */
+    public static String longestCommonPrefix (String str1,String str2) {
+        String result = "";
+        int length = Math.min(str1.length(),str2.length());
+        for(int i = 0;i<length;i++){
+            if(str1.charAt(i) == str2.charAt(i)){
+                result = str1.substring(0,i+1);
+            }
+        }
+        System.out.println(result);
+        return result;
+    }
 
     //////////////////////////////////////////////////////////////
 

@@ -12,7 +12,6 @@ public class bStringReverse2 {
         System.out.println(swapWords(bb));
     }
 
-
     public static String swapWords(String s) {
         if (s == null) {
             return null;
@@ -50,4 +49,5 @@ public class bStringReverse2 {
             end--;
         }
     }
+
 }

@@ -5,14 +5,12 @@ package iString.single;
  */
 public class aStringReverse1 {
 
-
     public static void main(String[] args){
         String aa = "java and python ";
         System.out.println(swapWords(aa));
         String bb = "i'm wang tao ";
         System.out.println(swapWords(bb));
     }
-
 
     /**
      * 不考虑字符串开头有空格，单词间有多个空格空格的情况
@@ -60,8 +58,6 @@ public class aStringReverse1 {
             end--;
         }
     }
-
-
 
     /////// 双指针反转字符串
     public static  String invertString(String var){
