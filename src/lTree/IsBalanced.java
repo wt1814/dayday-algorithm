@@ -6,15 +6,23 @@ package lTree;
  */
 public class IsBalanced {
 
-    public static class Node {
-        public int value;
-        public Node left;
-        public Node right;
 
-        public Node(int data) {
-            this.value = data;
+
+    public static void main(String[] args) {
+        int maxLevel = 5;
+        int maxValue = 100;
+        int testTimes = 1000000;
+        for (int i = 0; i < testTimes; i++) {
+            Node head = generateRandomBST(maxLevel, maxValue);
+            if (isBalanced1(head) != isBalanced2(head)) {
+                System.out.println("Oops!");
+            }
         }
+        System.out.println("finish!");
     }
+
+
+    ////////////////////////////////////////////////////////////////////
 
     public static boolean isBalanced1(Node head) {
         boolean[] ans = new boolean[1];
@@ -35,19 +43,12 @@ public class IsBalanced {
         return Math.max(leftHeight, rightHeight) + 1;
     }
 
+
+    ////////////////////////////////////////////////////////////////////
     public static boolean isBalanced2(Node head) {
         return process(head).isBalanced;
     }
 
-    public static class Info{
-        public boolean isBalanced;
-        public int height;
-
-        public Info(boolean i, int h) {
-            isBalanced = i;
-            height = h;
-        }
-    }
 
     public static Info process(Node x) {
         if(x == null) {
@@ -70,7 +71,18 @@ public class IsBalanced {
     }
 
 
-    // for test
+    public static class Info{
+        public boolean isBalanced;
+        public int height;
+
+        public Info(boolean i, int h) {
+            isBalanced = i;
+            height = h;
+        }
+    }
+
+    /////////////////////////////////////////////////////////////////////
+    // 构造二叉树
     public static Node generateRandomBST(int maxLevel, int maxValue) {
 
         return generate(1, maxLevel, maxValue);
@@ -87,17 +99,18 @@ public class IsBalanced {
         return head;
     }
 
-    public static void main(String[] args) {
-        int maxLevel = 5;
-        int maxValue = 100;
-        int testTimes = 1000000;
-        for (int i = 0; i < testTimes; i++) {
-            Node head = generateRandomBST(maxLevel, maxValue);
-            if (isBalanced1(head) != isBalanced2(head)) {
-                System.out.println("Oops!");
-            }
+
+    /////////////////////////////////////////////////////////////////////
+    // 节点
+    public static class Node {
+        public int value;
+        public Node left;
+        public Node right;
+
+        public Node(int data) {
+            this.value = data;
         }
-        System.out.println("finish!");
     }
+
 
 }
