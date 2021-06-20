@@ -1,11 +1,11 @@
 package jRecursion.backtrack.string;
 
 /**
- * 字符串的所有子序列(字符串的组合)
+ * todo 字符串的所有子序列(字符串的组合)
  * 题目：输入一个字符串，输出该字符串中字符的所有组合。
  * 例子：输入：abc，它的组合有：a、b、c、ab、ac、bc、abc
  */
-public class ePrintAllSubsquence {
+public class gPrintAllSubsquence {
 
     //https://mp.weixin.qq.com/s?__biz=MzA5NDIwNTk2Mw==&mid=2247484636&amp;idx=1&amp;sn=9ea705d330e7955c83dcfc3d6a7f90d0&source=41#wechat_redirect
     // 左神 暴力递归到动态规划1
@@ -45,12 +45,11 @@ public class ePrintAllSubsquence {
             return;
         }
 
-        // 如果没有到最后一个字符，那么当前字符有两种选择：选择要 和 选择不要
-        printAllSubString(i + 1, pre, chars);  // 不要当前字符
+        // todo 如果没有到最后一个字符，那么当前字符有两种选择：选择要pre + String.valueOf(chars[i]) 和 选择不要pre
         printAllSubString(i + 1, pre + String.valueOf(chars[i]), chars);   // 要当前字符
-    }
+        printAllSubString(i + 1, pre, chars);  // 不要当前字符
 
-    //////////////////////////////////////
+    }
 
 
 }

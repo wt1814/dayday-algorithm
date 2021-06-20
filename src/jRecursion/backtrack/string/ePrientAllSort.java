@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * 字符串全排列
  * todo 双指针交换
  */
-public class gPrientAllSort {
+public class ePrientAllSort {
 
 
     public static void main(String[] args) {

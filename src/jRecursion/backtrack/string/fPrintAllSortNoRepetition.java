@@ -7,7 +7,7 @@ import java.util.HashSet;
  * 去重全排列
  * 只需要增加一个 hashset，用于保证重复字符不会被再次交换。
  */
-public class hPrintAllSortNoRepetition {
+public class fPrintAllSortNoRepetition {
 
 
     public static void main(String[] args) {

@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 字符串的所有子序列(字符串的组合) 去重
  */
-public class fPrintAllSubsquenceNoRepetition {
+public class hPrintAllSubsquenceNoRepetition {
 
     public static void main(String[] args) {
         String test = "acccc";
