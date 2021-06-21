@@ -7,6 +7,9 @@ import java.util.Stack;
  */
 public class cStackQueue {
 
+
+    // 栈实现队列，用两个栈实现队列方法详解（含实现代码） http://data.biancheng.net/view/110.html
+
     public static void main(String[] args)throws Exception{
 
         cStackQueue cStackQueue = new cStackQueue();

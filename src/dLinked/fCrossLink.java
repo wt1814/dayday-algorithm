@@ -5,6 +5,9 @@ package dLinked;
  */
 public class fCrossLink {
 
+
+    //理解 链表中环的入口结点 https://blog.nowcoder.net/n/9d3ffa4b004e43d1aff512141d0d7dac
+
     public static void main(String[] args){
         fCrossLink fCrossLink = new fCrossLink();
         int[] arr = {1,2,3,4,5,2};

@@ -8,6 +8,10 @@
 https://blog.csdn.net/weixin_46523794/article/details/111121405
 回溯法模板
 https://zhuanlan.zhihu.com/p/138587283
+
+回溯算法套路详解（转）
+https://www.cnblogs.com/dreamyu/p/13210713.html
+
 -->
 
 ## 回溯和递归的区别

@@ -13,9 +13,15 @@
 
 
 # 1. 字符串算法题
-<!-- 
+<!--
+LeetCode字符串算法题——Java题解与思路
 https://blog.csdn.net/qq_17681679/article/details/108735222
+
+最长公共前缀
 https://www.jianshu.com/p/4ef3cfa01367
+字符串-关于滑动窗口和双指针
+https://zhuanlan.zhihu.com/p/75577543
+
 -->
 
 ## 1.1. 最长公共前缀  

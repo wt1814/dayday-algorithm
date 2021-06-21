@@ -2,6 +2,16 @@
 
 
 # 时间复杂度
+<!-- 
+
+如何清晰的理解算法中的时间复杂度？
+https://www.zhihu.com/question/20196775/answer/693388880
+算法时间复杂度分析方法
+https://www.cnblogs.com/nwnu-daizh/p/8652285.html
+
+
+-->
+
 
 ## 常见时间复杂度
 
