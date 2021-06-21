@@ -11,7 +11,7 @@ import java.util.Queue;
  * 层序遍历，key在哪一层
  * todo 可以通过设置flag变量的方式，来发现某一层的结束。
  */
-public class eTreeMaxWidth {
+public class fTreeMaxWidth {
 
     public static void main(String[] args) {
         int maxLevel = 10;
