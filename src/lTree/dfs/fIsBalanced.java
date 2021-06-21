@@ -1,4 +1,4 @@
-package lTree;
+package lTree.dfs;
 
 /**
  * 是否平衡树

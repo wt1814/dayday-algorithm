@@ -1,4 +1,6 @@
-package lTree;
+package lTree.dfs;
+
+import lTree.TreeNode;
 
 import java.util.Stack;
 

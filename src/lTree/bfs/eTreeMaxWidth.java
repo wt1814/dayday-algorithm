@@ -1,4 +1,4 @@
-package lTree;
+package lTree.bfs;
 
 import java.util.HashMap;
 import java.util.LinkedList;

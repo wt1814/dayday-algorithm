@@ -1,5 +1,7 @@
-package lTree;
+package lTree.dfs;
 
+
+import lTree.TreeNode;
 
 /**
  * 是否是平衡二叉树
@@ -10,7 +12,7 @@ public class gIsBalanced2 {
         if (root == null){
             return true;
         }
-
+        
         if (isBalenced(root.left) && isBalenced(root.right) && Math.abs(height(root.left)-height(root.right))<=1){
             return true;
         }else {

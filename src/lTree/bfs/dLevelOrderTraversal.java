@@ -1,4 +1,6 @@
-package lTree;
+package lTree.bfs;
+
+import lTree.TreeNode;
 
 import java.util.*;
 
