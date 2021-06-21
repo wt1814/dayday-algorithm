@@ -4,7 +4,7 @@ package lTree;
 /**
  * 是否是平衡二叉树
  */
-public class IsBalanced2 {
+public class gIsBalanced2 {
 
     public static boolean isBalenced(TreeNode root){
         if (root == null){
