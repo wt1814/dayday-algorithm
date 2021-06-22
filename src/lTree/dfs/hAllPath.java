@@ -14,8 +14,6 @@ public class hAllPath {
     // https://leetcode-cn.com/problems/binary-tree-paths/solution/yi-pian-wen-zhang-jie-jue-suo-you-er-cha-5f58/
 
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<Integer>();
-        list.add(1);
 
         TreeNode TreeNode = new TreeNode(1);
         TreeNode treeNode1 = new TreeNode(2);
