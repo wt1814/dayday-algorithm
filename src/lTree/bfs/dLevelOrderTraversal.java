@@ -9,13 +9,13 @@ import java.util.*;
  */
 public class dLevelOrderTraversal {
 
-    public static void main(String[] args) {
+/*    public static void main(String[] args) {
+
         TreeNode TreeNode = new TreeNode(1);
         TreeNode treeNode1 = new TreeNode(2);
         TreeNode treeNode2 = new TreeNode(3);
         TreeNode.left = treeNode1;
         TreeNode.right = treeNode2;
-
 
         List<List<Integer>> lists = levelOrder(TreeNode);
         for (List<Integer> list:lists){
@@ -24,6 +24,18 @@ public class dLevelOrderTraversal {
             }
         }
 
+    }*/
+
+    public static void main(String[] args){
+        TreeNode treeNode1 = new TreeNode(1);
+        TreeNode treeNode2 = new TreeNode(2);
+        TreeNode treeNode3 = new TreeNode(3);
+        TreeNode treeNode4 = new TreeNode(4);
+        treeNode1.right = treeNode2;
+        treeNode2.left = treeNode3;
+        treeNode2.right = treeNode4;
+
+        level(treeNode1);
     }
 
 /*
@@ -47,12 +59,13 @@ public class dLevelOrderTraversal {
             return;
         }
         Queue<TreeNode> queue = new LinkedList<>(); //todo 创建队列，使用链表这种队列
+                                                    //todo 队列里放入TreeNode
         queue.add(root);
 
         while (!queue.isEmpty()){
             TreeNode cur = queue.poll();
             System.out.print(cur.val + " "); // 弹就打印
-            if (cur.left != null){
+            if (cur.left != null){    // todo 队列弹出对节点
                 queue.add(cur.left);  // todo 如有左，压入左
             }
             if (cur.right != null){
