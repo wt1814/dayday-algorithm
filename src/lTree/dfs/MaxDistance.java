@@ -25,6 +25,7 @@ public class MaxDistance {
 
     /////////////////////////////////////
     public static int maxDistance2(Node head) {
+
         return process(head).maxDistance;
     }
 
