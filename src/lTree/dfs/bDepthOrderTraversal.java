@@ -14,8 +14,6 @@ import java.util.List;
  */
 public class bDepthOrderTraversal {
 
-
-
     /**
      *
      * @param args
@@ -37,7 +35,7 @@ public class bDepthOrderTraversal {
     }
 
     /**
-     * 基础：递归序
+     * todo 基础：递归序
      * @param node
      */
     public static void orderTraveral(TreeNode node){
@@ -46,11 +44,11 @@ public class bDepthOrderTraversal {
             return;
         }
 
-        // 1.
-        preOrderTraveral(node.left);
-        // 2.
-        preOrderTraveral(node.right);
-        // 3.
+        // 1. 前序
+        orderTraveral(node.left);
+        // 2. 中序
+        orderTraveral(node.right);
+        // 3. 后序
     }
 
 

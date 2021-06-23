@@ -111,4 +111,10 @@ public class gIsSymmetric {
         return result;
 
     }
+
+
+    ////////////
+    // 使用深度遍历 https://www.nowcoder.com/practice/1b0b7f371eae4204bc4a7570c84c2de1?tpId=188&&tqId=38623&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
+
+
 }
