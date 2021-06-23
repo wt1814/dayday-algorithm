@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * @ProjectName：java-algorithm
- * @ClassName: LRUCache2
+ * @ClassName: LRUByMap
  * @Description: TODO  
  * @Author: wt 
  * @CreateDate: 2020-05-20 16:14
@@ -14,16 +14,31 @@ import java.util.Map;
  * @UpdateRemark:
  * @Version: V1.0
  **/
-public class LRUCache2 {
+public class LRUByMap {
 
+
+    public static void main(String[] args) {
+        LRUByMap lruCache = new LRUByMap(10);
+        for (int i = 0; i < 10; i++) {
+            lruCache.map.put(i,i);
+            System.out.println(lruCache.map.size());
+        }
+        System.out.println(lruCache.map);
+        lruCache.put(10,10);
+        System.out.println(lruCache.map);
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////
 
     int capacity;
     Map<Integer,Integer> map;
 
-    public LRUCache2(int capacity){
+    public LRUByMap(int capacity){
         this.capacity = capacity;
         map = new LinkedHashMap<>();
     }
+
+    ////////////////////////////////////////////////////////////////////////////////////
 
     public int get(int key){
         //如果没有找到
@@ -49,15 +64,6 @@ public class LRUCache2 {
         }
     }
 
-    public static void main(String[] args) {
-        LRUCache2 lruCache = new LRUCache2(10);
-        for (int i = 0; i < 10; i++) {
-            lruCache.map.put(i,i);
-            System.out.println(lruCache.map.size());
-        }
-        System.out.println(lruCache.map);
-        lruCache.put(10,10);
-        System.out.println(lruCache.map);
-    }
+
 
 }
