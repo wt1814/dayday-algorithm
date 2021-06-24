@@ -91,6 +91,26 @@ public class bianlishuzu2 {
 }
 ```
 
+
+```java
+// todo 二维数组遍历
+public static void main(String []args){
+	//把以上的数据用二维数组来表示
+	int [][] nums={{22,66,44},{100,150,180},{300,240,180},{11,33,19}};
+	//遍历二维数组
+	int sum = 0;
+	//外循环遍历有多少个一维数组
+	for(int i =0;i <nums.length;i++){
+		//内循环遍历每一个一维数组的元素
+		for(int j = 0;j<nums[i].length,j++){
+				sum+=nums[i][j];		//依次相加到sum中
+			}
+		}
+		System.out.println("西蒙公司年销售总额为:"+sum);
+	}
+}
+```
+
 ## 1.2. 链表  
 <!-- 
  23张图！万字详解「链表」，从小白到大佬！ 
