@@ -16,7 +16,6 @@ public class gPrintAllSubsquence {
         printAllSubString("abc");
     }
 
-
     public static void printAllSubString(String str){
         if(str == null){
             return;
@@ -25,7 +24,7 @@ public class gPrintAllSubsquence {
         char[] chars = str.toCharArray();
         if(chars.length > 0){
             String pre = "";   // pre：用于表示从0到i-1位置上形成的结果
-            printAllSubString(0, pre, chars);
+            printAllSubString( pre, chars,0);
         }else{
             System.out.println("");     // 输入空字符串也会打印空
         }
@@ -33,11 +32,11 @@ public class gPrintAllSubsquence {
 
     /**
      *
-     * @param i
-     * @param pre
-     * @param chars
+     * @param pre 结果集
+     * @param chars 字符串字节数组
+     * @param i 操作的下标
      */
-    public static void printAllSubString(int i, String pre, char[] chars){
+    public static void printAllSubString(String pre, char[] chars,int i){
         // 迭代终止条件
         if(i == chars.length){
             // 说明已经到最后一个字符了，所有的选择都已经做完了，应该返回了
@@ -46,10 +45,8 @@ public class gPrintAllSubsquence {
         }
 
         // todo 如果没有到最后一个字符，那么当前字符有两种选择：选择要pre + String.valueOf(chars[i]) 和 选择不要pre
-        printAllSubString(i + 1, pre + String.valueOf(chars[i]), chars);   // 要当前字符
-        printAllSubString(i + 1, pre, chars);  // 不要当前字符
-
+        printAllSubString(pre + String.valueOf(chars[i]), chars,i+1);   // 要当前字符
+        printAllSubString(pre, chars,i+1);  // 不要当前字符
     }
-
 
 }

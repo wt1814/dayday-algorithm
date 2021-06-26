@@ -4,13 +4,14 @@ import java.util.ArrayList;
 
 /**
  * 字符串全排列
- * todo 双指针交换
+ * todo 回溯
+ * 找到所有所有可能的组合，如有必要再去重
  */
 public class ePrientAllSort {
 
 
     public static void main(String[] args) {
-        System.out.println(Permutation("abcc"));
+        System.out.println(Permutation("ab"));
     }
 
     public static ArrayList<String> Permutation(String str) {
@@ -23,8 +24,16 @@ public class ePrientAllSort {
         return res;
     }
 
-    //对chs[i~length-1]范围内的字符数组完成全排列,并将结果存入res中
+    /**
+     * 对chars[i~length-1]范围内的字符数组完成全排列,并将结果存入res中
+     * todo 注：这里操作的是字符串字节数组，非原始字符串
+     * @param res
+     * @param chars
+     * @param i
+     */
     private static void findPermutation(ArrayList<String> res, char[] chars, int i) {
+
+        // todo 递归终止条件
         if (i == chars.length) {
             res.add(new String(chars));
             return;
