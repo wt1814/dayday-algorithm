@@ -5,7 +5,6 @@ package kDP.string.two;
  */
 public class LongestSubstring {
 
-
     public static void main(String[] argv) {
         String a = "12345CD";
         String b = "12345EF";
