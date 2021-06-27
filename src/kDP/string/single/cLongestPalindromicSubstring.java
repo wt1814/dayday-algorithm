@@ -7,9 +7,9 @@ public class cLongestPalindromicSubstring {
 
 
     // https://www.cxyxiaowu.com/2869.html
-
-    // todo bilibili官方视频：https://www.bilibili.com/video/BV1L54y1D7pa
     // todo 题解：https://leetcode-cn.com/problems/longest-palindromic-substring/solution/zui-chang-hui-wen-zi-chuan-by-leetcode-solution/
+
+
     // dp[i][j] 表示子串s[i...j]是否为回文子串
     // 状态转移方程： dp[i][j] = (s[i] == s[j]) and dp[i+1][j-1]
     // 边界条件：j - 1 -(i+1) +1 <2，整理得 j-i <3 ==> j-i+1 <4 ，s[i...j]长度为2或者3时，不用检查子串是否回文

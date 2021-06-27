@@ -8,7 +8,8 @@ public class LongestCommonSequence {
     public static void main(String[] args) {
         String  a = "AGCAT",
                 b = "GAC";
-        //System.out.println(lcse(a,b));
+        System.out.println(lcse(a,b));
+        System.out.println("-----------------");
         System.out.println(compute(a, b));
         System.out.println("-----------------");
         System.out.println(LCS(a, b));
@@ -16,6 +17,8 @@ public class LongestCommonSequence {
         maxCommonChar(a.toCharArray(),b.toCharArray());
 
     }
+
+    // todo 视频讲解 https://leetcode-cn.com/problems/longest-common-subsequence/solution/shi-pin-jiang-jie-shi-yong-dong-tai-gui-hua-qiu-ji/
 
     // 左神
 
@@ -91,7 +94,7 @@ public class LongestCommonSequence {
 
 
 
-    // -----------
+    ////////////////////////////////////////////////////////////////////////////////////////////
     public static int compute(String a, String b) {
         char[] str1 = a.toCharArray();
         char[] str2 = b.toCharArray();
@@ -134,7 +137,7 @@ public class LongestCommonSequence {
     }
 
 
-    // ---------------
+    ////////////////////////////////////////////////////////////////////////////////////////////
     //求解str1 和 str2 的最长公共子序列
     public static int LCS(String str1, String str2){
         int[][] c = new int[str1.length() + 1][str2.length() + 1];
@@ -158,8 +161,7 @@ public class LongestCommonSequence {
     }
 
 
-    // ------
-
+    ////////////////////////////////////////////////////////////////////////////////////////////
     public static void maxCommonChar(char [] a, char [] b){
         int m = a.length;
         int n = b.length;
