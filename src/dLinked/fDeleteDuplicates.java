@@ -3,7 +3,7 @@ package dLinked;
 /**
  * 删除排序链表中的重复元素
  */
-public class dDeleteDuplicates {
+public class fDeleteDuplicates {
 
 
     public static void main(String[] args) {

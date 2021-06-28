@@ -3,7 +3,7 @@ package dLinked;
 /**
  * 单链表增删改查
  */
-public class SingleLinkedList {
+public class bSingleLinkedList {
 
     private class Node {
 
@@ -19,7 +19,7 @@ public class SingleLinkedList {
     public int size;//链表节点的个数
     public Node head;//头节点
 
-    public SingleLinkedList(){
+    public bSingleLinkedList(){
         size = 0;
         head = null;
     }

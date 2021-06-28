@@ -3,7 +3,7 @@ package dLinked;
 /**
  * 两个链表生成相加链表
  */
-public class gAddInList {
+public class iAddInList {
 
 
 

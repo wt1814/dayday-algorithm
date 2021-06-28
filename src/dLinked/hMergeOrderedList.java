@@ -4,7 +4,7 @@ package dLinked;
  * 合并两个有序链表
  * 要求重复利用已有空间
  */
-public class eMergeOrderedList {
+public class hMergeOrderedList {
 
     public static void main(String[] args){
         ListNode listNode = new ListNode(5);

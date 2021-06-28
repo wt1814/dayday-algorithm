@@ -3,23 +3,26 @@ package dLinked;
 /**
  * 删除链表节点
  */
-public class cRemoveNthFromEnd {
+public class eRemoveNthFromEnd {
 
 
     public static void main(String[] args) {
-        cRemoveNthFromEnd cRemoveNthFromEnd = new cRemoveNthFromEnd();
+        eRemoveNthFromEnd eRemoveNthFromEnd = new eRemoveNthFromEnd();
         int[] arr = {1,2,3,4,5};
         for (int i = 0; i < arr.length; i++) {
-            cRemoveNthFromEnd.addHead(arr[i]);
+            eRemoveNthFromEnd.addHead(arr[i]);
         }
-        cRemoveNthFromEnd.print();
+        eRemoveNthFromEnd.print();
 
-        cRemoveNthFromEnd.removeNodeByEndNum(cRemoveNthFromEnd.head,2);
-        cRemoveNthFromEnd.print(); // 打印 1，2，3，4
+        eRemoveNthFromEnd.removeNodeByEndNum(eRemoveNthFromEnd.head,2);
+        eRemoveNthFromEnd.print(); // 打印 1，2，3，4
 
-        cRemoveNthFromEnd.removeNthFromEnd(cRemoveNthFromEnd.head,1);
-        cRemoveNthFromEnd.print(); // 打印 1，2，3，4
+        eRemoveNthFromEnd.removeNthFromEnd(eRemoveNthFromEnd.head,1);
+        eRemoveNthFromEnd.print(); // 打印 1，2，3，4
     }
+
+
+    ////////////////////////////
 
 
 
@@ -27,13 +30,13 @@ public class cRemoveNthFromEnd {
     // 删除链表倒数第N个节点
 
     /**
-     * todo 引入哑节点
+     *
      * @param listNode
      * @param n
      * @return
      */
     private ListNode removeNode(ListNode listNode, int n) {
-        ListNode dummy = new ListNode(0, head);
+        ListNode dummy = new ListNode(0, head); //todo 引入哑节点
         ListNode first = head;
         ListNode second = dummy;
         for (int i = 0; i < n; ++i) {
@@ -153,7 +156,7 @@ public class cRemoveNthFromEnd {
     private ListNode head;
     private int size;
 
-    public cRemoveNthFromEnd(){
+    public eRemoveNthFromEnd(){
         this.head = null;
         this.size = 0;
     }

@@ -3,10 +3,10 @@ package cArray;
 /**
  * 合并两个有序的数组
  */
-public class mergeArray {
+public class MergeArray {
 
-
-    //https://leetcode-cn.com/problems/merge-sorted-array/solution/he-bing-liang-ge-you-xu-shu-zu-by-leetco-rrb0/
+    // https://www.nowcoder.com/practice/89865d4375634fc484f3a24b7fe65665?tpId=188&&tqId=38585&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
+    // https://leetcode-cn.com/problems/merge-sorted-array/solution/he-bing-liang-ge-you-xu-shu-zu-by-leetco-rrb0/
 
     /**
      * 双指针
@@ -65,5 +65,17 @@ public class mergeArray {
         }
     }
 
+
+    public void merge3(int A[], int m, int B[], int n) {
+        //因为题目明确说了A数组足够大，所以直接在A数组操作
+        int i = m - 1;
+        int j = n - 1;
+        int index = m + n - 1;//AB合并后最后一个元素所在位置
+        while(i >= 0 && j >= 0)//AB合并，谁大就先放谁
+            A[index --] = A[i] > B[j] ? A[i --] : B[j --];
+        while(j >= 0)//如果B没有遍历完，那么之间丢在A数组里面
+            A[index --] = B[j --];
+
+    }
 
 }

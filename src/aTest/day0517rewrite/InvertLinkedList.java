@@ -2,7 +2,7 @@ package aTest.day0517rewrite;
 
 /**
  * @ProjectName：dayday-algorithm
- * @ClassName: bInvertLinkedList
+ * @ClassName: dInvertLinkedList
  * @Description: TODO  
  * @Author: wt 
  * @CreateDate: 5/17/21 10:22 AM

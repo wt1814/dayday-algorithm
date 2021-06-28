@@ -1,53 +1,49 @@
 package dLinked;
 
 /**
- * 不带头节点单向链表，递归反转链表
+ * 不带头节点单向链表，双指针迭代反转链表
  */
-public class bInvertLinkedList {
+public class cInvertLinkedList {
 
 
     public static void main(String[] args) {
-        bInvertLinkedList linkedList = new bInvertLinkedList();
-        int[] arr = {1,2,3,4,5};
+
+        cInvertLinkedList linkedList = new cInvertLinkedList();
+        int[] arr = {1, 2, 3, 4,5};
         for (int i = 0; i < arr.length; i++) {
             linkedList.addHead(arr[i]);
         }
         linkedList.print();
-        /*        ListNode newHead = linkedList.invertLinkedList(linkedList.head.next);
+        linkedList.iterationInvertLinkedList();
         // 翻转后别忘了设置头结点的后继结点！
-        linkedList.head.next = newHead;*/
-        Node newHead = linkedList.invertLinkedList(linkedList.head);
-        //todo 翻转后别忘了设置头结点的后继结点！
-        linkedList.head = newHead;
+        //linkedList.head = newHead;
         linkedList.print(); // 打印 1，2，3，4
     }
 
 
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
-
     /**
-     * 反转链表
-     * @param node
-     * @return
+     * 迭代反转链表
      */
-    public Node invertLinkedList(Node node) {
+    public void iterationInvertLinkedList() {
+        // 步骤 1
+        Node pre = head;
+        Node cur = pre.next;
+        pre.next = null;
 
-        if (node.next == null) {
-            return node;
+        while (cur != null) {
+            /**
+             * 务必注意：在 cur 指向 pre 之前一定要先保留 cur 的后继结点，不然 cur 指向 pre 后就再也找不到后继结点了
+             * 也就无法对 cur 后继之后的结点进行翻转了
+             */
+            Node next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
         }
-
-        // 步骤 1: 先翻转 node 之后的链表，得到头节点
-        // todo 得到新的头节点
-        Node newHead = invertLinkedList(node.next);
-        // 步骤 2: 再把原 node 节点后继结点的后继结点指向 node (4)，node 的后继节点设置为空(防止形成环)
-        node.next.next = node;  // 5 ---> 4， 1 ---> 2 ---> 3 ---> 4
-        node.next = null;
-        // 步骤 3: 返回翻转后的头结点
-        return newHead;
+        // 此时 pre 为头结点的后继结点
+        head = pre;
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
      * 内部节点类
@@ -56,6 +52,9 @@ public class bInvertLinkedList {
         private int data;
         private Node next;
 
+        public Node(){
+
+        }
         public Node(int data){
             this.data = data;
         }
@@ -69,11 +68,13 @@ public class bInvertLinkedList {
     private Node head;
 
     // 构造函数
-    public bInvertLinkedList(){
+    public cInvertLinkedList(){
+/*        ListNode node = new ListNode();
+        node.next = null;
+        head = node;*/
         this.head = null;
         this.size = 0;
     }
-
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////
 

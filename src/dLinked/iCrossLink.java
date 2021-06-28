@@ -3,27 +3,27 @@ package dLinked;
 /**
  * 链表环
  */
-public class fCrossLink {
+public class iCrossLink {
 
 
     //理解 链表中环的入口结点 https://blog.nowcoder.net/n/9d3ffa4b004e43d1aff512141d0d7dac
 
     public static void main(String[] args){
-        fCrossLink fCrossLink = new fCrossLink();
+        iCrossLink iCrossLink = new iCrossLink();
         int[] arr = {1,2,3,4,5,2};
         for (int i = 0; i< arr.length; i++){
-            fCrossLink.addHead(arr[i]);
+            iCrossLink.addHead(arr[i]);
         }
-        fCrossLink.print();
+        iCrossLink.print();
 
-        Node node = fCrossLink.detectCrossNode();
+        Node node = iCrossLink.detectCrossNode();
         if (node == null){
             System.out.println("链表无环");
         }else {
             System.out.println("链表有环，快慢指针相遇节点"+node.data);
         }
 
-        Node ringEntryNode = fCrossLink.getRingEntryNode();
+        Node ringEntryNode = iCrossLink.getRingEntryNode();
         if (ringEntryNode == null){
             System.out.println("链表无环");
         }else {
@@ -105,7 +105,7 @@ public class fCrossLink {
     private Node head;
     private int size;
 
-    public fCrossLink(){
+    public iCrossLink(){
         this.head = null;
         this.size = 0;
     }
