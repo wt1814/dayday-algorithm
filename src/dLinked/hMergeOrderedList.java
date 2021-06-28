@@ -33,7 +33,7 @@ public class hMergeOrderedList {
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 
         ListNode prehead = new ListNode(-1); // todo 哑节点
-        ListNode prev = prehead;  // todo 移动节点
+        ListNode prev = prehead;  // todo 哨兵节点
 
         while (l1 != null && l2 != null) {
             if (l1.val <= l2.val) {
@@ -43,10 +43,10 @@ public class hMergeOrderedList {
                 prev.next = l2;
                 l2 = l2.next;
             }
-            prev = prev.next; // todo 移动节点也要移动
+            prev = prev.next; // todo 哨兵节点也要移动
         }
 
-        //todo 合并后 l1 和 l2 最多只有一个还未被合并完，我们直接将链表末尾指向未合并完的链表即可
+        //todo 合并后 l1 和 l2 最多只有一个还未被合并完，直接将链表末尾指向未合并完的链表即可
         if (l1 != null){
             prev.next = l1;
         }else {

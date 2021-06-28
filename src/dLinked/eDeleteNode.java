@@ -3,7 +3,7 @@ package dLinked;
 /**
  *
  */
-public class fDeleteNode {
+public class eDeleteNode {
 
 
 
@@ -11,7 +11,7 @@ public class fDeleteNode {
 
     /**
      * todo @param node 题目给的是删除节点，那说明这个节点可以舍弃了，
-     * todo s把下一个节点的值拷贝给当前要删除的节点，再删除下一个节点。
+     * todo 把下一个节点的值拷贝给当前要删除的节点，再删除下一个节点。
      * @param node 要删除的节点
      */
     public static void deleteNode(ListNode node) {

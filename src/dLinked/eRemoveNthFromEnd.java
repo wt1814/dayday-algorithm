@@ -22,8 +22,41 @@ public class eRemoveNthFromEnd {
     }
 
 
-    ////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////
 
+    /**
+     * 删除链表第n个节点。转化为快慢指针找到第n+1个节点，并且删除其后继节点
+     * @param head
+     * @return
+     */
+    public ListNode removeNthFromEnd(ListNode head, int n){
+        ListNode dummy = new ListNode(0); //todo 哑节点
+        dummy.next = head; //todo
+        int length = getLength(head);
+        ListNode cur = dummy;
+        for (int i = 1; i < length - n + 1; ++i) {
+            cur = cur.next;
+        }
+        cur.next = cur.next.next;
+        ListNode ans = dummy.next;
+        return ans;
+    }
+
+    /**
+     * 获取链表的长度
+     * @param head
+     * @return
+     */
+    public static int getLength(ListNode head) {
+        int length = 0;
+        while (head != null) {
+            ++length;
+            head = head.next;
+        }
+        return length;
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
     //https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/solution/shan-chu-lian-biao-de-dao-shu-di-nge-jie-dian-b-61/
@@ -49,43 +82,6 @@ public class eRemoveNthFromEnd {
         second.next = second.next.next;
         ListNode ans = dummy.next;
         return ans;
-    }
-
-
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-
-    /**
-     * 删除链表第n个节点。转化为快慢指针找到第n+1个节点，并且删除其后继节点
-     * @param head
-     * @return
-     */
-    public ListNode removeNthFromEnd(ListNode head, int n){
-        ListNode dummy = new ListNode(0);
-        dummy.next = head; //todo
-        int length = getLength(head);
-        ListNode cur = dummy;
-        for (int i = 1; i < length - n + 1; ++i) {
-            cur = cur.next;
-        }
-        cur.next = cur.next.next;
-        ListNode ans = dummy.next;
-        return ans;
-    }
-
-    /**
-     * 获取链表的长度
-     * @param head
-     * @return
-     */
-    public static int getLength(ListNode head) {
-        int length = 0;
-        while (head != null) {
-            ++length;
-            head = head.next;
-        }
-        return length;
     }
 
 
