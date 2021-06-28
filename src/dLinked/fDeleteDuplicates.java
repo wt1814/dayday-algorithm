@@ -47,4 +47,28 @@ public class fDeleteDuplicates {
     }
 
 
+    /////////////////////////////
+    public ListNode deleteDuplicates2(ListNode head) {
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+
+        ListNode prev = dummy;
+        ListNode curr = head;
+        while (curr != null && curr.next != null) {
+            if (curr.val == curr.next.val) {       // todo 分支
+                ListNode temp = curr.next;
+                while (temp != null && temp.val == curr.val) {
+                    temp = temp.next;
+                }
+                prev.next = temp;
+                curr = temp;
+            } else {
+                prev = prev.next;
+                curr = curr.next;
+            }
+        }
+        return dummy.next;
+    }
+
+
 }
