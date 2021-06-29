@@ -1,6 +1,6 @@
 package aTest.day0622rewrite;
 
-import lTree.TreeNode;
+import mTree.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

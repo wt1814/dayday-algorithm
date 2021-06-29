@@ -15,8 +15,8 @@ public class TreeNode {
 
     public int val = 0;
 
-    public lTree.TreeNode left = null;
-    public lTree.TreeNode right = null;
+    public mTree.TreeNode left = null;
+    public mTree.TreeNode right = null;
 
     public TreeNode(int x) {
         val = x;
