@@ -1,4 +1,6 @@
 
+
+# 大话算法
 <!-- 
 一个快速排序这么多细节？ 
 https://mp.weixin.qq.com/s/-jhXzU3RzMWMWtmkFxknEQ
@@ -22,3 +24,8 @@ latex 插件我用的是 tex-all-the-things。地址：https://chrome.google.com
 
 1. 什么是变量？为什么需要变量？使用什么样的变量(全局、成员、局部)？  
 2. 流程控制  
+
+
+## 算法建模  
+1. 是否需要额外空间？或者使用额外的数据结构能帮助运算。  
+2. 算法建模：构建算法流程。  

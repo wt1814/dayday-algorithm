@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * 数组中出现次数超过一半的数字
  */
-public class MoreThanHalfNum {
+public class cMoreThanHalfNum {
 
     public static void main(String[] args){
         int[] arr = {2,2,3,4,8,99,3};
@@ -39,4 +39,5 @@ public class MoreThanHalfNum {
         }
         return result;
     }
+
 }

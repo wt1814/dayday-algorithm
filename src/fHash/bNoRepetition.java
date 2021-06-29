@@ -57,6 +57,7 @@ public class bNoRepetition {
     }
 
 
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static int maxLength2 (int[] arr) {
         // write code here
         HashMap<Integer, Integer> hashMap = new HashMap<>();
