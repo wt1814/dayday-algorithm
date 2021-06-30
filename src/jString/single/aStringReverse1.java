@@ -8,8 +8,6 @@ public class aStringReverse1 {
     public static void main(String[] args){
         String aa = "java and python ";
         System.out.println(swapWords(aa));
-        String bb = "i'm wang tao ";
-        System.out.println(swapWords(bb));
     }
 
     /**
@@ -59,7 +57,13 @@ public class aStringReverse1 {
         }
     }
 
-    /////// 双指针反转字符串
+    ///////////////////////////////////////////////////////////////
+
+    /**
+     * 双指针反转字符串
+     * @param var
+     * @return
+     */
     public static  String invertString(String var){
         byte[] bytes = var.getBytes();
         int left = 0;

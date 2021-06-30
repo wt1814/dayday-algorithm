@@ -8,7 +8,7 @@ public class LongestCommonPrefix {
     public static void main(String[] args){
         String[] arr = {"baaa","baab","baac","abaa"};
         System.out.println(longestCommonPrefix(arr));
-        System.out.println(longestCommontPrefix6(arr));
+        //System.out.println(longestCommontPrefix6(arr));
 
     }
 
@@ -48,11 +48,11 @@ public class LongestCommonPrefix {
                 result = str1.substring(0,i+1);
             }
         }
-        System.out.println(result);
+        System.out.println("result is "+ result);
         return result;
     }
 
-    //////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////
 
     /**
      * 利用二分法的思想

@@ -19,15 +19,41 @@ public class Test {
 
     public static void main(String[] args) throws Exception {
 
-        TreeNode treeNode1 = new TreeNode(1);
-        TreeNode treeNode2 = new TreeNode(2);
-        TreeNode treeNode3 = new TreeNode(2);
-        treeNode1.left = treeNode2;
-        treeNode1.right = treeNode3;
-
-        System.out.println(isSymmetric(treeNode1));
 
 
+        System.out.println(FirstNotRepeatingChar("google"));
+
+
+    }
+
+    public static int FirstNotRepeatingChar(String str) {
+
+        int result = -1;
+
+        if(str == null || str.length() ==0){
+            return -1;
+        }
+
+        HashMap<Character,Integer> map = new HashMap();
+        char[] strs = str.toCharArray();
+
+        for(int i = 0;i<strs.length;i++){
+            System.out.println("11 "+map.get(strs[i]));
+            int num = map.get(strs[i]) == null?0:map.get(strs[i]);
+            if(num == 0){
+                map.put(strs[i],1);
+            }else{
+                map.put(strs[i],num+1);
+            }
+        }
+
+        for(int i = 0;i<strs.length;i++){
+            if(map.get(strs[i]) == 1){
+                result = i;
+            }
+        }
+
+        return result;
     }
 
     /**

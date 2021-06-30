@@ -9,12 +9,8 @@ public class cValidPalindrome {
         System.out.println(isHuiWen("abbba"));
     }
 
-    // 反转字符串。如果是回文串，则它的反转字符串等于它本身
-
-
-
     /**
-     * 双指针
+     * 方式一：双指针
      * @param str
      * @return
      */
@@ -32,5 +28,9 @@ public class cValidPalindrome {
         }
         return flag;
     }
+
+
+    // 方式二
+    // 反转字符串。如果是回文串，则它的反转字符串等于它本身
 
 }
