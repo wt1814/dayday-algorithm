@@ -28,6 +28,10 @@ public class LRUByLinkedOne {
     int capacity;
     Map<Integer,Integer> map;
 
+    /**
+     * todo 构造函数
+     * @param capacity
+     */
     public LRUByLinkedOne(int capacity){
         this.capacity = capacity;
         map = new LinkedHashMap<>();
@@ -65,7 +69,5 @@ public class LRUByLinkedOne {
             map.remove(map.entrySet().iterator().next().getKey()); // todo 删除最久没用的，即第一个
         }
     }
-
-
 
 }
