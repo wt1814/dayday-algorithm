@@ -3,7 +3,10 @@ package gSort;
 import java.util.Arrays;
 
 /**
- * 快速排序(递归实现) 
+ * 快速排序(递归实现)
+ * todo 双边循环也有两种
+ * todo 一种是找到右边比baseData大的，找到左边比baseData小的，再交换， 最后交换两指针重合位置的值和baseData
+ * todo 一种是找到右边比baseData大的，就交换baseData和右边值 （推荐这种）
  */
 public class dQuickSort {
 
@@ -33,7 +36,7 @@ public class dQuickSort {
         }
 
         //todo 获取基准元素的下标，获取的是下标，而不是值
-        int i = getBase(array, left, right);
+        int i = partition3(array, left, right);
 
         count++;
 
@@ -43,6 +46,33 @@ public class dQuickSort {
         quickSort2(array, i + 1, right);
 
     }
+
+    ///////////////
+
+    //分割
+    public static int partition3(int[] a, int left, int right){
+        //基准值
+        int base = a[left];
+
+        while(left < right){
+            while (left < right && a[right] >= base)
+                right--;
+            swap(a,left,right);
+
+            while(left < right && a[left] <= base)
+                left++;
+            swap(a,left,right);
+        }
+        return left;
+    }
+
+    private static void swap(int[] a, int left, int right) {
+        int tmp = a[left];
+        a[left] = a[right];
+        a[right] = tmp;
+    }
+
+    /////////////////////////////////////////////////////////////////////
 
     /**
      * 获取基准位置
@@ -164,5 +194,6 @@ public class dQuickSort {
         arr[mark] = pivot;
         return mark;
     }
+
 
 }

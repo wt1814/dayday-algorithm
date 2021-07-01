@@ -1,9 +1,8 @@
-package gSort;
+package aTest.day0701;
 
-/**
- * 利用快速排序寻找第K大数
- */
-public class dFindKth {
+import java.util.*;
+
+public class test {
 
 
     public static void main(String[] args) {
@@ -15,29 +14,17 @@ public class dFindKth {
         return quickSort(a,0,n-1,K);
     }
 
-    /**
-     * 利用快速排序寻找第K大数
-     * todo 每次进行一次快速排序后，就判断基数右侧大于基数的数字个数，与K比较，是否进行二次快速排序，
-     * 如果当前基数刚好是第K大数，返回这个数即可；
-     * 如果右侧大于基数的数字个数比K小，说明还有数在左边，对左边继续进行快速排序；
-     * 如果K大于当前基数的右侧的数字的个数，说明第K大的数在基数的右边，对右边进行快速排序。
-     * @param a
-     * @param left
-     * @param right
-     * @param k
-     * @return
-     */
+    //快速排序
     public static int quickSort(int[] a, int left, int right, int k){
-        if(left > right) {
-            return -1;
+        if(left < right){
+            int point = partition(a,left,right);
+            if (point == k-1)
+                return a[k-1];
+            else if (point > k-1)
+                quickSort(a,left,point-1,k);
+            else
+                quickSort(a,point+1,right,k);
         }
-        int point = partition(a,left,right);
-        if (point == k-1)
-            return a[k-1];
-        else if (point > k-1)
-            quickSort(a,left,point-1,k);
-        else
-            quickSort(a,point+1,right,k);
         return a[k-1];
     }
 
@@ -63,5 +50,6 @@ public class dFindKth {
         a[left] = a[right];
         a[right] = tmp;
     }
+
 
 }
