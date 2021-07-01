@@ -32,7 +32,7 @@ public class dQuickSort {
             return;
         }
 
-        // 获取基准元素
+        //todo 获取基准元素的下标，获取的是下标，而不是值
         int i = getBase(array, left, right);
 
         count++;

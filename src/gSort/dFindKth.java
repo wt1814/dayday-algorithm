@@ -3,7 +3,7 @@ package gSort;
 /**
  * 利用快速排序寻找第K大数
  */
-public class nFindKth {
+public class dFindKth {
 
     public static void main(String[] args) {
         int[] arr = new int[] {1,3,5,2,2};
@@ -29,18 +29,21 @@ public class nFindKth {
      * @return
      */
     public static int findK(int[] arr, int left, int right, int k) {
-        if (left <= right) {
-            int pivot = partition(arr, left, right);
-
-            if (pivot == k - 1) {
-                return arr[pivot];
-            } else if (pivot < k - 1) {
-                return findK(arr, pivot + 1, right, k);
-            } else {
-                return findK(arr, left, pivot - 1, k);
-            }
+        if (left > right){
+            return -1;
         }
-        return -1;
+
+        int pivot = partition(arr, left, right);
+
+        if (pivot == k - 1) {
+            return arr[pivot];
+        } else if (pivot < k - 1) {
+            // todo 如果基准在左边，这在右边找
+            return findK(arr, pivot + 1, right, k);
+        } else {
+            return findK(arr, left, pivot - 1, k);
+        }
+
     }
 
     /**

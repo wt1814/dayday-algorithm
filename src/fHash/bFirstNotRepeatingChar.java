@@ -8,7 +8,8 @@ import java.util.HashMap;
 public class bFirstNotRepeatingChar {
 
     // 遍历一遍字符串，统计每个字符出现的次数。
-    // todo 然后再遍历一遍字符串，找出答案。非遍历map
+    // todo 然后再遍历一遍字符串，找出答案。
+    //  非遍历map
     public static int FirstNotRepeatingChar(String str) {
 
         int result = -1;
