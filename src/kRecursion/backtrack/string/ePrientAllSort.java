@@ -11,9 +11,11 @@ public class ePrientAllSort {
 
 
     public static void main(String[] args) {
-        System.out.println(Permutation("aab"));
+        System.out.println(Permutation("ab"));
     }
 
+    // 视频： https://www.bilibili.com/video/BV1cK4y1s7tN?from=search&seid=5804313901838849813
+    // https://www.bilibili.com/video/BV1xg4y1v7HR?from=search&seid=5804313901838849813
     public static ArrayList<String> Permutation(String str) {
         ArrayList<String> res = new ArrayList<>();
         if (str == null || str.length() == 0) {
@@ -33,7 +35,7 @@ public class ePrientAllSort {
      */
     private static void findPermutation(ArrayList<String> res, char[] chars, int i) {
 
-        // todo 递归终止条件
+        // todo 递归终止条件，最后i+1，因此判断条件是i == chars.length
         if (i == chars.length) {
             res.add(new String(chars));
             return;

@@ -36,7 +36,8 @@ public class dQuickSort {
         }
 
         //todo 获取基准元素的下标，获取的是下标，而不是值
-        int i = partition3(array, left, right);
+        //todo 注意是移动后的基准元素的下标，而不是基准元素的初始下标
+        int i = partition3(array, left, right);  // todo 返回的是基准元素的下标 // todo 返回的是数组下标 // todo 返回的是数组下标
 
         count++;
 
@@ -50,6 +51,8 @@ public class dQuickSort {
     ///////////////
 
     //分割
+    // todo 返回的是基准元素的下标
+    //todo 注意方法 #partition3() 与方法 #getBase() 的区别
     public static int partition3(int[] a, int left, int right){
         //基准值
         int base = a[left];
