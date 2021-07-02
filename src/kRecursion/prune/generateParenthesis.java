@@ -33,14 +33,15 @@ public class generateParenthesis {
     }
 
     private static void gp(String s,int left,int right,int n){
+
+        // todo 剪枝
+        if (left > n || left < right){
+            return;
+        }
+
         // 递归终止
         if(right == n){
             r.add(s);
-        }
-
-        // 剪枝
-        if (left > n || left < right){
-            return;
         }
 
         gp(s+"(",left+1,right,n);

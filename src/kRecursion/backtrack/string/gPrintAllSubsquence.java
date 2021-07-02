@@ -39,7 +39,7 @@ public class gPrintAllSubsquence {
      */
     public static void printAllSubString(String pre, char[] chars,int i){
         // 迭代终止条件
-        if(i == chars.length){
+        if(i == chars.length){   //todo 最后会执行一次i+1，所以是chars.length，而不是chars.length-1
             // 说明已经到最后一个字符了，所有的选择都已经做完了，应该返回了
             System.out.println(pre);  //todo 输出值可以用集合保存起来
             return;
