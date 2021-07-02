@@ -11,7 +11,7 @@ public class ePrientAllSort {
 
 
     public static void main(String[] args) {
-        System.out.println(Permutation("ab"));
+        System.out.println(Permutation("aab"));
     }
 
     public static ArrayList<String> Permutation(String str) {

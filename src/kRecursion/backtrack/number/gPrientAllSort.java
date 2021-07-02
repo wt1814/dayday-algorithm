@@ -3,16 +3,8 @@ package kRecursion.backtrack.number;
 import java.util.Arrays;
 
 /**
- * @ProjectName：dayday-algorithm
- * @ClassName: ePrientAllSort
- * @Description: TODO  
- * @Author: wt 
- * @CreateDate: 6/20/21 9:09 PM
- * @UpdateUser: 
- * @UpdateDate:   
- * @UpdateRemark:
- * @Version: V1.0
- **/
+ * 数组全排列
+ */
 public class gPrientAllSort {
 
     public static void main(String[] args) {
