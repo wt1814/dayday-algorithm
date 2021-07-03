@@ -5,6 +5,8 @@ package mTree.dfs;
  * todo 左神 课程8 《二叉树的递归套路》
  */
 
+import mTree.TreeNode;
+
 /**
  * todo 二叉树的递归dfs套路
  * 1) 假设以x节点为头，假设可以向x左树和x右树要任何信息
@@ -31,6 +33,7 @@ public class fIsBalanced {
 
     ////////////////////////////////////////////////////////////////////
     public static boolean isBalanced2(Node head) {
+
         return process(head).isBalanced;
     }
 
@@ -119,5 +122,29 @@ public class fIsBalanced {
         }
     }
 
+    /////////////////////////////
+    public static boolean isBalenced3(TreeNode root){
+        if (root == null){
+            return true;
+        }
+
+        if (isBalenced3(root.left) && isBalenced3(root.right) && Math.abs(height(root.left)-height(root.right))<=1){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    /**
+     * todo 求二叉树高度
+     * @param root
+     * @return
+     */
+    private static int height(TreeNode root) {
+        if (root == null){
+            return 0;
+        }
+        return Math.max(height(root.left),height(root.right))+1;
+    }
 
 }
