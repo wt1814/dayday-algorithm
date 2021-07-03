@@ -22,6 +22,9 @@ public class hAllPath {
         TreeNode.right = treeNode2;
 
         List<String> stringList = binaryTreePaths(TreeNode);
+        for (String s:stringList){
+            System.out.println(s);
+        }
 
     }
 
