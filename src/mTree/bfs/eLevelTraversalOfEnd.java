@@ -35,8 +35,8 @@ public class eLevelTraversalOfEnd {
             return;
         }
 
-
         Queue<TreeNode> queue = new LinkedList<>();
+
         queue.add(root);
         queue.add(null); //todo 一层结束放入null节点
         int level = 1;
@@ -49,7 +49,7 @@ public class eLevelTraversalOfEnd {
             if (null == cur){
 
                 if (queue.isEmpty()){  // todo 特例：如果队列中已经没有数据，则说明遍历已经结束，需要停止循环
-                    break;
+                    break;   //todo 如果无此句，则会死循环
                 }
 
                 System.out.println("第"+level+"层结束");
@@ -66,6 +66,7 @@ public class eLevelTraversalOfEnd {
             }
         }
         level++;
-
     }
+
+
 }

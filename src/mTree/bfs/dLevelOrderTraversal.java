@@ -9,23 +9,6 @@ import java.util.*;
  */
 public class dLevelOrderTraversal {
 
-/*    public static void main(String[] args) {
-
-        TreeNode TreeNode = new TreeNode(1);
-        TreeNode treeNode1 = new TreeNode(2);
-        TreeNode treeNode2 = new TreeNode(3);
-        TreeNode.left = treeNode1;
-        TreeNode.right = treeNode2;
-
-        List<List<Integer>> lists = levelOrder(TreeNode);
-        for (List<Integer> list:lists){
-            for (Integer integer:list){
-                System.out.print(integer+" ");
-            }
-        }
-
-    }*/
-
     public static void main(String[] args){
         TreeNode treeNode1 = new TreeNode(1);
         TreeNode treeNode2 = new TreeNode(2);
@@ -35,18 +18,28 @@ public class dLevelOrderTraversal {
         treeNode2.left = treeNode3;
         treeNode2.right = treeNode4;
 
+
+        List<List<Integer>> lists = levelOrder(treeNode1);
+        for (List<Integer> list:lists){
+            for (Integer integer:list){
+                System.out.print(integer+" ");
+            }
+        }
+
+        System.out.println("------------------------------");
+
         level(treeNode1);
     }
 
-/*
-算法分析
-    层序遍历与先序、中序、后序遍历不同。层序遍历用到了队列，而先、中、后序需要用到栈。
-    因此，先、中、后序遍历 可以 采用递归方式来实现，而层序遍历则没有递归方式。
+    /* todo
+    算法分析
+        层序遍历与先序、中序、后序遍历不同。层序遍历用到了队列，而先、中、后序需要用到栈。
+        因此，先、中、后序遍历 可以 采用递归方式来实现，而层序遍历则没有递归方式。
 
-算法步骤：
-    初始时，根结点入队列
-    然后，while循环判断队列不空时，弹出一个结点，访问它，并把它的所有孩子结点入队列。
-*/
+    算法步骤：
+        初始时，根结点入队列
+        然后，while循环判断队列不空时，弹出一个结点，访问它，并把它的所有孩子结点入队列。
+    */
 
     /**
      * 层序遍历
@@ -100,10 +93,19 @@ public class dLevelOrderTraversal {
             for (int i = 0; i < size; i++) {
                 TreeNode node = list.remove();
                 item.add(node.val);
-                if (node.left != null) list.add(node.left);
-                if (node.right != null) list.add(node.right);
+                if (node.left != null) {
+                    list.add(node.left);
+                }
+                if (node.right != null) {
+                    list.add(node.right);
+                }
             }
             size = list.size();
+            System.out.println(size);
+            for (int i = 0;i<item.size();i++){
+                System.out.println(item.get(i));
+            }
+
             result.add(item);
         }
         return result;
