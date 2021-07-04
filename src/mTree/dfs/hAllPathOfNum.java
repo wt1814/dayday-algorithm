@@ -1,13 +1,13 @@
-package aTest.day0703;
+package mTree.dfs;
+
+import mTree.TreeNode;
 
 import java.util.ArrayList;
 
 /**
- * 二叉树全路径
- * todo 回溯法
+ *
  */
-public class test4 {
-
+public class hAllPathOfNum {
 
     public static void main(String[] args) {
 
@@ -60,22 +60,20 @@ public class test4 {
             return;
         }
 
-        nums.add(root.val);
+        nums.add(root.val); // todo 先添加节点，再判断该节点是否叶节点
 
         if(root.left == null && root.right == null){
             ArrayList<Integer> temp = new ArrayList<>();
-
             for (int i = 0;i<nums.size();i++){
                 temp.add(nums.get(i));
             }
-
             result.add(temp);
-
         }
 
         preOrder(result,nums,root.left);
         preOrder(result,nums,root.right);
-        nums.remove(nums.size()-1);  // todo 回溯法
+        nums.remove(nums.size()-1);
 
     }
+
 }
