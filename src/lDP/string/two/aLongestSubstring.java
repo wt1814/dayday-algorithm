@@ -3,11 +3,11 @@ package lDP.string.two;
 /**
  * 两个字符串的最长公共子串
  */
-public class LongestSubstring {
+public class aLongestSubstring {
 
     public static void main(String[] argv) {
-        String a = "12345CD";
-        String b = "12345EF";
+        String a = "M948e9Kb5KJt80";
+        String b = "uD948ez0htzd5YF9J1";
         System.out.println(getLCSLength(a,b));
     }
 
@@ -20,6 +20,8 @@ public class LongestSubstring {
      */
     public static int getLCSLength(String s, String t) {
 
+
+        System.out.println(s.length());
         if (s == null || t == null || s.length() == 0 || t.length() == 0) {
             return 0;
         }
@@ -44,8 +46,14 @@ public class LongestSubstring {
                     } else {
                         dp[i][k] = dp[i - 1][k - 1] + 1;
                     }
-                    result = Math.max(dp[i][k], result);
-                    endIndex = i; //todo 更新尾标
+
+
+                    if (dp[i][k] > result){   //todo 更新尾标条件
+                        result = Math.max(dp[i][k], result);
+                        endIndex = i; //todo 更新尾标
+                    }
+
+                    System.out.println("result is "+ result+" endIndex is "+endIndex);
                 } else {
                     dp[i][k] = 0;
                 }

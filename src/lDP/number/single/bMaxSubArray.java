@@ -17,7 +17,7 @@ public class bMaxSubArray {
 
 
     /**
-     * todo 自己写的s
+     * todo 自己写的
      * max sum of the subarray
      * @param arr int整型一维数组 the array
      * @return int整型

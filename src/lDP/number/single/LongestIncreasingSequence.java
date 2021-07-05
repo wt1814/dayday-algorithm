@@ -25,7 +25,7 @@ public class LongestIncreasingSequence {
 
 
     /**
-     *
+     * todo 生成dp数组
      * @param arr
      * @return
      */

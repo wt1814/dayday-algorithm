@@ -27,7 +27,7 @@ public class aKnapsack {
     public static int knapsack(int N,int W,int[] wt,int[] val){
 
         // dp数组 对于前i个物品，当背包当容量为w时，可以装当最大价值是dp[i][w]
-        int[] [] dp = new int[N+1][W+1];
+        int[][] dp = new int[N+1][W+1];
         // base case 已初始化
 
         for (int i =1; i<=N; i++){

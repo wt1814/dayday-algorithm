@@ -3,7 +3,7 @@ package lDP.string.two;
 /**
  * 最长公共子序列
  */
-public class LongestCommonSequence {
+public class bLongestCommonSequence {
 
     public static void main(String[] args) {
         String  a = "AGCAT",
@@ -31,14 +31,12 @@ public class LongestCommonSequence {
         char[] res = new char[dp[m][n]];
         char[] str1Arr = str1.toCharArray();
         char[] str2Arr = str2.toCharArray();
-        if(str1 == null || str2 == null || str1.equals("") || str2.equals("") || dp[m][n] == 0)
-        {
+        if(str1 == null || str2 == null || str1.equals("") || str2.equals("") || dp[m][n] == 0) {
             return "-1";
         }
         int index = res.length - 1;
         //比如res数组长度为7，实际计算过程并不是7次，而是大于等于7次
-        while(index >= 0)
-        {
+        while(index >= 0) {
             if(n > 0 && dp[m][n] == dp[m][n-1])//来自左
             {
                 n--;
