@@ -6,6 +6,7 @@ import java.util.Iterator;
 /**
  * 生成括号
  * todo 递归 + 剪枝 （也可以改写成回溯）
+ * todo 通过DFS实现回溯，关键在于两点： 去重（好好理解一下） ； 剪枝（不剪枝会超时）。
  */
 public class generateParenthesis {
 
