@@ -12,6 +12,7 @@ public class aLongestSubstring {
     }
 
     // https://www.cnblogs.com/fanguangdexiaoyuer/p/11281179.html
+    // https://mp.weixin.qq.com/s/o6jXoYMm8QvWiJrP8Akc8w
     /**
      * 最长公共子串
      * @param s

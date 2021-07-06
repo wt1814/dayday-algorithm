@@ -8,7 +8,7 @@ public class cLongestPalindromicSubstring {
 
     // https://www.cxyxiaowu.com/2869.html
     // todo 题解：https://leetcode-cn.com/problems/longest-palindromic-substring/solution/zui-chang-hui-wen-zi-chuan-by-leetcode-solution/
-
+    //
 
     // dp[i][j] 表示子串s[i...j]是否为回文子串
     // 状态转移方程： dp[i][j] = (s[i] == s[j]) and dp[i+1][j-1]

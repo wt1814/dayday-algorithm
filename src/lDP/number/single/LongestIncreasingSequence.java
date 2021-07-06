@@ -9,6 +9,7 @@ import java.util.Arrays;
 public class LongestIncreasingSequence {
 
     // https://blog.csdn.net/u012505432/article/details/52228945
+    // https://mp.weixin.qq.com/s/pq0QStRtLBLOzsyJcsn3Qw
 
     public static void main(String[] args){
         int[] arr = {1,2,8,6,4};
