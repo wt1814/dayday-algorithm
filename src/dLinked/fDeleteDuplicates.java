@@ -48,7 +48,38 @@ public class fDeleteDuplicates {
 
         return dummy.next;
     }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+    /**
+     * 自己调试的
+     * @param head
+     * @return
+     */
+    public ListNode deleteDuplicatesOfSelf (ListNode head) {
+        // write code here
+
+        if(head == null){
+            return null;
+        }
+
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+        ListNode cur = dummy;
+
+        while(cur!= null && cur.next != null){
+            int val = cur.val;
+            while (cur.next != null && cur.next.val == val){
+                cur.next = cur.next.next;
+
+            }
+            if (cur.next!= null){
+                cur = cur.next;
+            }
+        }
+
+        return dummy.next;
+    }
 
     /////////////////////////////
     public ListNode deleteDuplicates2(ListNode head) {
@@ -72,6 +103,8 @@ public class fDeleteDuplicates {
         }
         return dummy.next;
     }
+
+
 
 
 }
