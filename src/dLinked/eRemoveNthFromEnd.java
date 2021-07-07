@@ -25,13 +25,13 @@ public class eRemoveNthFromEnd {
     ////////////////////////////////////////////////////////////////////////////////////
 
     /**
-     * 删除链表第n个节点。转化为快慢指针找到第n+1个节点，并且删除其后继节点
+     * 删除链表倒数第n个节点。转化为快慢指针找到第n+1个节点，并且删除其后继节点
      * @param head
      * @return
      */
     public ListNode removeNthFromEnd(ListNode head, int n){
         ListNode dummy = new ListNode(0); //todo 哑节点
-        dummy.next = head; //todo
+        dummy.next = head;
         int length = getLength(head);
         ListNode cur = dummy;
         for (int i = 1; i < length - n + 1; ++i) {

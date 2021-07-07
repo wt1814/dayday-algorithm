@@ -42,7 +42,7 @@ public class iCrossLink {
         Node fast = head;
         Node slow = head;
         while (fast != null && fast.next != null){
-            fast = fast.next;
+            fast = fast.next.next;  //todo 快指针走两步
             slow = slow.next;
 
             if (slow == fast) {

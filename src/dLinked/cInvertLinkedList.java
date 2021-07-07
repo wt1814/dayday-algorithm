@@ -35,15 +35,20 @@ public class cInvertLinkedList {
              * 务必注意：在 cur 指向 pre 之前一定要先保留 cur 的后继结点，不然 cur 指向 pre 后就再也找不到后继结点了
              * 也就无法对 cur 后继之后的结点进行翻转了
              */
-            Node next = cur.next;
-            cur.next = pre;
-            pre = cur;
+            Node next = cur.next; // todo 保存当前节点的下一节点
+
+            cur.next = pre; // todo 反转
+
+            pre = cur;  // todo 矫正pre 和 cur 以便下一次
             cur = next;
         }
         // 此时 pre 为头结点的后继结点
         head = pre;
     }
 
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
      * 内部节点类
@@ -61,7 +66,6 @@ public class cInvertLinkedList {
 
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // 属性
     private int size;

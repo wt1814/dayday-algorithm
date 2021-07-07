@@ -3,6 +3,7 @@ package dLinked;
 /**
  * 合并两个有序链表
  * 要求重复利用已有空间
+ * todo 移动节点 和 哨兵节点 的使用
  */
 public class hMergeOrderedList {
 

@@ -2,7 +2,6 @@ package dLinked;
 
 /**
  * 链表快慢指针找到单链表中间节点
- *
  */
 public class gSpeedPointer {
 
@@ -27,6 +26,7 @@ public class gSpeedPointer {
      * @return
      */
     public Node findMiddleNodeWithSlowFastPointer(){
+
         Node fast = head;
         Node slow = head;
 
@@ -35,6 +35,7 @@ public class gSpeedPointer {
             slow = slow.next;
         }
         return slow;
+
     }
 
 
