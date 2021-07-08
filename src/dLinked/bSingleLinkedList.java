@@ -27,7 +27,7 @@ public class bSingleLinkedList {
     //在链表头添加元素
     public Object addHead(Object obj){
         Node newHead = new Node(obj);
-        if(size == 0){
+        if(size == 0){   // todo 如果添加的
             head = newHead;
         }else{
             newHead.next = head;

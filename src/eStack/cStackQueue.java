@@ -23,6 +23,8 @@ public class cStackQueue {
         System.out.println(cStackQueue.pop());
     }
 
+
+
     /**
      * todo 入队都在 stack1 中进行，出队在 stack2 中进行
      */
@@ -52,10 +54,11 @@ public class cStackQueue {
             }
         }
 
-        if (out.isEmpty()){
+        if (out.isEmpty()){   //todo 若两个栈都为空栈，则队列为空队，无法出队。
             throw new Exception("queue is empty");
         }
 
         return out.pop();
     }
+
 }

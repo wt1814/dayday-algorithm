@@ -8,6 +8,7 @@ import java.util.Stack;
 public class aStringReversal {
 
     public static void main(String[] args){
+
         testStringReversal();
     }
 
@@ -25,7 +26,7 @@ public class aStringReversal {
         }
         System.out.print("\n");   // print 输出字符后，下一个输出字符不会会换展示
         while(!stack.isEmpty()){
-            System.out.print(stack.pop());   //todo print 输出字符后，下一个输出字符不会会换展示
+            System.out.print(stack.pop());   //todo print 输出字符后，下一个输出字符不会换行展示
             //System.out.println(stack.pop());  //todo println 输出字符后，下一个输出的字符会换行展示
         }
 
