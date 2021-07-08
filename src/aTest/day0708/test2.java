@@ -24,11 +24,18 @@ public class test2 {
         TreeNode treeNode1 = new TreeNode(1);
         TreeNode treeNode2 = new TreeNode(2);
         TreeNode treeNode3 = new TreeNode(3);
+/*        TreeNode treeNode4 = new TreeNode(4);
+        TreeNode treeNode5 = new TreeNode(5);*/
 
-        treeNode1.left = treeNode3;
-        treeNode1.right = treeNode2;
+
+        treeNode1.left = treeNode2;
+        treeNode1.right = treeNode3;
+/*        treeNode2.left = treeNode4;
+        treeNode3.right = treeNode5;*/
+
 
         ArrayList<ArrayList<Integer>> arrayLists = zigzagLevelOrder(treeNode1);
+
 
         System.out.println("-------------"+arrayLists);
 
@@ -52,47 +59,35 @@ public class test2 {
         while(!queue.isEmpty()){
             TreeNode poll = queue.poll();
             if(null == poll){
+                if (level %2 ==1){
+                    result.add(temp);
+                }else {
+                    for(int j = 0;j<temp.size()/2;j++){
+                        int temp4 = temp.get(j);
+                        temp.set(j,temp.get(temp.size()-j-1));
+                        temp.set(temp.size()-j-1,temp4);
+                    }
+                    result.add(temp);
+                }
+                temp = new ArrayList();
                 if(queue.isEmpty()){
                     break;
                 }
                 queue.add(null);
                 level++;
-                result.add(temp);
-                temp = new ArrayList();
                 continue;
             }
-            if(poll != null && poll.val != 0){
-                temp.add(poll.val);
-            }
-            if(level%2 ==1){
-                if(poll.left != null){
-                    queue.add(root.left);
-                }
-                if(poll.right != null){
-                    queue.add(root.right);
-                }
-            }else{
-                if(poll.right != null){
-                    queue.add(root.right);
-                }
-                if(poll.left != null){
-                    queue.add(root.left);
-                }
-            }
 
+            temp.add(poll.val);
+            if(poll.left != null){
+                queue.add(poll.left);
+            }
+            if(poll.right != null){
+                queue.add(poll.right);
+            }
         }
         level++;
 
-        if(level%2 ==0){
-            result.add(temp);
-        }else{
-            for(int j = 0;j<temp.size()/2;j++){
-                int temp4 = temp.get(j);
-                temp.set(j,temp.get(temp.size()-j-1));
-                temp.set(temp.size()-j-1,temp4);
-            }
-            result.add(temp);
-        }
 
         return result;
     }
