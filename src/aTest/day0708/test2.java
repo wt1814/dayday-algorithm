@@ -30,7 +30,7 @@ public class test2 {
 
         ArrayList<ArrayList<Integer>> arrayLists = zigzagLevelOrder(treeNode1);
 
-        System.out.println("-------------");
+        System.out.println("-------------"+arrayLists);
 
     }
 
@@ -81,6 +81,8 @@ public class test2 {
             }
 
         }
+        level++;
+
         if(level%2 ==0){
             result.add(temp);
         }else{
@@ -88,11 +90,8 @@ public class test2 {
                 int temp4 = temp.get(j);
                 temp.set(j,temp.get(temp.size()-j-1));
                 temp.set(temp.size()-j-1,temp4);
-
-
             }
             result.add(temp);
-
         }
 
         return result;
