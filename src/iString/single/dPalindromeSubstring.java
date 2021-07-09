@@ -1,4 +1,4 @@
-package jString.single;
+package iString.single;
 
 /**
  * 回文子串的个数

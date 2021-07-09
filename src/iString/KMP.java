@@ -1,4 +1,4 @@
-package jString;
+package iString;
 
 /**
  * @ProjectName：dayday-algorithm

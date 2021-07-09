@@ -1,4 +1,4 @@
-package jString.two;
+package iString.two;
 
 /**
  * 最长公共前缀

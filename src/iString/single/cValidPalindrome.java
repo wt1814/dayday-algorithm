@@ -1,4 +1,4 @@
-package jString.single;
+package iString.single;
 
 /**
  * 验证回文串

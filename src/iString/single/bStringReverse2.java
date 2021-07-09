@@ -1,4 +1,4 @@
-package jString.single;
+package iString.single;
 
 /**
  * 考虑字符串开头有空格，单词间有多个空格空格的情况

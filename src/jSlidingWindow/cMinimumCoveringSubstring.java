@@ -1,4 +1,4 @@
-package iSlidingWindow;
+package jSlidingWindow;
 
 import java.util.HashMap;
 
@@ -58,7 +58,5 @@ public class cMinimumCoveringSubstring {
         }
         return len == Integer.MAX_VALUE ? "" : s.substring(start,start + len);
     }
-
-
 
 }

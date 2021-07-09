@@ -1,9 +1,10 @@
-package iSlidingWindow;
+package jSlidingWindow;
 
 import java.util.HashMap;
 
 /**
  * 滑动窗口模板
+ * todo ★★★求满足一定条件的 连续子区间，子串一般用滑动窗口
  * todo 当窗口不满足要求的时候，向右拓宽边界
  * todo 当窗口满足的时候，向左收缩边界
  */

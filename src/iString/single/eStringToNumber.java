@@ -1,4 +1,4 @@
-package jString.single;
+package iString.single;
 
 /**
  * 字符串转整数
