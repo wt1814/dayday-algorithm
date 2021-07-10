@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 归并排序
  */
-public class MergeSort {
+public class fMergeSort {
 
 
     public static void main(String[] args) {

@@ -2,6 +2,7 @@ package hSearch;
 
 /**
  * “旋转数组”中的二分查找
+ * todo 迭代
  */
 public class cRotatedBinarySearch {
 
@@ -19,14 +20,14 @@ public class cRotatedBinarySearch {
      */
     public static int rotatedBinarySearch(int[] array, int target){
         int start = 0, end = array.length-1;
-        while(start<=end)
+        while(start<=end)   //todo 递归转迭代
         {
             int mid = start + (end-start)/2;
             if(array[mid]==target){
                 return mid;
             }
-            //情况A：旋转点在中位数右侧
-            if(array[mid]>=array[start]) {
+
+            if(array[mid]>=array[start]) {  //todo 情况A：旋转点在中位数右侧
                 //最左侧元素 <= 查找目标 < 中位数
                 if(array[mid]>target && array[start]<=target){
                     end = mid - 1;
@@ -34,8 +35,8 @@ public class cRotatedBinarySearch {
                     start = mid + 1;
                 }
             }
-            //情况B：旋转点在中位数左侧，或与中位数重合
-            else {
+
+            else {   //todo 情况B：旋转点在中位数左侧，或与中位数重合
                 //中位数 < 查找目标 <= 最右侧元素
                 if(array[mid]<target && target<=array[end]){
                     start = mid + 1;
