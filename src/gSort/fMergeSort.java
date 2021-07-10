@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 /**
  * 归并排序
+ * todo 1. 先分再合
+ * todo 2. 合的时候，设置移动指针，合并“两个待排序数组”
+ * todo 2. 1). 双指针同时移动比较， 2). 若左边还有剩余
  */
 public class fMergeSort {
 
@@ -28,7 +31,7 @@ public class fMergeSort {
         }
 
         int mid = (left+right)/2;
-        mergeSort(array,left,mid);
+        mergeSort(array,left,mid);        //todo 先分再合
         mergeSort(array,mid+1,right);
 
         // 在排序前，先建好一个长度等于原数组长度的临时数组，避免递归中频繁开辟空间
@@ -55,7 +58,7 @@ public class fMergeSort {
         int t = 0;//临时数组指针
 
 
-        while (i<=mid && j<=right){
+        while (i<=mid && j<=right){  //todo 两个数组合并，同时移动指针
             if (arr[i]>=arr[j]){
                 temp[t] = arr[j];
                 j++;
@@ -75,7 +78,7 @@ public class fMergeSort {
         }*/
 
 
-        while(i<=mid){//将左边剩余元素填充进temp中
+        while(i<=mid){             //todo 若左边还有剩余，将左边剩余元素填充进temp中
             //temp[t++] = arr[i++];
             temp[t] = arr[i];
             t++;
@@ -91,7 +94,7 @@ public class fMergeSort {
 
 
         t = 0;
-        //将temp中的元素全部拷贝到原数组中
+        //todo 将temp中的元素全部拷贝到原数组中
         while(left <= right){
             arr[left++] = temp[t++];
         }

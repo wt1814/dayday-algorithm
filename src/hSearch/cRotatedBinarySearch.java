@@ -2,7 +2,8 @@ package hSearch;
 
 /**
  * “旋转数组”中的二分查找
- * todo 迭代
+ * todo 迭代 迭代 迭代 迭代 迭代 迭代 迭代 迭代 迭代 迭代 迭代 迭代 迭代 迭代 迭代 迭代 迭代
+ * todo 二分查找算法不限于运用在有序数组上。如果能够明确二分之后，答案存在于二分的某一侧，就可以使用二分
  */
 public class cRotatedBinarySearch {
 
