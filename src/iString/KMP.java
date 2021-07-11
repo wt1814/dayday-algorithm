@@ -8,17 +8,10 @@ package iString;
  */
 public class KMP {
 
+    // 视频讲解：https://www.bilibili.com/video/BV1jb411V78H?from=search&seid=16480680497195823788
+    // 视频讲解：计算next函数值：https://www.bilibili.com/video/BV12J411m74v/?spm_id_from=autoNext
 
-    // https://mp.weixin.qq.com/s/MoRBHbS4hQXn7LcPdmHmIg
-
-    // 关于字符串，我总结了这些
-    // https://mp.weixin.qq.com/s/pD0a3r4_gO5ydWoRfTIyyg
-
-    // https://www.bilibili.com/video/BV1jb411V78H?from=search&seid=16480680497195823788
-
-    // https://www.bilibili.com/video/BV12J411m74v/?spm_id_from=autoNext
-
-
+    // 重学KMP： https://mp.weixin.qq.com/s/MoRBHbS4hQXn7LcPdmHmIg
 
 
 }
