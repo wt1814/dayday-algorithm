@@ -4,9 +4,7 @@ import java.util.HashMap;
 
 /**
  * todo 最长无重复子数组、最长无公共子串
- * todo 采用双指针+Hash
- * todo 即滑动窗口
- * 最长重复子数组、最长公共子序列，采用动态规划
+ * todo 最长重复子数组、最长公共子序列，采用动态规划
  */
 public class bNoRepetition {
 

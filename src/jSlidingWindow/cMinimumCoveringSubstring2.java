@@ -5,7 +5,6 @@ import java.util.Map;
 
 public class cMinimumCoveringSubstring2 {
 
-
     public static void main(String[] args){
         String s = "wyqaalfdtavrmkvrgbrmauenibfxrzjpzzqzlveexayjkvdsyueboloymtvfugvtgnutkyzhaztlvwdvqkwgvmejhbpdimwqbslnrkutkpehnkefwblrprcxvtaffzxitivmssgehklvwqastojihmhcfkhnlexemtrhnxlujxrgpuyiikspycufodubisfwnydaxrwhqqpfkppuzjlzlfhbjbcttkriixkiohpexgjjvafxjqyvyfyjhbccltlvsvdgeumdavoyxtvhmtekzctidxkqsxmlvrrzmefobtmznhizdmlcoemudwkvuyirscqegvsjrfkgoshrgsvvyhrbgdycehtwjlcrjucabpgsjnjqhhnfqeiwhgalptjyflpoiuqjjwdslpiswvxobfljnnwdhgdortezpulysoqddbxbwuqabdjqqhtzpxpjsvkjrvhjmzoralvzhlzkqkbgrwijvzspvcymafymfmfhaaghnfsdrvmlruuntmcqqbdqideprkxrmfbanvfeqrphnlwjxbzqcegmhnczxbslitnvotaemroadkjclksppzeyoiznlsytnopch" +
                 "ritiyvlleqypiqgjugxeikpclipzxtgoebxcxkpdaoulecuajueretvpbkqbgwrkaooxbeaduvoaxlaifgblzwdcjtfpsxbsnrrovturokrovtycbcqcytfjomygj";
@@ -28,7 +27,7 @@ public class cMinimumCoveringSubstring2 {
         map.put("min",Integer.MAX_VALUE);
 
         while (right < S.length()){
-            right++;
+            right++;                 // todo 右指针移动，直到满足条件
             if (comepare(S.substring(left,right), T)){
                 rightresult = right;
             }
@@ -39,7 +38,7 @@ public class cMinimumCoveringSubstring2 {
                     map.put("right",rightresult);
                     map.put("min",rightresult-leftresult+1);
                 }
-                left++;
+                left++;              // todo 左指针移动，直到不满足条件
             }
         }
         return S.substring(map.get("left"),map.get("right"));
@@ -74,7 +73,6 @@ public class cMinimumCoveringSubstring2 {
                 window.put(chars[i],integer+1);
             }
         }
-
 
         for (Map.Entry<Character, Integer> entry : need.entrySet()) {
             Integer integer = window.get(entry.getKey());

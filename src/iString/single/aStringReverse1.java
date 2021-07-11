@@ -21,7 +21,7 @@ public class aStringReverse1 {
         }
         String ret = "";
 
-        // 字符串预先处理
+        //todo 字符串预先处理
         if (!s.endsWith(" ")) {
             s += " ";
         }
