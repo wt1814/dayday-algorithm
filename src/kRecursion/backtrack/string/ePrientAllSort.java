@@ -41,13 +41,13 @@ public class ePrientAllSort {
             return;
         }
         //从[i~length-1]枚举确定i位置的字符
-        for (int j = i; j < chars.length; j++) {
+        for (int j = i; j < chars.length; j++) {  //todo 控制树的横向遍历
             //交换
-            swap(chars, i, j);
+            swap(chars, i, j);  // todo 处理节点
             //确定好i的位置,对[i+1~length-1]范围内的字符数组完成全排列
-            findPermutation(res, chars, i + 1);
+            findPermutation(res, chars, i + 1);  //todo 递归：控制树的纵向遍历，注意下⼀层搜索要从i+1开始
             //恢复原数组
-            swap(chars, i, j);
+            swap(chars, i, j); //todo 处理节点
         }
     }
 

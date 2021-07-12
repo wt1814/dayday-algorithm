@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @ProjectName：dayday-algorithm
- * @ClassName: gPrintAllSubsquence
+ * @ClassName: gPrintAllSubsquenceOfOther
  * @Description: TODO  
  * @Author: wt 
  * @CreateDate: 7/2/21 2:12 PM

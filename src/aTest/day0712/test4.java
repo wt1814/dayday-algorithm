@@ -1,21 +1,20 @@
-package kRecursion.backtrack.string;
+package aTest.day0712;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @ProjectName：dayday-algorithm
- * @ClassName: gPrintAllSubsquence
+ * @ClassName: test4
  * @Description: TODO  
  * @Author: wt 
- * @CreateDate: 7/12/21 6:15 PM
+ * @CreateDate: 7/12/21 5:47 PM
  * @UpdateUser: 
  * @UpdateDate:   
  * @UpdateRemark:
  * @Version: V1.0
  **/
-public class gPrintAllSubsquence {
-
+public class test4 {
 
     public static void main(String[] args){
 
@@ -51,5 +50,6 @@ public class gPrintAllSubsquence {
         }
 
     }
+
 
 }
