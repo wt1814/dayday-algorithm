@@ -22,6 +22,9 @@ https://www.cnblogs.com/kyoner/p/11087755.html
 &emsp; ~~双指针技巧还可以分为两类，一类是「快慢指针」，另一类是「左右指针」。前者解决主要解决链表中的问题，比如典型的判定链表中是否包含环；后者主要解决数组（或者字符串）中的问题，比如二分查找。~~  
 
 
+
+
+
 ## 1.1. 什么是双指针（对撞指针、快慢指针）
 &emsp; 双指针，指的是在遍历对象的过程中，不是普通的使用单个指针进行访问，而是使用两个相同方向（快慢指针）或者相反方向（对撞指针）的指针进行扫描，从而达到相应的目的。  
 &emsp; 换言之，双指针法充分使用了数组有序这一特征，从而在某些情况下能够简化一些运算。  
@@ -31,7 +34,7 @@ https://www.cnblogs.com/kyoner/p/11087755.html
 <center>截图来之LeetCode中文官网</center>  
 
 
-## 1.2. 用法
+## 1.2. 数组中的双指针
 ### 1.2.1. 对撞指针
 &emsp; 对撞指针是指在有序数组中，将指向最左侧的索引定义为左指针(left)，最右侧的定义为右指针(right)，然后从两头向中间进行数组遍历。  
 &emsp; 对撞数组适用于有序数组，也就是说当你遇到题目给定有序数组时，应该第一时间想到用对撞指针解题。  
@@ -81,43 +84,8 @@ var numRescueBoats = function(people, limit) {
 
 ### 1.2.2. 快慢指针  
 &emsp; 快慢指针也是双指针，但是两个指针从同一侧开始遍历数组，将这两个指针分别定义为快指针（fast）和慢指针（slow），两个指针以不同的策略移动，直到两个指针的值相等（或其他特殊条件）为止，如fast每次增长两个，slow每次增长一个。  
-&emsp; 以LeetCode 141.环形链表为例，判断给定链表中是否存在环，可以定义快慢两个指针，快指针每次增长一个，而慢指针每次增长两个，最后两个指针指向节点的值相等，则说明有环。就好像一个环形跑道上有一快一慢两个运动员赛跑，如果时间足够长，跑地快的运动员一定会赶上慢的运动员。  
 
-&emsp; 解题代码如下：  
-
-```
-/**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
-
-/**
- * @param {ListNode} head
- * @return {boolean}
- */
-var hasCycle = function(head) {
-  if (head === null || head.next === null) {
-    return false
-  }
-
-  let slow = head
-  let fast = head.next
-
-  while (slow !== fast) {
-    if (fast === null || fast.next === null) {
-      return false
-    }
-    slow = slow.next
-    fast = fast.next.next
-  }
-  return true
-};
-```
-
-&emsp; 再比如LeetCode 26 删除排序数组中的重复项，这里还是定义快慢两个指针。快指针每次增长一个，慢指针只有当快慢指针上的值不同时，才增长一个（由于是有序数组，快慢指针值不等说明找到了新值）。  
+&emsp; 比如LeetCode 26 删除排序数组中的重复项，这里还是定义快慢两个指针。快指针每次增长一个，慢指针只有当快慢指针上的值不同时，才增长一个（由于是有序数组，快慢指针值不等说明找到了新值）。  
 
 &emsp; 真实代码：  
 
@@ -135,6 +103,20 @@ var removeDuplicates = function (nums) {
   }
   return slow + 1;
 };
+```
+
+### 双指针思想，双层for循环
+
+&emsp; 数组中的双指针也可以使用双层for循环来解决。  
+
+```java
+int[] arr = new int[3];
+for (int i = 0; i < arr.size(); i++) {
+    
+    for (int j = i; j < arr.size(); j++) {
+        
+    }
+}
 ```
 
 ## 1.3. 总结  
