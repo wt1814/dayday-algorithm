@@ -1,4 +1,4 @@
-package lDP.number.single;
+package lDP.aNumber.single;
 
 /**
  * 最大子序和

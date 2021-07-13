@@ -1,10 +1,10 @@
-package lDP.string.single;
+package lDP.bString.single;
 
 /**
  * 最长回文子串
  * todo 自己写的
  */
-public class cLongestPalindromicSubstring2 {
+public class cLongestPalindromicSubstringOfOneself {
 
     public static void main(String[] args){
         String str = "abc1234321ab";

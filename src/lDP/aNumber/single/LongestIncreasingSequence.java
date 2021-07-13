@@ -1,4 +1,4 @@
-package lDP.number.single;
+package lDP.aNumber.single;
 
 import java.util.Arrays;
 

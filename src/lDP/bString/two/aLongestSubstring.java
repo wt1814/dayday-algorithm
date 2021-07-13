@@ -1,4 +1,4 @@
-package lDP.string.two;
+package lDP.bString.two;
 
 /**
  * 两个字符串的最长公共子串

@@ -14,10 +14,6 @@ import java.util.LinkedList;
  * @UpdateRemark:
  * @Version: V1.0
  **/
-
-/**
- * 数组 子序列
- */
 public class gPrintAllSubsquence {
 
     public static void main(String[] args){

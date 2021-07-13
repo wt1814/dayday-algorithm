@@ -1,9 +1,9 @@
-package lDP.string.single;
+package lDP.bString.single;
 
 /**
  * 最长回文子串
  */
-public class cLongestPalindromicSubstring {
+public class cLongestPalindromicSubstringOfOther {
 
 
     // https://www.cxyxiaowu.com/2869.html
