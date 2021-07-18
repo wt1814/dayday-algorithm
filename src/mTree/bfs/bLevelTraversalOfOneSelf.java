@@ -7,19 +7,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * @ProjectName：dayday-algorithm
- * @ClassName: eLevelTraversalOfSelf
- * @Description: TODO  
- * @Author: wt 
- * @CreateDate: 7/3/21 9:09 PM
- * @UpdateUser: 
- * @UpdateDate:   
- * @UpdateRemark:
- * @Version: V1.0
- **/
-public class eLevelTraversalOfSelf {
+ * 层序遍历
+ */
+public class bLevelTraversalOfOneSelf {
 
     public static void main(String[] args){
+
         TreeNode treeNode1 = new TreeNode(1);
         TreeNode treeNode2 = new TreeNode(2);
         TreeNode treeNode3 = new TreeNode(3);
@@ -35,9 +28,7 @@ public class eLevelTraversalOfSelf {
             for (int j = 0;j<integers.size();j++){
                 System.out.println(integers.get(j));
             }
-
         }
-
 
     }
 

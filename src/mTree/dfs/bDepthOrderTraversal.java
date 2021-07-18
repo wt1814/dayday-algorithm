@@ -22,15 +22,15 @@ public class bDepthOrderTraversal {
         List<Integer> list = new ArrayList<Integer>();
         list.add(1);
 
-        TreeNode TreeNode = new TreeNode(1);
+        TreeNode treeNode = new TreeNode(1);
         TreeNode treeNode1 = new TreeNode(2);
         TreeNode treeNode2 = new TreeNode(3);
-        TreeNode.left = treeNode1;
-        TreeNode.right = treeNode2;
+        treeNode.left = treeNode1;
+        treeNode.right = treeNode2;
 
-        preOrderTraveral(TreeNode);
-        inOrderTraveral(TreeNode);
-        postOrderTraveral(TreeNode);
+        preOrderTraveral(treeNode);
+        inOrderTraveral(treeNode);
+        postOrderTraveral(treeNode);
 
     }
 
@@ -50,7 +50,6 @@ public class bDepthOrderTraversal {
         orderTraveral(node.right);
         // 3. 后序
     }
-
 
     /**
      * 递归 前序遍历

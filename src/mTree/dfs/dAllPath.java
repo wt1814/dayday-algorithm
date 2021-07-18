@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 二叉树所有路径
  */
-public class hAllPath {
+public class dAllPath {
 
 
     // https://leetcode-cn.com/problems/binary-tree-paths/solution/er-cha-shu-de-suo-you-lu-jing-by-leetcode-solution/
@@ -27,7 +27,6 @@ public class hAllPath {
         }
 
     }
-
 
     public static List<String> binaryTreePaths(TreeNode root) {
         List<String> paths = new ArrayList<String>();

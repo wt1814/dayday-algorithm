@@ -54,7 +54,7 @@ public class MaxDistance {
         return new Info(maxDistance, height);
     }
 
-    ///////////////////////  递归求解
+    ///////////////////////////////递归求解/////////////////////////////////////////
     public static int maxDistance1(Node head) {
         if (head == null) {
             return 0;

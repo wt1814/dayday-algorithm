@@ -1,13 +1,12 @@
 package mTree.bfs;
 
 import mTree.TreeNode;
-
 import java.util.*;
 
 /**
  * 层序遍历
  */
-public class dLevelOrderTraversal {
+public class aLevelOrderTraversal {
 
     public static void main(String[] args){
         TreeNode treeNode1 = new TreeNode(1);
@@ -17,7 +16,6 @@ public class dLevelOrderTraversal {
         treeNode1.right = treeNode2;
         treeNode2.left = treeNode3;
         treeNode2.right = treeNode4;
-
 
         List<List<Integer>> lists = levelOrder(treeNode1);
         for (List<Integer> list:lists){

@@ -5,9 +5,9 @@ import mTree.TreeNode;
 import java.util.ArrayList;
 
 /**
- *
+ * 二叉树所有路径
  */
-public class hAllPathOfNum {
+public class dAllPathOfNum {
 
     public static void main(String[] args) {
 
@@ -42,9 +42,7 @@ public class hAllPathOfNum {
             for (int j = 0;j<integers.size();j++){
                 System.out.println(integers.get(j));
             }
-
         }
-
 
     }
 
@@ -72,7 +70,7 @@ public class hAllPathOfNum {
 
         preOrder(result,nums,root.left);
         preOrder(result,nums,root.right);
-        nums.remove(nums.size()-1);
+        nums.remove(nums.size()-1);   //todo todo todo 回溯
 
     }
 
