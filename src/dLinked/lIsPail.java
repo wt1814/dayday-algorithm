@@ -1,16 +1,8 @@
 package dLinked;
 
 /**
- * @ProjectName：dayday-algorithm
- * @ClassName: lIsPail
- * @Description: TODO  
- * @Author: wt 
- * @CreateDate: 7/6/21 2:52 PM
- * @UpdateUser: 
- * @UpdateDate:   
- * @UpdateRemark:
- * @Version: V1.0
- **/
+ * 是否回文链表
+ */
 public class lIsPail {
 
 

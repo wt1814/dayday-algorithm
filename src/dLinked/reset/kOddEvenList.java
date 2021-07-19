@@ -1,8 +1,9 @@
-package dLinked;
+package dLinked.reset;
+
+import dLinked.ListNode;
 
 /**
  * 链表的奇偶重排
- *
  * todo 链表分割
  */
 public class kOddEvenList {
@@ -28,7 +29,6 @@ public class kOddEvenList {
 
     // https://leetcode-cn.com/problems/odd-even-linked-list/solution/
 
-
     public ListNode oddEvenListOfSelf (ListNode head) {
         // write code here
 
@@ -50,9 +50,7 @@ public class kOddEvenList {
         }
 
         jiYiDong.next = ou;
-
         return ji;
-
     }
 
 
