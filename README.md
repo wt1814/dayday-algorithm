@@ -32,6 +32,7 @@
 &emsp; &emsp; [外部排序](/docs/function/sort/externalSort.md)  
 &emsp; [查找算法](/docs/function/search.md)  
 &emsp; &emsp; [双指针法](/docs/function/DoublePointer.md)  
+&emsp; &emsp; [滑动窗口](/docs/function/SlidingWindow.md) 
 [其他数据结构](/docs/function/otherStructure.md)  
 &emsp; [跳跃表](/docs/function/SkipList.md)  
 &emsp; [位图](/docs/function/BitMap.md)  
