@@ -81,7 +81,7 @@ public class fDeleteDuplicates {
         return dummy.next;
     }
 
-    /////////////////////////////
+    ////////////////////////////////////////////
     public ListNode deleteDuplicates2(ListNode head) {
         ListNode dummy = new ListNode(-1);
         dummy.next = head;

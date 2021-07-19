@@ -1,16 +1,8 @@
 package dLinked;
 
 /**
- * @ProjectName：dayday-algorithm
- * @ClassName: mReverseBetween
- * @Description: TODO  
- * @Author: wt 
- * @CreateDate: 7/6/21 3:51 PM
- * @UpdateUser: 
- * @UpdateDate:   
- * @UpdateRemark:
- * @Version: V1.0
- **/
+ * 链表内指定区间反转
+ */
 public class mReverseBetween {
 
 

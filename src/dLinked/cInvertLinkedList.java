@@ -5,7 +5,6 @@ package dLinked;
  */
 public class cInvertLinkedList {
 
-
     public static void main(String[] args) {
 
         cInvertLinkedList linkedList = new cInvertLinkedList();
