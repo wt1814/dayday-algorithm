@@ -13,7 +13,7 @@ public class test2 {
      * @param s string字符串 待计算的表达式
      * @return int整型
      */
-    public int solve (String s) {
+    public static int solve (String s) {
         // write code here
         char[] c=s.toCharArray();
         Stack<Integer> intS=new Stack<>();
@@ -73,7 +73,7 @@ public class test2 {
         return res;
     }
 
-    public int strToInt(String s){
+    public static int strToInt(String s){
         int len=s.length();
         int res=0;
         for(int i=0;i<len;i++){
@@ -82,7 +82,7 @@ public class test2 {
         return res;
     }
 
-    public int compute(int a,int b,char c){
+    public static int compute(int a,int b,char c){
         if(c=='*')
             return a*b;
         if(c=='-')//注意这里做减法和除法要用后一个减(除)前一个，因为栈是先进后出和数学计算规则是相反的
@@ -94,7 +94,7 @@ public class test2 {
         return 0;
     }
 
-    public boolean compare(char c,char d){
+    public static boolean compare(char c,char d){
         //这里判断优先级，别忘了左括号的优先级是最低的，
         if(c=='*'||c=='/'){
             if(d=='+'||d=='-'||d=='(')
