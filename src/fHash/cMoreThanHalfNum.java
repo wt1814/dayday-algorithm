@@ -30,7 +30,7 @@ public class cMoreThanHalfNum {
             }
         }
 
-        Set<Map.Entry<Integer, Integer>> entries = hashMap.entrySet();
+        Set<Map.Entry<Integer, Integer>> entries = hashMap.entrySet();  //todo map的遍历
         for (Map.Entry entry:entries){
             Integer value = (Integer) entry.getValue();
             if (value >= arr.length/2){

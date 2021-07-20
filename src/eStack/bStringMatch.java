@@ -7,13 +7,11 @@ import java.util.Stack;
  */
 public class bStringMatch {
 
-
     public static void main(String[] args){
 
         String str = "((";
         stringMatch(str);
     }
-
 
     @SuppressWarnings("unchecked")
     public boolean isValid (String s) {
