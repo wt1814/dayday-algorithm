@@ -27,16 +27,16 @@ public class cRotatedBinarySearch {
                 return mid;
             }
 
-            if(array[mid]>=array[start]) {  //todo 情况A：旋转点在中位数右侧
+            else if(array[mid]>=array[start]) {  //todo 情况A：旋转点在中位数右侧
                 //最左侧元素 <= 查找目标 < 中位数
-                if(array[mid]>target && array[start]<=target){
+                if(array[start]<=target && array[mid]>target){  // todo 旋转点在中位数右侧，考虑左侧
                     end = mid - 1;
                 } else {
                     start = mid + 1;
                 }
             }
 
-            else {   //todo 情况B：旋转点在中位数左侧，或与中位数重合
+            else if(array[mid]<=array[start])  {   //todo 情况B：旋转点在中位数左侧，或与中位数重合
                 //中位数 < 查找目标 <= 最右侧元素
                 if(array[mid]<target && target<=array[end]){
                     start = mid + 1;

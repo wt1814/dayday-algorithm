@@ -3,7 +3,9 @@ package hSearch;
 /**
  * todo 二分查找
  * todo 关键点：相撞指针到同一个中点，然后返回中点。
- * todo 二分查找，将一个集合分成三部分
+ * todo todo todo
+ *
+ * 二分查找，将一个集合分成三部分
  */
 public class aBinarySearch {
 
