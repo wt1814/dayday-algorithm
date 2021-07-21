@@ -32,12 +32,13 @@ public class dFindKth {
             return -1;
         }
         int point = partition(a,left,right);
-        if (point == k-1)
+        if (point == k-1){
             return a[k-1];
-        else if (point > k-1)
+        } else if (point > k-1){
             quickSort(a,left,point-1,k);
-        else
+        } else{
             quickSort(a,point+1,right,k);
+        }
         return a[k-1];
     }
 

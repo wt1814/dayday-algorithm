@@ -50,8 +50,8 @@ public class cSelectionSort {
      * @param array
      */
     public static void selectionSort_improvement(int[] array){
-        int minPoint;  //存储最小元素的小标
-        int maxPoint;  //存储最大元素的小标
+        int minPoint;  //存储最小元素的下标
+        int maxPoint;  //存储最大元素的下标
         int len = array.length;
         int temp;
         int counter = 1;

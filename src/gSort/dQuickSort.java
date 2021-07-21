@@ -17,7 +17,6 @@ public class dQuickSort {
         System.out.println(Arrays.toString(arr));
     }
 
-
     /**
      * 次数
      */
@@ -197,6 +196,5 @@ public class dQuickSort {
         arr[mark] = pivot;
         return mark;
     }
-
 
 }

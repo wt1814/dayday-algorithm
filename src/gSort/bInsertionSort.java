@@ -18,7 +18,6 @@ public class bInsertionSort {
         System.out.println(Arrays.toString(arr));
     }
 
-
     /**
      * 插入排序
      * @param array
