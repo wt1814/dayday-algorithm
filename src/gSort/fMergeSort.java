@@ -10,7 +10,6 @@ import java.util.Arrays;
  */
 public class fMergeSort {
 
-
     public static void main(String[] args) {
         int[] arr = new int[] {4,7,6,5,3,2,8,1};
         mergeSort(arr,0,arr.length-1);

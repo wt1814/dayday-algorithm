@@ -7,7 +7,6 @@ package hSearch;
  */
 public class cRotatedBinarySearch {
 
-
     public static void main(String[] args) {
         int[] array = new int[]{9,10,11,12,13,1,3,4,5,8};
         System.out.println(rotatedBinarySearch(array, 12));
@@ -21,8 +20,8 @@ public class cRotatedBinarySearch {
      */
     public static int rotatedBinarySearch(int[] array, int target){
         int start = 0, end = array.length-1;
-        while(start<=end)   //todo 递归转迭代
-        {
+
+        while(start<=end) {  //todo 递归转迭代
             int mid = start + (end-start)/2;
             if(array[mid]==target){
                 return mid;
