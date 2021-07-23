@@ -5,6 +5,7 @@ package iString.two;
  */
 public class LongestCommonPrefix {
 
+
     public static void main(String[] args){
         String[] arr = {"baaa","baab","baac","abaa"};
         System.out.println(longestCommonPrefix(arr));

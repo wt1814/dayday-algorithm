@@ -11,8 +11,6 @@ import java.util.List;
  */
 public class bGenerateParenthesis {
 
-
-
     static ArrayList<String> r = new ArrayList<String>();
 
     public static void main(String[] args) {
