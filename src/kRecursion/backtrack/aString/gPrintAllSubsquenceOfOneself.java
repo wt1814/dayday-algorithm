@@ -1,29 +1,27 @@
-package kRecursion.backtrack.string;
+package kRecursion.backtrack.aString;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @ProjectName：dayday-algorithm
- * @ClassName: gPrintAllSubsquence
- * @Description: TODO  
- * @Author: wt 
- * @CreateDate: 7/12/21 6:15 PM
- * @UpdateUser: 
- * @UpdateDate:   
- * @UpdateRemark:
- * @Version: V1.0
- **/
-public class gPrintAllSubsquence {
+ * 字符串组合
+ */
+public class gPrintAllSubsquenceOfOneself {
 
 
     public static void main(String[] args){
 
         List<String> strings = printAllSubString("abc");
-        System.out.println("pppppppppp");
-
+        for (String str:strings){
+            System.out.println(str);
+        }
     }
 
+    /**
+     *
+     * @param str
+     * @return
+     */
     public static List<String> printAllSubString(String str){
         List<String> result = new ArrayList<>();
         if (str == null || str.trim().equals("")){

@@ -1,4 +1,4 @@
-package qBST;
+package rBST;
 
 /**
  * 二叉排序树

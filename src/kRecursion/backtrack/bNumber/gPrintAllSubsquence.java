@@ -1,19 +1,11 @@
-package kRecursion.backtrack.number;
+package kRecursion.backtrack.bNumber;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 
 /**
- * @ProjectName：dayday-algorithm
- * @ClassName: gPrintAllSubsquenceOfOther
- * @Description: TODO  
- * @Author: wt 
- * @CreateDate: 7/12/21 5:34 PM
- * @UpdateUser: 
- * @UpdateDate:   
- * @UpdateRemark:
- * @Version: V1.0
- **/
+ * xxxxx
+ */
 public class gPrintAllSubsquence {
 
     public static void main(String[] args){

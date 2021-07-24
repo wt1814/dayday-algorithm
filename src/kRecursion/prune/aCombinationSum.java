@@ -9,7 +9,6 @@ import java.util.List;
  * 给定一个无重复元素的数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。
  * 1. candidates 中的数字可以无限制重复被选取。
  * 2. candidates 中的每个数字在每个组合中只能使用一次。
- *
  */
 public class aCombinationSum {
 
@@ -26,6 +25,7 @@ public class aCombinationSum {
         deep(candidates,0,0,temp);
         return res;
     }
+
     //index的作用为剪去那些下边枝条值小于上边枝条值的分支
     public void deep(int[] candidates,int value,int index, List<Integer> temp){
         if(value >target) return ;

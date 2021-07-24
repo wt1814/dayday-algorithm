@@ -1,4 +1,4 @@
-package kRecursion.backtrack.string;
+package kRecursion.backtrack.aString;
 
 import java.util.ArrayList;
 
@@ -7,11 +7,12 @@ import java.util.ArrayList;
  * todo 回溯
  * 找到所有所有可能的组合，如有必要再去重
  */
-public class ePrientAllSort {
+public class ePrientAllSortOfother {
 
 
     public static void main(String[] args) {
-        System.out.println(Permutation("ab"));
+
+        System.out.println(Permutation("abc"));
     }
 
     // 视频： https://www.bilibili.com/video/BV1cK4y1s7tN?from=search&seid=5804313901838849813
@@ -56,5 +57,6 @@ public class ePrientAllSort {
         chars[i] = chars[j];
         chars[j] = temp;
     }
+
 }
 

@@ -1,4 +1,4 @@
-package kRecursion.backtrack.string;
+package kRecursion.backtrack.aString;
 
 /**
  * todo 字符串的所有子序列(字符串的组合)

@@ -1,4 +1,4 @@
-package kRecursion.backtrack.string;
+package kRecursion.backtrack.aString;
 
 import java.util.ArrayList;
 import java.util.HashSet;

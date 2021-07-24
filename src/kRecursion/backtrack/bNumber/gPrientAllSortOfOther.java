@@ -1,13 +1,14 @@
-package kRecursion.backtrack.number;
+package kRecursion.backtrack.bNumber;
 
 import java.util.Arrays;
 
 /**
  * 数组全排列
  */
-public class gPrientAllSort {
+public class gPrientAllSortOfOther {
 
     public static void main(String[] args) {
+
         int[] arr = {1,2,3};
         permutation(arr);
 
@@ -40,9 +41,12 @@ public class gPrientAllSort {
             }
         }
     }
+
+
     public static void swap (int[] arr, int i, int j) {
         int t = arr[i];
         arr[i] = arr[j];
         arr[j] = t;
     }
+
 }

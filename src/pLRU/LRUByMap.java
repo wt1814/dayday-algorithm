@@ -1,25 +1,30 @@
-package oLRU;
+package pLRU;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * 基于LinkedHashMap实现
- * 不重写removeEldestEntry
- */
-public class LRUByLinkedOne {
+ * @ProjectName：java-algorithm
+ * @ClassName: LRUByMap
+ * @Description: TODO  
+ * @Author: wt 
+ * @CreateDate: 2020-05-20 16:14
+ * @UpdateUser: 
+ * @UpdateDate:   
+ * @UpdateRemark:
+ * @Version: V1.0
+ **/
+public class LRUByMap {
 
-
-    // https://mp.weixin.qq.com/s/pGNIEOGvOYDM5yiyMM8bRQ
 
     public static void main(String[] args) {
-        LRUByLinkedOne lruCache = new LRUByLinkedOne(10);
+        LRUByMap lruCache = new LRUByMap(10);
         for (int i = 0; i < 10; i++) {
             lruCache.map.put(i,i);
             System.out.println(lruCache.map.size());
         }
         System.out.println(lruCache.map);
-        lruCache.put(10,200);
+        lruCache.put(10,10);
         System.out.println(lruCache.map);
     }
 
@@ -28,11 +33,7 @@ public class LRUByLinkedOne {
     int capacity;
     Map<Integer,Integer> map;
 
-    /**
-     * todo 构造函数
-     * @param capacity
-     */
-    public LRUByLinkedOne(int capacity){
+    public LRUByMap(int capacity){
         this.capacity = capacity;
         map = new LinkedHashMap<>();
     }
@@ -50,12 +51,6 @@ public class LRUByLinkedOne {
         return value;
     }
 
-
-    // https://blog.csdn.net/varyall/article/details/82319443
-    // https://blog.csdn.net/weixin_45640609/article/details/105069981
-    // afterNodeInsertion方法用于移除链表中的最旧的节点对象，也就是链表头部的对象。
-    // 但是在JDK1.8版本中，可以看到removeEldestEntry一直返回false，所以该方法并不生效。如果存在特定的需求，比如链表中长度固定，并保持最新的N的节点数据，可以通过重写该方法来进行实现。
-
     public void put(int key,int value){
         if (map.containsKey(key)){
             map.remove(key);
@@ -63,11 +58,12 @@ public class LRUByLinkedOne {
             return;
         }
         map.put(key,value);
-        //todo 超出capacity，删除最久没用的即第一个,
-        // 或者可以复写removeEldestEntry方法
+        //超出capacity，删除最久没用的即第一个,或者可以复写removeEldestEntry方法
         if (map.size() > capacity){
-            map.remove(map.entrySet().iterator().next().getKey()); // todo 删除最久没用的，即第一个
+            map.remove(map.entrySet().iterator().next().getKey());
         }
     }
+
+
 
 }

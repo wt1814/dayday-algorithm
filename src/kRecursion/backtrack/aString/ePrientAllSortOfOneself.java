@@ -1,19 +1,20 @@
-package kRecursion.backtrack.string;
+package kRecursion.backtrack.aString;
 
 import java.util.*;
 /**
  * 字符串全排列
  */
-public class ePrientAllSortSelf {
-
+public class ePrientAllSortOfOneself {
 
     public static void main(String[] args) {
-        System.out.println("ab".length());
-        System.out.println(Permutation("ab"));
+        System.out.println(Permutation("abc"));
     }
 
-
-
+    /**
+     *
+     * @param str
+     * @return
+     */
     public static ArrayList<String> Permutation(String str) {
 
         ArrayList<String> result = new ArrayList();
@@ -27,7 +28,7 @@ public class ePrientAllSortSelf {
 
         char[] strs = str.toCharArray();
 
-        permutation1(strs,0,result);
+        permutation(strs,0,result);
 
 /*
         HashSet<String> set = new HashSet();
@@ -42,7 +43,7 @@ public class ePrientAllSortSelf {
         return result;
     }
 
-    public static void permutation1(char[] strs,int i,ArrayList<String> result) {
+    public static void permutation(char[] strs,int i,ArrayList<String> result) {
 
         if(i == strs.length){
             result.add(new String(strs));
@@ -51,7 +52,7 @@ public class ePrientAllSortSelf {
 
         for(int j=i;j<strs.length;j++){
             swap(strs,i,j);
-            permutation1(strs,i+1,result);
+            permutation(strs,i+1,result);
             swap(strs,i,j);
         }
 

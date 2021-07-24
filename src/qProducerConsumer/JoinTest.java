@@ -1,4 +1,4 @@
-package pProducerConsumer;
+package qProducerConsumer;
 
 /**
  * 多线程顺序打印ABC
