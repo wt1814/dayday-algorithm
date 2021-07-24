@@ -38,11 +38,14 @@ public class fIsBalanced {
     }
 
     public static Info process(Node x) {
-        if(x == null) {
+        if(x == null) {   // todo 递归终止条件
             return new Info(true, 0);
         }
+
         Info leftInfo = process(x.left);
         Info rightInfo = process(x.right);
+
+
         int height = Math.max(leftInfo.height, rightInfo.height)  + 1;
         boolean isBalanced = true;
         if(!leftInfo.isBalanced) {
