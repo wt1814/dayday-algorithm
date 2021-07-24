@@ -15,6 +15,12 @@ https://www.cnblogs.com/dreamyu/p/13210713.html
 回溯法视频
 https://www.bilibili.com/video/BV1cy4y167mM
 
+回溯法模板
+https://www.cnblogs.com/hygeia/p/5812128.html
+https://zhuanlan.zhihu.com/p/138587283
+https://www.cnblogs.com/oldhands/p/11840667.html
+
+
 -->
 
 ## 回溯和递归的区别
