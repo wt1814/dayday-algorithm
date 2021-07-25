@@ -65,7 +65,7 @@ function fn (list) {
 
 ```
 var numRescueBoats = function(people, limit) {
-  people.gSort((a, b) => (a - b));
+  people.hSort((a, b) => (a - b));
   var num = 0
   let left = 0
   let right = people.length - 1

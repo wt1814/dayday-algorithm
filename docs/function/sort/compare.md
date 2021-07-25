@@ -62,7 +62,7 @@ https://mp.weixin.qq.com/s/snBEpUsQ8ZhHLLuNarwqgA
  * 冒泡排序优化版
  * @param array
  */
-public static void gSort(int array[]){
+public static void hSort(int array[]){
     int tmp  = 0;
     //记录最后一次交换的位置
     int lastExchangeIndex = 0;
@@ -95,7 +95,7 @@ public static void gSort(int array[]){
 
 public static void main(String[] args){
     int[] array = new int[]{3,4,2,1,5,6,7,8};
-    gSort(array);
+    hSort(array);
     System.out.println(Arrays.toString(array));
 }
 ```

@@ -181,7 +181,7 @@ class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         vector<vector<int>> res;
-        gSort(nums.begin(), nums.end());
+        hSort(nums.begin(), nums.end());
         if (nums.empty() || nums.back() < 0 || nums.front() > 0) return {};
         for (int k = 0; k < nums.size(); ++k) {
             if (nums[k] > 0) break;

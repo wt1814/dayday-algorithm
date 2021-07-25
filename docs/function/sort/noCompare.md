@@ -74,7 +74,7 @@ public static double[] bucketSort(double[] array){
     //4.对每个通内部进行排序
     for(int i = 0; i < bucketList.size(); i++){
         //JDK底层采用了归并排序或归并的优化版本
-        Collections.gSort(bucketList.get(i));
+        Collections.hSort(bucketList.get(i));
     }
 
     //5.输出全部元素
