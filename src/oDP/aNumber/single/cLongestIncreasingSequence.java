@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 最长递增子序列
  * 如果有多个答案，请输出其中 按数值(注：区别于按单个字符的ASCII码值)进行比较的 字典序最小的那个
  */
-public class LongestIncreasingSequence {
+public class cLongestIncreasingSequence {
 
     // https://blog.csdn.net/u012505432/article/details/52228945
     // https://mp.weixin.qq.com/s/pq0QStRtLBLOzsyJcsn3Qw
@@ -31,16 +31,18 @@ public class LongestIncreasingSequence {
      * @return
      */
     public static int[] getdp1(int arr[]){
+
         int[] dp= new int[arr.length];
         for(int i=0;i<arr.length;i++){ // 遍历原数组
-            dp[i]=1;   // todo dp数组 base case是每个位置的值都为1
-            for(int j=0;j<i;j++){   //todo dp数组结果集中 dp[i]依赖前面的结果
+            dp[i]=1;   // todo todo todo dp数组 base case是每个位置的值都为1
+            for(int j=0;j<i;j++){   //todo todo todo dp数组结果集中，dp[i]依赖前面的结果
                 if (arr[i]>arr[j]){
                     dp[i] = Math.max(dp[i], dp[j]+1);
                 }
             }
         }
         return dp;
+
     }
 
     //如果还需要求出递增序列的话，可以这么做：
@@ -83,5 +85,7 @@ public class LongestIncreasingSequence {
         }
         return lis;
     }
+
+
 
 }

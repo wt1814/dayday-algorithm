@@ -64,9 +64,6 @@ public class cLongestPalindromicSubstringOfOneself {
         for (int i =0;i<dp.length;i++){
             for (int j=0;j<dp[i].length;j++){
                 if (dp[i][j]){
-
-
-
                     start = i;
                     end = j;
                     if (j-i+1 > maxCha){

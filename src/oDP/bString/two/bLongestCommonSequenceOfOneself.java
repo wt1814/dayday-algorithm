@@ -1,6 +1,9 @@
 package oDP.bString.two;
 
-public class bLongestCommonSequenceOfOneSelfTwo {
+/**
+ * 最长公共子序列
+ */
+public class bLongestCommonSequenceOfOneself {
 
 
     public static void main(String[] args) {
@@ -8,6 +11,7 @@ public class bLongestCommonSequenceOfOneSelfTwo {
                 b = "B1D23A456A";
         System.out.println(LCS(a,b));
     }
+
 
     public static String LCS(String s1,String s2){
         if (s1 == null || s2 == null || s1.length() == 0 || s2.length() == 0){

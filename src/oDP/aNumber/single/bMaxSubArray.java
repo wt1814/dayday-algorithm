@@ -6,7 +6,6 @@ package oDP.aNumber.single;
  */
 public class bMaxSubArray {
 
-    // https://mp.weixin.qq.com/s/GvBPILaDVhjVhtVDQRLs5g
 
     public static void main(String[] args){
         int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
@@ -14,7 +13,6 @@ public class bMaxSubArray {
         System.out.println(maxSubArray2(nums));
 
     }
-
 
     /**
      * todo 自己写的
@@ -28,9 +26,11 @@ public class bMaxSubArray {
             return 0;
         }
 
+        //
         int[] dp = new int[arr.length];
         dp[0] = arr[0];
 
+        // 生成dp数组
         for(int i = 1;i<arr.length;i++){
             if(dp[i-1]>0){
                 dp[i] = dp[i-1]+arr[i];
@@ -39,6 +39,7 @@ public class bMaxSubArray {
             }
         }
 
+        //
         int result = dp[0];
         for(int i = 0;i<dp.length;i++){
             if(dp[i] > result){
@@ -54,7 +55,7 @@ public class bMaxSubArray {
     // https://mp.weixin.qq.com/s/GvBPILaDVhjVhtVDQRLs5g
     // https://leetcode-cn.com/problems/maximum-subarray/
     // https://www.cnblogs.com/dddyyy/p/10746769.html
-
+    // https://mp.weixin.qq.com/s/GvBPILaDVhjVhtVDQRLs5g
 
     /**
      *

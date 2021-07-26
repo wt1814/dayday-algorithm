@@ -21,7 +21,6 @@ public class aLongestSubstring {
      */
     public static int getLCSLength(String s, String t) {
 
-
         System.out.println(s.length());
         if (s == null || t == null || s.length() == 0 || t.length() == 0) {
             return 0;
@@ -48,7 +47,6 @@ public class aLongestSubstring {
                         dp[i][k] = dp[i - 1][k - 1] + 1;
                     }
 
-
                     if (dp[i][k] > result){   //todo 更新尾标条件
                         result = Math.max(dp[i][k], result);
                         endIndex = i; //todo 更新尾标
@@ -64,5 +62,6 @@ public class aLongestSubstring {
         System.out.println("最长公共子串，第一个字符串的尾标： "+endIndex);
         return result;
     }
+
 
 }
