@@ -1,18 +1,24 @@
-package oDP.bString.two;
+package aTest.day0727;
+
 
 /**
- * 最长公共子序列
- * todo dp数组下标
- */
-public class bLongestCommonSequenceOfOneself {
-
+ * @ProjectName：dayday-algorithm
+ * @ClassName: test
+ * @Description: TODO  
+ * @Author: wt 
+ * @CreateDate: 7/27/21 11:12 AM
+ * @UpdateUser: 
+ * @UpdateDate:   
+ * @UpdateRemark:
+ * @Version: V1.0
+ **/
+public class test {
 
     public static void main(String[] args){
         String s1 = "1A2C3D4B56";
         String s2 = "B1D23A456A";
         System.out.println(LCS(s1,s2));
     }
-
     /**
      * longest common subsequence
      * @param s1 string字符串 the string
@@ -36,7 +42,7 @@ public class bLongestCommonSequenceOfOneself {
     private static int[][] getDp(String s1, String s2) {
         int length1 = s1.length();
         int length2 = s2.length();
-        int[][] dp = new int[length1+1][length2+1];  //todo 注意下标，好计算
+        int[][] dp = new int[length1+1][length2+1];
 
         for (int i = 0;i<length1;i++){
             for (int j = 0;j<length2;j++){
