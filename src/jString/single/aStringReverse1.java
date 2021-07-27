@@ -44,7 +44,6 @@ public class aStringReverse1 {
         return ret;
     }
 
-
     // 翻转一段字符串
     public static void swapStr(char[] arr, int begin, int end) {
         System.out.println("begin is "+begin+" end is "+end);
@@ -78,4 +77,5 @@ public class aStringReverse1 {
         }
         return new String(bytes);
     }
+
 }

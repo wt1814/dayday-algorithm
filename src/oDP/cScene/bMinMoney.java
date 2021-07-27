@@ -8,8 +8,6 @@ import java.util.Arrays;
  */
 public class bMinMoney {
 
-
-
     public int minMoney (int[] arr, int aim) {
         // write code here
         int Max = aim + 1;//定一个全局最大值
