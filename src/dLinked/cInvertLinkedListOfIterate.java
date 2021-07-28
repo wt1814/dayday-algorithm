@@ -3,11 +3,11 @@ package dLinked;
 /**
  * 不带头节点单向链表，双指针迭代反转链表
  */
-public class cInvertLinkedList {
+public class cInvertLinkedListOfIterate {
 
     public static void main(String[] args) {
 
-        cInvertLinkedList linkedList = new cInvertLinkedList();
+        cInvertLinkedListOfIterate linkedList = new cInvertLinkedListOfIterate();
         int[] arr = {1, 2, 3, 4,5};
         for (int i = 0; i < arr.length; i++) {
             linkedList.addHead(arr[i]);
@@ -71,7 +71,7 @@ public class cInvertLinkedList {
     private Node head;
 
     // 构造函数
-    public cInvertLinkedList(){
+    public cInvertLinkedListOfIterate(){
 /*        ListNode node = new ListNode();
         node.next = null;
         head = node;*/

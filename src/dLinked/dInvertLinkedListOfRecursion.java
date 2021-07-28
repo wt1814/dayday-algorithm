@@ -3,11 +3,11 @@ package dLinked;
 /**
  * 不带头节点单向链表，递归反转链表
  */
-public class dInvertLinkedList {
+public class dInvertLinkedListOfRecursion {
 
 
     public static void main(String[] args) {
-        dInvertLinkedList linkedList = new dInvertLinkedList();
+        dInvertLinkedListOfRecursion linkedList = new dInvertLinkedListOfRecursion();
         int[] arr = {1,2,3,4,5};
         for (int i = 0; i < arr.length; i++) {
             linkedList.addHead(arr[i]);
@@ -66,7 +66,7 @@ public class dInvertLinkedList {
     private Node head;
 
     // 构造函数
-    public dInvertLinkedList(){
+    public dInvertLinkedListOfRecursion(){
         this.head = null;
         this.size = 0;
     }

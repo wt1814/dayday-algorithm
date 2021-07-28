@@ -3,7 +3,7 @@ package dLinked;
 /**
  * 环形链表的约瑟夫问题
  */
-public class iCrossJoseph {
+public class jCrossJoseph {
 
     // https://www.nowcoder.com/practice/41c399fdb6004b31a6cbb047c641ed8a?tpId=188&&tqId=38612&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
 

@@ -14,7 +14,6 @@ public class mergeKLists {
     }
 
 
-
     public ListNode merge(ArrayList<ListNode> lists, int l, int r){
         // 左右相等说明不能再分
         if(l == r)
@@ -25,7 +24,6 @@ public class mergeKLists {
         int mid = l + (r-l)/2;
         return mergeTwoList(merge(lists,l,mid),merge(lists,mid+1,r)); //todo
     }
-
 
 
     //合并两个有序链表
