@@ -9,6 +9,7 @@
 [算法基本概念](/docs/function/notion.md)  
 &emsp; [时间复杂度](/docs/function/TimeComplexity.md)  
 [算法方法](/docs/function/algorithmicIdea.md)  
+&emsp; [贪心](/docs/function/Greedy.md)  
 &emsp; [递归](/docs/function/recursion.md)  
 &emsp; [动态规划](/docs/function/dynamic.md)  
 &emsp; &emsp; [备忘录与动态规划](/docs/function/MemorandumAndDynamic.md)  
