@@ -19,8 +19,8 @@
 
 # 1. 动态规划
 <!-- 
-
-
+浅谈动态规划
+https://mp.weixin.qq.com/s/smD-V7lg2YEItYvewdXGsg
 -->
 
 &emsp; 会变化的就是状态。DP数组是几维根据状态来决定。    
