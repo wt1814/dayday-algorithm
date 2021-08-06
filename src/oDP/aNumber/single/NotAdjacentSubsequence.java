@@ -5,10 +5,6 @@ package oDP.aNumber.single;
  */
 public class NotAdjacentSubsequence {
 
-
-
-
-
     /**
      * 状态转移表达式：
      * (1)对于当前的元素arr[i]，如果取，那么dp[i] = dp[i-2] + arr[i]
@@ -20,7 +16,7 @@ public class NotAdjacentSubsequence {
      */
     public long subsequence (int n, int[] array) {
         // write code here
-
+        //todo n+1，一维数组长度加1，设置哑节点
         long[] dp = new long[n + 1];
 
         dp[0] = 0;
