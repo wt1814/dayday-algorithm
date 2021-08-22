@@ -5,7 +5,7 @@ package mRecursion.backtrack.aString;
  * 题目：输入一个字符串，输出该字符串中字符的所有组合。
  * 例子：输入：abc，它的组合有：a、b、c、ab、ac、bc、abc
  */
-public class gPrintAllSubsquenceOfOther {
+public class gPrintAllSubsquence {
 
     //https://mp.weixin.qq.com/s?__biz=MzA5NDIwNTk2Mw==&mid=2247484636&amp;idx=1&amp;sn=9ea705d330e7955c83dcfc3d6a7f90d0&source=41#wechat_redirect
     // 左神 暴力递归到动态规划1
@@ -14,6 +14,7 @@ public class gPrintAllSubsquenceOfOther {
 
     // 测试
     public static void main(String[] args) {
+
         printAllSubString("abc");
     }
 

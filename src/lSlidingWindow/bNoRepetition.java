@@ -8,7 +8,6 @@ import java.util.HashMap;
  */
 public class bNoRepetition {
 
-
     public static void main(String[] args){
         int[] arr = {2,2,3,4,8,99,3};
         System.out.println(maxLength(arr));

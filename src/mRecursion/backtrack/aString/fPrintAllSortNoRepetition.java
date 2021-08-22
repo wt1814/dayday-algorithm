@@ -11,8 +11,10 @@ public class fPrintAllSortNoRepetition {
 
 
     public static void main(String[] args) {
+
         printAllSort("abcc");
     }
+
 
     public static void printAllSort(String string){
         if(string == null){
@@ -25,7 +27,11 @@ public class fPrintAllSortNoRepetition {
         }
     }
 
-    // 对i及i以后的字符进行全排列
+    /**
+     * 对i及i以后的字符进行全排列
+     * @param i
+     * @param chars
+     */
     public static void printAllSort(int i, char[] chars){
         // 递归终止条件
         if(i == chars.length){

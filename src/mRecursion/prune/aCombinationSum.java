@@ -28,7 +28,9 @@ public class aCombinationSum {
 
     //index的作用为剪去那些下边枝条值小于上边枝条值的分支
     public void deep(int[] candidates,int value,int index, List<Integer> temp){
-        if(value >target) return ;
+        if(value >target) {
+            return ;
+        }
 
         if(value==target) {
             res.add(new ArrayList(temp));

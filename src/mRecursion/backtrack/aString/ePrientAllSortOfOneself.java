@@ -1,12 +1,15 @@
 package mRecursion.backtrack.aString;
 
 import java.util.*;
+
+
 /**
  * 字符串全排列
  */
 public class ePrientAllSortOfOneself {
 
     public static void main(String[] args) {
+
         System.out.println(Permutation("abc"));
     }
 

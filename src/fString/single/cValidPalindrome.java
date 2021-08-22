@@ -15,7 +15,7 @@ public class cValidPalindrome {
      * @return
      */
     public static boolean isHuiWen(String str){
-        //true:回文  false：非回文
+
         boolean flag = true;
         int len = str.length();
         for(int i=0;i<len/2;i++){

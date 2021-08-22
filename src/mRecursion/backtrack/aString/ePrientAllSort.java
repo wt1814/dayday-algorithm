@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * todo 回溯
  * 找到所有所有可能的组合，如有必要再去重
  */
-public class ePrientAllSortOfother {
+public class ePrientAllSort {
 
 
     public static void main(String[] args) {
