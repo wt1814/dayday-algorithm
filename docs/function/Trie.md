@@ -183,7 +183,7 @@ https://mp.weixin.qq.com/s?__biz=MzI5MTU1MzM3MQ==&mid=2247484257&idx=1&sn=ef0104
 &emsp; 代码实现  
 
 ```java
-packagecom.suning.iSearch.test.tree.trie;
+packagecom.suning.eSearch.test.tree.trie;
  
 public class Trie
 {

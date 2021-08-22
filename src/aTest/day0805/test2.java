@@ -1,6 +1,6 @@
 package aTest.day0805;
 
-import dLinked.ListNode;
+import gLinked.ListNode;
 
 public class test2 {
 
