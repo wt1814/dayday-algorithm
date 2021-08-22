@@ -1,4 +1,4 @@
-package jTree.dfs;
+package jTree.aDFS.bModel;
 
 import jTree.TreeNode;
 
@@ -22,22 +22,11 @@ public class fJudgeIt {
         return new boolean[]{result.isSearch,result.isAll};
     }
 
-
-    class Info{  //todo 获取的info还必须包含val、leftVal、rightVal
-        boolean isSearch;
-        boolean isAll;
-        Integer val;
-        Integer leftVal;
-        Integer rightVal;
-        Info(boolean isSearch,boolean isAll,Integer val,Integer leftVal,Integer rightVal){
-            this.isSearch=isSearch;
-            this.isAll=isAll;
-            this.val=val;
-            this.leftVal=leftVal;
-            this.rightVal=rightVal;
-        }
-    }
-
+    /**
+     *
+     * @param root
+     * @return
+     */
     public Info judgeItInfo(TreeNode root){
 
         if(root==null){
@@ -68,5 +57,20 @@ public class fJudgeIt {
         }
         return new Info(isSearch,isAll,root.val,root.left==null?null:root.left.val,root.right==null?null:root.right.val);
 
+    }
+
+    class Info{  //todo 获取的info还必须包含val、leftVal、rightVal
+        boolean isSearch;
+        boolean isAll;
+        Integer val;
+        Integer leftVal;
+        Integer rightVal;
+        Info(boolean isSearch,boolean isAll,Integer val,Integer leftVal,Integer rightVal){
+            this.isSearch=isSearch;
+            this.isAll=isAll;
+            this.val=val;
+            this.leftVal=leftVal;
+            this.rightVal=rightVal;
+        }
     }
 }

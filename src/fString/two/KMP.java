@@ -1,4 +1,4 @@
-package fString;
+package fString.two;
 
 /**
  * KMP算法

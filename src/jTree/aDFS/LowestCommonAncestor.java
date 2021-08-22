@@ -1,4 +1,4 @@
-package jTree.dfs;
+package jTree.aDFS;
 
 import jTree.TreeNode;
 
@@ -9,8 +9,10 @@ public class LowestCommonAncestor {
 
 
     public int lowestCommonAncestor (TreeNode root, int o1, int o2) {
+
         return CommonAncestor(root, o1, o2).val;
     }
+
 
     public TreeNode CommonAncestor (TreeNode root, int o1, int o2) {
         if (root == null || root.val == o1 || root.val == o2) { // 超过叶子节点，或者root为p、q中的一个直接返回
@@ -26,4 +28,5 @@ public class LowestCommonAncestor {
         }
         return root; // 在左右两侧
     }
+
 }

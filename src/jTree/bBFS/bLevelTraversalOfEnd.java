@@ -1,4 +1,4 @@
-package jTree.bfs;
+package jTree.bBFS;
 
 import jTree.TreeNode;
 
@@ -8,7 +8,7 @@ import java.util.Queue;
 /**
  * 层序遍历，每一层结束
  */
-public class cLevelTraversalOfEnd {
+public class bLevelTraversalOfEnd {
 
     // https://blog.csdn.net/OrthocenterChocolate/article/details/37612183
 
@@ -48,14 +48,14 @@ public class cLevelTraversalOfEnd {
             //todo 弹出为null节点，说明本层结束，同时下一层也全部放入了队列中，再次添加null节点
             if (null == cur){
 
-                if (queue.isEmpty()){  // todo 特例：如果队列中已经没有数据，则说明遍历已经结束，需要停止循环
+                if (queue.isEmpty()){  // todo todo 特例：如果队列中已经没有数据，则说明遍历已经结束，需要停止循环
                     break;   //todo 如果无此句，则会死循环
                 }
 
                 System.out.println("第"+level+"层结束");
                 level++;
                 queue.add(null);
-                continue;             // todo 跳出循环
+                continue;  // todo 跳出循环
             }
 
             if (cur.left != null){

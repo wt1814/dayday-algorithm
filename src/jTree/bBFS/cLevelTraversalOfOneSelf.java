@@ -1,4 +1,4 @@
-package jTree.bfs;
+package jTree.bBFS;
 
 import jTree.TreeNode;
 
@@ -9,7 +9,7 @@ import java.util.Queue;
 /**
  * 层序遍历
  */
-public class bLevelTraversalOfOneSelf {
+public class cLevelTraversalOfOneSelf {
 
     public static void main(String[] args){
 

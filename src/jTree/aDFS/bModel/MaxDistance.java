@@ -1,4 +1,4 @@
-package jTree.dfs;
+package jTree.aDFS.bModel;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -53,6 +53,8 @@ public class MaxDistance {
         int maxDistance = Math.max(Math.max(p1, p2), p3);
         return new Info(maxDistance, height);
     }
+
+
 
     ///////////////////////////////递归求解/////////////////////////////////////////
     public static int maxDistance1(Node head) {

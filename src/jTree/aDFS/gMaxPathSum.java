@@ -1,4 +1,4 @@
-package jTree.dfs;
+package jTree.aDFS;
 
 import jTree.TreeNode;
 
@@ -6,7 +6,6 @@ import jTree.TreeNode;
  * 二叉树的最大路径和
  */
 public class gMaxPathSum {
-
 
     public static void main(String[] args) {
 
@@ -35,6 +34,7 @@ public class gMaxPathSum {
      *  如果将当前结点作为其父节点的子结点，那么计算过当前结点的最大路径和时就不能考虑横跨的情况。
      */
     int result = Integer.MIN_VALUE;
+
     public int maxPathSum2(TreeNode root) {
         maxSum(root);
         return result;
@@ -60,13 +60,12 @@ public class gMaxPathSum {
         }
         result = Math.max(result, data);    //记录当前树的最大路径和
 
-
         return Math.max(root.val, Math.max(root.val + maxL, root.val + maxR)); // todo 使用root.val，非之前定义的data
                                                                                 // todo 原因待寻找xxx
     }
 
 
-    //////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////
 
     /**
      * 求树的最大路径，递归树的节点

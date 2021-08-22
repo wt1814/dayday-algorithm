@@ -50,11 +50,11 @@ public class cCombinationSum {
         vector<int> tmp;
         if (num.empty()) return res;
         sort(num.begin(), num.end());//对候选素组进行排序，在一定程度上可以优化搜索
-        dfs(num, target, res, tmp, 0);//开始搜索 刚开始start=0 从第一个开始搜索
+        aDFS(num, target, res, tmp, 0);//开始搜索 刚开始start=0 从第一个开始搜索
         return res;//返回最后的结果
     }
 
-    void dfs(vector<int> &num, int target, vector<vector<int> > &res, vector<int> &tmp, int start) {
+    void aDFS(vector<int> &num, int target, vector<vector<int> > &res, vector<int> &tmp, int start) {
         if (target==0) {//当每一个小组的target=0的时候 说明该分组已经分好了 直接存进res中
             res.push_back(tmp);
             return;//末端终止 避免无效搜索
@@ -69,7 +69,7 @@ public class cCombinationSum {
                 //后面是一个回溯的过程先加入tmp 后从tmp末端删除 确保可以搜索可以进行下去
                 tmp.push_back(num[i]);
                 //由于num[i]加入 target的大小减去num[i] 搜索开始位置往后 也就是start+1
-                dfs(num, target - num[i], res, tmp, i + 1);
+                aDFS(num, target - num[i], res, tmp, i + 1);
                 tmp.pop_back();
             }
         }

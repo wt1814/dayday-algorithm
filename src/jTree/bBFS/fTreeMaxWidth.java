@@ -1,4 +1,4 @@
-package jTree.bfs;
+package jTree.bBFS;
 
 import java.util.HashMap;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package jTree.dfs;
+package jTree.aDFS.aBasic;
 
 import jTree.TreeNode;
 
@@ -10,7 +10,6 @@ import java.util.Stack;
  * 先序 中左右
  * 中序 左中右
  * 后序 左右中
- *
  */
 public class cDepthOrderTraveralWithStack {
 
@@ -197,7 +196,5 @@ public class cDepthOrderTraveralWithStack {
             }
         }
     }
-
-
 
 }
