@@ -8,6 +8,7 @@ package eSearch;
 public class dRotatedBinarySearch {
 
     public static void main(String[] args) {
+
         int[] array = new int[]{9,10,11,12,13,1,3,4,5,8};
         System.out.println(rotatedBinarySearch(array, 12));
     }
@@ -35,7 +36,6 @@ public class dRotatedBinarySearch {
                     start = mid + 1;
                 }
             }
-
             else if(array[mid]<=array[start])  {   //todo 情况B：旋转点在中位数左侧，或与中位数重合
                 //中位数 < 查找目标 <= 最右侧元素
                 if(array[mid]<target && target<=array[end]){

@@ -1,7 +1,7 @@
 package eSearch;
 
 /**
- * todo 二分查找
+ * todo 递归解二分查找
  * todo 关键点：相撞指针到同一个中点，然后返回中点。
  * todo todo todo
  *

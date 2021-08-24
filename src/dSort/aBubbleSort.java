@@ -7,7 +7,6 @@ import java.util.Arrays;
  */
 public class aBubbleSort {
 
-
     public static void main(String[] args) {
         int arr[] = new int[]{1,6,2,2,5};
         aBubbleSort.BubbleSort(arr);
@@ -31,13 +30,11 @@ public class aBubbleSort {
         }
     }
 
-
     /**
      * 冒泡排序优化版
      * @param array
      */
-    public static void sort(int array[])
-    {
+    public static void sort(int array[]) {
         int tmp  = 0;
         //记录最后一次交换的位置
         int lastExchangeIndex = 0;
@@ -69,6 +66,5 @@ public class aBubbleSort {
             }
         }
     }
-
 
 }

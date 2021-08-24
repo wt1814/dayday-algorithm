@@ -11,7 +11,6 @@ import java.util.Arrays;
  */
 public class dQuickSort {
 
-
     public static void main(String[] args) {
         int[] arr = new int[] {4,4,6,5,3,2,8,1};
         quickSort2(arr, 0, arr.length-1);
@@ -54,19 +53,23 @@ public class dQuickSort {
     // todo 返回的是基准元素的下标
     //todo 注意方法 #partition3() 与方法 #getBase() 的区别
     public static int partition3(int[] a, int left, int right){
+
         //基准值
         int base = a[left];
 
         while(left < right){
-            while (left < right && a[right] >= base)
+            while (left < right && a[right] >= base){
                 right--;
+            }
             swap(a,left,right);
 
-            while(left < right && a[left] <= base)
+            while(left < right && a[left] <= base){
                 left++;
+            }
             swap(a,left,right);
         }
         return left;
+
     }
 
     private static void swap(int[] a, int left, int right) {

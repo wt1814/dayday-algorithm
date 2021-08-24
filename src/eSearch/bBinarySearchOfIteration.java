@@ -1,16 +1,8 @@
 package eSearch;
 
 /**
- * @ProjectName：dayday-algorithm
- * @ClassName: bBinarySearchOfIteration
- * @Description: TODO  
- * @Author: wt 
- * @CreateDate: 8/22/21 4:31 PM
- * @UpdateUser: 
- * @UpdateDate:   
- * @UpdateRemark:
- * @Version: V1.0
- **/
+ * todo 迭代解二分查找
+ */
 public class bBinarySearchOfIteration {
 
 

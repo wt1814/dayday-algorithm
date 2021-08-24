@@ -117,8 +117,7 @@ public class cBinarySearchDeformation {
      * @param key
      * @return
      */
-    public static int searchFirstEqualOrLarger(int arr[], int key)
-    {
+    public static int searchFirstEqualOrLarger(int arr[], int key) {
         int left=0, right=arr.length-1;
 
         while(left<=right) {

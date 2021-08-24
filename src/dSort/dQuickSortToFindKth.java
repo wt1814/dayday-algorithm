@@ -29,6 +29,7 @@ public class dQuickSortToFindKth {
      * @return
      */
     public static int quickSort(int[] a, int left, int right, int k){
+
         if(left > right) {
             return -1;
         }

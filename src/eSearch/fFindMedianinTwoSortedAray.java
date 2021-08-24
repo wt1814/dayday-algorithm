@@ -5,6 +5,8 @@ package eSearch;
  */
 public class fFindMedianinTwoSortedAray {
 
+
+
     ////////////////// todo 双指针法 ////////////////////////////////////
 
     // 首先求出上中位数的下标，然后在合并的过程中求出下标对应的数，下面是代码:
@@ -17,9 +19,12 @@ public class fFindMedianinTwoSortedAray {
         } else {
             mid=len/2+1;
         }
-        int cnt=0;//表示合并数组的指针
+
         int ans=0;
+        //todo 两个原数组，再加一个目标数组，共3个数组的指针
+        int cnt=0;//表示合并数组的指针
         int a=0,b=0;//a,b分别表示数组arr1,arr2的下标指针
+
         while(cnt!=mid){
             if(arr1[a]<=arr2[b]){
                 ans=arr1[a];

@@ -1,5 +1,9 @@
 package gLinked.eSpecialLinked;
 
+import gLinked.ListNode;
+
+import java.util.LinkedList;
+
 /**
  * 环形链表的约瑟夫问题
  */
@@ -30,7 +34,61 @@ public class jCrossJoseph {
             最后留下人的编号是3
             */
 
+    /**
+     * 根据题意，正常构造链表满足条件删除即可
+     * @param n
+     * @param m
+     * @return
+     */
+    public int ysf (int n, int m) {
+        // write code here
+        ListNode head=new ListNode(1);
+        ListNode tail=head;
+        for(int i=2;i<=n;i++){
+            tail.next=new ListNode(i);
+            tail=tail.next;
+        }
+        tail.next=head;
+        ListNode index=head;
+        ListNode pre=tail;
+        int k=0;
+        while(index.next!=null&&index.next!=index){
+            k++;
+            ListNode next=index.next;
+            if(k==m){
+                pre.next=pre.next.next;
+                k=0;
+            }
+            pre=index;
+            index=next;
+        }
+        return index.val;
+    }
 
+    //////////////////////////
 
+    /**
+     * 将[1,n]依次存储在链表中
+     * 只要链表的长度不为1，就一直循环，如果到了第m个就remove；否则将其添加到链表尾部
+     * 时间复杂度为O(nm)
+     * @param n
+     * @param m
+     * @return
+     */
+    public int LastRemaining(int n, int m){
+        LinkedList<Integer> list=new LinkedList<>();
+        if(m<1 || n<1){
+            return -1;
+        }
+        for(int i=0;i<n;i++){
+            list.add(i);
+        }
+        int bt=0;
+        while(list.size()>1){
+            bt=(bt+m-1)%list.size();
+            list.remove(bt);
+        }
+        return list.get(0)+1;
+    }
 
 }
