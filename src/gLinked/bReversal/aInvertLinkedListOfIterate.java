@@ -19,7 +19,6 @@ public class aInvertLinkedListOfIterate {
         linkedList.print(); // 打印 1，2，3，4
     }
 
-
     /**
      * 迭代解反转链表
      */
@@ -37,9 +36,8 @@ public class aInvertLinkedListOfIterate {
             Node next = cur.next; // todo 保存当前节点的下一节点
 
             cur.next = pre; // todo 反转
-
-            pre = cur;  // todo 矫正pre 和 cur 以便下一次
-            cur = next;
+            // todo 矫正pre 和 cur 以便下一次
+            pre = cur;   cur = next;
         }
         // 此时 pre 为头结点的后继结点
         head = pre;

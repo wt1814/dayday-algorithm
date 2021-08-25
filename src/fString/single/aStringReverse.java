@@ -11,7 +11,7 @@ public class aStringReverse {
     }
 
     /**
-     * 不考虑字符串开头有空格，单词间有多个空格空格的情况
+     * 不考虑字符串开头有空格，单词间有多个空格的情况
      * @param s
      * @return
      */

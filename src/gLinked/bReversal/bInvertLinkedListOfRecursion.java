@@ -5,7 +5,6 @@ package gLinked.bReversal;
  */
 public class bInvertLinkedListOfRecursion {
 
-
     public static void main(String[] args) {
         bInvertLinkedListOfRecursion linkedList = new bInvertLinkedListOfRecursion();
         int[] arr = {1,2,3,4,5};

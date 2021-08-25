@@ -6,6 +6,7 @@ package fString.single;
 public class cValidPalindrome {
 
     public static void main(String[] args){
+
         System.out.println(isHuiWen("abbba"));
     }
 

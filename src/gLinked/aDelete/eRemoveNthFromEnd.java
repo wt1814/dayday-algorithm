@@ -5,7 +5,6 @@ package gLinked.aDelete;
  */
 public class eRemoveNthFromEnd {
 
-
     public static void main(String[] args) {
         eRemoveNthFromEnd eRemoveNthFromEnd = new eRemoveNthFromEnd();
         int[] arr = {1,2,3,4,5};
