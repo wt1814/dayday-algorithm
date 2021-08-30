@@ -19,8 +19,6 @@
 
 # 1. 动态规划
 <!-- 
-浅谈动态规划
-https://mp.weixin.qq.com/s/smD-V7lg2YEItYvewdXGsg
 
 *** 重要重要重要重要 动态规划常见题型总结
 https://www.cnblogs.com/Renyi-Fan/p/9285495.html
