@@ -28,7 +28,7 @@ public class aBinarySearch {
      */
     public static int recursionBinarySearch(int[] array,int start,int end,int target){
 
-        if (start +1 > end){
+        if (start  > end){
             return -1;
         }
 
