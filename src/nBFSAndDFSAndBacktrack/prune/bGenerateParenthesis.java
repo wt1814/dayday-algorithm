@@ -1,4 +1,4 @@
-package mRecursion.prune;
+package nBFSAndDFSAndBacktrack.prune;
 
 import java.util.ArrayList;
 import java.util.Iterator;

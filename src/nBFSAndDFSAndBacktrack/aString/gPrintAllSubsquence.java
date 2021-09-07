@@ -1,4 +1,4 @@
-package mRecursion.backtrack.aString;
+package nBFSAndDFSAndBacktrack.aString;
 
 /**
  * todo 字符串的所有子序列(字符串的组合)

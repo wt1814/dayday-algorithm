@@ -1,4 +1,4 @@
-package mRecursion.backtrack.bNumber;
+package nBFSAndDFSAndBacktrack.bNumber;
 
 /**
  * 数组全排列

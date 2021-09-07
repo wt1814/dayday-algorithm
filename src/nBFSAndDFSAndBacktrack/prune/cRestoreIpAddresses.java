@@ -1,4 +1,4 @@
-package mRecursion.prune;
+package nBFSAndDFSAndBacktrack.prune;
 
 /**
  * 数字字符串转化成IP地址

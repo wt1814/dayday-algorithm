@@ -14,6 +14,7 @@ public class bMaxSubArray {
 
     }
 
+    /////////////////////////////
     /**
      * todo 自己写的
      * max sum of the subarray
@@ -49,6 +50,31 @@ public class bMaxSubArray {
 
         return result;
     }
+
+
+
+    //////////////////////////
+
+    public static int maxSubArray(int[] nums) {// 动态规划法
+        int sum=nums[0]; // dp数组
+        int n=nums[0];  // 初始值，前n个子序列和
+
+        for(int i=1;i<nums.length;i++) {
+
+            if(n>0){
+                n+=nums[i];  //todo 如果当前元素大于0
+            } else {
+                n=nums[i];
+            }
+
+            if(sum<n){   //todo 更新当前子序列和
+                sum=n;
+            }
+        }
+        return sum;
+    }
+
+
 
     //////////////////////////////////
 
@@ -126,23 +152,6 @@ public class bMaxSubArray {
 
     ////////////////
 
-    public static int maxSubArray(int[] nums) {// 动态规划法
-        int sum=nums[0]; // dp数组
-        int n=nums[0];  // 初始值，前n个子序列和
 
-        for(int i=1;i<nums.length;i++) {
-
-            if(n>0){
-                n+=nums[i];  //todo 如果当前元素大于0
-            } else {
-                n=nums[i];
-            }
-
-            if(sum<n){   //todo 更新当前子序列和
-                sum=n;
-            }
-        }
-        return sum;
-    }
 
 }

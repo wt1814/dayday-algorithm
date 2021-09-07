@@ -1,4 +1,4 @@
-package mRecursion.backtrack.bNumber;
+package nBFSAndDFSAndBacktrack.bNumber;
 
 import java.util.Arrays;
 
