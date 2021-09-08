@@ -1,6 +1,7 @@
 package nBFSAndDFSAndBacktrack.bNumber;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * 数组全排列
@@ -10,15 +11,8 @@ public class gPrientAllSort {
     public static void main(String[] args) {
 
         int[] arr = {1,2,3};
-        permutation(arr);
+        permutation(arr,0);
 
-    }
-
-    public static void permutation(int[] arr) {
-
-        for (int i = 0;i<arr.length;i++){
-            permutation(arr,i);
-        }
     }
 
     /**
@@ -35,10 +29,12 @@ public class gPrientAllSort {
         for (int i = k; i < arr.length; i++) {
             // 将 k 与之后的元素 i 依次交换,然后可以认为选中了第 k 位
             swap(arr, k, i);
-            // 第 k 位选择完成后，求剩余元素的全排列
+            // todo 第 k 位选择完成后，求剩余元素的全排列
             permutation(arr, k+1);
             // 这一步很关键：将 k 与 i 换回来，保证是初始的顺序
             swap(arr, k, i);
+
+
         }
 
     }

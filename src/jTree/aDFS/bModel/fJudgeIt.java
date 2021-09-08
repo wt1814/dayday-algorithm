@@ -5,6 +5,7 @@ import jTree.TreeNode;
 /**
  * 判断一棵二叉树是否为搜索二叉树和完全二叉树
  * todo 获取的info还必须包含val、leftVal、rightVal
+ * todo xxxxxxxxxxxxxx
  */
 public class fJudgeIt {
 
@@ -29,19 +30,21 @@ public class fJudgeIt {
      */
     public Info judgeItInfo(TreeNode root){
 
-        if(root==null){
+        if(root==null){ //todo 递归结束条件
             return new Info(true,true,null,null,null);
         }
 
-        Info leftInfo=judgeItInfo(root.left);
-        Info rightInfo=judgeItInfo(root.right);
+        Info leftInfo=judgeItInfo(root.left); //todo 获取左子树信息
+        Info rightInfo=judgeItInfo(root.right); //todo 获取右子树信息
+
+
         boolean isSearch=leftInfo.isSearch&&rightInfo.isSearch;
         boolean isAll=leftInfo.isAll&&rightInfo.isAll;
         //左节点为空 右节点不为空 则不是完全二叉树
         if(leftInfo.val==null&&rightInfo.val!=null){
             isAll=false;
         }
-        //判断是否为搜索树时注意 左右子树的左右子树也需要跟根节点比较
+        // todo 判断是否为搜索树时注意 左右子树的左右子树也需要跟根节点比较
         if(leftInfo.val!=null){
             isSearch=isSearch&&leftInfo.val<=root.val;
             if(leftInfo.rightVal!=null){

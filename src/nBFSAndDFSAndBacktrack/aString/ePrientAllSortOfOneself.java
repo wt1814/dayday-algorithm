@@ -54,9 +54,9 @@ public class ePrientAllSortOfOneself {
         }
 
         for(int j=i;j<strs.length;j++){
-            swap(strs,i,j);
-            permutation(strs,i+1,result);
-            swap(strs,i,j);
+            swap(strs,i,j);    // 交换
+            permutation(strs,i+1,result);  // 递归
+            swap(strs,i,j);  // 回溯
         }
 
     }
