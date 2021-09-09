@@ -1,4 +1,4 @@
-package nBFSAndDFSAndBacktrack.prune;
+package nBFSAndDFSAndBacktrack;
 
 import java.util.ArrayList;
 import java.util.Iterator;

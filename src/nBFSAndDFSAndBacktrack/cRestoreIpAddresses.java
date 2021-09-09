@@ -1,4 +1,4 @@
-package nBFSAndDFSAndBacktrack.prune;
+package nBFSAndDFSAndBacktrack;
 
 /**
  * 数字字符串转化成IP地址

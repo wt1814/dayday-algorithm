@@ -1,4 +1,4 @@
-package nBFSAndDFSAndBacktrack.prune;
+package nBFSAndDFSAndBacktrack.bCombine.num;
 
 import java.util.ArrayList;
 import java.util.Arrays;

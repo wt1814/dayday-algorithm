@@ -1,7 +1,6 @@
-package nBFSAndDFSAndBacktrack.bNumber;
+package nBFSAndDFSAndBacktrack.aRandk.num;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 /**
  * 数组全排列

@@ -1,4 +1,4 @@
-package nBFSAndDFSAndBacktrack.aString;
+package nBFSAndDFSAndBacktrack.bCombine.str;
 
 /**
  * todo 字符串的所有子序列(字符串的组合)

@@ -1,4 +1,4 @@
-package nBFSAndDFSAndBacktrack.aString;
+package nBFSAndDFSAndBacktrack.aRandk.num;
 
 import java.util.*;
 
