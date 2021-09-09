@@ -19,6 +19,35 @@ public class aInvertLinkedListOfIterate {
         linkedList.print(); // 打印 1，2，3，4
     }
 
+
+    /**
+     * 在遍历链表时，将当前节点的 next指针改为指向前一个节点。
+     * 由于节点没有引用其前一个节点，因此必须事先存储其前一个节点。
+     * 在更改引用之前，还需要存储后一个节点。最后返回新的头引用。
+     * @param head
+     * @return
+     */
+    public Node reverseList(Node head) {
+        Node prev = null;
+        Node curr = head;
+        while (curr != null) {
+            /**
+             * 务必注意：在 cur 指向 pre 之前一定要先保留 cur 的后继结点，不然 cur 指向 pre 后就再也找不到后继结点了
+             * 也就无法对 cur 后继之后的结点进行翻转了
+             */
+            Node next = curr.next;   // todo 保存当前节点的下一节点
+            curr.next = prev;   // todo 反转
+            // todo 矫正pre 和 cur 以便下一次
+            prev = curr;  curr = next;
+        }
+        return prev;
+    }
+
+
+
+
+    //////////////////////////////
+
     /**
      * 迭代解反转链表
      */

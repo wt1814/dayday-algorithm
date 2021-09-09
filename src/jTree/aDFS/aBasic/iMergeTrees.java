@@ -1,4 +1,4 @@
-package jTree.aDFS;
+package jTree.aDFS.aBasic;
 
 import jTree.TreeNode;
 
@@ -8,6 +8,33 @@ import jTree.TreeNode;
  * todo 递归的深入理解
  */
 public class iMergeTrees {
+
+    /**
+     *
+     * @param t1
+     * @param t2
+     * @return
+     */
+    public TreeNode mergeTrees1(TreeNode t1, TreeNode t2) {
+        if (t1 == null) {
+            return t2;
+        }
+        if (t2 == null) {
+            return t1;
+        }
+
+        TreeNode merged = new TreeNode(t1.val + t2.val);
+
+        merged.left = mergeTrees(t1.left, t2.left);
+        merged.right = mergeTrees(t1.right, t2.right);
+
+        return merged;
+
+    }
+
+
+
+    //////////////////////////////
 
     // https://www.nowcoder.com/practice/7298353c24cc42e3bd5f0e0bd3d1d759?tpId=188&&tqId=38652&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
     public TreeNode mergeTrees (TreeNode t1, TreeNode t2) {
