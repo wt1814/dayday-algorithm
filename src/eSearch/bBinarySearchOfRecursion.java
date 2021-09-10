@@ -7,7 +7,7 @@ package eSearch;
  *
  * 二分查找，将一个集合分成三部分
  */
-public class aBinarySearch {
+public class bBinarySearchOfRecursion {
 
     public static void main(String[] args) {
 

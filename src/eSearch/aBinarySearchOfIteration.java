@@ -3,7 +3,7 @@ package eSearch;
 /**
  * todo 迭代解二分查找
  */
-public class bBinarySearchOfIteration {
+public class aBinarySearchOfIteration {
 
 
     public static void main(String[] args) {

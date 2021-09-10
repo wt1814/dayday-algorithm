@@ -9,8 +9,9 @@ public class fFindMedianinTwoSortedAray {
 
     ////////////////// todo 双指针法 ////////////////////////////////////
 
-    // 首先求出上中位数的下标，然后在合并的过程中求出下标对应的数，下面是代码:
+    // 首先求出上中位数的下标，然后在合并的过程中求出下标对应的数。
     int findMedianinTwoSortedAray(int[] arr1, int[] arr2) {
+
         int len = arr1.length+arr2.length;
         int mid=0;
         //上中位数的下标
@@ -36,6 +37,7 @@ public class fFindMedianinTwoSortedAray {
             cnt++;
         }
         return ans;
+
     }
 
 }
