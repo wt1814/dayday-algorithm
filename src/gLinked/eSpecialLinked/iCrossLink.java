@@ -39,6 +39,7 @@ public class iCrossLink {
      * @return
      */
     public Node detectCrossNode() {
+
         Node fast = head;
         Node slow = head;
         while (fast != null && fast.next != null){
@@ -51,6 +52,7 @@ public class iCrossLink {
 
         }
         return null;
+
     }
 
 
@@ -61,6 +63,7 @@ public class iCrossLink {
      * @return
      */
     public Node getRingEntryNode() {
+
         // 获取快慢指针相遇结点
         Node crossNode = detectCrossNode();
 
@@ -79,6 +82,7 @@ public class iCrossLink {
             tmp2 = tmp2.next;
         }
         return tmp1;
+
     }
 
 

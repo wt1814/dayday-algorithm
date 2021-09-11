@@ -16,19 +16,23 @@ public class eStringToNumber {
      * @return
      */
     public static int atoi2 (String str) {
+
         str = str.trim();//去掉前后的空格
         //如果为空，直接返回0
         if (str.length() == 0){
             return 0;
         }
-        int index = 0;//遍历字符串中字符的位置
+
         int res = 0;//最终结果
+        int index = 0;//遍历字符串中字符的位置
         int sign = 1;//符号，1是正数，-1是负数，默认为正数
         int length = str.length();
+
         //判断符号
         if (str.charAt(index) == '-' || str.charAt(index) == '+'){
             sign = str.charAt(index++) == '+' ? 1 : -1;
         }
+
         for (; index < length; ++index) {   // todo for循环里的计数，可以提前定义
             //取出字符串中字符，然后转化为数字
             int digit = str.charAt(index) - '0';
@@ -43,6 +47,7 @@ public class eStringToNumber {
                 res = res * 10 + digit;
         }
         return sign * res;
+
     }
 
     //////////////////////////////////////////////////////////////////////////////

@@ -9,7 +9,6 @@ public class dReverseKGroup {
 
     // https://www.nowcoder.com/practice/b49c3dc907814e9bbfa8437c251b028e?tpId=188&&tqId=38557&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
 
-
     /**
      *
      * @param head
@@ -17,17 +16,23 @@ public class dReverseKGroup {
      * @return
      */
     public static ListNode reverseKGroup (ListNode head, int k) {
-        if(head==null||head.next==null||k==1) return head;
+
+        if(head==null||head.next==null||k==1) {
+            return head;
+        }
+
         ListNode res = new ListNode(0);
         res.next = head;
         int length = 0;
         ListNode pre = res,
                 cur = head,
                 temp = null;
+
         while(head!=null){
             length++;
             head = head.next;
         }
+
         //分段使用头插法将链表反序
         for(int i=0; i<length/k; i++){
             //pre作为每一小段链表的头节点，负责衔接
@@ -44,6 +49,7 @@ public class dReverseKGroup {
             cur = cur.next;
         }
         return res.next;
+
     }
 
 }

@@ -41,6 +41,7 @@ public class bInvertLinkedListOfRecursion {
         node.next = null;
         // 步骤 3: 返回翻转后的头结点
         return newHead;
+
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -17,6 +17,7 @@ public class dPalindromeSubstring {
      * @return
      */
     public static int palindromeSubstring(String str) {
+
         int num=0;
 
         //子字符串的起始下标
@@ -33,6 +34,7 @@ public class dPalindromeSubstring {
             }
         }
         return num;
+
     }
 
     /**

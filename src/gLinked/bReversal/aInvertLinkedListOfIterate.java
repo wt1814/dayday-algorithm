@@ -28,6 +28,7 @@ public class aInvertLinkedListOfIterate {
      * @return
      */
     public Node reverseList(Node head) {
+
         Node prev = null;
         Node curr = head;
         while (curr != null) {
@@ -41,6 +42,7 @@ public class aInvertLinkedListOfIterate {
             prev = curr;  curr = next;
         }
         return prev;
+
     }
 
 

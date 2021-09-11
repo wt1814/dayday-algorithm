@@ -1,6 +1,5 @@
 package fString.single;
 
-
 /**
  * 最长重复子串
  * https://www.nowcoder.com/practice/4fe306a84f084c249e4afad5edf889cc?tpId=188&&tqId=38654&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
@@ -58,6 +57,13 @@ public class fSolve {
 
     }
 
+    /**
+     *
+     * @param arr
+     * @param left
+     * @param right
+     * @return
+     */
     public static boolean isChongFu(char[] arr,int left,int right){
         if((right - left +1)%2 ==1){
             return false;

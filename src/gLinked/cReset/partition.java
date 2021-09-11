@@ -4,7 +4,7 @@ import gLinked.ListNode;
 
 /**
  * 划分链表
- * 给出一个链表和一个值 ，以特定值为参照将链表划分成两部分，使所有小于 的节点都位于大于或等于 的节点之前。
+ * 给出一个链表和一个值，以特定值为参照将链表划分成两部分，使所有小于 的节点都位于大于或等于 的节点之前。
  * todo 对链表进行指空处理
  */
 public class partition {
@@ -35,6 +35,7 @@ public class partition {
      * @return ListNode类
      */
     public static ListNode partition (ListNode head, int x) {
+
         // write code here
         ListNode small = new ListNode(-1);
         ListNode large = new ListNode(-1);
@@ -54,6 +55,7 @@ public class partition {
         layd.next = null; //todo 对链表进行指空处理
         smyd.next = large.next;
         return small.next;
+
     }
 
 }
