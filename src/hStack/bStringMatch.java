@@ -9,8 +9,8 @@ public class bStringMatch {
 
     public static void main(String[] args){
 
-        String str = "((";
-        stringMatch(str);
+        String str = "(}";
+        System.out.println(isValid(str));
     }
 
     /**
@@ -18,7 +18,7 @@ public class bStringMatch {
      * @param s
      * @return
      */
-    public boolean isValid (String s) {
+    public static boolean isValid (String s) {
         // write code here
         boolean result = true;
         Stack tempStack = new Stack();
@@ -28,7 +28,6 @@ public class bStringMatch {
             return false;
         }
         for(char sub:arr){
-            result = false;
             switch(sub){   // todo switch使用
                 case '(':  // todo char类型定义
                 case '{':
@@ -45,10 +44,15 @@ public class bStringMatch {
                         }else{
                             result = false;
                         }
+                    }else {
+                        result = false;
                     }
                     break;
                 default:
                     break;
+            }
+            if (result == false){
+                break;
             }
         }
 
