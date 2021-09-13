@@ -1,4 +1,4 @@
-package nBFSAndDFSAndBacktrack;
+package nBFSAndDFSAndBacktrack.eCheckerboard;
 
 /**
  * 九皇后

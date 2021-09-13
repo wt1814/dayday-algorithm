@@ -5,6 +5,7 @@ import jTree.TreeNode;
 public class fIsValidBST {
 
     public boolean isValidBST(TreeNode root) {
+
         return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
 
