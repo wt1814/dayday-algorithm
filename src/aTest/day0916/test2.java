@@ -10,11 +10,6 @@ public class test2 {
         System.out.println(canPartitionKSubsets(nums,4));
     }
 
-    // https://blog.csdn.net/qq_43539599/article/details/107631956
-    // https://blog.csdn.net/qq_39445165/article/details/119476303
-
-    // https://blog.csdn.net/weixin_42956047/article/details/106404967
-
     public static boolean canPartitionKSubsets(int[] nums, int k) {
         //因为题目限制条件不用担心溢出
         int sum = 0;
