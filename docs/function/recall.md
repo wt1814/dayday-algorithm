@@ -21,6 +21,14 @@ https://zhuanlan.zhihu.com/p/138587283
 https://www.cnblogs.com/oldhands/p/11840667.html
 
 https://blog.csdn.net/u014303647/article/details/88328526
+
+
+回溯法与深度优先遍历的异同
+https://blog.csdn.net/gardenpalace/article/details/84625537
+
+回溯算法的模板整理
+https://www.cnblogs.com/oldhands/p/11840667.html
+
 -->
 回溯法确实不好理解，所以需要把回溯法抽象为⼀个图形来理解就容易多了，每⼀道回溯法的题⽬都可以抽象为树形结构。  
 把回溯问题抽象为树形结构，可以直观的看出其搜索的过程：for循环横向遍历，递归纵向遍历，回溯不断调整结果集。  

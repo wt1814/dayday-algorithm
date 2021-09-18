@@ -5,5 +5,7 @@ package nBFSAndDFSAndBacktrack.eCheckerboard;
  */
 public class NineQueens {
 
+    // https://mp.weixin.qq.com/s/c-J5yfTGGuGt4YnHeInkUw
+
 
 }
