@@ -9,6 +9,10 @@ package oDP.bString.single;
  */
 public class dLongestPalindromeSubseq {
 
+
+    //回文子序列
+    //https://mp.weixin.qq.com/s/2SWKifZJ3Gf1s5L2xBDJtg
+
     // https://mp.weixin.qq.com/s/_YznW0t4z-_bzkBGQK6jpQ
 
     public int longestPalindromeSubseq(String s) {
