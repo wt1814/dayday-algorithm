@@ -12,7 +12,7 @@ package oDP.aNumber.single;
  *  todo 正确写法
  *  result[i] = Math.max(result[i-2]+array[i],result[i-1]);
  */
-public class NotAdjacentSubsequence {
+public class cNotAdjacentSubsequence {
 
     /**
      * 状态转移表达式：
@@ -32,14 +32,13 @@ public class NotAdjacentSubsequence {
         dp[1] = array[0];
 
         for (int i = 2; i <= n; i++) {
-
             dp[i] = Math.max(dp[i-1],dp[i-2] + array[i-1]);
         }
         return dp[n];
     }
 
 
-    //////////////////////////
+    //////////////////////////////////////////////////////////
     public long subsequence1 (int n, int[] array) {
         // write code here
         int len = array.length;

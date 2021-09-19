@@ -1,4 +1,4 @@
-package oDP.aBasic;
+package oDP.knapsack;
 
 /**
  * 01背包

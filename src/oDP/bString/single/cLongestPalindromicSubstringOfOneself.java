@@ -12,6 +12,7 @@ public class cLongestPalindromicSubstringOfOneself {
         lis("abc1234321ab");
     }
 
+
     public static String lis (String str){
 
         if (str == null || str.length() == 0){

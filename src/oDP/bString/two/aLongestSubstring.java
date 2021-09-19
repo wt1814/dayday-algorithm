@@ -21,7 +21,6 @@ public class aLongestSubstring {
      */
     public static int getLCSLength(String s, String t) {
 
-        System.out.println(s.length());
         if (s == null || t == null || s.length() == 0 || t.length() == 0) {
             return 0;
         }

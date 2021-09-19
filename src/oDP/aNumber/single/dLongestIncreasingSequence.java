@@ -6,22 +6,28 @@ import java.util.Arrays;
  * 最长递增子序列
  * 如果有多个答案，请输出其中 按数值(注：区别于按单个字符的ASCII码值)进行比较的 字典序最小的那个
  */
-public class cLongestIncreasingSequence {
+public class dLongestIncreasingSequence {
 
     // https://blog.csdn.net/u012505432/article/details/52228945
     // https://mp.weixin.qq.com/s/pq0QStRtLBLOzsyJcsn3Qw
 
     public static void main(String[] args){
         int[] arr = {1,2,8,6,4};
-        int[] ints = lis1(arr);
+        int[] ints = lis(arr);
 
         Arrays.stream(ints).forEach(value -> System.out.print(value));
     }
 
 
-    public static int[] lis1 (int[] arr){
+    /**
+     *
+     * @param arr
+     * @return
+     */
+    public static int[] lis (int[] arr){
         int[] dp = getdp1(arr);
-        return generateLIS(arr,dp);
+        int[] ints = generateLIS(arr, dp);
+        return ints;
     }
 
 

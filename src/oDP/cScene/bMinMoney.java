@@ -9,20 +9,22 @@ import java.util.Arrays;
 public class bMinMoney {
 
     public int minMoney (int[] arr, int aim) {
+
         // write code here
-        int Max = aim + 1;//定一个全局最大值
-        int []dp = new int[aim + 1];//dp[i]的含义是目标值为i的时候最少钱币数是多少。
-        Arrays.fill(dp,Max);//把dp数组全部定为最大值
+        int[] dp = new int[aim + 1];//dp[i]的含义是目标值为i的时候最少钱币数是多少。
+
         dp[0] = 0;//总金额为0的时候所需钱币数一定是0
+        int Max = aim + 1;//定一个全局最大值
+        Arrays.fill(dp,Max);//把dp数组全部定为最大值
+
         for(int i = 1;i <= aim;i ++){// 遍历目标值
             for(int j = 0;j < arr.length;j ++){// 遍历钱币
                 if(arr[j] <= i){//如果当前的钱币比目标值小就可以兑换
                     dp[i] = Math.min(dp[i],dp[i-arr[j]] + 1);
-
-
                 }
             }
         }
+
         return dp[aim] > aim ? -1 : dp[aim];
 
     }
