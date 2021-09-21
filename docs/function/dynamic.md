@@ -252,6 +252,6 @@ https://www.bilibili.com/video/BV15B4y1P7X7
 -->
 
 ## 1.5. 动态规划解题  
-&emsp; &emsp; [动态规划解题](/docs/function/DynamicSolve.md)  
+&emsp; [动态规划解题](/docs/function/DynamicSolve.md)  
 ![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-57.png)  
-
+&emsp; 对动态规划进行空间压缩  
