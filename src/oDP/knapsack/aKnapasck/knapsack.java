@@ -1,4 +1,4 @@
-package oDP.knapsack;
+package oDP.knapsack.aKnapasck;
 
 /**
  * @ProjectName：dayday-algorithm

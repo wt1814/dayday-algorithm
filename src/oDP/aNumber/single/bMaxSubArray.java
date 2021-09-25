@@ -9,7 +9,7 @@ public class bMaxSubArray {
 
     public static void main(String[] args){
         int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
-        System.out.println(maxSubArray(nums));
+        System.out.println(maxsumofSubarray(nums));
         System.out.println(maxSubArray2(nums));
 
     }
@@ -21,7 +21,7 @@ public class bMaxSubArray {
      * @param arr int整型一维数组 the array
      * @return int整型
      */
-    public int maxsumofSubarray (int[] arr) {
+    public  static int maxsumofSubarray (int[] arr) {
         // write code here
         if(arr == null || arr.length == 0){
             return 0;
@@ -50,30 +50,6 @@ public class bMaxSubArray {
 
         return result;
     }
-
-
-
-    //////////////////////////
-
-    public static int maxSubArray(int[] nums) {// 动态规划法
-        int sum=nums[0]; // dp数组
-        int n=nums[0];  // 初始值，前n个子序列和
-
-        for(int i=1;i<nums.length;i++) {
-
-            if(n>0){
-                n+=nums[i];  //todo 如果当前元素大于0
-            } else {
-                n=nums[i];
-            }
-
-            if(sum<n){   //todo 更新当前子序列和
-                sum=n;
-            }
-        }
-        return sum;
-    }
-
 
 
     //////////////////////////////////
@@ -148,7 +124,6 @@ public class bMaxSubArray {
         }
         return maxAns;
     }
-
 
 
 }

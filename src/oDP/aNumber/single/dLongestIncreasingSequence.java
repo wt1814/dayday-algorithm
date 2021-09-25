@@ -14,7 +14,6 @@ public class dLongestIncreasingSequence {
     public static void main(String[] args){
         int[] arr = {1,2,8,6,4};
         int[] ints = lis(arr);
-
         Arrays.stream(ints).forEach(value -> System.out.print(value));
     }
 

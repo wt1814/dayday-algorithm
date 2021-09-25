@@ -7,12 +7,12 @@ package oDP.bString.single;
  * 输入：s = "bbbab" 输出：4 解释：一个可能的最长回文子序列为 "bbbb" 。
  * 输入：s = "cbbd" 输出：2 解释：一个可能的最长回文子序列为 "bb" 。
  */
-public class dLongestPalindromeSubseq {
+public class dLongestPalindromeSubseqXXX {
 
+    //todo
 
     //回文子序列
     //https://mp.weixin.qq.com/s/2SWKifZJ3Gf1s5L2xBDJtg
-
     // https://mp.weixin.qq.com/s/_YznW0t4z-_bzkBGQK6jpQ
 
     public int longestPalindromeSubseq(String s) {

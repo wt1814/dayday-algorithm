@@ -33,6 +33,12 @@ public class bLongestCommonSequenceOfOneself {
 
     }
 
+    /**
+     * 生成dp数组
+     * @param s1
+     * @param s2
+     * @return
+     */
     private static int[][] getDp(String s1, String s2) {
         int length1 = s1.length();
         int length2 = s2.length();

@@ -2,19 +2,17 @@ package oDP.aNumber.single;
 
 /**
  * 不相邻最大子序列和
- *
- * todo 错误写法
- *             if(array[i]>0){
- *                 result[i] = result[i-2]+array[i];
- *             }else{
- *                 result[i] = result[i-1];
- *             }
- *  todo 正确写法
- *  result[i] = Math.max(result[i-2]+array[i],result[i-1]);
  */
 public class cNotAdjacentSubsequence {
 
     /**
+     * todo 错误写法
+     *  if(array[i]>0){
+     *      result[i] = result[i-2]+array[i];
+     *  }else{
+     *      result[i] = result[i-1];
+     *  }
+     * todo 正确写法   result[i] = Math.max(result[i-2]+array[i],result[i-1]);
      * 状态转移表达式：
      * (1)对于当前的元素arr[i]，如果取，那么dp[i] = dp[i-2] + arr[i]
      * (2)如果不取，那么dp[i] = dp[i-1]

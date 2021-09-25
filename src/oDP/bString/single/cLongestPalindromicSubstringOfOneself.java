@@ -2,7 +2,6 @@ package oDP.bString.single;
 
 /**
  * 最长回文子串
- * todo 自己写的
  */
 public class cLongestPalindromicSubstringOfOneself {
 
