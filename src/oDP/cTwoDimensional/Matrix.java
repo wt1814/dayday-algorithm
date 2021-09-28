@@ -1,4 +1,4 @@
-package oDP.twoDimensional;
+package oDP.cTwoDimensional;
 
 /**
  * 二维

@@ -1,4 +1,4 @@
-package oDP.aNumber.single;
+package oDP.division;
 
 /**
  * 动态规划解分割等和子集

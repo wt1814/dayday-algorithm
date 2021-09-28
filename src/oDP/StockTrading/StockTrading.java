@@ -1,7 +1,7 @@
 package oDP.StockTrading;
 
 /**
- *
+ * 股票交易
  */
 public class StockTrading {
 
