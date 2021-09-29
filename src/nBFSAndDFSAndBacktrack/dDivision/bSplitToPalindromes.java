@@ -1,6 +1,5 @@
 package nBFSAndDFSAndBacktrack.dDivision;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +8,7 @@ import java.util.List;
  */
 public class bSplitToPalindromes {
 
-
+    // *** https://mp.weixin.qq.com/s/SrBfADlsOXjeOX4Cr4pQNg
     // https://leetcode-cn.com/problems/palindrome-partitioning/
     // https://blog.csdn.net/zjg379569986/article/details/102505694
 
