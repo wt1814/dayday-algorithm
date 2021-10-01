@@ -1,10 +1,9 @@
 package lSlidingWindow.DoublePointer;
 
 /**
- * 最长重复子串 https://www.nowcoder.com/practice/4fe306a84f084c249e4afad5edf889cc?tpId=188&&tqId=38654&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
- * todo 双指针解法， 非滑动窗口
+ * 最长重复子串
  */
-public class dSolve {
+public class cSolve {
 
     public static void main(String[] args){
         int solve = solve("abcdiiiiiiiiiiiiadiiiiiiiiiiabcr'");
@@ -12,6 +11,7 @@ public class dSolve {
         System.out.println(solve);
     }
 
+    //https://www.nowcoder.com/practice/4fe306a84f084c249e4afad5edf889cc?tpId=188&&tqId=38654&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
     public static int solve (String a) {
         // write code here
         int result = 0;
