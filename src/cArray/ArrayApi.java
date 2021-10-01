@@ -1,6 +1,4 @@
-package bBasic;
-
-import java.util.Arrays;
+package cArray;
 
 /**
  * 数组基础操作

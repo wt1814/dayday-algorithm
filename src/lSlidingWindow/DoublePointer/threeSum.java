@@ -1,4 +1,4 @@
-package lSlidingWindow;
+package lSlidingWindow.DoublePointer;
 
 
 /**

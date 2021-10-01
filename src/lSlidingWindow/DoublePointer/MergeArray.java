@@ -1,8 +1,8 @@
-package cArray;
+package lSlidingWindow.DoublePointer;
 
 /**
- * todo xxxxx
  * 合并两个有序的数组
+ * todo 双指针
  */
 public class MergeArray {
 

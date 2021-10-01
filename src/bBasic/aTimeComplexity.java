@@ -3,7 +3,7 @@ package bBasic;
 /**
  * 时间复杂度
  */
-public class TimeComplexity {
+public class aTimeComplexity {
 
 
     // https://zhuanlan.zhihu.com/p/50479555
