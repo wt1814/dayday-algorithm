@@ -1,4 +1,4 @@
-package gLinked.eSpecialLinked;
+package gLinked.dDoublePointer;
 
 /**
  * 链表环

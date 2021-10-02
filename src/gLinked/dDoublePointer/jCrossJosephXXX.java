@@ -1,4 +1,4 @@
-package gLinked.eSpecialLinked;
+package gLinked.dDoublePointer;
 
 import gLinked.ListNode;
 
@@ -7,7 +7,7 @@ import java.util.LinkedList;
 /**
  * 环形链表的约瑟夫问题
  */
-public class jCrossJoseph {
+public class jCrossJosephXXX {
 
     // https://www.nowcoder.com/practice/41c399fdb6004b31a6cbb047c641ed8a?tpId=188&&tqId=38612&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
 
@@ -64,13 +64,19 @@ public class jCrossJoseph {
 
     /////////////////////////////
 
+    public static void main(String[] args){
+
+        System.out.println(ysf(5,2));
+
+    }
+
     /**
      * 根据题意，正常构造链表满足条件删除即可
      * @param n
      * @param m
      * @return
      */
-    public int ysf (int n, int m) {
+    public static int ysf (int n, int m) {
         // write code here
         ListNode head=new ListNode(1);
         ListNode tail=head;
@@ -79,16 +85,19 @@ public class jCrossJoseph {
             tail=tail.next;
         }
         tail.next=head;
+
         ListNode index=head;
         ListNode pre=tail;
         int k=0;
+
         while(index.next!=null&&index.next!=index){
             k++;
             ListNode next=index.next;
-            if(k==m){
+            if(k==m){ // todo
                 pre.next=pre.next.next;
                 k=0;
             }
+
             pre=index;
             index=next;
         }

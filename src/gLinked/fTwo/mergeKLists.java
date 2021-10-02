@@ -25,13 +25,18 @@ public class mergeKLists {
      */
     public ListNode merge(ArrayList<ListNode> lists, int l, int r){
         // 左右相等说明不能再分
-        if(l == r)
+        if(l == r){
             return lists.get(l);
+        }
         if(l > r){
             return null;
         }
+
         int mid = l + (r-l)/2;
-        return mergeTwoList(merge(lists,l,mid),merge(lists,mid+1,r)); //todo
+        ListNode merge = merge(lists, l, mid);
+        ListNode merge1 = merge(lists, mid + 1, r);
+
+        return mergeTwoList(merge,merge1);
     }
 
     /**

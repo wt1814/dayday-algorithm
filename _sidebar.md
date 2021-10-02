@@ -1,5 +1,3 @@
-
-
 * [总结](/docs/function/summary.md)  
 * [算法基础](/docs/function/basics.md)  
 * [算法基本概念](/docs/function/notion.md)  
@@ -13,7 +11,8 @@
     * [双指针法](/docs/function/DoublePointer.md)  
     * [滑动窗口](/docs/function/SlidingWindow.md)  
 * [基本数据结构](/docs/function/structure/structure.md)      
-    * [数组和链表](/docs/function/structure/array.md)  
+    * [数组](/docs/function/structure/array.md)  
+    * [链表](/docs/function/structure/Linked.md)  
     * [栈与队列](/docs/function/structure/stack.md)  
     * [哈希](/docs/function/structure/hash.md)  
     * [二叉树](/docs/function/structure/tree.md)  

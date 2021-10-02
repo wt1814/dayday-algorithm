@@ -1,4 +1,4 @@
-package gLinked.eSpecialLinked;
+package gLinked.eOther;
 
 /**
  * 是否回文链表
