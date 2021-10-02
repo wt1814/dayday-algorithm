@@ -35,8 +35,11 @@ https://blog.csdn.net/zhizhengguan/article/details/105967696
 <!-- 
  23张图！万字详解「链表」，从小白到大佬！ 
  https://mp.weixin.qq.com/s/BRcsDO9aAKtYWduCtST9gA
+ 
+ 可以参考《代码随想录》链表理论基础  
 -->
 &emsp; 链表分类：单向链表、双端链表、有序链表、双向链表。  
+
 
 `链表反转两种方式：1).指针反转；2).类似头插法`  
 
