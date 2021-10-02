@@ -50,12 +50,14 @@ public class dQuickSortToFindKth {
         int base = a[left];
 
         while(left < right){
-            while (left < right && a[right] <= base)
+            while (left < right && a[right] <= base){
                 right--;
+            }
             swap(a,left,right);
 
-            while(left < right && a[left] >= base)
+            while(left < right && a[left] >= base){
                 left++;
+            }
             swap(a,left,right);
         }
         return left;

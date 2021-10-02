@@ -1,7 +1,10 @@
 package oDP.bString.two;
 
 /**
- *
+ * KMP算法
+ * todo 两个字符串比较的普通思路，不匹配时，待匹配的模式串向右移动一个位置。
+ * todo 优化：当模式串有公共的前缀和后缀（acddddac，ac就是公共的前缀和后缀），直接移动到后缀的位置
+ * kmp算法：当不匹配时，找最长公共前后缀，移动到后缀部分
  */
 public class KMP {
 
@@ -10,5 +13,11 @@ public class KMP {
     //KMP算法，字符串匹配：
     //动态规划之 KMP 算法详解(配代码版)
     //https://mp.weixin.qq.com/s?__biz=MzUyNjQxNjYyMg==&mid=2247486490&idx=3&sn=35ba410818207a1bef83d6578f4b332c&chksm=fa0e639bcd79ea8dff1141a8729cf4b1243d23ac276652a58fc23d7b6b2ce01ca2666feab293&mpshare=1&scene=1&srcid=&sharer_sharetime=1569055567478&sharer_shareid=b256218ead787d58e0b58614a973d00d&key=20f7b87cb3d4d9a8e94f75ad1bbd1fe8ed4af91513a424bebd0c4df328ea367a462e742f0885a4dbf9693a65560f764378ab2da5e0d620daa8cd627756a8d79b7b364eb9ccf4a8629e46dad4de38545d&ascene=1&uin=MTE1MTYxNzY2MQ%3D%3D&devicetype=Windows+10&version=62060844&lang=zh_CN&pass_ticket=l152qY7UDy13%2FQ8lMQftZpzwON66UoS8zNnRNqU0gQ1B38kfpkeCoh6I%2F0Cu%2FOwX
+
+    // 视频讲解：https://www.bilibili.com/video/BV1jb411V78H?from=search&seid=16480680497195823788
+    // 视频讲解：计算next函数值：https://www.bilibili.com/video/BV12J411m74v/?spm_id_from=autoNext
+
+    // 重学KMP： https://mp.weixin.qq.com/s/MoRBHbS4hQXn7LcPdmHmIg
+
 
 }

@@ -1,7 +1,8 @@
 package eSearch;
 
 /**
- * todo 迭代解二分查找
+ * todo 二分查找，前提条件是数据必须是有序的
+ * todo 迭代解二分查找，双指针
  */
 public class aBinarySearchOfIteration {
 

@@ -72,7 +72,9 @@ public class eStringToNumber {
         byte zero = '0';
         byte nine = '9';
 
-        if(bytes.length == 0) return value;
+        if(bytes.length == 0) {
+            return value;
+        }
 
         //过滤掉非无用字符，并只用endIndex作为截断位
         int endIndex = 1;
@@ -87,11 +89,15 @@ public class eStringToNumber {
         }
 
         //判断过滤后的值是否为空
-        if(endIndex == 0) return value;
+        if(endIndex == 0) {
+            return value;
+        }
 
         for (int i = 0; i < endIndex; i++) {
             //如果第一个字符是正负符号，continue不做计算
-            if(i == 0 && (bytes[i] == p || bytes[i] ==n)) continue;
+            if(i == 0 && (bytes[i] == p || bytes[i] ==n)) {
+                continue;
+            }
             if(bytes[0] == n){//如果是正值-=
                 value -= (bytes[i] % zero) * Math.pow(10, endIndex - 1 - i);
             }else{//否则+=

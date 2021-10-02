@@ -2,6 +2,11 @@ package eSearch;
 
 /**
  * 二分查找的变形
+ * ⼆分搜索的变种写法。有 4 个基本变种:
+ * 1. 查找第⼀个与 target 相等的元素，时间复杂度 O(logn)
+ * 2. 查找最后⼀个与 target 相等的元素，时间复杂度 O(logn)
+ * 3. 查找第⼀个⼤于等于 target 的元素，时间复杂度 O(logn)
+ * 4. 查找最后⼀个⼩于等于 target 的元素，时间复杂度 O(logn)
  */
 public class cBinarySearchDeformation {
 
