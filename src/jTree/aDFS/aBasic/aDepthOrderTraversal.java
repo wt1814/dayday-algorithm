@@ -12,7 +12,7 @@ import java.util.List;
  * 中序 左中右
  * 后序 左右中
  */
-public class bDepthOrderTraversal {
+public class aDepthOrderTraversal {
 
     /**
      *
