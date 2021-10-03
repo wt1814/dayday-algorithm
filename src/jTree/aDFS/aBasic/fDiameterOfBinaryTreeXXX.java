@@ -5,11 +5,12 @@ import jTree.TreeNode;
 /**
  * 二叉树的直径
  */
-public class fDiameterOfBinaryTree {
+public class fDiameterOfBinaryTreeXXX {
 
 
     // https://leetcode-cn.com/problems/diameter-of-binary-tree/solution/er-cha-shu-de-zhi-jing-by-leetcode-solution/
     int ans;
+
     public int diameterOfBinaryTree(TreeNode root) {
         ans = 1;
         depth(root);

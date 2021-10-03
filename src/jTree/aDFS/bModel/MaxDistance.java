@@ -29,17 +29,6 @@ public class MaxDistance {
         return process(head).maxDistance;
     }
 
-    public static class Info {
-        public int maxDistance;
-        public int height;
-
-        public Info(int m, int h) {
-            maxDistance = m;
-            height = h;
-        }
-
-    }
-
     public static Info process(Node x) {
         if (x == null) {
             return new Info(0, 0);
@@ -54,7 +43,16 @@ public class MaxDistance {
         return new Info(maxDistance, height);
     }
 
+    public static class Info {
+        public int maxDistance;
+        public int height;
 
+        public Info(int m, int h) {
+            maxDistance = m;
+            height = h;
+        }
+
+    }
 
     ///////////////////////////////递归求解/////////////////////////////////////////
     public static int maxDistance1(Node head) {

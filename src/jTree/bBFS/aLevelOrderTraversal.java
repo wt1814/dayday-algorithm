@@ -50,8 +50,7 @@ public class aLevelOrderTraversal {
             return;
         }
         Queue<TreeNode> queue = new LinkedList<>(); //todo 创建队列，使用链表这种队列
-                                                    //todo 队列里放入TreeNode
-        queue.add(root);
+        queue.add(root); //todo 队列里放入TreeNode
 
         while (!queue.isEmpty()){
             TreeNode cur = queue.poll();

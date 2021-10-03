@@ -5,7 +5,6 @@ import jTree.TreeNode;
 /**
  * 判断一棵二叉树是否为搜索二叉树和完全二叉树
  * todo 获取的info还必须包含val、leftVal、rightVal
- * todo xxxxxxxxxxxxxx
  */
 public class fJudgeIt {
 
@@ -76,4 +75,6 @@ public class fJudgeIt {
             this.rightVal=rightVal;
         }
     }
+
+
 }

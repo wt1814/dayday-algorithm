@@ -28,12 +28,23 @@ public class dAllPath {
 
     }
 
+    /**
+     *
+     * @param root
+     * @return
+     */
     public static List<String> binaryTreePaths(TreeNode root) {
         List<String> paths = new ArrayList<String>();
         constructPaths(root, "", paths);
         return paths;
     }
 
+    /**
+     *
+     * @param root
+     * @param path
+     * @param paths
+     */
     public static void constructPaths(TreeNode root, String path, List<String> paths) {
         if (root != null) {
             StringBuffer pathSB = new StringBuffer(path);

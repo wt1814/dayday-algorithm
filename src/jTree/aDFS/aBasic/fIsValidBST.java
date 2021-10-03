@@ -1,4 +1,4 @@
-package jTree.aDFS;
+package jTree.aDFS.aBasic;
 
 import jTree.TreeNode;
 
@@ -10,13 +10,18 @@ public class fIsValidBST {
     }
 
     public boolean isValidBST(TreeNode node, long lower, long upper) {
+
         if (node == null) {
             return true;
         }
         if (node.val <= lower || node.val >= upper) {
             return false;
         }
-        return isValidBST(node.left, lower, node.val) && isValidBST(node.right, node.val, upper);
+
+        boolean left = isValidBST(node.left, lower, node.val);
+        boolean right = isValidBST(node.right, node.val, upper);
+
+        return left && right;
     }
 
 }

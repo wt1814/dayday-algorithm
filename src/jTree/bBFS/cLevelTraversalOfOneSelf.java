@@ -32,9 +32,13 @@ public class cLevelTraversalOfOneSelf {
 
     }
 
+    /**
+     *
+     * @param root
+     * @return
+     */
     public static ArrayList<ArrayList<Integer>> zigzagLevelOrder (TreeNode root) {
         // write code here
-
         ArrayList<ArrayList<Integer>> result = new ArrayList();
 
         if(root == null){
