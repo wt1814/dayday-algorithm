@@ -24,7 +24,6 @@
 # 1. 栈与队列
 &emsp; **<font color = "clime">栈、队列与数组一样，都是顺序存储方式。</font>**    
 
-
 ## 1.1. 栈Stack  
 <!-- https://www.cnblogs.com/ysocean/p/7911910.html 
 &emsp; **栈与递归：**用非递归写递归，都需要用到栈。  
@@ -80,6 +79,17 @@ public class StackSingleLink {
 
 }
 ```
+
+### 单调栈
+单调栈是⼀种特殊的栈。栈本来就是⼀种受限的数据结构了，单调栈在此 基础上⼜受限了⼀次（受限++）。  
+单调栈要求栈中的元素是单调递减或者单调递减的。  
+是否严格递减或递减可以根据实际情况来。
+
+<!-- 
+https://mp.weixin.qq.com/s/Mb8PAxMj2KLTQ1QrCh8XAA
+https://mp.weixin.qq.com/s/KYfjBejo84AmajnPZNs5nA
+-->
+
 
 ### 1.1.2. 有关栈的算法题  
 #### 1.1.2.1. 利用栈实现字符串逆序  

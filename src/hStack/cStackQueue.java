@@ -36,6 +36,7 @@ public class cStackQueue {
      * @param node
      */
     public void push(int node) {
+
         in.push(node);
     }
 
