@@ -1,7 +1,7 @@
 package lSlidingWindow.DoublePointer;
 
 /**
- * 双指针解替换后的最长重复字符
+ *  514，双指针解替换后的最长重复字符
  */
 public class dCharacterReplacement {
 

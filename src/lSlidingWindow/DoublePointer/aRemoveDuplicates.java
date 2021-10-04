@@ -1,7 +1,7 @@
 package lSlidingWindow.DoublePointer;
 
 /**
- * 双指针解删除有序数组中的重复项
+ * 539，双指针解删除有序数组中的重复项
  */
 public class aRemoveDuplicates {
 

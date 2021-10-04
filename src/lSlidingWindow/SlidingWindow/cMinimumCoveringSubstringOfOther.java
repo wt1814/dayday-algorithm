@@ -3,7 +3,7 @@ package lSlidingWindow.SlidingWindow;
 import java.util.HashMap;
 
 /**
- * 最小覆盖子串
+ * 542，滑动窗口解最小覆盖子串
  */
 public class cMinimumCoveringSubstringOfOther {
 
