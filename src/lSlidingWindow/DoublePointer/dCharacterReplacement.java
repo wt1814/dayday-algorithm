@@ -6,7 +6,6 @@ package lSlidingWindow.DoublePointer;
 public class dCharacterReplacement {
 
     // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490163&idx=1&sn=4cbb66581d85a6a31019e0a25e3da21a&chksm=fb418953cc3600454f3c0e765f6e1c860076b61d237471eaf72a98b6922ac9b7d2b36b6a2b3c&scene=21#wechat_redirect
-
     /**
      * 在一个窗口内假如出现次数最多的那个字符出现的次数是a，窗口的长度是b，
      * todo 只要满足a+k>=b，就可以把窗口中的其他字符全部替换为出现次数最多的那个字符。
