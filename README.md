@@ -14,6 +14,7 @@
 &emsp; [外部排序](/docs/function/sort/externalSort.md)  
 [查找算法](/docs/function/search.md)  
 &emsp; [二分查找](/docs/function/BinarySearch.md)  
+&emsp; 【双指针与滑动窗口】  
 &emsp; [双指针法](/docs/function/DoublePointer.md)  
 &emsp; [滑动窗口](/docs/function/SlidingWindow.md)  
 [基本数据结构](/docs/function/structure/structure.md)  
@@ -27,7 +28,7 @@
 &emsp; &emsp; [红黑树](/docs/function/structure/redBlack.md)  
 &emsp; [B树](/docs/function/structure/BTree.md)  
 &emsp; [二叉堆](/docs/function/structure/binaryReactor.md)  
-[字符串](/docs/function/structure/String.md)  
+&emsp; [字符串](/docs/function/structure/String.md)  
 [算法方法](/docs/function/algorithmicIdea.md)  
 &emsp; [贪心](/docs/function/Greedy.md)  
 &emsp; [递归](/docs/function/recursion.md)  

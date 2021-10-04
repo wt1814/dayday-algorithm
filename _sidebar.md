@@ -8,6 +8,7 @@
     * [外部排序](/docs/function/sort/externalSort.md)  
 * [查找算法](/docs/function/search.md)  
     * [二分查找](/docs/function/BinarySearch.md)  
+* 双指针与滑动窗口
     * [双指针法](/docs/function/DoublePointer.md)  
     * [滑动窗口](/docs/function/SlidingWindow.md)  
 * [基本数据结构](/docs/function/structure/structure.md)      
@@ -21,7 +22,7 @@
         * [红黑树](/docs/function/structure/redBlack.md)  
     * [B树](/docs/function/structure/BTree.md)  
     * [二叉堆](/docs/function/structure/binaryReactor.md)   
-* [字符串](/docs/function/structure/String.md)  
+    * [字符串](/docs/function/structure/String.md)  
 * [算法方法](/docs/function/algorithmicIdea.md)  
     * [贪心](/docs/function/Greedy.md)  
     * [递归](/docs/function/recursion.md)  
