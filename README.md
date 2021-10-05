@@ -32,6 +32,7 @@
 [算法思想](/docs/function/algorithmicIdea.md)  
 &emsp; [递归](/docs/function/recursion.md)  
 &emsp; [回溯](/docs/function/recall.md)  
+&emsp; [BFS](/docs/function/BFS.md)  
 &emsp; [动态规划](/docs/function/dynamic.md)  
 &emsp; &emsp; [备忘录与动态规划](/docs/function/MemorandumAndDynamic.md)  
 &emsp; &emsp; [动态规划解题](/docs/function/DynamicSolve.md)  
