@@ -25,7 +25,14 @@
 &emsp; **<font color = "clime">栈、队列与数组一样，都是顺序存储方式。</font>**    
 
 ## 1.1. 栈Stack  
-<!-- https://www.cnblogs.com/ysocean/p/7911910.html 
+<!-- 
+单调栈
+ 【西法带你学算法】单调栈解题模板秒杀八道题 
+ https://mp.weixin.qq.com/s/Mb8PAxMj2KLTQ1QrCh8XAA
+  单调栈解题模板秒杀三道算法题 
+  https://mp.weixin.qq.com/s/KYfjBejo84AmajnPZNs5nA
+
+https://www.cnblogs.com/ysocean/p/7911910.html 
 &emsp; **栈与递归：**用非递归写递归，都需要用到栈。  
 -->
 &emsp; **栈的实现：**既可以用「数组」来实现一个栈，也可以用「链表」来实现一个栈。  

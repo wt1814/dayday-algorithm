@@ -1,20 +1,22 @@
 
 
 <!-- 
+还不懂这八大算法思想
+https://baijiahao.baidu.com/s?id=1672756028135592643&wfr=spider&for=pc
+https://blog.csdn.net/weixin_42137700/article/details/86777003
+
+
+
 一文图解分治算法和思想 
 https://mp.weixin.qq.com/s/kRBAwF5xAV54AqdvmMLxAg
-揭秘回溯算法 
-https://mp.weixin.qq.com/s/yH6cLfOBjMJdbprdo3c4mg
-拜托，别再问我贪心算法了！ 
-https://mp.weixin.qq.com/s?__biz=MzI5MTU1MzM3MQ==&mid=2247483945&idx=1&sn=6f5b0d8c0ac60f40068986738d038a4d&scene=21#wechat_redirect
-贪心算法
-https://blog.csdn.net/qfikh/article/details/51959226
+
+
+
 动态规划总结——经典问题总结
 https://blog.csdn.net/qfikh/article/details/51954901
 五大常用算法之五：分支限界法
 https://blog.csdn.net/qfikh/article/details/51966332
-五大常用算法之四：回溯法
-https://blog.csdn.net/qfikh/article/details/51960331 
+
 你说你会位运算，那你用位运算来解下八皇后问题吧 
 https://mp.weixin.qq.com/s?__biz=MzI5MTU1MzM3MQ==&mid=2247483994&idx=1&sn=2baad696e0f74986195c3bcc7db3816e&scene=21#wechat_redirect
 -->

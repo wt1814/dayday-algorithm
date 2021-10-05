@@ -2,8 +2,7 @@
 
 # 大话算法
 <!-- 
-一个快速排序这么多细节？ 
-https://mp.weixin.qq.com/s/-jhXzU3RzMWMWtmkFxknEQ
+
 
 西法的刷题秘籍 2.0
 https://mp.weixin.qq.com/s/oL8x6cxL4WGicnhi1hZkVQ

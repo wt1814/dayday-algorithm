@@ -37,6 +37,9 @@
 手撕 9大排序算法
 https://mp.weixin.qq.com/s/snBEpUsQ8ZhHLLuNarwqgA
 
+一个快速排序这么多细节？ 
+https://mp.weixin.qq.com/s/-jhXzU3RzMWMWtmkFxknEQ
+
 -->
 
 ## 1.1. 冒泡排序  

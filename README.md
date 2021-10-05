@@ -5,7 +5,7 @@
 
 # 算法小抄  
 [总结](/docs/function/summary.md)  
-[算法基础](/docs/function/basics.md)  
+[Java基础语法](/docs/function/basics.md)  
 [算法基本概念](/docs/function/notion.md)  
 &emsp; [时间复杂度](/docs/function/TimeComplexity.md)  
 [排序算法](/docs/function/sort.md)  
@@ -14,7 +14,7 @@
 &emsp; [外部排序](/docs/function/sort/externalSort.md)  
 [查找算法](/docs/function/search.md)  
 &emsp; [二分查找](/docs/function/BinarySearch.md)  
-&emsp; 【双指针与滑动窗口】  
+【双指针与滑动窗口】  
 &emsp; [双指针法](/docs/function/DoublePointer.md)  
 &emsp; [滑动窗口](/docs/function/SlidingWindow.md)  
 [基本数据结构](/docs/function/structure/structure.md)  
@@ -29,13 +29,13 @@
 &emsp; [B树](/docs/function/structure/BTree.md)  
 &emsp; [二叉堆](/docs/function/structure/binaryReactor.md)  
 &emsp; [字符串](/docs/function/structure/String.md)  
-[算法方法](/docs/function/algorithmicIdea.md)  
-&emsp; [贪心](/docs/function/Greedy.md)  
+[算法思想](/docs/function/algorithmicIdea.md)  
 &emsp; [递归](/docs/function/recursion.md)  
 &emsp; [回溯](/docs/function/recall.md)  
 &emsp; [动态规划](/docs/function/dynamic.md)  
 &emsp; &emsp; [备忘录与动态规划](/docs/function/MemorandumAndDynamic.md)  
 &emsp; &emsp; [动态规划解题](/docs/function/DynamicSolve.md)  
+&emsp; [贪心](/docs/function/Greedy.md)  
 [其他数据结构](/docs/function/otherStructure.md)  
 &emsp; [跳跃表](/docs/function/SkipList.md)  
 &emsp; [位图](/docs/function/BitMap.md)  
