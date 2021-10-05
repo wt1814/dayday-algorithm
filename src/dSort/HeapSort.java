@@ -59,6 +59,7 @@ public class HeapSort {
     public static void downAdjust(int[] array, int parentIndex, int length) {
         // temp保存父节点值，用于最后的赋值
         int temp = array[parentIndex];
+
         int childIndex = 2 * parentIndex + 1; // 先获得左孩子
         while (childIndex < length) {
             // 如果有右孩子，且右孩子大于左孩子的值，则定位到右孩子
@@ -78,6 +79,7 @@ public class HeapSort {
             parentIndex = childIndex;
             childIndex = 2 * childIndex + 1;
         }
+
         array[parentIndex] = temp;
     }
 
