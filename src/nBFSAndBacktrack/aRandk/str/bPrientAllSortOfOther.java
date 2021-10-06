@@ -1,4 +1,4 @@
-package nBFSAndBacktrack.aRandk.num;
+package nBFSAndBacktrack.aRandk.str;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * todo 回溯
  * 找到所有所有可能的组合，如有必要再去重
  */
-public class ePrientAllSortOfOther {
+public class bPrientAllSortOfOther {
 
 
     public static void main(String[] args) {

@@ -1,12 +1,11 @@
-package nBFSAndBacktrack.aRandk.num;
+package nBFSAndBacktrack.aRandk.str;
 
 import java.util.*;
-
 
 /**
  * 字符串全排列
  */
-public class ePrientAllSortOfOneself {
+public class aPrientAllSortOfOneself {
 
     public static void main(String[] args) {
 

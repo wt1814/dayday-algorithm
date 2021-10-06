@@ -11,6 +11,7 @@ public class bSplitToPalindromes {
     // *** https://mp.weixin.qq.com/s/SrBfADlsOXjeOX4Cr4pQNg
     // https://leetcode-cn.com/problems/palindrome-partitioning/
     // https://blog.csdn.net/zjg379569986/article/details/102505694
+    // https://programmercarl.com/0131.%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2.html#%E6%80%BB%E7%BB%93
 
     public static void main(String[] args) {
 

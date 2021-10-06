@@ -3,9 +3,9 @@ package nBFSAndBacktrack.aRandk.num;
 import java.util.Arrays;
 
 /**
- * 数组全排列
+ * 46. 数组全排列
  */
-public class gPrientAllSort {
+public class bPrientAllSortOfther {
 
     public static void main(String[] args) {
 
@@ -14,6 +14,9 @@ public class gPrientAllSort {
 
     }
 
+    // https://programmercarl.com/0046.%E5%85%A8%E6%8E%92%E5%88%97.html
+    // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247492108&idx=1&sn=218469577378cca2c29818fa98b82bac&chksm=fb42712ccc35f83af932533cdc8b46d4adb8d0b8f06841c588a9158f3aa5dc3c69d53b4c0704&scene=21#wechat_redirect
+    // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247492156&idx=1&sn=74650c2009af6631eb5705a2a33f955e&chksm=fb42711ccc35f80ae79938933fde5befcffd4fb5caf4e5977dabcde2564d8c052ac9a560fd73&scene=21#wechat_redirect
     /**
      *
      * @param arr  代表全排列数字组成的数组

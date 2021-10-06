@@ -107,6 +107,14 @@ https://blog.csdn.net/u014303647/article/details/88328526
 ## 1.3. 回溯法模板
 
 <!-- 
+
+回溯法模版
+https://mp.weixin.qq.com/s/trILKSiN9EoS58pXmvUtUQ
+https://labuladong.gitbook.io/algo/mu-lu-ye/hui-su-suan-fa-xiang-jie-xiu-ding-ban
+
+-->
+
+<!-- 
 https://www.cnblogs.com/dreamyu/p/13210713.html
 -->
 

@@ -1,48 +1,16 @@
 package nBFSAndBacktrack.bCombine.num;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /**
- * 组合总和
- * 给定一个无重复元素的数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。
- * 1. candidates 中的数字可以无限制重复被选取。
- * 2. candidates 中的每个数字在每个组合中只能使用一次。
+ * 第77题. 组合
+ * 给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。
+ * 示例: 输入: n = 4, k = 2 输出: [ [2,4], [3,4], [2,3], [1,2], [1,3], [1,4], ]
  */
 public class aCombinationSum {
 
+    // https://programmercarl.com/0077.%E7%BB%84%E5%90%88.html#%E6%80%9D%E8%B7%AF
+    // https://programmercarl.com/0077.%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC
 
-    List<List<Integer>> res=new ArrayList();
-    List<Integer> temp=new ArrayList();
-    int target=0;
-
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        if(candidates.length<=0) return res;
-        this.target=target;
-        Arrays.sort(candidates);
-        List<Integer> temp=new ArrayList();
-        deep(candidates,0,0,temp);
-        return res;
-    }
-
-    //index的作用为剪去那些下边枝条值小于上边枝条值的分支
-    public void deep(int[] candidates,int value,int index, List<Integer> temp){
-        if(value >target) {
-            return ;
-        }
-
-        if(value==target) {
-            res.add(new ArrayList(temp));
-        }
-        if(value<target){
-            for(int i=index;i<candidates.length;i++){
-                temp.add(candidates[i]);
-                deep(candidates,value+candidates[i],i,temp); //todo candidates 中的数字可以无限制重复被选取。
-                // deep(candidates,value+candidates[i],i+1,temp);  //todo candidates 中的每个数字在每个组合中只能使用一次。
-                temp.remove(temp.size()-1);
-            }
-        }
-    }
+    // https://mp.weixin.qq.com/s?__biz=MzUxNjY5NTYxNA==&mid=2247494135&idx=2&sn=3a17829d16a597246c20600a3a4bb2ce&scene=21#wechat_redirect
+    // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247485339&idx=1&sn=15eeae1e3e02c71519363c1fbc495ce7&chksm=fb4194bbcc361dad1df5e7762f21583b15fded5d4f6373615d5f82f0877fbaf511f650474c2a&scene=21#wechat_redirect
 
 }
