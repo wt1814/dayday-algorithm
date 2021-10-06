@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 分割回文串
+ * 551，回溯算法解分割回文串
  */
 public class bSplitToPalindromes {
 
@@ -12,6 +12,7 @@ public class bSplitToPalindromes {
     // https://leetcode-cn.com/problems/palindrome-partitioning/
     // https://blog.csdn.net/zjg379569986/article/details/102505694
     // https://programmercarl.com/0131.%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2.html#%E6%80%BB%E7%BB%93
+    // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247491154&idx=1&sn=de5214414d1e122530c67e035be7cef4&chksm=fb418d72cc360464a835ba9ec4f7b7f1f9f998245bfcd901c9af29fd072f153519305540d9a9&scene=21#wechat_redirect
 
     public static void main(String[] args) {
 

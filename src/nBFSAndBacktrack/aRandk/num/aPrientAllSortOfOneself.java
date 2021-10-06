@@ -10,6 +10,8 @@ import java.util.List;
 public class aPrientAllSortOfOneself {
 
 
+    // https://mp.weixin.qq.com/s/8DIZ9qZArmytsoGsnn7b8Q
+
     public static void main(String[] args) {
 
         int[] arr = {1,2,3};
