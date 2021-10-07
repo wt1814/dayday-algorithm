@@ -33,6 +33,9 @@ https://mp.weixin.qq.com/s/SnyN1Gn6DTLm0uJyp5l6CQ
 回溯算法和动态规划
 https://mp.weixin.qq.com/s/OyqQXQnyH_UzmxdytK2rTA
 
+
+西法的刷题秘籍
+
 -->
 
 ## 1.1. ~~动态规划基本概念-百度百科~~  
