@@ -16,6 +16,9 @@ public class aKnapsack {
         System.out.println(knapsack(N,W,wt,val));
     }
 
+
+
+    // https://mp.weixin.qq.com/s/RXfnhSpVBmVneQjDSUSAVQ
     /**
      *
      * @param N 状态一：背包剩余的容量

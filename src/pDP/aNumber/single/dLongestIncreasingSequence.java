@@ -3,6 +3,7 @@ package pDP.aNumber.single;
 import java.util.Arrays;
 
 /**
+ * 577，数组中的最长连续子序列
  * 最长递增子序列
  * 如果有多个答案，请输出其中 按数值(注：区别于按单个字符的ASCII码值)进行比较的 字典序最小的那个
  */

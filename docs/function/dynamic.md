@@ -22,6 +22,17 @@
 # 1. 动态规划
 <!-- 
 
+https://mp.weixin.qq.com/s/Cw39C9MY9Wr2JlcvBQZMcA
+1、到底什么才叫「最优⼦结构」，和动态规划什么关系。 2、为什么动态规划遍历 dp 数组的⽅式五花⼋门，有的正着遍历，有的倒 着遍历，有的斜着遍历。  
+https://mp.weixin.qq.com/s/qvlfyKBiXVX7CCwWFR-XKg
+
+https://mp.weixin.qq.com/s/YePeNnzBUSsfpApMFKqzAQ
+ 状态压缩技巧：动态规划的降维打击 
+https://mp.weixin.qq.com/s/SnyN1Gn6DTLm0uJyp5l6CQ
+
+回溯算法和动态规划
+https://mp.weixin.qq.com/s/OyqQXQnyH_UzmxdytK2rTA
+
 -->
 
 ## 1.1. ~~动态规划基本概念-百度百科~~  
@@ -255,3 +266,4 @@ https://www.bilibili.com/video/BV15B4y1P7X7
 &emsp; [动态规划解题](/docs/function/DynamicSolve.md)  
 ![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-57.png)  
 &emsp; 对动态规划进行空间压缩  
+

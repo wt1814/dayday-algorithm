@@ -5,6 +5,10 @@ package pDP.cTwoDimensional;
  */
 public class cMaximalSquare {
 
+
+    // https://mp.weixin.qq.com/s/nSQbgqcngC4KEA-GJb-o9Q
+    // https://mp.weixin.qq.com/s/QehNMzsisC9ZAPZyxCGBzw
+
     // 数据结构和算法 530
 
     public int maximalSquare(char[][] matrix) {

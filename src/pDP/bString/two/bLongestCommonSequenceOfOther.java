@@ -18,6 +18,8 @@ public class bLongestCommonSequenceOfOther {
 
     }
 
+
+    // *** https://mp.weixin.qq.com/s/ZhPEchewfc03xWv9VP3msg
     // todo 视频讲解 https://leetcode-cn.com/problems/longest-common-subsequence/solution/shi-pin-jiang-jie-shi-yong-dong-tai-gui-hua-qiu-ji/
 
     // 左神

@@ -1,7 +1,7 @@
 package pDP.bString.two;
 
 /**
- * 最长公共子序列
+ * 1143. 最长公共子序列
  * todo dp数组下标
  */
 public class bLongestCommonSequenceOfOneself {

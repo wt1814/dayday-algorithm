@@ -1,7 +1,7 @@
 package pDP.bString.two;
 
 /**
- * 两个字符串的最长公共子串
+ * 牛客题霸第127题. 两个字符串的最长公共子串
  */
 public class aLongestSubstring {
 

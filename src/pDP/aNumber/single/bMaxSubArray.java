@@ -1,7 +1,7 @@
 package pDP.aNumber.single;
 
 /**
- * 最大子序和
+ * 53. 最大子序和
  * 给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
  */
 public class bMaxSubArray {
@@ -13,6 +13,9 @@ public class bMaxSubArray {
         System.out.println(maxSubArray2(nums));
 
     }
+
+    // https://mp.weixin.qq.com/s/nrULqCsRsrPKi3Y-nUfnqg
+    // https://mp.weixin.qq.com/s/A1QjxToAE9bqRetsypJFog
 
     /////////////////////////////
     /**

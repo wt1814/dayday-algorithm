@@ -1,7 +1,7 @@
 package pDP.cTwoDimensional;
 
 /**
- * 矩阵的最小路径和
+ * 64. 矩阵的最小路径和
  * 给定一个 n * m 的矩阵 a，从左上角开始每次只能向右或者向下走，最后到达右下角的位置，路径上所有的数字累加起来就是路径和，输出所有的路径中最小的路径和。
  */
 public class aMinPathSum {
@@ -12,6 +12,8 @@ public class aMinPathSum {
         System.out.println(i);
     }
 
+
+    // https://mp.weixin.qq.com/s/SqNdZOu9vSMNQx37EkousQ
     /**
      * 第一行 只能从左往右  第一个元素 的值为 原数组的第一个元素 dp[0][0] = a[0][0]  dp[0][j] = a[0][j] + dp[0][j-1];
      * 第一列元素 只能从上往下 dp[i][0] = dp[i-1][0] + a[i][0]

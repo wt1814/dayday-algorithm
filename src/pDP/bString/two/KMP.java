@@ -19,5 +19,7 @@ public class KMP {
 
     // 重学KMP： https://mp.weixin.qq.com/s/MoRBHbS4hQXn7LcPdmHmIg
 
+    // https://mp.weixin.qq.com/s/r9pbkMyFyMAvmkf4QnL-1g
+
 
 }

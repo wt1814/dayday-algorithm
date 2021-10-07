@@ -1,4 +1,4 @@
-package qLRU;
+package rLRU;
 
 import java.util.HashMap;
 
