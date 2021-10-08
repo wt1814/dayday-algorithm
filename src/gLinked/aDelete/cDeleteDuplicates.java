@@ -5,7 +5,7 @@ import gLinked.ListNode;
 /**
  * 删除排序链表中的重复元素
  */
-public class fDeleteDuplicates {
+public class cDeleteDuplicates {
 
 
     public static void main(String[] args) {

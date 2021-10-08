@@ -5,7 +5,7 @@ import gLinked.ListNode;
 /**
  *
  */
-public class eDeleteNode {
+public class aDeleteNode {
 
     // todo 链表删除节点的两种方式
     // https://blog.csdn.net/yc1203968305/article/details/79278268

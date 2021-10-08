@@ -141,8 +141,9 @@ public class iCrossLink {
     public void print() {
         Node current = head;
         while (current!=null){
-            if(current.next!=null)
+            if(current.next!=null){
                 System.out.print(current.data+"->");
+            }
             else {
                 System.out.println(current.data);
             }

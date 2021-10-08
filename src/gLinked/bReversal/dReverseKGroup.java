@@ -33,7 +33,9 @@ public class dReverseKGroup {
             head = head.next;
         }
 
-        //分段使用头插法将链表反序
+        /**
+         * todo 分段使用头插法将链表反序
+         */
         for(int i=0; i<length/k; i++){
             //pre作为每一小段链表的头节点，负责衔接
             for(int j=1; j<k; j++){

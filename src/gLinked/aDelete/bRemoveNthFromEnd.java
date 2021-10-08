@@ -3,21 +3,23 @@ package gLinked.aDelete;
 /**
  * 删除链表节点
  */
-public class eRemoveNthFromEnd {
+public class bRemoveNthFromEnd {
+
+
 
     public static void main(String[] args) {
-        eRemoveNthFromEnd eRemoveNthFromEnd = new eRemoveNthFromEnd();
+        bRemoveNthFromEnd bRemoveNthFromEnd = new bRemoveNthFromEnd();
         int[] arr = {1,2,3,4,5};
         for (int i = 0; i < arr.length; i++) {
-            eRemoveNthFromEnd.addHead(arr[i]);
+            bRemoveNthFromEnd.addHead(arr[i]);
         }
-        eRemoveNthFromEnd.print();
+        bRemoveNthFromEnd.print();
 
-        eRemoveNthFromEnd.removeNodeByEndNum(eRemoveNthFromEnd.head,2);
-        eRemoveNthFromEnd.print(); // 打印 1，2，3，4
+        bRemoveNthFromEnd.removeNodeByEndNum(bRemoveNthFromEnd.head,2);
+        bRemoveNthFromEnd.print(); // 打印 1，2，3，4
 
-        eRemoveNthFromEnd.removeNthFromEnd(eRemoveNthFromEnd.head,1);
-        eRemoveNthFromEnd.print(); // 打印 1，2，3，4
+        bRemoveNthFromEnd.removeNthFromEnd(bRemoveNthFromEnd.head,1);
+        bRemoveNthFromEnd.print(); // 打印 1，2，3，4
     }
 
 
@@ -151,7 +153,7 @@ public class eRemoveNthFromEnd {
     private ListNode head;
     private int size;
 
-    public eRemoveNthFromEnd(){
+    public bRemoveNthFromEnd(){
         this.head = null;
         this.size = 0;
     }

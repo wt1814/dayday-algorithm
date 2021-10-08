@@ -1,12 +1,10 @@
 package gLinked.fTwo;
 
 import gLinked.ListNode;
-
 import java.util.ArrayList;
 
 /**
- * 合并k个已排序的链表 https://www.nowcoder.com/practice/65cfde9e5b9b4cf2b6bafa5f3ef33fa6?tpId=188&&tqId=38611&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
- *
+ * 合并k个已排序的链表
  */
 public class mergeKLists {
 
@@ -16,6 +14,7 @@ public class mergeKLists {
         return merge(lists,0,lists.size()-1);
     }
 
+    // 合并k个已排序的链表 https://www.nowcoder.com/practice/65cfde9e5b9b4cf2b6bafa5f3ef33fa6?tpId=188&&tqId=38611&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
     /**
      *
      * @param lists
