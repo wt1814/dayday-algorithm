@@ -4,14 +4,14 @@
 **<font color = "clime">好习惯：每个方法都有输出</font>**
 
 # 算法小抄  
-[总结](/docs/function/summary.md)  
+[总结](/docs/summary.md)  
 [Java基础语法](/docs/function/basics.md)  
 [算法基本概念](/docs/function/notion.md)  
 &emsp; [时间复杂度](/docs/function/TimeComplexity.md)  
-[排序算法](/docs/function/sort.md)  
-&emsp; [比较排序](/docs/function/sort/compare.md)  
-&emsp; [非比较排序](/docs/function/sort/noCompare.md)  
-&emsp; [外部排序](/docs/function/sort/externalSort.md)  
+[排序算法](/docs/function/a-sort/sort.md)  
+&emsp; [比较排序](/docs/function/a-sort/compare.md)  
+&emsp; [非比较排序](/docs/function/a-sort/noCompare.md)  
+&emsp; [外部排序](/docs/function/a-sort/externalSort.md)  
 [查找算法](/docs/function/search.md)  
 &emsp; [二分查找](/docs/function/BinarySearch.md)  
 【双指针与滑动窗口】  
