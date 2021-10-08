@@ -156,21 +156,26 @@ public class eMergeSort {
         int p1=start, p2=mid+1, p=0;
         //比较两个小集合的元素，依次放入大集合
         while(p1<=mid && p2<=end){
-            if(array[p1]<=array[p2])
+            if(array[p1]<=array[p2]){
                 tempArray[p++]=array[p1++];
-            else
+            }
+            else{
                 tempArray[p++]=array[p2++];
+            }
         }
         //左侧小集合还有剩余，依次放入大集合尾部
-        while(p1<=mid)
+        while(p1<=mid){
             tempArray[p++]=array[p1++];
+        }
         //右侧小集合还有剩余，依次放入大集合尾部
-        while(p2<=end)
+        while(p2<=end){
             tempArray[p++]=array[p2++];
+        }
 
         //把大集合的元素复制回原数组
-        for (int i=0; i<tempArray.length; i++)
+        for (int i=0; i<tempArray.length; i++){
             array[i+start]=tempArray[i];
+        }
     }
 
 

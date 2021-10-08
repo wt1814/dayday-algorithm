@@ -21,7 +21,7 @@ public class eMergeSortOfKLists {
         return mergeKLists(lists,0,lists.size()-1);
     }
 
-    public ListNode mergeKLists(ArrayList<ListNode> lists,int low,int high){
+    public ListNode mergeKLists(ArrayList<ListNode> lists, int low, int high){
         if(low>=high){
             return lists.get(low);
         }
@@ -47,4 +47,5 @@ public class eMergeSortOfKLists {
         }
 
     }
+
 }

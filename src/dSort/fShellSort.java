@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 希尔排序
  */
-public class eShellSort {
+public class fShellSort {
 
 
     //希尔 根据步长分组。步长越长，分组越少；每一步相当于插入排序；直至步长为1时，相当于冒泡排序。
@@ -53,6 +53,7 @@ public class eShellSort {
             System.out.println("++++++一趟后："+Arrays.toString(array));
         }
         return array;
+
     }
 
 

@@ -46,10 +46,36 @@ public class HeapSort {
     }
 
 
-
-    ////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
+     * todo 写法简单
+     * @param arr
+     * @param i
+     * @param length
+     */
+    public static void adjustHeap(int[] arr, int i, int length){
+
+        int temp = arr[i]; //先取出当前元素i
+        for(int k=i*2+1;k<length;k=k*2+1){ //从i结点的左子结点开始，也就是2i+1处开始
+            if(k+1<length && arr[k]<arr[k+1]){ //处理左节点还是右节点？如果左子结点小于右子结点，k指向右子结点
+                k++;
+            }
+            if(arr[k] >temp){ //如果子节点大于父节点，将子节点值赋给父节点（不用进行交换）
+                arr[i] = arr[k];
+                i = k;
+            }else{
+                break;
+            }
+        }
+        arr[i] = temp; //将temp值放到最终的位置
+
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////
+
+    /**
+     * todo 容易理解
      * todo https://www.cnblogs.com/jingmoxukong/p/4303826.html#%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90
      * 下沉调整
      * @param array 待调整的堆
@@ -62,8 +88,7 @@ public class HeapSort {
 
         int childIndex = 2 * parentIndex + 1; // 先获得左孩子
         while (childIndex < length) {
-            // 如果有右孩子，且右孩子大于左孩子的值，则定位到右孩子
-            // 如果有右孩子结点，并且右孩子结点的值大于左孩子结点，则选取右孩子结点
+            // 如果有右孩子结点，并且右孩子结点的值大于左孩子结点，则定位到右孩子结点
             if (childIndex + 1 < length && array[childIndex + 1] > array[childIndex]) {
                 childIndex++;
             }
@@ -75,32 +100,13 @@ public class HeapSort {
             // 把孩子结点的值赋给父结点
             array[parentIndex] = array[childIndex];
 
-            //todo 选取孩子结点的左孩子结点,继续向下筛选
+            //todo 选取孩子结点的左孩子结点，继续向下筛选
             parentIndex = childIndex;
             childIndex = 2 * childIndex + 1;
         }
 
         array[parentIndex] = temp;
     }
-
-
-    public static void adjustHeap(int []arr,int i,int length){
-
-        int temp = arr[i];//先取出当前元素i
-        for(int k=i*2+1;k<length;k=k*2+1){//从i结点的左子结点开始，也就是2i+1处开始
-            if(k+1<length && arr[k]<arr[k+1]){//处理左节点还是右节点？如果左子结点小于右子结点，k指向右子结点
-                k++;
-            }
-            if(arr[k] >temp){//如果子节点大于父节点，将子节点值赋给父节点（不用进行交换）
-                arr[i] = arr[k];
-                i = k;
-            }else{
-                break;
-            }
-        }
-        arr[i] = temp;//将temp值放到最终的位置
-    }
-
 
 
 }

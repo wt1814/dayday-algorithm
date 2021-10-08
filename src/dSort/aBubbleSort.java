@@ -42,13 +42,11 @@ public class aBubbleSort {
         //
         // 要比到这里为止
         int sortBorder = array.length - 1;
-        for(int i = 0; i < array.length; i++)
-        {
+        for(int i = 0; i < array.length; i++) {
             //有序标记，每一轮的初始是true
             boolean isSorted = true;
 
-            for(int j = 0; j < sortBorder; j++)
-            {
+            for(int j = 0; j < sortBorder; j++) {
                 if(array[j] > array[j+1])
                 {
                     tmp = array[j];
