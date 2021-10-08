@@ -1,4 +1,4 @@
-package lSlidingWindow.DoublePointer;
+package fSlidingWindow.DoublePointer;
 
 /**
  *  514，双指针解替换后的最长重复字符

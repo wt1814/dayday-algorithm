@@ -3,7 +3,7 @@ package hStack.MonotoneStack;
 /**
  * 739.温度 https://leetcode-cn.com/problems/daily-temperatures/
  */
-public class DailyTemperatures {
+public class cDailyTemperatures {
 
     /**
      * 我们可以维持一个单调递减的栈，表示每天的温度；为了方便计算天数差，我们这里存放位

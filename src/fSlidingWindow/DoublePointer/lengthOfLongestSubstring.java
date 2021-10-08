@@ -1,4 +1,4 @@
-package lSlidingWindow.DoublePointer;
+package fSlidingWindow.DoublePointer;
 
 /**
  *  398，双指针求无重复字符的最长子串

@@ -1,4 +1,4 @@
-package lSlidingWindow.DoublePointer;
+package fSlidingWindow.DoublePointer;
 
 /**
  *  407，动态规划和滑动窗口解决最长重复子数组

@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * 利用栈实现字符串逆序
  */
-public class aStringReversal {
+public class bStringReversal {
 
     public static void main(String[] args){
 

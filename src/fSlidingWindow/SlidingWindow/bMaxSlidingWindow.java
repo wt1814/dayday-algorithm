@@ -1,4 +1,4 @@
-package lSlidingWindow.SlidingWindow;
+package fSlidingWindow.SlidingWindow;
 
 /**
  *  443，滑动窗口最大值

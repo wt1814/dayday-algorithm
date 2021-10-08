@@ -1,4 +1,4 @@
-package lSlidingWindow.SlidingWindow;
+package fSlidingWindow.SlidingWindow;
 
 import java.util.HashMap;
 import java.util.Map;

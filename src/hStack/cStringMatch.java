@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * 利用栈判断分隔符是否匹配
  */
-public class bStringMatch {
+public class cStringMatch {
 
     public static void main(String[] args){
 

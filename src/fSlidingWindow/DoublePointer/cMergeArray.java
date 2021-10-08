@@ -1,4 +1,4 @@
-package lSlidingWindow.DoublePointer;
+package fSlidingWindow.DoublePointer;
 
 /**
  * 合并两个有序的数组

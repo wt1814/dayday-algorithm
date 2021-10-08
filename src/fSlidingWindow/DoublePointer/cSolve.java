@@ -1,4 +1,4 @@
-package lSlidingWindow.DoublePointer;
+package fSlidingWindow.DoublePointer;
 
 /**
  * 最长重复子串

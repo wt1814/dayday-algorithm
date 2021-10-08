@@ -5,22 +5,22 @@ import java.util.Stack;
 /**
  * 用两个栈实现队列
  */
-public class cStackQueue {
+public class eStackQueue {
 
 
     // 栈实现队列，用两个栈实现队列方法详解（含实现代码） http://data.biancheng.net/view/110.html
 
     public static void main(String[] args)throws Exception{
 
-        cStackQueue cStackQueue = new cStackQueue();
-        cStackQueue.push(1);
-        cStackQueue.push(2);
-        cStackQueue.push(3);
+        eStackQueue eStackQueue = new eStackQueue();
+        eStackQueue.push(1);
+        eStackQueue.push(2);
+        eStackQueue.push(3);
 
-        System.out.println(cStackQueue.pop());
-        System.out.println(cStackQueue.pop());
-        System.out.println(cStackQueue.pop());
-        System.out.println(cStackQueue.pop());
+        System.out.println(eStackQueue.pop());
+        System.out.println(eStackQueue.pop());
+        System.out.println(eStackQueue.pop());
+        System.out.println(eStackQueue.pop());
     }
 
 
