@@ -79,7 +79,7 @@ https://mp.weixin.qq.com/s/OyqQXQnyH_UzmxdytK2rTA
 &emsp; 动态规划的转移方程就是(暴力递归中)决策过程中的决策。  
 
 ## 1.2. 入门案例走进动态规划
-&emsp; [备忘录与动态规划](/docs/function/MemorandumAndDynamic.md)  
+&emsp; [备忘录与动态规划](/docs/function/e-recursion/MemorandumAndDynamic.md)  
 &emsp; 用一句话解释动态规划就是 `“记住你之前做过的事”`，如果更准确些，其实是 `“记住你之前得到的答案”`。  
 
 ## 1.3. 动态规划解题步骤小结  
@@ -266,7 +266,7 @@ https://www.bilibili.com/video/BV15B4y1P7X7
 -->
 
 ## 1.5. 动态规划解题  
-&emsp; [动态规划解题](/docs/function/DynamicSolve.md)  
+&emsp; [动态规划解题](/docs/function/e-recursion/DynamicSolve.md)  
 ![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-57.png)  
 &emsp; 对动态规划进行空间压缩  
 

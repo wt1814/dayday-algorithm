@@ -31,6 +31,16 @@ latex 插件我用的是 tex-all-the-things。地址：https://chrome.google.com
 2. 算法建模：构建算法流程。  
 3. 构造算法流程可以 ~~想象~~
 
+## java语法基础
+
+```java
+int index = 0;//遍历字符串中字符的位置
+
+for (; index < length; ++index) {  // todo for循环里的计数，可以提前定义
+    
+}
+```
+
 ## 排序
 
 |排序算法|	平均时间复杂度|	最好|	最坏|	空间复杂度|	稳定性|

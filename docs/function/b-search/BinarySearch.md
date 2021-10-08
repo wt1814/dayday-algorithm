@@ -28,12 +28,16 @@ https://mp.weixin.qq.com/s/zteJKZ6jy5RdhWUTM10kdQ
 ## 1.2. 二分查找模版   
 
 ### 1.2.1. 模版
+
+&emsp; 迭代：  
 ```java
 int start = 0, end = nums.length - 1;
 while (start + 1 < end) {
     int mid = start + (end - start) / 2;
-    
-    if (...) {
+    if (...){
+        return mid;
+    }
+    else if (...) {
         start = mid;
     } else {
         end = mid;
