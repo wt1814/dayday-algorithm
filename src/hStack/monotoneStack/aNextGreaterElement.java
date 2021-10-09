@@ -47,8 +47,9 @@ public class aNextGreaterElement {
             //如果栈顶元素小于num，说明栈顶元素遇到了右边
             //第一个比他大的值，然后栈顶元素出栈，记录下
             //这个值。
-            while (!stack.empty() && stack.peek() < num)
+            while (!stack.empty() && stack.peek() < num){
                 map.put(stack.pop(), num);
+            }
             //当前元素入栈
             stack.push(num);
         }
