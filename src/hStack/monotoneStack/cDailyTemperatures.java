@@ -1,18 +1,42 @@
 package hStack.monotoneStack;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 /**
  * 739. 温度
+ * 请根据每日 气温 列表 temperatures ，请计算在每一天需要等几天才会有更高的温度。如果气温在这之后都不会升高，请在该位置用 0 来代替。
+ *
+ * 示例 1:
+ * 输入: temperatures = [73,74,75,71,69,72,76,73]
+ * 输出: [1,1,4,2,1,1,0,0]
  */
 public class cDailyTemperatures {
 
-    /**
-     * 我们可以维持一个单调递减的栈，表示每天的温度；为了方便计算天数差，我们这里存放位
-     * 置（即日期）而非温度本身。我们从左向右遍历温度数组，对于每个日期 p，如果 p 的温度比栈
-     * 顶存储位置 q 的温度高，则我们取出 q，并记录 q 需要等待的天数为 p p q；我们重复这一过程，
-     * 直到 p 的温度小于等于栈顶存储位置的温度（或空栈）时，我们将 p 插入栈顶，然后考虑下一天。
-     * 在这个过程中，栈内数组永远保持单调递减，避免了使用排序进行比较。最后若栈内剩余一些日
-     * 期，则说明它们之后都没有出现更暖和的日期。
-     */
+
+    public static void main(String[] args) {
+
+    }
+
     // https://leetcode-cn.com/problems/daily-temperatures/
+    /**
+     *
+     * @param temperatures
+     * @return
+     */
+    public int[] dailyTemperatures(int[] temperatures) {
+        int length = temperatures.length;
+        int[] ans = new int[length];
+        Deque<Integer> stack = new LinkedList<Integer>();
+        for (int i = 0; i < length; i++) {
+            int temperature = temperatures[i];
+            while (!stack.isEmpty() && temperature > temperatures[stack.peek()]) {
+                int prevIndex = stack.pop();
+                ans[prevIndex] = i - prevIndex;
+            }
+            stack.push(i);
+        }
+        return ans;
+    }
 
 }

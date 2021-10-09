@@ -3,7 +3,7 @@ package hStack;
 import java.util.Stack;
 
 /**
- * 利用栈判断分隔符是否匹配
+ * 20. 有效的括号
  */
 public class cStringMatch {
 

@@ -14,7 +14,7 @@ import java.util.Stack;
  *     数字 2 找不到下一个更大的数；
  *     第二个 1 的下一个最大的数需要循环搜索，结果也是 2。
  */
-public class bNextGreaterElements {
+public class dNextGreaterElements {
 
     // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490294&idx=1&sn=ef2e83f712d4e410ec80689f50e68b5c&chksm=fb4189d6cc3600c0bfffb56277b8194f5818c944a17cc6493e8d45e4123f76cc030b2f01f2ad&scene=21#wechat_redirect
 
