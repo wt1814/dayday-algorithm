@@ -1,4 +1,4 @@
-package fSlidingWindow.DoublePointer;
+package fSlidingWindow.doublePointer;
 
 /**
  * 539，双指针解删除有序数组中的重复项

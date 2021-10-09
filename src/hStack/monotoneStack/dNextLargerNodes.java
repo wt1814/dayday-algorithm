@@ -1,4 +1,4 @@
-package hStack.MonotoneStack;
+package hStack.monotoneStack;
 
 /**
  * 386，链表中的下一个更大节点

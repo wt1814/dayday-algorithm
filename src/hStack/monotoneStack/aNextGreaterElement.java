@@ -1,4 +1,4 @@
-package hStack.MonotoneStack;
+package hStack.monotoneStack;
 
 import java.util.HashMap;
 import java.util.Map;

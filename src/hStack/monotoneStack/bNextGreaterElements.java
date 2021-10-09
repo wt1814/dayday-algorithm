@@ -1,4 +1,4 @@
-package hStack.MonotoneStack;
+package hStack.monotoneStack;
 
 /**
  * 523，单调栈解下一个更大元素 II

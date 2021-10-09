@@ -1,9 +1,13 @@
-package fSlidingWindow.DoublePointer;
+package fSlidingWindow.slidingWindow;
 
 /**
  *  514，双指针解替换后的最长重复字符
  */
 public class dCharacterReplacement {
+
+
+
+
 
     // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490163&idx=1&sn=4cbb66581d85a6a31019e0a25e3da21a&chksm=fb418953cc3600454f3c0e765f6e1c860076b61d237471eaf72a98b6922ac9b7d2b36b6a2b3c&scene=21#wechat_redirect
     /**
@@ -16,7 +20,7 @@ public class dCharacterReplacement {
      * @param k
      * @return
      */
-    public int characterReplacement(String s, int k) {
+    public static int characterReplacement(String s, int k) {
         //字符串的长度
         int length = s.length();
         //用来存放对应字母的个数，比如字母A的个数是map[0],

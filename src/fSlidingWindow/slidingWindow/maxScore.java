@@ -1,4 +1,4 @@
-package fSlidingWindow.SlidingWindow;
+package fSlidingWindow.slidingWindow;
 
 /**
  * 549，滑动窗口解可获得的最大点数

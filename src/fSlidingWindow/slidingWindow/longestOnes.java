@@ -1,4 +1,4 @@
-package fSlidingWindow.SlidingWindow;
+package fSlidingWindow.slidingWindow;
 
 /**
  * 521，滑动窗口解最大连续1的个数 III

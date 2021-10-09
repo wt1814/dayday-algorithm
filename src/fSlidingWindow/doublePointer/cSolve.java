@@ -1,7 +1,16 @@
-package fSlidingWindow.DoublePointer;
+package fSlidingWindow.doublePointer;
 
 /**
- * 最长重复子串
+ * NC142 最长重复子串
+ *
+ * 输入："ababc"
+ * 返回值：4
+ * 说明：abab为最长的重复字符子串，长度为4
+ *
+ * 输入："abcab"
+ * 返回值：0
+ * 说明：该字符串没有重复字符子串
+ *
  */
 public class cSolve {
 

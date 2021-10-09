@@ -1,4 +1,4 @@
-package fSlidingWindow.SlidingWindow;
+package fSlidingWindow.slidingWindow;
 
 /**
  * 209. 长度最小的子数组
