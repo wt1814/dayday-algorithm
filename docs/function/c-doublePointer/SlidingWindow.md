@@ -12,11 +12,8 @@
 
 <!-- 
 https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583ad935e76e9a3f6793792e60734&scene=21#wechat_redirect
-
-https://www.cnblogs.com/dreamy-xay/p/14221664.html
 滑动窗口算法
 https://www.cnblogs.com/huansky/p/13488234.html
-
 -->
 
 ## 1.1. 双指针与滑动窗口
@@ -49,6 +46,16 @@ https://www.cnblogs.com/huansky/p/13488234.html
 * 窗⼝⼤⼩不固定，求解最⼩的满⾜条件的窗⼝（上⾯的 209 题就属于 这种） 
 
 后⾯两种我们统称为 可变窗⼝ 。当然不管是哪种类型基本的思路都是⼀ 样的，不⼀样的仅仅是代码细节。  
+
+
+## 基本示例
+<!-- 
+https://www.cnblogs.com/huansky/p/13488234.html
+-->
+&emsp; 如下图所示，设定滑动窗口（window）大小为 3，当滑动窗口每次划过数组时，计算当前滑动窗口中元素的和，得到结果 res。  
+![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-59.png)  
+&emsp; 可以用来解决一些查找满足一定条件的连续区间的性质（长度等）的问题。由于区间连续，因此当区间发生变化时，可以通过旧有的计算结果对搜索空间进行剪枝，这样便减少了重复计算，降低了时间复杂度。`往往类似于“ 请找到满足 xx 的最 x 的区间（子串、子数组）的 xx ”这类问题都可以使用该方法进行解决。`  
+&emsp; 需要注意的是，滑动窗口算法更多的是一种思想，而非某种数据结构的使用。  
 
 
 ## 1.2. 滑动窗口模版

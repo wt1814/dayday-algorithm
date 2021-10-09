@@ -1,4 +1,4 @@
-package fSlidingWindow.doublePointer;
+package fSlidingWindow.slidingWindow;
 
 import java.util.HashMap;
 
@@ -9,7 +9,7 @@ import java.util.HashMap;
  *     输出: 3
  *     解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
  */
-public class dLengthOfLongestSubstring {
+public class eLengthOfLongestSubstring {
 
 
 

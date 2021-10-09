@@ -1,4 +1,4 @@
-package fSlidingWindow.doublePointer;
+package fSlidingWindow.slidingWindow;
 
 /**
  * NC142 最长重复子串
@@ -12,7 +12,7 @@ package fSlidingWindow.doublePointer;
  * 说明：该字符串没有重复字符子串
  *
  */
-public class cSolve {
+public class gSolve {
 
     public static void main(String[] args){
         int solve = solve("abcdiiiiiiiiiiiiadiiiiiiiiiiabcr'");
