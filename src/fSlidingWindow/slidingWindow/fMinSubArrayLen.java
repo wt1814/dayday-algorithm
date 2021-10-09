@@ -17,6 +17,9 @@ package fSlidingWindow.slidingWindow;
  */
 public class fMinSubArrayLen {
 
+    public static void main(String[] args) {
+
+    }
 
     /**
      * 定义两个指针 start\textit{start}start 和 end\textit{end}end 分别表示子数组（滑动窗口窗口）的开始位置和结束位置，维护变量 sum\textit{sum}sum 存储子数组中的元素和（即从 nums[start]\text{nums}[\textit{start}]nums[start] 到 nums[end]\text{nums}[\textit{end}]nums[end] 的元素和）。
