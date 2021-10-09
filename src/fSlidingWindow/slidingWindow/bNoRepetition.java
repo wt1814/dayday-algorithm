@@ -3,7 +3,7 @@ package fSlidingWindow.slidingWindow;
 import java.util.HashMap;
 
 /**
- * todo 最长无重复子数组、最长无公共子串
+ * todo 最长无重复子数组
  * todo 最长重复子数组、最长公共子序列，采用动态规划
  */
 public class bNoRepetition {

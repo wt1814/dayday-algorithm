@@ -3,7 +3,7 @@ package fSlidingWindow.slidingWindow;
 import java.util.HashMap;
 
 /**
- *  398，双指针求无重复字符的最长子串
+ *  3. 双指针求无重复字符的最长子串
  *  给定一个字符串，请你找出其中不含有重复字符的最长子串的长度。
  *     输入: "abcabcbb"
  *     输出: 3
@@ -21,6 +21,7 @@ public class bLengthOfLongestSubstring {
      * @return
      */
     public static int lengthOfLongestSubstring(String s) {
+
         if (s.length() == 0){
             return 0;
         }
@@ -37,6 +38,7 @@ public class bLengthOfLongestSubstring {
         }
         //返回最大值
         return max;
+
     }
 
 
