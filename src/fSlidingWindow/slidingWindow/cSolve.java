@@ -12,7 +12,7 @@ package fSlidingWindow.slidingWindow;
  * 说明：该字符串没有重复字符子串
  *
  */
-public class gSolve {
+public class cSolve {
 
     public static void main(String[] args){
         int solve = solve("abcdiiiiiiiiiiiiadiiiiiiiiiiabcr'");

@@ -1,4 +1,4 @@
-package fSlidingWindow.slidingWindow;
+package fSlidingWindow.slidingWindow.twoArray;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * 76. 最小覆盖子串
  */
-public class cMinimumCoveringSubstringOfOneself {
+public class eMinimumCoveringSubstringOfOneself {
 
     public static void main(String[] args){
 
