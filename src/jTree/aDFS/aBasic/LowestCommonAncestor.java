@@ -3,10 +3,12 @@ package jTree.aDFS.aBasic;
 import jTree.TreeNode;
 
 /**
- * 在二叉树中找到两个节点的最近公共祖先
+ * 236. 二叉树的最近公共祖先
  */
 public class LowestCommonAncestor {
 
+
+    // https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/
 
     public int lowestCommonAncestor (TreeNode root, int o1, int o2) {
 

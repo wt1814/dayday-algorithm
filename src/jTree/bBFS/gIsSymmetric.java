@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * 二叉树是否对称
+ * 101. 对称二叉树
  */
 public class gIsSymmetric {
 
