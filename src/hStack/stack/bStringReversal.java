@@ -1,4 +1,4 @@
-package hStack;
+package hStack.stack;
 
 import java.util.Stack;
 
