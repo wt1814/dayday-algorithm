@@ -107,6 +107,14 @@ https://blog.csdn.net/u014303647/article/details/88328526
 https://programmercarl.com/0077.%E7%BB%84%E5%90%88.html#%E5%9B%9E%E6%BA%AF%E6%B3%95%E4%B8%89%E9%83%A8%E6%9B%B2
 -->
 
+输出参数、输入参数、操作下标  
+
+对于组合问题，什么时候需要startIndex呢？    
+我举过例子，如果是一个集合来求组合的话，就需要startIndex，例如：77.组合，216.组合总和III。    
+如果是多个集合取组合，各个集合之间相互不影响，那么就不用startIndex，例如：17.电话号码的字母组合  
+
+
+
 ## 1.3. 回溯法模板
 ![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-62.png)
 
