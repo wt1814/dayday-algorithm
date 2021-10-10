@@ -9,9 +9,6 @@ import java.util.List;
  */
 public class aPrientAllSortOfOneself {
 
-
-    // https://mp.weixin.qq.com/s/8DIZ9qZArmytsoGsnn7b8Q
-
     public static void main(String[] args) {
 
         int[] arr = {1,2,3};
@@ -20,13 +17,13 @@ public class aPrientAllSortOfOneself {
 
     }
 
+
     public static List<List<Integer>> permute(int[] nums) {
 
         List<List<Integer>> result = new ArrayList();
         permute1(result,nums,0);
         return result;
     }
-
 
     public static void permute1(List<List<Integer>> result,int[] nums,int index){
 
@@ -52,5 +49,7 @@ public class aPrientAllSortOfOneself {
         arr[i] = arr[j];
         arr[j] = t;
     }
+
+
 }
 
