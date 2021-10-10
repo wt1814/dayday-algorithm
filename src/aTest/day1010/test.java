@@ -1,2 +1,7 @@
-package aTest.day1010;public class test {
+package aTest.day1010;
+
+public class test {
+
+    
+
 }
