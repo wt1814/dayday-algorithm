@@ -20,8 +20,10 @@ public class gMaxPathSum {
     }
 
 
+
+    // https://mp.weixin.qq.com/s/EY3wOMmlVkX4Lzo6mfzFoQ
+    // https://blog.csdn.net/qq_28114615/article/details/86561069
     /**
-     * https://blog.csdn.net/qq_28114615/article/details/86561069
      * 经过任一结点的路径和可能有哪些情况呢？
      * ①该结点本身；
      * ②过该结点左子结点的最大路径和加上该结点；

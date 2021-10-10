@@ -9,7 +9,8 @@ public class LowestCommonAncestor {
 
 
     // https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/
-
+    // https://mp.weixin.qq.com/s/aWvfcCh4JjWxJVWpyr2WmQ
+    // https://mp.weixin.qq.com/s/V73MWneaud5A97j_Ltxnmw
     public int lowestCommonAncestor (TreeNode root, int o1, int o2) {
 
         return CommonAncestor(root, o1, o2).val;
