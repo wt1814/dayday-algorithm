@@ -8,6 +8,10 @@
         - [1.1.2. 回溯 + 剪枝](#112-回溯--剪枝)
     - [1.2. 回溯法能解决的问题](#12-回溯法能解决的问题)
     - [1.3. 回溯法模板](#13-回溯法模板)
+        - [1.3.1. 无重复输入](#131-无重复输入)
+            - [1.3.1.1. 递归](#1311-递归)
+            - [1.3.1.2. 迭代](#1312-迭代)
+        - [1.3.2. 有重复输入](#132-有重复输入)
 
 <!-- /TOC -->
 
@@ -16,19 +20,15 @@
 
 
 <!-- 
-揭秘回溯算法 
-https://mp.weixin.qq.com/s/yH6cLfOBjMJdbprdo3c4mg
 
 labuladong
 https://labuladong.gitbook.io/algo/mu-lu-ye-3/mu-lu-ye/hui-su-suan-fa-xiang-jie-xiu-ding-ban
 
-https://programmercarl.com/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html
-https://mp.weixin.qq.com/s/gMMnZC0KvKee1V16lJzPKg
-
-
 -->
-<!-- 
+<!-- ~~
 
+https://mp.weixin.qq.com/s/gMMnZC0KvKee1V16lJzPKg
+https://programmercarl.com/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html
 回溯法视频
 https://www.bilibili.com/video/BV1cy4y167mM
 -->
@@ -103,9 +103,11 @@ https://blog.csdn.net/u014303647/article/details/88328526
 
 
 ## 1.3. 回溯法模板
+![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-62.png)
 
 <!-- 
-
+揭秘回溯算法 
+https://mp.weixin.qq.com/s/yH6cLfOBjMJdbprdo3c4mg
 回溯法模版
 https://mp.weixin.qq.com/s/trILKSiN9EoS58pXmvUtUQ
 https://labuladong.gitbook.io/algo/mu-lu-ye/hui-su-suan-fa-xiang-jie-xiu-ding-ban
@@ -117,13 +119,65 @@ https://www.cnblogs.com/dreamyu/p/13210713.html
 -->
 
 
-### 无重复输入
+### 1.3.1. 无重复输入
 <!-- 
 https://www.cnblogs.com/oldhands/p/11840667.html
 -->
 
-#### 递归
+#### 1.3.1.1. 递归
 
+```text
+    List<Object> result = new ArrayList<>();
+
+    void backtracking(参数) {
+
+        if(不满足条件){  // todo 剪枝
+            return;
+        }
+
+        if (终⽌条件) {
+            result.add(结果)  // todo 存放结果
+            return;
+        }
+        for (选择：本层集合中元素（树中节点孩⼦的数量就是集合的⼤⼩） ) {  //todo 剪枝要修改的地方
+            
+            if (可选解在已选择的集合中) { 
+                continue; 
+            }
+            
+            // todo 处理节点; 做选择
+            将该选择从选择列表移除;
+            路径.add(选择);
+            
+            backtracking(路径，选择列表); // 递归
+            
+            //todo 撤销选择   回溯，撤销处理结果
+            路径.remove(选择)
+            将该选择再加入选择列表
+        }
+    }
+```
+
+-------------------
+
+```text
+void back_trace(已选择的集合，当前解的状态，可选择的解的集合) {
+    if (当前解满足条件) {
+        结果集.add(当前解);
+        return;
+    }
+    for (可选解 : 可选择的解的集合) {
+        if (可选解在已选择的集合中) { continue; }
+        已选择集合.add(可选解);
+        当前解的状态.add(可选解);
+        back_trace(已选择的集合，当前解状态，下个可选择的集合);
+        已选择的集合.remove(可选解);
+        当前解的状态.remove(可选解);
+    }
+}
+```
+
+------------------------------------
 
 ```text
 void backtracking(参数) {
@@ -137,9 +191,9 @@ void backtracking(参数) {
         return;
     }
     for (选择：本层集合中元素（树中节点孩⼦的数量就是集合的⼤⼩） ) {  //todo 剪枝要修改的地方
-        处理节点;
+        处理节点; // 做选择
         backtracking(路径，选择列表); // 递归
-        回溯，撤销处理结果
+        回溯，撤销处理结果  // 撤销选择
     }
 }
 ```
@@ -157,19 +211,6 @@ for 选择 in 选择列表:
 
 其核心就是 for 循环里面的递归，在递归调用之前「做选择」，在递归调用之后「撤销选择」。
 
-
-```text
-result = []
-def backtrack(路径, 选择列表):
-    if 满足结束条件:
-        result.add(路径)
-        return
-​
-    for 选择 in 选择列表:
-        做选择
-        backtrack(路径, 选择列表)
-        撤销选择
-```
 
 
 递归的算法框架  
@@ -197,8 +238,24 @@ def backtrack(路径, 选择列表):
 : }
 ```
 
+<!-- 
 
-#### 迭代
+```text
+result = []
+def backtrack(路径, 选择列表):
+    if 满足结束条件:
+        result.add(路径)
+        return
+​
+    for 选择 in 选择列表:
+        做选择
+        backtrack(路径, 选择列表)
+        撤销选择
+```
+-->
+
+
+#### 1.3.1.2. ~~迭代~~
 
 非递归回溯框架
 
@@ -232,12 +289,38 @@ def backtrack(路径, 选择列表):
 : }
 ```
 
-### 有重复输入  
-&emsp; 以上是针对无重复的输入的排列，但对于有重复的输入，使用套路1就有一点点小问题，对于这种情况，可以使用这种套路2。
-&emsp; 不可重复回溯与可重复回溯：只是for循环的下界不同。  
+### 1.3.2. 有重复输入  
+&emsp; 以上是针对无重复的输入的排列，但对于有重复的输入，使用套路1就有一点点小问题，对于这种情况，可以使用这种套路2。  
 
 
 <!-- 
 https://mp.weixin.qq.com/s/yH6cLfOBjMJdbprdo3c4mg
 -->
+
+```text
+void main() {
+    首先对输入的数组排序，使相同的元素在相邻的位置
+    back_trace();
+}
+
+void back_trace(已选择的集合，当前解的状态，可选择的解的集合) {
+    if (当前解满足条件) {
+        结果集.add(当前解);
+        return;
+    }
+    for (可选解 : 可选择的解的集合) {
+        if (当前可选解和上一可选解相同&&上一可选解未在已选择集合里) {  // todo
+            continue; 
+        }
+        if (可选解在已选择的集合中) { 
+            continue; 
+        }
+        已选择集合.add(可选解);
+        当前解的状态.add(可选解);
+        back_trace(已选择的集合，当前解状态，下个可选择的集合);
+        已选择的集合.remove(可选解);
+        当前解的状态.remove(可选解);
+    }
+}
+```
 
