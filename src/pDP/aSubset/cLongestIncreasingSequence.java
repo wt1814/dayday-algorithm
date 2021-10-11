@@ -3,12 +3,21 @@ package pDP.aSubset;
 import java.util.Arrays;
 
 /**
- * 最长递增子序列
+ * 300. 最长递增子序列
+ * 给你一个整数数组 nums ，找到其中最长严格递增子序列的长度。
+ * 子序列是由数组派生而来的序列，删除（或不删除）数组中的元素而不改变其余元素的顺序。例如，[3,6,2,7] 是数组 [0,3,1,6,2,2,7] 的子序列。
+ *
+ * 示例 1：
+ * 输入：nums = [10,9,2,5,3,7,101,18]
+ * 输出：4
+ * 解释：最长递增子序列是 [2,3,7,101]，因此长度为 4 。
+ *
+ *
  * 如果有多个答案，请输出其中 按数值(注：区别于按单个字符的ASCII码值)进行比较的 字典序最小的那个
  */
 public class cLongestIncreasingSequence {
 
-    // https://blog.csdn.net/u012505432/article/details/52228945
+
 
     public static void main(String[] args){
         int[] arr = {1,2,8,6,4};
@@ -16,6 +25,10 @@ public class cLongestIncreasingSequence {
         Arrays.stream(ints).forEach(value -> System.out.print(value));
     }
 
+
+    // https://blog.csdn.net/u012505432/article/details/52228945
+    // https://mp.weixin.qq.com/s/7QFapCuvi-2nkh6gREcR9g
+    // https://mp.weixin.qq.com/s/HJTbehi5JfvOFM1ZSxDxow
 
     /**
      *
@@ -89,7 +102,6 @@ public class cLongestIncreasingSequence {
         }
         return lis;
     }
-
 
 
 }

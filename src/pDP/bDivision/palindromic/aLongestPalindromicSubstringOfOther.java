@@ -1,9 +1,9 @@
 package pDP.bDivision.palindromic;
 
 /**
- * 最长回文子串
+ * 5. 最长回文子串
  */
-public class cLongestPalindromicSubstringOfOther {
+public class aLongestPalindromicSubstringOfOther {
 
 
     // https://www.cxyxiaowu.com/2869.html

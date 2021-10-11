@@ -1,9 +1,9 @@
 package pDP.bDivision.palindromic;
 
 /**
- * 最长回文子串
+ * 5. 最长回文子串
  */
-public class cLongestPalindromicSubstringOfOneself {
+public class aLongestPalindromicSubstringOfOneself {
 
     public static void main(String[] args){
         String str = "abc1234321ab";
