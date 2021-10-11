@@ -6,4 +6,7 @@ package pDP.dTwoDimensional.bString.edit;
  * 要几次操作可以把字符串延展到指定长度。
  */
 public class minSteps {
+
+
+
 }
