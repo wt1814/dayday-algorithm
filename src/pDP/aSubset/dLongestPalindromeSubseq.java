@@ -9,8 +9,42 @@ package pDP.aSubset;
  */
 public class dLongestPalindromeSubseq {
 
-    // todo https://leetcode-cn.com/problems/longest-palindromic-subsequence/solution/dai-ma-sui-xiang-lu-dai-ni-xue-tou-dpzi-dv83q/
 
+
+    // 回文子序列
+    // https://mp.weixin.qq.com/s/zNai1pzXHeB2tQE6AdOXTA
+    // https://mp.weixin.qq.com/s/_YznW0t4z-_bzkBGQK6jpQ
+    // ~~https://mp.weixin.qq.com/s/FmWvxnlJLIzUYDI23u08Aw
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    // todo https://leetcode-cn.com/problems/longest-palindromic-subsequence/solution/dai-ma-sui-xiang-lu-dai-ni-xue-tou-dpzi-dv83q/
+    /**
+     * 动规五部曲分析如下：
+     * 1. 确定dp数组（dp table）以及下标的含义
+     * 2. 确定递推公式
+     * 3. dp数组如何初始化
+     * todo 4. 确定遍历顺序
+     * 5. 举例推导dp数组
+     *
+     * @param s
+     * @return
+     */
+    public int longestPalindromeSubseq(String s) {
+        int len = s.length();
+        int[][] dp = new int[len + 1][len + 1];
+        for (int i = len - 1; i >= 0; i--) { // 从后往前遍历 保证情况不漏
+            dp[i][i] = 1; // 初始化
+            for (int j = i + 1; j < len; j++) {
+                if (s.charAt(i) == s.charAt(j)) {
+                    dp[i][j] = dp[i + 1][j - 1] + 2;
+                } else {
+                    dp[i][j] = Math.max(dp[i + 1][j], Math.max(dp[i][j], dp[i][j - 1]));
+                }
+            }
+        }
+        return dp[0][len - 1];
+    }
 
 
     ///////////////////////////////////////////////////////////////////////////////////
@@ -21,13 +55,9 @@ public class dLongestPalindromeSubseq {
      *
      * 2. 转移方程
      * 如果 s 的第 i 个字符和第 j 个字符相同的话
-     *
      * f[i][j] = f[i + 1][j - 1] + 2
-     *
      * 如果 s 的第 i 个字符和第 j 个字符不同的话
-     *
      * f[i][j] = max(f[i + 1][j], f[i][j - 1])
-     *
      * 然后注意遍历顺序，i 从最后一个字符开始往前遍历，j 从 i + 1 开始往后遍历，这样可以保证每个子问题都已经算好了。
      *
      * 3. 初始化 f[i][i] = 1 单个字符的最长回文序列是 1
@@ -37,7 +67,7 @@ public class dLongestPalindromeSubseq {
      * @param s
      * @return
      */
-    public static int longestPalindromeSubseq(String s) {
+    public static int longestPalindromeSubseq2(String s) {
 
         int n = s.length();
         int[][] f = new int[n][n];
@@ -60,7 +90,7 @@ public class dLongestPalindromeSubseq {
 
     ///////////////////////////////////////////////////////////////////////////////////
 
-    public static int longestPalindromeSubseqTwo(String s) {
+    public static int longestPalindromeSubseq3(String s) {
         int n = s.length();
         if (n <= 1) {
             return n;
@@ -85,15 +115,6 @@ public class dLongestPalindromeSubseq {
         return dp[0][n - 1];
     }
 
-
-    ///////////////////////////////////////////////////////////////////////////////////
-
-
-    // 回文子序列
-    // https://mp.weixin.qq.com/s/_YznW0t4z-_bzkBGQK6jpQ
-
-    // https://mp.weixin.qq.com/s/zNai1pzXHeB2tQE6AdOXTA
-    // https://mp.weixin.qq.com/s/FmWvxnlJLIzUYDI23u08Aw
 
 
 }
