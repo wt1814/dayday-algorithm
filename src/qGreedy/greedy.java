@@ -1,16 +1,8 @@
 package qGreedy;
 
 /**
- * @ProjectName：dayday-algorithm
- * @ClassName: greedy
- * @Description: TODO  
- * @Author: wt 
- * @CreateDate: 10/7/21 8:21 PM
- * @UpdateUser: 
- * @UpdateDate:   
- * @UpdateRemark:
- * @Version: V1.0
- **/
+ * 贪心算法
+ */
 public class greedy {
 
     // https://mp.weixin.qq.com/s/NpEHIpemv4b74BUTOWekQw
