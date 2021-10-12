@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 最大堆排序
  */
-public class HeapSort {
+public class hHeapSort {
 
     public static void main(String[] args) {
         int[] arr = new int[] {1,3,2,6,5,7,8,9,10,0};
@@ -65,7 +65,7 @@ public class HeapSort {
                 arr[i] = arr[k];
                 i = k;
             }else{
-                break;
+                break;  // todo 直接结束for循环
             }
         }
         arr[i] = temp; //将temp值放到最终的位置
@@ -101,6 +101,7 @@ public class HeapSort {
             array[parentIndex] = array[childIndex];
 
             //todo 选取孩子结点的左孩子结点，继续向下筛选
+            //todo 对比for循环的区别，while循环此处要编码修改指针
             parentIndex = childIndex;
             childIndex = 2 * childIndex + 1;
         }

@@ -1,8 +1,18 @@
 
+<!-- TOC -->
 
+- [1. 总结](#1-总结)
+    - [1.1. 算法建模](#11-算法建模)
+    - [1.2. java语法基础](#12-java语法基础)
+    - [1.3. 排序](#13-排序)
+        - [1.3.1. 归并](#131-归并)
+        - [1.3.2. 堆排序](#132-堆排序)
+    - [1.4. 查找](#14-查找)
 
-# 总结
-## 算法建模
+<!-- /TOC -->
+
+# 1. 总结
+## 1.1. 算法建模
 <!-- 
 
 
@@ -13,6 +23,8 @@ https://mp.weixin.qq.com/s/oL8x6cxL4WGicnhi1hZkVQ
 latex 插件我用的是 tex-all-the-things。地址：https://chrome.google.com/webstore/detail/tex-all-the-things/cbimabofgmfdkicghcadidpemeenbffn
 
 -->
+&emsp;  一个中心 --- 画图，即梳理算法逻辑。  
+
 &emsp; 数据结构是门特大的学问  
 
 &emsp; 算法的好坏：时间复杂度、空间复杂度。  
@@ -47,7 +59,7 @@ latex 插件我用的是 tex-all-the-things。地址：https://chrome.google.com
         1. 数组：1.选择起始位置；2.正序还是反序；
 
 
-## java语法基础
+## 1.2. java语法基础
 
 ```java
 int index = 0;//遍历字符串中字符的位置
@@ -57,7 +69,7 @@ for (; index < length; ++index) {  // todo for循环里的计数，可以提前�
 }
 ```
 
-## 排序
+## 1.3. 排序
 
 |排序算法|	平均时间复杂度|	最好|	最坏|	空间复杂度|	稳定性|
 |---|---|---|---|---|---|
@@ -73,7 +85,7 @@ for (; index < length; ++index) {  // todo for循环里的计数，可以提前�
 |基数排序|	O(n*k)|	O(n*k)|	O(n*k)	|O(n+k)|	稳定|
 
 
-### 归并  
+### 1.3.1. 归并  
 
 ```java
 import java.util.Arrays;
@@ -259,7 +271,7 @@ public class eMergeSort {
 
 ```
 
-### 堆排序
+### 1.3.2. 堆排序
 
 ```java
 import java.util.Arrays;
@@ -267,7 +279,7 @@ import java.util.Arrays;
 /**
  * 最大堆排序
  */
-public class HeapSort {
+public class hHeapSort {
 
     public static void main(String[] args) {
         int[] arr = new int[] {1,3,2,6,5,7,8,9,10,0};
@@ -327,7 +339,7 @@ public class HeapSort {
                 arr[i] = arr[k];
                 i = k;
             }else{
-                break;
+                break;  // todo 直接结束for循环
             }
         }
         arr[i] = temp; //将temp值放到最终的位置
@@ -363,6 +375,7 @@ public class HeapSort {
             array[parentIndex] = array[childIndex];
 
             //todo 选取孩子结点的左孩子结点，继续向下筛选
+            //todo 对比for循环的区别，while循环此处要编码修改指针
             parentIndex = childIndex;
             childIndex = 2 * childIndex + 1;
         }
@@ -374,4 +387,98 @@ public class HeapSort {
 }
 ```
 
-## 查找
+## 1.4. 查找
+
+### 二分查找
+&emsp; `一般在有序数组中查找。`  
+&emsp; 迭代解二分查找，双指针  
+
+```java
+/**
+ * todo 二分查找，前提条件是数据必须是有序的
+ * todo 迭代解二分查找，双指针
+ */
+public class aBinarySearchOfIteration {
+
+    /**
+     * 非递归实现，while循环
+     * @param array
+     * @param target
+     * @return
+     */
+    public static int binarySearch(int []array,int target){
+
+        //查找范围起点
+        int start=0;
+        //查找范围终点
+        int end=array.length-1;
+        //查找范围中位数
+        int mid;
+
+        while(start<=end){
+            //mid=(start+end)/2 有可能溢出
+            mid=start+(end-start)/2;
+            if(array[mid]==target){
+                return mid;
+            }else if(array[mid]<target){
+                start=mid+1;
+            }else{
+                end=mid-1;
+            }
+        }
+        return -1;
+    }
+
+
+}
+```
+
+&emsp; 递归解二分查找  
+
+```java
+/**
+ * todo 递归解二分查找
+ * todo 关键点：相撞指针到同一个中点，然后返回中点。
+ * todo todo todo
+ *
+ * 二分查找，将一个集合分成三部分
+ */
+public class bBinarySearchOfRecursion {
+
+    public static void main(String[] args) {
+
+        int[] array = new int[1000];
+        for(int i=0; i<1000;i++){
+            array[i] = i;
+        }
+        System.out.println(recursionBinarySearch(array, 0,array.length,173));
+    }
+
+    /**
+     * 递归实现
+     * @param array
+     * @param start
+     * @param end
+     * @param target
+     * @return
+     */
+    public static int recursionBinarySearch(int[] array,int start,int end,int target){
+
+        if (start > end){
+            return -1;
+        }
+
+        int mid=start+(end-start)/2;
+        if (target == array[mid]) {
+            return mid;
+        } else if (target < array[mid]) { //比关键字大则关键字在左区域
+            return recursionBinarySearch(array, start, mid - 1, target);
+        } else { //比关键字小则关键字在右区域
+            return recursionBinarySearch(array, mid + 1, end, target);
+        }
+
+    }
+
+}
+```
+

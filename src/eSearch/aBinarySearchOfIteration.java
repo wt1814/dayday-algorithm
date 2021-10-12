@@ -13,11 +13,10 @@ public class aBinarySearchOfIteration {
         for(int i=0; i<1000;i++){
             array[i] = i;
         }
-        System.out.println(binarySearch(array, 173));
+        System.out.println(binarySearch(array, 1110));
     }
 
     /**
-     * todo 需要调解
      * 非递归实现，while循环
      * @param array
      * @param target

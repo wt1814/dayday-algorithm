@@ -6,7 +6,7 @@ import java.util.ArrayList;
 /**
  * 合并k个已排序的链表
  */
-public class eMergeSortOfKLists {
+public class fMergeSortOfKLists {
 
     /**
      * 合并k个已排序的链表并将其作为一个已排序的链表返回。

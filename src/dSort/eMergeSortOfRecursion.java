@@ -9,7 +9,7 @@ import java.util.Arrays;
  * todo 2. 合的时候，设置移动指针，合并“两个待排序数组”
  * todo 2. 1). 双指针同时移动比较， 2). 若左边还有剩余
  */
-public class eMergeSort {
+public class eMergeSortOfRecursion {
 
     public static void main(String[] args) {
         int[] arr = new int[] {4,7,6,5,3,2,8,1};
@@ -100,40 +100,6 @@ public class eMergeSort {
     }
 
     ////////////////////////////////////////////////////////////////////////
-    // https://www.cnblogs.com/sheeva/p/6600666.html
-    //todo 迭代解题
-    private static int count = 0;
-    public int[] sort(int[] data) {
-        return sort(data, 0, data.length - 1);
-    }
-
-    private int[] sort(int[] data, int low, int high) {
-        if (low == high) {
-            return new int[] { data[low] };
-        }
-        int mid = (low + high) >> 1;
-        int[] left = sort(data, low, mid); //(1)
-        int[] right = sort(data, mid + 1, high); //(2)
-
-        int[] result = new int[high - low + 1];
-        int i = 0, k = 0;
-        //(3)
-        for (int j = 0; j < result.length; j++) {
-            count++;
-            if (i == left.length) {
-                result[j] = right[k++];
-            } else if (k == right.length) {
-                result[j] = left[i++];
-            } else {
-                if (left[i] <= right[k]) {
-                    result[j] = left[i++];
-                } else {
-                    result[j] = right[k++];
-                }
-            }
-        }
-        return result;
-    }
 
 
     ////////////////////////////////////////////////////////////////////////////

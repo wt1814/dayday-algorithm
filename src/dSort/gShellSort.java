@@ -5,15 +5,9 @@ import java.util.Arrays;
 /**
  * 希尔排序
  */
-public class fShellSort {
+public class gShellSort {
 
 
-    //希尔 根据步长分组。步长越长，分组越少；每一步相当于插入排序；直至步长为1时，相当于冒泡排序。
-
-    /**
-     *
-     * @param args
-     */
     public static void main(String[] args) {
         System.out.println(7/2);
 
@@ -26,8 +20,10 @@ public class fShellSort {
     }
 
 
+
     /**
      * 希尔排序
+     * todo 根据步长分组。步长越长，分组越少；每一步相当于插入排序；直至步长为1时，相当于冒泡排序。
      * @param array
      * @return
      */

@@ -28,7 +28,7 @@ public class bBinarySearchOfRecursion {
      */
     public static int recursionBinarySearch(int[] array,int start,int end,int target){
 
-        if (start  > end){
+        if (start > end){
             return -1;
         }
 
@@ -41,20 +41,6 @@ public class bBinarySearchOfRecursion {
             return recursionBinarySearch(array, mid + 1, end, target);
         }
 
-/*        if (start <= end) {
-            int mid=start+(end-start)/2;
-            if (target == array[mid]) {
-                return mid;
-            } else if (target < array[mid]) { //比关键字大则关键字在左区域
-                return recursionBinarySearch(array, start, mid - 1, target);
-            } else { //比关键字小则关键字在右区域
-                return recursionBinarySearch(array, mid + 1, end, target);
-            }
-        } else {
-            return -1;
-        }*/
     }
-
-
 
 }
