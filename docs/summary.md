@@ -421,7 +421,7 @@ public class aBinarySearchOfIteration {
             if(array[mid]==target){
                 return mid;
             }else if(array[mid]<target){
-                start=mid+1;
+                start=mid+1; // todo mid+1，非mid
             }else{
                 end=mid-1;
             }
@@ -481,4 +481,7 @@ public class bBinarySearchOfRecursion {
 
 }
 ```
+
+## 双指针
+&emsp; `双重for循环可以使用相向指针 + 单循环，替代。`  
 

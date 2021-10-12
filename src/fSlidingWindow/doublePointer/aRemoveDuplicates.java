@@ -6,8 +6,12 @@ package fSlidingWindow.doublePointer;
 public class aRemoveDuplicates {
 
 
+    public static void main(String[] args) {
+
+    }
+
     //双指针解决
-    public int removeDuplicates(int[] A) {
+    public static int removeDuplicates(int[] A) {
 
         //边界条件判断
         if (A == null || A.length == 0){

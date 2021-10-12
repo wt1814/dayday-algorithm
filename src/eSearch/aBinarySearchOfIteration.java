@@ -37,7 +37,7 @@ public class aBinarySearchOfIteration {
             if(array[mid]==target){
                 return mid;
             }else if(array[mid]<target){
-                start=mid+1;
+                start=mid+1;   // todo mid+1，非mid
             }else{
                 end=mid-1;
             }

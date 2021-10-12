@@ -1,12 +1,53 @@
 package fSlidingWindow.doublePointer;
 
 /**
- * 396，双指针求盛最多水的容器
+ * 11. 盛最多水的容器
  * 给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。
  * 找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
+ *
+ * 示例 1：
+ * 输入：[1,8,6,2,5,4,8,3,7]
+ * 输出：49
+ * 解释：图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。
+ *
+ * 示例 2：
+ * 输入：height = [1,1]
+ * 输出：1
+ *
  */
 public class eMaxArea {
 
+
+    public static void main(String[] args) {
+
+    }
+
+
+    /**
+     * 在初始时，左右指针分别指向数组的左右两端
+     * 此时我们需要移动一个指针。移动哪一个呢？直觉告诉我们，
+     * todo 应该移动对应数字较小的那个指针（即此时的左指针）。
+     * 这是因为，由于容纳的水量是由两个指针指向的数字中较小值∗指针之间的距离
+     */
+    public static int maxArea(int[] height) {
+        int l = 0, r = height.length - 1;
+        int ans = 0;
+        while (l < r) {
+            int area = Math.min(height[l], height[r]) * (r - l);
+            ans = Math.max(ans, area);
+            if (height[l] <= height[r]) {
+                ++l;
+            }
+            else {
+                --r;
+            }
+        }
+        return ans;
+    }
+
+
+
+    ///////////////////////////////////////////////////////////////////////////
     // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247487488&idx=1&sn=a31c5dc6f3351461621e72b281d5aa81&chksm=fb418320cc360a36d83158508dbf0edd2940e862b3a391a965a393cd4fc35c05c7c3ff7ab870&scene=21#wechat_redirect
     /**
      * 根据木桶原理，桶的容量是由最短的木板决定的，所以这里矩形的高度也是由最矮的柱子所决定的。
@@ -16,7 +57,7 @@ public class eMaxArea {
      * @param height
      * @return
      */
-    public int maxArea(int[] height) {
+    public int maxArea1(int[] height) {
         int maxarea = 0, left = 0, length = height.length;
         int area;
         int right;
