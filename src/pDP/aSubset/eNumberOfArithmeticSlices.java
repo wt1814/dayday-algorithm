@@ -19,6 +19,7 @@ public class eNumberOfArithmeticSlices {
 
     // todo 滑动窗口、动态规划（Java）
     // https://leetcode-cn.com/problems/arithmetic-slices/solution/hua-dong-chuang-kou-dong-tai-gui-hua-jav-3vpp/
+    //  https://mp.weixin.qq.com/s/lVONbve_on-HY3lKAcgfyg
     /**
      *
      * @param nums
