@@ -32,6 +32,9 @@
 <!-- 
 几乎刷完了力扣所有的链表题，我发现了这些东西。。。
 https://mp.weixin.qq.com/s/Ym7MhhJ--NcaRRnj1y1vFA
+
+ 2021 秋招算法高频题汇总 - 链表篇 
+https://mp.weixin.qq.com/s/pJGRhBFhlLoHrYDZ4sUtRA
 -->
 
 &emsp; 参考`力扣加加`链表专题  
