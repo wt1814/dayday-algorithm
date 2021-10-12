@@ -17,10 +17,10 @@ public class bLengthOfLongestSubstring {
     }
 
     // https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583ad935e76e9a3f6793792e60734&chksm=9bd7f8ddaca071cbb7570b2433290e5e2628d20473022a5517271de6d6e50783961bebc3dd3b&scene=21#wechat_redirect
-    // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247487526&idx=1&sn=000b9cbf7db449c8ec7e09e26a911c2e&chksm=fb418306cc360a105d98b39290315f2b89744c9d7cbdb04b2262ef9bc5de77274d42f8b5afbe&scene=21#wechat_redirect
+    // todo https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247487526&idx=1&sn=000b9cbf7db449c8ec7e09e26a911c2e&chksm=fb418306cc360a105d98b39290315f2b89744c9d7cbdb04b2262ef9bc5de77274d42f8b5afbe&scene=21#wechat_redirect
 
     /**
-     * todo xxxxx
+     * 最开始的时候两个指针i和j都指向第一个元素，然后i往后移，把扫描过的元素都放到map中，如果i扫描过的元素没有重复的，就顺便记录一下最大值max，如果i扫描过的元素有重复的，就改变j的位置，要保证j到i之间不能有重复的元素。
      * @param s
      * @return
      */
@@ -34,6 +34,8 @@ public class bLengthOfLongestSubstring {
         int max = 0;
         for (int i = 0, j = 0; i < s.length(); ++i) {
             //如果有重复的，就修改j的值
+            // 使用一个map来存储扫描过的元素，其中i指针是一直往右移动的，如果i指向的元素在map中出现过，说明出现了重复的元素，要更新j的值。
+            // todo 并且这个j的值只能增大不能减小，也就是说j只能往右移动，不能往左移动，所以下面代码中j取的是重复元素位置的下一个值和j这两个值的最大值。
             if (map.containsKey(s.charAt(i))) {
                 j = Math.max(j, map.get(s.charAt(i)) + 1);
             }

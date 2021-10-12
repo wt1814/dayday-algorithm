@@ -1,4 +1,4 @@
-package fSlidingWindow.slidingWindow;
+package fSlidingWindow.slidingWindow.replace;
 
 /**
  * 424. 双指针解替换后的最长重复字符
