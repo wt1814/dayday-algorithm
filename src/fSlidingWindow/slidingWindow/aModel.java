@@ -13,24 +13,8 @@ public class aModel {
     // https://www.nowcoder.com/practice/c466d480d20c4c7c9d322d12ca7955ac?tpId=188&&tqId=38617&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
 
     public void window(String S, String T) {
-/*        unordered_map<char, int> window, target;
-        for (char c : t) { ++target[c]; }
-        int left = 0, right = 0;    // 初始化双指针
-    ...                         // 定义状态值
-        while (right < s.size()) {
-            // 增大窗口
-            char c = s[righ]
-                    ++right;
-        ...                     // 更新window
-            while (达到缩小窗口的条件) {
-            ...                 // 更新状态值
-                char c = s[left];
-                ++left;
-            ...                 // 更新window/状态值
-            }
-        }*/
 
-        char[] s = S.toCharArray();
+/*        char[] s = S.toCharArray();
         char[] t = T.toCharArray();
 
         HashMap<Character,Integer> window = new HashMap<>();
@@ -41,6 +25,22 @@ public class aModel {
         }
         int left = 0, right = 0;    // 初始化双指针
         //...                       // 定义状态值
+
+        while (right < s.length){
+            // 增大窗口
+            char c = s[right];
+            ++right;
+            //...                   // 更新window
+            while (达到缩小窗口的条件){
+                //...               // 更新状态值
+                char cc = s[left];
+                ++left;
+                //...               // 更新window/状态值
+
+            }
+        }*/
+
+
     }
 
 }
