@@ -15,6 +15,7 @@ public class dCharacterReplacement {
     public static void main(String[] args) {
         int i = characterReplacement("ABAB", 2);
         System.out.println(i);
+        System.out.println('A'-'A');
     }
 
     // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490163&idx=1&sn=4cbb66581d85a6a31019e0a25e3da21a&chksm=fb418953cc3600454f3c0e765f6e1c860076b61d237471eaf72a98b6922ac9b7d2b36b6a2b3c&scene=21#wechat_redirect

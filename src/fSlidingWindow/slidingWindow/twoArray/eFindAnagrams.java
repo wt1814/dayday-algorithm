@@ -12,7 +12,7 @@ package fSlidingWindow.slidingWindow.twoArray;
  * 起始索引等于 0 的子串是 "cba", 它是 "abc" 的异位词。
  * 起始索引等于 6 的子串是 "bac", 它是 "abc" 的异位词。
  */
-public class cFindAnagrams {
+public class eFindAnagrams {
 
 
     // https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/solution/438-zhao-dao-zi-fu-chuan-zhong-suo-you-z-nx6b/
