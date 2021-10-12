@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * 76. 最小覆盖子串
  */
-public class eMinimumCoveringSubstringOfOneself {
+public class aMinimumCoveringSubstringOfOneself {
 
     public static void main(String[] args){
 

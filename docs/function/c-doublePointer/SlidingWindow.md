@@ -3,18 +3,15 @@
 
 - [1. 滑动窗口](#1-滑动窗口)
     - [1.1. 双指针与滑动窗口](#11-双指针与滑动窗口)
-    - [1.2. 滑动窗口模版](#12-滑动窗口模版)
+    - [1.2. 基本示例](#12-基本示例)
+    - [1.3. 滑动窗口模版](#13-滑动窗口模版)
 
 <!-- /TOC -->
 
-
 # 1. 滑动窗口
-
 <!-- 
-https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583ad935e76e9a3f6793792e60734&scene=21#wechat_redirect
 滑动窗口算法
 https://www.cnblogs.com/huansky/p/13488234.html
-
 https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583ad935e76e9a3f6793792e60734&chksm=9bd7f8ddaca071cbb7570b2433290e5e2628d20473022a5517271de6d6e50783961bebc3dd3b&scene=21#wechat_redirect
 -->
 
@@ -40,8 +37,8 @@ https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583
 &emsp; `滑动窗口关注双指针的区间，一般用于解决数组连续问题，例如...`  
 
 --------------
-滑动窗⼝主要⽤来处理连续问题。⽐如题⽬求解“连续⼦串 xxxx”，“连续 ⼦数组 xxxx”，就应该可以想到滑动窗⼝。能不能解决另说，但是这种敏 感性还是要有的。  
-从类型上说主要有：  
+&emsp; `滑动窗⼝主要⽤来处理连续问题。⽐如题⽬求解“连续⼦串 xxxx”，“连续 ⼦数组 xxxx”，就应该可以想到滑动窗⼝。`能不能解决另说，但是这种敏 感性还是要有的。  
+&emsp; 从类型上说主要有：  
 
 * 固定窗⼝⼤⼩ 
 * 窗⼝⼤⼩不固定，求解最⼤的满⾜条件的窗⼝ 
@@ -50,7 +47,7 @@ https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583
 后⾯两种我们统称为 可变窗⼝ 。当然不管是哪种类型基本的思路都是⼀ 样的，不⼀样的仅仅是代码细节。  
 
 
-## 基本示例
+## 1.2. 基本示例
 <!-- 
 https://www.cnblogs.com/huansky/p/13488234.html
 -->
@@ -60,7 +57,7 @@ https://www.cnblogs.com/huansky/p/13488234.html
 &emsp; 需要注意的是，滑动窗口算法更多的是一种思想，而非某种数据结构的使用。  
 
 
-## 1.2. 滑动窗口模版
+## 1.3. 滑动窗口模版
 滑动窗口模板伪代码   
 
 ```text
