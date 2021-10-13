@@ -21,9 +21,64 @@ import gLinked.ListNode;
  */
 public class dReverseKGroup {
 
+
     public static void main(String[] args) {
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(2,node1);
+        ListNode node3 = new ListNode(3,node2);
+        ListNode node4 = new ListNode(4,node3);
+        ListNode node5 = new ListNode(5,node4);
+
+        ListNode listNode = reverseKGroup(node5, 3);
+        System.out.println(listNode.val);
 
     }
+
+
+
+    public static ListNode reverseKGroup(ListNode head, int k) {
+
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+
+        ListNode pre = dummy;
+        ListNode end = dummy;
+
+        while (end.next != null) {
+            for (int i = 0; i < k && end != null; i++) {
+                end = end.next;
+            }
+            if (end == null) {
+                break;
+            }
+
+            // todo 记录开始节点与下一组的开始节点
+            ListNode start = pre.next;
+            ListNode next = end.next;
+
+            end.next = null;
+            pre.next = reverse(start);
+            start.next = next;
+            pre = start;
+
+            end = pre;
+        }
+        return dummy.next;
+
+    }
+
+    private static ListNode reverse(ListNode head) {
+        ListNode pre = null;
+        ListNode curr = head;
+        while (curr != null) {
+            ListNode next = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = next;
+        }
+        return pre;
+    }
+
 
     // https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
     // https://www.nowcoder.com/practice/b49c3dc907814e9bbfa8437c251b028e?tpId=188&&tqId=38557&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
@@ -34,7 +89,7 @@ public class dReverseKGroup {
      * @param k
      * @return
      */
-    public static ListNode reverseKGroup (ListNode head, int k) {
+    public static ListNode reverseKGroup1 (ListNode head, int k) {
 
         if(head==null||head.next==null||k==1) {
             return head;
