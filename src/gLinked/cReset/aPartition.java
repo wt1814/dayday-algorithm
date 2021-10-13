@@ -3,10 +3,10 @@ package gLinked.cReset;
 import gLinked.ListNode;
 
 /**
- * 划分链表
+ * 86. 分隔链表
  * 给出一个链表和一个值，以特定值为参照将链表划分成两部分，使所有小于 的节点都位于大于或等于 的节点之前。
  */
-public class partition {
+public class aPartition {
 
 
     public static void main(String[] args){

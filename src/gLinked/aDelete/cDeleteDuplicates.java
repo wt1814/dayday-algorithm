@@ -2,8 +2,9 @@ package gLinked.aDelete;
 
 import gLinked.ListNode;
 
+
 /**
- * 删除排序链表中的重复元素
+ * 82. 删除排序链表中的重复元素 II
  */
 public class cDeleteDuplicates {
 
@@ -12,14 +13,15 @@ public class cDeleteDuplicates {
 
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2,node1);
-        ListNode node3 = new ListNode(3,node2);
+        ListNode node3 = new ListNode(2,node2);
         ListNode node4 = new ListNode(4,node3);
         ListNode node5 = new ListNode(5,node4);
 
-        System.out.println(deleteDuplicates(node5).val);
+        ListNode listNode = deleteDuplicates(node5);
+        System.out.println(listNode);
     }
 
-
+    // https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/
     // https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/solution/shan-chu-pai-xu-lian-biao-zhong-de-zhong-oayn/
     /**
      * 删除排序链表中的重复元素
@@ -50,64 +52,5 @@ public class cDeleteDuplicates {
 
     }
 
-
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-    /**
-     * 自己调试的
-     * @param head
-     * @return
-     */
-    public ListNode deleteDuplicatesOfSelf (ListNode head) {
-        // write code here
-
-        if(head == null){
-            return null;
-        }
-
-        ListNode dummy = new ListNode(-1);
-        dummy.next = head;
-        ListNode cur = dummy;
-
-        while(cur!= null && cur.next != null){
-            int val = cur.val;
-            while (cur.next != null && cur.next.val == val){
-                cur.next = cur.next.next;
-
-            }
-            if (cur.next!= null){
-                cur = cur.next;
-            }
-        }
-
-        return dummy.next;
-    }
-
-    ////////////////////////////////////////////
-
-    public ListNode deleteDuplicates2(ListNode head) {
-
-        ListNode dummy = new ListNode(-1);
-        dummy.next = head;
-
-        ListNode prev = dummy;
-        ListNode curr = head;
-        while (curr != null && curr.next != null) {
-            if (curr.val == curr.next.val) {       // todo 分支
-                ListNode temp = curr.next;
-                while (temp != null && temp.val == curr.val) {
-                    temp = temp.next;
-                }
-                prev.next = temp;
-                curr = temp;
-            } else {
-                prev = prev.next;
-                curr = curr.next;
-            }
-        }
-        return dummy.next;
-
-    }
 
 }

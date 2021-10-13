@@ -1,7 +1,8 @@
 package fString.two;
 
 /**
- * 最长公共前缀
+ * 14. 最长公共前缀
+ * // todo XXXX
  */
 public class LongestCommonPrefix {
 
