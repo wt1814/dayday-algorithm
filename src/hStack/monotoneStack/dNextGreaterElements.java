@@ -16,14 +16,19 @@ import java.util.Stack;
  */
 public class dNextGreaterElements {
 
-    // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490294&idx=1&sn=ef2e83f712d4e410ec80689f50e68b5c&chksm=fb4189d6cc3600c0bfffb56277b8194f5818c944a17cc6493e8d45e4123f76cc030b2f01f2ad&scene=21#wechat_redirect
+    public static void main(String[] args) {
 
+    }
+
+
+    // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490294&idx=1&sn=ef2e83f712d4e410ec80689f50e68b5c&chksm=fb4189d6cc3600c0bfffb56277b8194f5818c944a17cc6493e8d45e4123f76cc030b2f01f2ad&scene=21#wechat_redirect
     /**
      * todo 题中说了是循环数组，只需要把数组遍历两遍即可
      * @param nums
      * @return
      */
     public static int[] nextGreaterElements(int[] nums) {
+
         int length = nums.length;
         int res[] = new int[length];
         Arrays.fill(res, -1);//默认都为-1
@@ -46,8 +51,7 @@ public class dNextGreaterElements {
             stack.push(index);
         }
         return res;
+
     }
-
-
 
 }

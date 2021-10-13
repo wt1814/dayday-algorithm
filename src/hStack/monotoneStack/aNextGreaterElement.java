@@ -37,6 +37,7 @@ public class aNextGreaterElement {
      * @return
      */
     public static int[] nextGreaterElement(int[] nums1, int[] nums2) {
+
         //todo map中的key是数组中元素的值，value是这个值遇到的右边第一个比它大的值
         Map<Integer, Integer> map = new HashMap<>();
         //单调栈，从栈顶到栈底是递增的
@@ -58,6 +59,7 @@ public class aNextGreaterElement {
             res[i] = map.getOrDefault(nums1[i], -1);
         }
         return res;
+
     }
 
 }
