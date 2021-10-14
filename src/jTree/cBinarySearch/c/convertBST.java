@@ -1,4 +1,4 @@
-package jTree.cBinarySearch;
+package jTree.cBinarySearch.c;
 
 /**
  * 538. 把二叉搜索树转换为累加树

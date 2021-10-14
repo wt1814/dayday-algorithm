@@ -1,4 +1,4 @@
-package jTree.cBinarySearch;
+package jTree.cBinarySearch.r;
 
 /**
  * 501.二叉搜索树中的众数

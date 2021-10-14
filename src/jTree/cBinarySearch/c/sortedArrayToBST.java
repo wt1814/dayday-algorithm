@@ -1,4 +1,4 @@
-package jTree.cBinarySearch;
+package jTree.cBinarySearch.c;
 
 import jTree.TreeNode;
 

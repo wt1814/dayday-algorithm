@@ -1,4 +1,4 @@
-package jTree.cBinarySearch;
+package jTree.cBinarySearch.c;
 
 /**
  * 701. 二叉搜索树中的插入操作

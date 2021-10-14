@@ -1,4 +1,4 @@
-package jTree.cBinarySearch;
+package jTree.cBinarySearch.u;
 
 /**
  * 669. 修剪二叉搜索树

@@ -1,4 +1,4 @@
-package jTree.cBinarySearch;
+package jTree.cBinarySearch.r;
 
 /**
  * 二叉搜索树的范围和
