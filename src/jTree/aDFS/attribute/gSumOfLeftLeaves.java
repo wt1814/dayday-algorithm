@@ -1,4 +1,4 @@
-package jTree.aDFS;
+package jTree.aDFS.attribute;
 
 import jTree.TreeNode;
 
@@ -9,7 +9,7 @@ import java.util.Stack;
 /**
  * 404. 左叶子之和
  */
-public class sumOfLeftLeaves {
+public class gSumOfLeftLeaves {
 
 
 

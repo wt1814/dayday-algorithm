@@ -1,4 +1,4 @@
-package jTree.aDFS;
+package jTree.aDFS.depth;
 
 import jTree.TreeNode;
 
@@ -12,7 +12,7 @@ public class cMaxDepth {
     /**
      * 递归法
      */
-    public int maxdepth(TreeNode root) {
+    public static int maxdepth(TreeNode root) {
         if (root == null) {
             return 0;
         }

@@ -1,4 +1,4 @@
-package jTree.aDFS;
+package jTree.aDFS.brother;
 
 /**
  * 993. 二叉树的堂兄弟节点

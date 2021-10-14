@@ -1,11 +1,11 @@
-package jTree.aDFS;
+package jTree.aDFS.attribute;
 
 import jTree.TreeNode;
 
 /**
  * 222. 完全二叉树的节点个数
  */
-public class countNodes {
+public class iCountNodes {
 
 
     // https://mp.weixin.qq.com/s/dF04lAx-0jh59QRXtP7t9w

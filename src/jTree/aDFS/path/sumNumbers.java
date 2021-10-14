@@ -1,4 +1,4 @@
-package jTree.aDFS;
+package jTree.aDFS.path;
 
 /**
  * DFS和BFS解求根到叶子节点数字之和

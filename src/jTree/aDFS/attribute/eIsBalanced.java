@@ -1,4 +1,4 @@
-package jTree.aDFS;
+package jTree.aDFS.attribute;
 
 import jTree.TreeNode;
 
@@ -6,7 +6,7 @@ import jTree.TreeNode;
  * 110. 平衡二叉树
  * todo 左神 课程8 《二叉树的递归套路》
  */
-public class fIsBalanced {
+public class eIsBalanced {
 
     public static void main(String[] args) {
         int maxLevel = 5;
