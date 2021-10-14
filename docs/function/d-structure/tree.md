@@ -8,47 +8,52 @@
     - [1.3. 两个基本点](#13-两个基本点)
         - [1.3.1. 深度优先遍历](#131-深度优先遍历)
         - [1.3.2. 广度优先遍历](#132-广度优先遍历)
-    - [1.4. 有关二叉树的算法题](#14-有关二叉树的算法题)
-        - [1.4.1. 两个通用方法和思路](#141-两个通用方法和思路)
-            - [1.4.1.1. 自顶向下的递归遍历](#1411-自顶向下的递归遍历)
-                - [1.4.1.1.1. 自底向上的分治](#14111-自底向上的分治)
-            - [1.4.1.2. ***两种方式比较](#1412-两种方式比较)
-    - [1.5. 三种题型](#15-三种题型)
-        - [1.5.1. 搜索类](#151-搜索类)
-            - [1.5.1.1. DFS 搜索](#1511-dfs-搜索)
-            - [1.5.1.2. BFS 搜索](#1512-bfs-搜索)
-        - [1.5.2. 构建类](#152-构建类)
-            - [1.5.2.1. 普通二叉树的构建](#1521-普通二叉树的构建)
-            - [1.5.2.2. 修改类](#1522-修改类)
-    - [1.6. 四个重要概念](#16-四个重要概念)
-        - [1.6.1. 路径](#161-路径)
-        - [1.6.2. 距离](#162-距离)
-    - [1.7. 七个技巧](#17-七个技巧)
-        - [1.7.1. 前后遍历](#171-前后遍历)
-        - [1.7.2. 虚拟节点](#172-虚拟节点)
-        - [1.7.3. 边界](#173-边界)
-        - [1.7.4. 参数扩展大法](#174-参数扩展大法)
-        - [1.7.5. 返回元组/列表](#175-返回元组列表)
-    - [1.8. 总结](#18-总结)
+    - [1.4. 三种题型](#14-三种题型)
+        - [1.4.1. 搜索类](#141-搜索类)
+            - [1.4.1.1. DFS 搜索](#1411-dfs-搜索)
+            - [1.4.1.2. BFS 搜索](#1412-bfs-搜索)
+        - [1.4.2. 构建类](#142-构建类)
+            - [1.4.2.1. 普通二叉树的构建](#1421-普通二叉树的构建)
+            - [1.4.2.2. 修改类](#1422-修改类)
+    - [1.5. 四个重要概念](#15-四个重要概念)
+        - [1.5.1. 路径](#151-路径)
+        - [1.5.2. 距离](#152-距离)
+    - [1.6. 七个技巧](#16-七个技巧)
+        - [1.6.1. 前后遍历](#161-前后遍历)
+            - [1.6.1.1. 自顶向下的递归遍历](#1611-自顶向下的递归遍历)
+            - [1.6.1.2. 自底向上的分治](#1612-自底向上的分治)
+            - [1.6.1.3. ***两种方式比较](#1613-两种方式比较)
+        - [1.6.2. 虚拟节点](#162-虚拟节点)
+        - [1.6.3. 边界](#163-边界)
+        - [1.6.4. 参数扩展大法](#164-参数扩展大法)
+        - [1.6.5. 返回元组/列表](#165-返回元组列表)
+    - [1.7. 小结](#17-小结)
+    - [1.8. 有关二叉树的算法题](#18-有关二叉树的算法题)
 
 <!-- /TOC -->
 
 <!--
-2021秋招算法总结4-二叉树篇
-https://leetcode-cn.com/circle/discuss/J8XFse/
 
 搜索算法
 https://mp.weixin.qq.com/s/gMMnZC0KvKee1V16lJzPKg
 
-***树
-https://mp.weixin.qq.com/s?__biz=MzI4MzUxNjI3OA==&mid=2247485899&idx=1&sn=27d1c7b8ff88cbe235b7fca63227d356&chksm=eb88c5d2dcff4cc4102a036bc558b9c598fbf1c69f6ee9dc2822b0784975f8b2df8b8a7609dd&scene=178&cur_album_id=1506626428316991490#rd
-
-
- 二叉树的统一迭代法
+二叉树的统一迭代法
 https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%BB%9F%E4%B8%80%E8%BF%AD%E4%BB%A3%E6%B3%95.html#%E8%BF%AD%E4%BB%A3%E6%B3%95%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86
 -->
+
+
+<!-- ~~
+
+几乎刷完了力扣所有的树题
+https://mp.weixin.qq.com/s?__biz=MzI4MzUxNjI3OA==&mid=2247485899&idx=1&sn=27d1c7b8ff88cbe235b7fca63227d356&chksm=eb88c5d2dcff4cc4102a036bc558b9c598fbf1c69f6ee9dc2822b0784975f8b2df8b8a7609dd&scene=178&cur_album_id=1506626428316991490#rd
+
+题目
+2021秋招算法总结4-二叉树篇
+https://leetcode-cn.com/circle/discuss/J8XFse/
 二叉树：总结篇！  
 https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%80%BB%E7%BB%93%E7%AF%87.html#%E6%9C%80%E5%90%8E%E6%80%BB%E7%BB%93  
+
+-->
 
 &emsp; 二叉树的递归套路
 
@@ -60,10 +65,12 @@ https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%80%BB%E7%BB%93%E7%AF%8
 &emsp; 6) 写代码，在代码中考虑如何把左树都信息和右树信息整合出整棵树的信息  
 
 
-![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-60.png)
 
 
 # 1. 二叉树  
+![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-60.png)
+
+
 ## 1.1. 二叉树简介及各种类型
 &emsp; **二叉树有两种特殊形式：**一个叫满二叉树，一个叫完全二叉树。  
 &emsp; **二叉树的实现：**树是一种逻辑数据结构。二叉树即可以用数组实现，也可以用链表实现。二叉树一般使用链表实现； **<font color = "clime">二叉堆，一种特殊的完全二叉树，使用数组来操作。</font>**  
@@ -76,29 +83,27 @@ https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%80%BB%E7%BB%93%E7%AF%8
 
 
 ## 1.2. 一个中心
-一个中心指的是「树的遍历」。整个树的专题只有一个中心点，那就是树的遍历。  
-而遍历不是目的，遍历是为了更好地做处理，这里的处理包括搜索，修改树等。树虽然只能从根开始访问，但是我们可以「选择」在访问完毕回来的时候做处理，还是在访问回来之前做处理，这两种不同的方式就是「后序遍历」和「先序遍历」。  
+&emsp; 一个中心指的是「树的遍历」。整个树的专题只有一个中心点，那就是树的遍历。  
 
-树的遍历  
-遍历不是目的，遍历是为了更好地做处理，这里的处理包括搜索，修改树等。树虽然只能从根开始访问，但是我们可以「选择」在访问完毕回来的时候做处理，还是在访问回来之前做处理，这两种不同的方式就是「后序遍历」和「先序遍历」。
-前序遍历和后序遍历是最常见的两种 DFS 方式。而另外一种遍历方式 （中序遍历）一般用于平衡二叉树，这个我们后面的「四个重要概念」部分再讲。
-BFS 比较适合找「最短距离/路径」和「某一个距离的目标」。比如给定一个二叉树，在树的最后一行找到最左边的值。，此题是力扣 513 的原题。这不就是求距离根节点「最远距离」的目标么？一个 BFS 模板就解决了。
+&emsp; 遍历不是目的，遍历是为了更好地做处理，这里的处理包括搜索，修改树等。 **<font color = "red">树虽然只能从根开始访问，但是可以「选择」在访问完毕回来的时候做处理，还是在访问回来之前做处理，这两种不同的方式就是「后序遍历」和「先序遍历」。</font>**  
+&emsp; 前序遍历和后序遍历是最常见的两种 DFS 方式。而另外一种遍历方式 **<font color = "red">（中序遍历）一般用于平衡二叉树，</font>** 这个后面的「四个重要概念」部分再讲。  
+&emsp; **<font color = "red">BFS 比较适合找「最短距离/路径」和「某一个距离的目标」。</font>** 比如给定一个二叉树，在树的最后一行找到最左边的值。，此题是力扣 513 的原题。这不就是求距离根节点「最远距离」的目标么？一个 BFS 模板就解决了。  
 
 
 1、为什么 BFS 可以找到最短距离，DFS 不行吗？  
-首先，你看 BFS 的逻辑，depth 每增加一次，队列中的所有节点都向前迈一步，这保证了第一次到达终点的时候，走的步数是最少的。  
-DFS 不能找最短路径吗？其实也是可以的，但是时间复杂度相对高很多。你想啊，DFS 实际上是靠递归的堆栈记录走过的路径，你要找到最短路径，肯定得把二叉树中所有树杈都探索完才能对比出最短的路径有多长对不对？而 BFS 借助队列做到一次一步「齐头并进」，是可以在不遍历完整棵树的条件下找到最短距离的。  
-形象点说，DFS 是线，BFS 是面；DFS 是单打独斗，BFS 是集体行动。这个应该比较容易理解吧。  
+&emsp; 首先，你看 BFS 的逻辑，depth 每增加一次，队列中的所有节点都向前迈一步，这保证了第一次到达终点的时候，走的步数是最少的。  
+&emsp; DFS 不能找最短路径吗？其实也是可以的，但是时间复杂度相对高很多。你想啊，DFS 实际上是靠递归的堆栈记录走过的路径，你要找到最短路径，肯定得把二叉树中所有树杈都探索完才能对比出最短的路径有多长对不对？而 BFS 借助队列做到一次一步「齐头并进」，是可以在不遍历完整棵树的条件下找到最短距离的。  
+&emsp; 形象点说，DFS 是线，BFS 是面；DFS 是单打独斗，BFS 是集体行动。这个应该比较容易理解吧。  
 2、既然 BFS 那么好，为啥 DFS 还要存在？  
-BFS 可以找到最短距离，但是空间复杂度高，而 DFS 的空间复杂度较低。  
-还是拿刚才我们处理二叉树问题的例子，假设给你的这个二叉树是满二叉树，节点数为 N，对于 DFS 算法来说，空间复杂度无非就是递归堆栈，最坏情况下顶多就是树的高度，也就是 O(logN)。  
-但是你想想 BFS 算法，队列中每次都会储存着二叉树一层的节点，这样的话最坏情况下空间复杂度应该是树的最底层节点的数量，也就是 N/2，用 Big O 表示的话也就是 O(N)。  
-由此观之，BFS 还是有代价的，一般来说在找最短路径的时候使用 BFS，其他时候还是 DFS 使用得多一些（主要是递归代码好写）。  
+&emsp; BFS 可以找到最短距离，但是空间复杂度高，而 DFS 的空间复杂度较低。  
+&emsp; 还是拿刚才我们处理二叉树问题的例子，假设给你的这个二叉树是满二叉树，节点数为 N，对于 DFS 算法来说，空间复杂度无非就是递归堆栈，最坏情况下顶多就是树的高度，也就是 O(logN)。  
+&emsp; 但是你想想 BFS 算法，队列中每次都会储存着二叉树一层的节点，这样的话最坏情况下空间复杂度应该是树的最底层节点的数量，也就是 N/2，用 Big O 表示的话也就是 O(N)。  
+&emsp; 由此观之，BFS 还是有代价的， **<font color = "red">一般来说在找最短路径的时候使用 BFS，其他时候还是 DFS 使用得多一些（主要是递归代码好写）。</font>**   
 
 ## 1.3. 两个基本点
-上面提到了树的遍历有两种基本方式，分别是「深度优先遍历（以下简称 DFS）和广度优先遍历（以下简称 BFS），这就是两个基本点」。这两种遍历方式下面又会细分几种方式。比如 「DFS 细分为前中后序遍历， BFS 细分为带层的和不带层的」。  
+&emsp; 上面提到了树的遍历有两种基本方式，分别是「深度优先遍历（以下简称 DFS）和广度优先遍历（以下简称 BFS），这就是两个基本点」。这两种遍历方式下面又会细分几种方式。比如 「DFS 细分为前中后序遍历， BFS 细分为带层的和不带层的」。  
 
-「DFS 适合做一些暴力枚举的题目，DFS 如果借助函数调用栈，则可以轻松地使用递归来实现。」  
+&emsp; 「DFS 适合做一些暴力枚举的题目，DFS 如果借助函数调用栈，则可以轻松地使用递归来实现。」  
 
 <!-- 
 图文详解 树的DFS 和 BFS 
@@ -113,291 +118,56 @@ https://mp.weixin.qq.com/s/VwjaMs4g2cxydt8dXNdS0g
 
 
 ### 1.3.1. 深度优先遍历  
-* 前序遍历  
-&emsp; 二叉树的前序遍历，输出顺序是根节点、左子树、右子树。  
-![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-26.png)  
-&emsp; 输出顺序为1--->2--->4--->5--->3--->6。  
-* 中序遍历  
-&emsp; 二叉树的中序遍历，输出顺序是左子树、根节点、右子树。  
-![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-27.png)  
-&emsp; 输出顺序为4--->2--->5--->1--->3--->6。  
-* 后序遍历  
-&emsp; 二叉树的后序遍历，输出顺序是左子树、右子树、根节点。  
-![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-28.png)  
-&emsp; 输出顺序为4--->5--->2--->6--->3--->1。  
 
 &emsp; 使用递归方式来实现前序、中序、后序遍历。  
 ```java
 
-import java.util.Arrays;
-import java.util.LinkedList;
-
-public class BinaryTreeTraversal {
-
-    /**
-     * 构建二叉树
-     * @param inputList   输入序列
-     */
-    public static TreeNode createBinaryTree(LinkedList<Integer> inputList){
-        TreeNode listNode = null;
-        if(inputList==null || inputList.isEmpty()){
-            return null;
-        }
-        Integer data = inputList.removeFirst();
-        //这里的判空很关键。如果元素是空，说明该节点不存在，跳出这一层递归；如果元素非空，继续递归构建该节点的左右孩子。
-        if(data != null){
-            listNode = new TreeNode(data);
-            listNode.leftChild = createBinaryTree(inputList);
-            listNode.rightChild = createBinaryTree(inputList);
-        }
-        return listNode;
-    }
-
-    /**
-     * 二叉树前序遍历
-     * @param listNode   二叉树节点
-     */
-    public static void preOrderTraversal(TreeNode listNode){
-        if(listNode == null){
-            return;
-        }
-        System.out.println(listNode.data);
-        preOrderTraversal(listNode.leftChild);
-        preOrderTraversal(listNode.rightChild);
-    }
-
-    /**
-     * 二叉树中序遍历
-     * @param listNode   二叉树节点
-     */
-    public static void inOrderTraversal(TreeNode listNode){
-        if(listNode == null){
-            return;
-        }
-        inOrderTraversal(listNode.leftChild);
-        System.out.println(listNode.data);
-        inOrderTraversal(listNode.rightChild);
-    }
-
-
-    /**
-     * 二叉树后序遍历
-     * @param listNode   二叉树节点
-     */
-    public static void postOrderTraversal(TreeNode listNode){
-        if(listNode == null){
-            return;
-        }
-        postOrderTraversal(listNode.leftChild);
-        postOrderTraversal(listNode.rightChild);
-        System.out.println(listNode.data);
-    }
-
-    /**
-     * 二叉树节点
-     */
-    private static class TreeNode {
-        int data;
-        TreeNode leftChild;
-        TreeNode rightChild;
-
-        TreeNode(int data) {
-            this.data = data;
-        }
-    }
-
-    public static void main(String[] args) {
-        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{3,2,9,null,null,10,null,null,8,null,4,}));
-        TreeNode TreeNode = createBinaryTree(inputList);
-        System.out.println("前序遍历：");
-        preOrderTraversal(TreeNode);
-        System.out.println("中序遍历：");
-        inOrderTraversal(TreeNode);
-        System.out.println("后序遍历：");
-        postOrderTraversal(TreeNode);
-    }
-}
 ```
 
 ### 1.3.2. 广度优先遍历  
 &emsp; 如果说深度优先遍历是在一个方向上“一头扎到底”，那么广度优先遍历则恰 恰相反：先在各个方向上各走出1步，再在各个方向上走出第2步、第3步……一直到 各个方向全部走完。通过二叉树的层序遍历，来看一 看广度优先是怎么回事。  
 &emsp; 层序遍历，顾名思义，就是二叉树按照从根节点到叶子节点的层次关系，一层 一层横向遍历各个节点。  
-![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-29.png)  
-&emsp; 输出顺序为1--->2--->3--->4--->5--->6。  
+
 
 ```java
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
 
-public class BinaryTreeTraversalLevel {
-
-    /**
-     * 构建二叉树
-     * @param inputList   输入序列
-     */
-    public static TreeNode createBinaryTree(LinkedList<Integer> inputList){
-        TreeNode listNode = null;
-        if(inputList==null || inputList.isEmpty()){
-            return null;
-        }
-        Integer data = inputList.removeFirst();
-        //这里的判空很关键。如果元素是空，说明该节点不存在，跳出这一层递归；如果元素非空，继续递归构建该节点的左右孩子。
-        if(data != null){
-            listNode = new TreeNode(data);
-            listNode.leftChild = createBinaryTree(inputList);
-            listNode.rightChild = createBinaryTree(inputList);
-        }
-        return listNode;
-    }
-
-    /**
-     * 二叉树层序遍历
-     * @param root   二叉树根节点
-     */
-    public static void levelOrderTraversal(TreeNode root){
-        Queue<TreeNode> queue = new LinkedList<TreeNode>();
-        queue.offer(root);
-        while(!queue.isEmpty()){
-            TreeNode listNode = queue.poll();
-            System.out.println(listNode.data);
-            if(listNode.leftChild != null){
-                queue.offer(listNode.leftChild);
-            }
-            if(listNode.rightChild != null){
-                queue.offer(listNode.rightChild);
-            }
-        }
-    }
-
-    /**
-     * 二叉树节点
-     */
-    private static class TreeNode {
-        int data;
-        TreeNode leftChild;
-        TreeNode rightChild;
-
-        TreeNode(int data) {
-            this.data = data;
-        }
-    }
-
-    public static void main(String[] args) {
-        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{3,2,9,null,null,10,null,null,8,null,4,}));
-        TreeNode TreeNode = createBinaryTree(inputList);
-        System.out.println("层序遍历：");
-        levelOrderTraversal(TreeNode);
-    }
-
-}
 ```
 
-## 1.4. 有关二叉树的算法题
-<!-- 
-~~
-LeetCode二叉树问题小总结
-https://mp.weixin.qq.com/s?__biz=MzUyNjQxNjYyMg==&mid=2247486350&idx=3&sn=f847d84a0c2553d2854b37b6202cb923&chksm=fa0e640fcd79ed19006e12d9d4e330fca44db451413a5870de3758515be60f387d43a1f80ef1&mpshare=1&scene=1&srcid=&sharer_sharetime=1567642529620&sharer_shareid=b256218ead787d58e0b58614a973d00d&key=a1704a04d6cad8d086b12ea2ff25a231d33902d1a964dc54bf8fa7ac6214cc54031a9fadea253fc8d1458fefa4d791da5f09b8d8b6e4ee35369d746f3486560b6d10bdfdd164449b259756a720157dd7&ascene=1&uin=MTE1MTYxNzY2MQ%3D%3D&devicetype=Windows+10&version=62060844&lang=zh_CN&pass_ticket=OvcJlS3excB3jnhYEzWG32VCQK0zodStiSrRfXXkqPZtu4LVEri6wuSl7MUtsbkU -->
-&emsp; LeetCode上面的二叉树问题一般可以看成是简单的深度优先搜索问题，一般的实现方式是使用递归，也会有非递归的实现方法，本节主要介绍一下解决二叉树问题的几个常规方法和思路，然后会给一个从递归转换到非递归的小技巧。  
+## 1.4. 三种题型
+&emsp; 树的题目就三种类型，分别是：「搜索类，构建类和修改类，而这三类题型的比例也是逐渐降低的」，即搜索类的题目最多，其次是构建类，最后是修改类。这一点和链表有很大的不同，链表更多的是修改类。  
 
-### 1.4.1. 两个通用方法和思路  
-&emsp; 两个通用方法和思路：拿到一道二叉树的问题，多半需要遍历这个树，只不过是在遍历的过程中，不同的题目要求做的计算不一样。  
-&emsp; 这里有两个遍历方法，自顶向下的递归遍历，以及自底向上的分治。  
-&emsp; 两种方法都用到了递归，在代码实现上面，差别不是特别大，但是思路却截然相反，拿树的中序遍历这道题目来作为示例。  
+### 1.4.1. 搜索类
+&emsp; 搜索类的题目是树的题目的绝对大头。而搜索类只有两种解法，那就是 DFS 和 BFS，下面分别介绍。  
+&emsp; 几乎所有的搜索类题目都可以方便地使用递归来实现，关于递归的技巧会在「七个技巧中的单/双递归」部分讲解。还有一小部分使用递归不好实现，我们可以使用 BFS，借助队列轻松实现，比如最经典的是求二叉树任意两点的距离，树的距离其实就是最短距离，因此可以用 BFS 模板解决。这也是为啥我说「DFS 和 BFS」是树的题目的两个基本点的原因。  
+&emsp; 所有搜索类的题目只要把握三个核心点，即「开始点」，「结束点」 和 「目标」即可。  
 
-#### 1.4.1.1. 自顶向下的递归遍历
-
-```java
-public List<Integer> inorderTraversal(TreeNode root) {
-    List<Integer> result = new ArrayList<>();
-    if (root == null) {
-        return result;
-    }
-
-    helper(root, result);
-
-    return result;
-}
-
-private void helper(TreeNode root, List<Integer> result) {
-    if (root == null) {
-        return;
-    }
-
-    helper(root.left, result);
-    result.add(root.val);
-    helper(root.right, result);
-}
-```
-&emsp; 代码非常的简短，上面代码的重心全放在了helper函数上，这个函数没有返回值，它做的事情也非常的简单，就是去到对应的树节点，然后把节点的值加到result中。  
-&emsp; 这里要求的是树的中序遍历，因此，要先去到当前树节点的左边，把左边所有的节点的值放到result中，才会继续放当前树节点，放完当前树节点的值后，会去到右边进行同样的操作。  
-&emsp; 对于这种实现方法其实有点类似于循环遍历，只不过循环遍历只作用于数组还有链表这样的线性结构，对于树的话，这里采用了递归的方式去遍历。  
-
-##### 1.4.1.1.1. 自底向上的分治
-```java
-public List<Integer> inorderTraversal(TreeNode root) {
-    List<Integer> result = new ArrayList<>();
-
-    if (root == null) {
-        return result;
-    }
-
-    result.addAll(inorderTraversal(root.left));
-    result.add(root.val);
-    result.addAll(inorderTraversal(root.right));
-
-    return result;
-}
-```
-&emsp; 同一个问题，再来看看之前提到的另外一种思路实现。  
-&emsp; 这里也使用了递归，但是这次的递归函数是有返回值的，而且没有将保存结果的list 传入函数。  
-&emsp; 正因为是自底向上，所以对于一个树节点来说，它这里会知道它子节点的返回值，也就是子节点的记录结果，在它这里会把左右子节点的结果，和它自己本身的结果汇总，然后将汇总的结果返回给上一层节点。  
-&emsp; 和之前的递归遍历的思路相比的话，代码实现上面的区别可能就是，是将result list放在参数中，还是放在返回值中，但是思考方向是截然相反的。  
-
-#### 1.4.1.2. ***两种方式比较
-&emsp; **这两种方法没有好坏之分，有的题目使用自顶向下递归遍历的方式会比较直接一点，比如求最大最小值，有些题目则使用自底向上分治的方式会比较好一些，比如说subtree的问题。** 对于不同的题目，需要选择不同的方法，但是思考方式可以考虑从这两个方向去思考。  
-&emsp; 一般来说，二叉树问题的时间复杂度都是 O(n) ，这个时间复杂的怎么理解呢？可以看成是在每个树节点上的操作的时间复杂度是 O(1)，但是要遍历所有的节点，因此 O(1) * n = O(n)。  
+#### 1.4.1.1. DFS 搜索
+&emsp; DFS 搜索类的基本套路就是从入口开始做 dfs，然后在 dfs 内部判断是否是结束点，这个结束点通常是「叶子节点」或「空节点」，关于结束这个话题我们放在「七个技巧中的边界」部分介绍，如果目标是一个基本值（比如数字）直接返回或者使用一个全局变量记录即可，如果是一个数组，则可以通过扩展参数的技巧来完成，关于扩展参数，会在「七个技巧中的参数扩展」部分介绍。这基本就是搜索问题的全部了。  
 
 
-## 1.5. 三种题型
-树的题目就三种类型，分别是：「搜索类，构建类和修改类，而这三类题型的比例也是逐渐降低的」，即搜索类的题目最多，其次是构建类，最后是修改类。这一点和链表有很大的不同，链表更多的是修改类。  
+#### 1.4.1.2. BFS 搜索
+&emsp; 这种类型相比 DFS，题目数量明显降低，套路也少很多。题目大多是求距离，套用我上面的两种 BFS 模板基本都可以轻松解决，这个不多介绍了。  
 
-### 1.5.1. 搜索类
-搜索类的题目是树的题目的绝对大头。而搜索类只有两种解法，那就是 DFS 和 BFS，下面分别介绍。  
-
-几乎所有的搜索类题目都可以方便地使用递归来实现，关于递归的技巧会在「七个技巧中的单/双递归」部分讲解。还有一小部分使用递归不好实现，我们可以使用 BFS，借助队列轻松实现，比如最经典的是求二叉树任意两点的距离，树的距离其实就是最短距离，因此可以用 BFS 模板解决。这也是为啥我说「DFS 和 BFS」是树的题目的两个基本点的原因。  
-
-所有搜索类的题目只要把握三个核心点，即「开始点」，「结束点」 和 「目标」即可。  
-
-#### 1.5.1.1. DFS 搜索
-DFS 搜索类的基本套路就是从入口开始做 dfs，然后在 dfs 内部判断是否是结束点，这个结束点通常是「叶子节点」或「空节点」，关于结束这个话题我们放在「七个技巧中的边界」部分介绍，如果目标是一个基本值（比如数字）直接返回或者使用一个全局变量记录即可，如果是一个数组，则可以通过扩展参数的技巧来完成，关于扩展参数，会在「七个技巧中的参数扩展」部分介绍。这基本就是搜索问题的全部了。  
-
-
-#### 1.5.1.2. BFS 搜索
-这种类型相比 DFS，题目数量明显降低，套路也少很多。题目大多是求距离，套用我上面的两种 BFS 模板基本都可以轻松解决，这个不多介绍了。  
-
-### 1.5.2. 构建类
+### 1.4.2. 构建类
 <!-- 
 https://labuladong.gitbook.io/algo/mu-lu-ye-1/mu-lu-ye-1/er-cha-shu-xi-lie-2
 -->
 
-除了搜索类，另外一个大头是构建类。构建类又分为两种：普通二叉树的构建和二叉搜索树的构建。  
+&emsp; 除了搜索类，另外一个大头是构建类。构建类又分为两种：普通二叉树的构建和二叉搜索树的构建。  
 
-#### 1.5.2.1. 普通二叉树的构建
+#### 1.4.2.1. 普通二叉树的构建
 
 
-#### 1.5.2.2. 修改类  
+#### 1.4.2.2. 修改类  
 
-## 1.6. 四个重要概念
+## 1.5. 四个重要概念
 
-### 1.6.1. 路径
-要明白路径的概念，以及如何解决这种题，只需要看一个题目就好了 124.二叉树中的最大路径和，虽然是困难难度，但是搞清楚概念的话，和简单难度没啥区别。接下来，我们就以这道题讲解一下。  
-
-这道题的题目是 给定一个非空二叉树，返回其最大路径和。路径的概念是：一条从树中任意节点出发，沿父节点-子节点连接，达到任意节点的序列。该路径至少包含一个节点，且不一定经过根节点。这听起来真的不容易理解，力扣给的 demo 我也没搞懂，这里我自己画了几个图来给大家解释一下这个概念。  
-
-首先是官网给的两个例子：  
+### 1.5.1. 路径
+&emsp; 要明白路径的概念，以及如何解决这种题，只需要看一个题目就好了 124.二叉树中的最大路径和，虽然是困难难度，但是搞清楚概念的话，和简单难度没啥区别。接下来，我们就以这道题讲解一下。  
+&emsp; 这道题的题目是 给定一个非空二叉树，返回其最大路径和。路径的概念是：一条从树中任意节点出发，沿父节点-子节点连接，达到任意节点的序列。该路径至少包含一个节点，且不一定经过根节点。这听起来真的不容易理解，力扣给的 demo 我也没搞懂，这里我自己画了几个图来给大家解释一下这个概念。  
+&emsp; 首先是官网给的两个例子：  
 ![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-61.png)  
-如图红色的部分是最大路径上的节点。  
+&emsp; 如图红色的部分是最大路径上的节点。  
 
 可以看出：  
 
@@ -427,12 +197,12 @@ class Solution:
         return self.ans
 ```
 
-### 1.6.2. 距离
+### 1.5.2. 距离
 和路径类似，距离也是一个相似且频繁出现的一个考点，并且二者都是搜索类题目的考点。原因就在于最短路径就是距离，而树的最短路径就是边的数目。  
 
 
-## 1.7. 七个技巧  
-### 1.7.1. 前后遍历
+## 1.6. 七个技巧  
+### 1.6.1. 前后遍历
 中序除了二叉搜索树，其他地方用的并不多。  
 和链表一样， 要掌握树的前后序，也只需要记住一句话就好了。那就是「如果是前序遍历，那么你可以想象上面的节点都处理好了，怎么处理的不用管」。相应地「如果是后序遍历，那么你可以想象下面的树都处理好了，怎么处理的不用管」。这句话的正确性也是毋庸置疑。  
 
@@ -451,7 +221,68 @@ class Solution:
 * 如果遇到二叉搜索树则考虑中序遍历
 
 
-### 1.7.2. 虚拟节点  
+-----------
+
+ 
+&emsp; 两个通用方法和思路：拿到一道二叉树的问题，多半需要遍历这个树，只不过是在遍历的过程中，不同的题目要求做的计算不一样。  
+&emsp; 这里有两个遍历方法，自顶向下的递归遍历，以及自底向上的分治。  
+&emsp; 两种方法都用到了递归，在代码实现上面，差别不是特别大，但是思路却截然相反，拿树的中序遍历这道题目来作为示例。  
+
+#### 1.6.1.1. 自顶向下的递归遍历
+
+```java
+public List<Integer> inorderTraversal(TreeNode root) {
+    List<Integer> result = new ArrayList<>();
+    if (root == null) {
+        return result;
+    }
+
+    helper(root, result);
+
+    return result;
+}
+
+private void helper(TreeNode root, List<Integer> result) {
+    if (root == null) {
+        return;
+    }
+
+    helper(root.left, result);
+    result.add(root.val);
+    helper(root.right, result);
+}
+```
+&emsp; 代码非常的简短，上面代码的重心全放在了helper函数上，这个函数没有返回值，它做的事情也非常的简单，就是去到对应的树节点，然后把节点的值加到result中。  
+&emsp; 这里要求的是树的中序遍历，因此，要先去到当前树节点的左边，把左边所有的节点的值放到result中，才会继续放当前树节点，放完当前树节点的值后，会去到右边进行同样的操作。  
+&emsp; 对于这种实现方法其实有点类似于循环遍历，只不过循环遍历只作用于数组还有链表这样的线性结构，对于树的话，这里采用了递归的方式去遍历。  
+
+#### 1.6.1.2. 自底向上的分治
+```java
+public List<Integer> inorderTraversal(TreeNode root) {
+    List<Integer> result = new ArrayList<>();
+
+    if (root == null) {
+        return result;
+    }
+
+    result.addAll(inorderTraversal(root.left));
+    result.add(root.val);
+    result.addAll(inorderTraversal(root.right));
+
+    return result;
+}
+```
+&emsp; 同一个问题，再来看看之前提到的另外一种思路实现。  
+&emsp; 这里也使用了递归，但是这次的递归函数是有返回值的，而且没有将保存结果的list 传入函数。  
+&emsp; 正因为是自底向上，所以对于一个树节点来说，它这里会知道它子节点的返回值，也就是子节点的记录结果，在它这里会把左右子节点的结果，和它自己本身的结果汇总，然后将汇总的结果返回给上一层节点。  
+&emsp; 和之前的递归遍历的思路相比的话，代码实现上面的区别可能就是，是将result list放在参数中，还是放在返回值中，但是思考方向是截然相反的。  
+
+#### 1.6.1.3. ***两种方式比较
+&emsp; **这两种方法没有好坏之分，有的题目使用自顶向下递归遍历的方式会比较直接一点，比如求最大最小值，有些题目则使用自底向上分治的方式会比较好一些，比如说subtree的问题。** 对于不同的题目，需要选择不同的方法，但是思考方式可以考虑从这两个方向去思考。  
+&emsp; 一般来说，二叉树问题的时间复杂度都是 O(n) ，这个时间复杂的怎么理解呢？可以看成是在每个树节点上的操作的时间复杂度是 O(1)，但是要遍历所有的节点，因此 O(1) * n = O(n)。  
+
+
+### 1.6.2. 虚拟节点  
 是的！不仅仅链表有虚拟节点的技巧，树也是一样。关于这点大家可能比较容易忽视。  
 
 回忆一下链表的虚拟指针的技巧，我们通常在什么时候才会使用？  
@@ -465,10 +296,10 @@ class Solution:
 【题目一】814. 二叉树剪枝  
 【题目一】1325. 删除给定值的叶子节点  
 
-### 1.7.3. 边界
+### 1.6.3. 边界
 
 
-### 1.7.4. 参数扩展大法  
+### 1.6.4. 参数扩展大法  
 参数扩展这个技巧非常好用，一旦掌握你会爱不释手。  
 
 如果不考虑参数扩展， 一个最简单的 dfs 通常是下面这样：  
@@ -546,7 +377,7 @@ def maxAncestorDiff(self, root: TreeNode) -> int:
     return dfs(root, float('inf'), float('-inf'))
 ```
 
-### 1.7.5. 返回元组/列表
+### 1.6.5. 返回元组/列表
 通常，我们的 dfs 函数的返回值是一个单值。而有时候为了方便计算，我们会返回一个数组或者元祖。  
 
     对于个数固定情况，我们一般使用元组，当然返回数组也是一样的。
@@ -554,7 +385,7 @@ def maxAncestorDiff(self, root: TreeNode) -> int:
 「这个技巧和参数扩展有异曲同工之妙，只不过一个作用于函数参数，一个作用于函数返回值。」  
 
 
-## 1.8. 总结
+## 1.7. 小结
 树的题目一种中心点就是「遍历」，这是搜索问题和修改问题的基础。  
 
 而遍历从大的方向分为「广度优先遍历和深度优先遍历」，这就是我们的「两个基本点」。两个基本点可以进一步细分，比如广度优先遍历有带层信息的和不带层信息的（其实只要会带层信息的就够了）。深度优先遍历常见的是前序和后序，中序多用于二叉搜索树，因为二叉搜索树的中序遍历是严格递增的数组。  
@@ -564,3 +395,12 @@ def maxAncestorDiff(self, root: TreeNode) -> int:
 树有四个比较重要的对做题帮助很大的概念，分别是完全二叉树，二叉搜索树，路径和距离，这里面相关的题目推荐大家好好做一下，都很经典。  
 
 最后我给大家介绍了七种干货技巧，很多技巧都说明了在什么情况下可以使用。好不好用你自己去找几个题目试试就知道了。  
+
+
+
+## 1.8. 有关二叉树的算法题
+<!-- 
+~~
+LeetCode二叉树问题小总结
+https://mp.weixin.qq.com/s?__biz=MzUyNjQxNjYyMg==&mid=2247486350&idx=3&sn=f847d84a0c2553d2854b37b6202cb923&chksm=fa0e640fcd79ed19006e12d9d4e330fca44db451413a5870de3758515be60f387d43a1f80ef1&mpshare=1&scene=1&srcid=&sharer_sharetime=1567642529620&sharer_shareid=b256218ead787d58e0b58614a973d00d&key=a1704a04d6cad8d086b12ea2ff25a231d33902d1a964dc54bf8fa7ac6214cc54031a9fadea253fc8d1458fefa4d791da5f09b8d8b6e4ee35369d746f3486560b6d10bdfdd164449b259756a720157dd7&ascene=1&uin=MTE1MTYxNzY2MQ%3D%3D&devicetype=Windows+10&version=62060844&lang=zh_CN&pass_ticket=OvcJlS3excB3jnhYEzWG32VCQK0zodStiSrRfXXkqPZtu4LVEri6wuSl7MUtsbkU -->
+&emsp; LeetCode上面的二叉树问题一般可以看成是简单的深度优先搜索问题，一般的实现方式是使用递归，也会有非递归的实现方法，本节主要介绍一下解决二叉树问题的几个常规方法和思路，然后会给一个从递归转换到非递归的小技巧。  

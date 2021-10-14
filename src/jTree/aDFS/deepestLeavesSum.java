@@ -1,4 +1,4 @@
-package jTree.aDFS.aBasic;
+package jTree.aDFS;
 
 /**
  * 1302. BFS和DFS解层数最深叶子节点的和

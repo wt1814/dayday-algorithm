@@ -1,4 +1,4 @@
-package jTree.aDFS.aBasic;
+package jTree.aDFS;
 
 /**
  * 662. 二叉树最大宽度

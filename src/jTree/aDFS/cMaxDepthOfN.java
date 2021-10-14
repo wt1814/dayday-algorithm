@@ -1,4 +1,4 @@
-package jTree.aDFS.aBasic;
+package jTree.aDFS;
 
 /**
  * 559. N叉树的最大深度

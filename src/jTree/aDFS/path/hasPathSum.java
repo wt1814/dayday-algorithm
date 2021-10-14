@@ -1,4 +1,4 @@
-package jTree.aDFS.aBasic;
+package jTree.aDFS.path;
 
 /**
  * 112. 路径总和

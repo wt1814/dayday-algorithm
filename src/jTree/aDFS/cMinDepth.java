@@ -1,4 +1,4 @@
-package jTree.aDFS.aBasic;
+package jTree.aDFS;
 
 /**
  * 111. 二叉树的最小深度

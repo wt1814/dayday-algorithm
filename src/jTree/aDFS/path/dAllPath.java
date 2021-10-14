@@ -1,4 +1,4 @@
-package jTree.aDFS.aBasic;
+package jTree.aDFS.path;
 
 import jTree.TreeNode;
 import java.util.ArrayList;

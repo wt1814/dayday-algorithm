@@ -1,4 +1,4 @@
-package jTree.aDFS.aBasic;
+package jTree.aDFS;
 
 /**
  * 987. 二叉树的垂序遍历

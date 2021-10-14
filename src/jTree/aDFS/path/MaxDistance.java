@@ -1,4 +1,4 @@
-package jTree.aDFS.bModel;
+package jTree.aDFS.path;
 
 import java.util.ArrayList;
 import java.util.HashMap;
