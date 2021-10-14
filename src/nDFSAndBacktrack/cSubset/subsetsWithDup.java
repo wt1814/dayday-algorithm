@@ -1,7 +1,7 @@
 package nDFSAndBacktrack.cSubset;
 
 /**
- * 第90题.子集II
+ * 90. 子集II
  */
 public class subsetsWithDup {
 
