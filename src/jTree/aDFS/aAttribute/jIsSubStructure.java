@@ -1,4 +1,4 @@
-package jTree.aDFS.attribute;
+package jTree.aDFS.aAttribute;
 
 /**
  * 剑指 Offer-树的子结构

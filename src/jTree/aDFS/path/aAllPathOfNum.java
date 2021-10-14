@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * 二叉树所有路径
  * todo todo todo 回溯
  */
-public class dAllPathOfNum {
+public class aAllPathOfNum {
 
     public static void main(String[] args) {
 
@@ -39,7 +39,6 @@ public class dAllPathOfNum {
 
         for (int i = 0;i<result.size();i++){
             ArrayList<Integer> integers = result.get(i);
-            System.out.println("------------------");
             for (int j = 0;j<integers.size();j++){
                 System.out.println(integers.get(j));
             }

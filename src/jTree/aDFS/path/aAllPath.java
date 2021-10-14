@@ -6,13 +6,14 @@ import java.util.List;
 
 /**
  * 257. 二叉树的所有路径
+ * 给你一个二叉树的根节点 root ，按 任意顺序 ，返回所有从根节点到叶子节点的路径。
+ * 叶子节点 是指没有子节点的节点。
+ *
+ * 示例 1：
+ * 输入：root = [1,2,3,null,5]
+ * 输出：["1->2->5","1->3"]
  */
-public class dAllPath {
-
-
-    // https://leetcode-cn.com/problems/binary-tree-paths/solution/er-cha-shu-de-suo-you-lu-jing-by-leetcode-solution/
-    // https://leetcode-cn.com/problems/binary-tree-paths/solution/yi-pian-wen-zhang-jie-jue-suo-you-er-cha-5f58/
-    // https://programmercarl.com/0257.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84.html#%E9%80%92%E5%BD%92
+public class aAllPath {
 
     public static void main(String[] args) {
 
@@ -28,6 +29,10 @@ public class dAllPath {
         }
 
     }
+
+    // https://leetcode-cn.com/problems/binary-tree-paths/solution/er-cha-shu-de-suo-you-lu-jing-by-leetcode-solution/
+    // https://leetcode-cn.com/problems/binary-tree-paths/solution/yi-pian-wen-zhang-jie-jue-suo-you-er-cha-5f58/
+    // https://programmercarl.com/0257.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84.html#%E9%80%92%E5%BD%92
 
     /**
      *

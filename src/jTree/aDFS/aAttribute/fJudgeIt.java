@@ -1,4 +1,4 @@
-package jTree.aDFS.attribute;
+package jTree.aDFS.aAttribute;
 
 import jTree.TreeNode;
 
@@ -39,6 +39,7 @@ public class fJudgeIt {
 
         boolean isSearch=leftInfo.isSearch&&rightInfo.isSearch;
         boolean isAll=leftInfo.isAll&&rightInfo.isAll;
+
         //左节点为空 右节点不为空 则不是完全二叉树
         if(leftInfo.val==null&&rightInfo.val!=null){
             isAll=false;
@@ -57,16 +58,19 @@ public class fJudgeIt {
                 isSearch=isSearch&&rightInfo.leftVal>=root.val;
             }
         }
+
         return new Info(isSearch,isAll,root.val,root.left==null?null:root.left.val,root.right==null?null:root.right.val);
 
     }
 
     class Info{  //todo 获取的info还必须包含val、leftVal、rightVal
+
         boolean isSearch;
         boolean isAll;
         Integer val;
         Integer leftVal;
         Integer rightVal;
+
         Info(boolean isSearch,boolean isAll,Integer val,Integer leftVal,Integer rightVal){
             this.isSearch=isSearch;
             this.isAll=isAll;
@@ -75,6 +79,5 @@ public class fJudgeIt {
             this.rightVal=rightVal;
         }
     }
-
 
 }

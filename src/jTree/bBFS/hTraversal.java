@@ -1,12 +1,20 @@
-package jTree.aDFS.attribute;
+package jTree.bBFS;
 
 import jTree.TreeNode;
 
 /**
  * 513.找树左下角的值
+ * 给定一个二叉树的 根节点 root，请找出该二叉树的 最底层 最左边 节点的值。
+ * 假设二叉树中至少有一个节点。
+ *
+ * 示例 1:
+ * 输入: root = [2,1,3]
+ * 输出: 1
  */
 public class hTraversal {
 
+    // https://leetcode-cn.com/problems/find-bottom-left-tree-value/solution/ceng-xu-bian-li-by-ai-ru-shao-nian-m-bzrw/
+    // https://leetcode-cn.com/problems/find-bottom-left-tree-value/solution/zi-jie-ti-ku-513-zhong-deng-zhao-shu-zuo-t56y/
     // https://programmercarl.com/0513.%E6%89%BE%E6%A0%91%E5%B7%A6%E4%B8%8B%E8%A7%92%E7%9A%84%E5%80%BC.html#%E9%80%92%E5%BD%92
 
     private int Deep = -1;
