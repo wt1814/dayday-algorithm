@@ -9,22 +9,13 @@ import jTree.TreeNode;
 public class eIsBalanced {
 
     public static void main(String[] args) {
-        int maxLevel = 5;
-        int maxValue = 100;
-        int testTimes = 1000000;
-        for (int i = 0; i < testTimes; i++) {
-            Node head = generateRandomBST(maxLevel, maxValue);
-            if (isBalanced1(head) != isBalanced2(head)) {
-                System.out.println("Oops!");
-            }
-        }
-        System.out.println("finish!");
+
     }
 
     // https://programmercarl.com/0110.%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91.html#java
 
     ////////////////////////////////////////////////////////////////////
-    public static boolean isBalanced2(Node head) {
+    public static boolean isBalanced2(TreeNode head) {
 
         return process(head).isBalanced;
     }
@@ -38,7 +29,7 @@ public class eIsBalanced {
      * 5) 递归函数都返回S，每一颗子树都这么要求
      * 6) 写代码，在代码中考虑如何把左树都信息和右树信息整合出整棵树的信息
      */
-    public static Info process(Node x) {
+    public static Info process(TreeNode x) {
         if(x == null) {   // todo 递归终止条件
             return new Info(true, 0);
         }
@@ -73,14 +64,14 @@ public class eIsBalanced {
 
     ////////////////////////////////////////////////////////////////////
 
-    public static boolean isBalanced1(Node head) {
+    public static boolean isBalanced1(TreeNode head) {
         boolean[] ans = new boolean[1];
         ans[0] = true;
         process1(head, ans);
         return ans[0];
     }
 
-    public static int process1(Node head, boolean[] ans) {
+    public static int process1(TreeNode head, boolean[] ans) {
         if (!ans[0] || head == null) {
             return -1;
         }
@@ -93,36 +84,7 @@ public class eIsBalanced {
     }
 
 
-    /////////////////////////////////////////////////////////////////////
-    // 构造二叉树
-    public static Node generateRandomBST(int maxLevel, int maxValue) {
 
-        return generate(1, maxLevel, maxValue);
-    }
-
-    // for test
-    public static Node generate(int level, int maxLevel, int maxValue) {
-        if (level > maxLevel || Math.random() < 0.5) {
-            return null;
-        }
-        Node head = new Node((int) (Math.random() * maxValue));
-        head.left = generate(level + 1, maxLevel, maxValue);
-        head.right = generate(level + 1, maxLevel, maxValue);
-        return head;
-    }
-
-
-    /////////////////////////////////////////////////////////////////////
-    // 节点
-    public static class Node {
-        public int value;
-        public Node left;
-        public Node right;
-
-        public Node(int data) {
-            this.value = data;
-        }
-    }
 
     /////////////////////////////
     public static boolean isBalenced3(TreeNode root){
