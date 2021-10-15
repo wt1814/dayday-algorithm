@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 551，回溯算法解分割回文串
  */
-public class bSplitToPalindromes {
+public class cSplitToPalindromes {
 
     // *** https://mp.weixin.qq.com/s/SrBfADlsOXjeOX4Cr4pQNg
     // https://leetcode-cn.com/problems/palindrome-partitioning/
