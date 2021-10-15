@@ -1,7 +1,9 @@
 package nDFSAndBacktrack.dDivision;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 139. 单词拆分
@@ -38,6 +40,7 @@ public class aWordBreak {
      * @return
      */
     public static boolean wordBreak(String s, List<String> wordDict) {
+
         return dfs(s, wordDict, 0);
     }
 
@@ -64,15 +67,40 @@ public class aWordBreak {
             if (!wordDict.contains(substring)){
                 continue;
             }
-            //如果截取的子串在字典中，继续剩下的拆分，如果剩下的可以拆分成
-            //在字典中出现的单词，直接返回true，如果不能则继续
-            //截取更大的子串判断
+            //如果截取的子串在字典中，继续剩下的拆分，
+            // 如果剩下的可以拆分成在字典中出现的单词，直接返回true，
+            // 如果不能则继续截取更大的子串判断
             if (dfs(s, wordDict, i)){
                 return true;
             }
         }
         return false;
 
+    }
+
+    ///////////
+    public boolean wordBreak1(String s, List<String> wordDict) {
+        return dfs(s, wordDict, new HashSet<>(), 0);
+    }
+
+    //start表示的是从字符串s的哪个位置开始
+    public boolean dfs(String s, List<String> wordDict, Set<Integer> indexSet, int start) {
+        //字符串都拆分完了，返回true
+        if (start == s.length())
+            return true;
+        for (int i = start + 1; i <= s.length(); i++) {
+            //如果已经判断过了，就直接跳过，防止重复判断
+            if (indexSet.contains(i))
+                continue;
+            //截取子串，判断是否是在字典中
+            if (wordDict.contains(s.substring(start, i))) {
+                if (dfs(s, wordDict, indexSet, i))
+                    return true;
+                //标记为已判断过
+                indexSet.add(i);
+            }
+        }
+        return false;
     }
 
 }
