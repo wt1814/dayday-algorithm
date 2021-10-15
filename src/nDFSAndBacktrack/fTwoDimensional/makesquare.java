@@ -1,4 +1,4 @@
-package nDFSAndBacktrack;
+package nDFSAndBacktrack.fTwoDimensional;
 
 /**
  * 473. 火柴拼正方形

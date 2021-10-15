@@ -1,4 +1,4 @@
-package nDFSAndBacktrack;
+package nDFSAndBacktrack.fTwoDimensional;
 
 /**
  * 岛屿数量

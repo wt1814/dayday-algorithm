@@ -29,14 +29,14 @@ public class cPrientAllSortTwo {
     // XXX 全排列1 https://programmercarl.com/0046.%E5%85%A8%E6%8E%92%E5%88%97.html#%E5%9B%9E%E6%BA%AF%E4%B8%89%E9%83%A8%E6%9B%B2
     /**
      * todo 剪枝
-     * 怎么剪呢？因为要过滤掉重复的，只有重复的数字才会造成重复的结果。所以第一步要做的就是对数组进行排序，排序之后相同的数字肯定是挨着的。
-     * XXX 当遍历到当前数字的时候，如果数组中当前数字和前一个数字一样，并且前一个数字没有被使用，我们就跳过当前分支，也就是把当前分支给剪掉。
+     * todo 排序：怎么剪呢？因为要过滤掉重复的，只有重复的数字才会造成重复的结果。所以第一步要做的就是对数组进行排序，排序之后相同的数字肯定是挨着的。
+     * XXX 方案一：当遍历到当前数字的时候，如果数组中当前数字和前一个数字一样，并且前一个数字没有被使用，我们就跳过当前分支，也就是把当前分支给剪掉。
      * todo 当遍历到当前数字的时候，如果当前数字和数组中前一个数字一样，并且前一个数字被使用了，我们就跳过当前分支，也就是把当前分支给剪掉（和上面的相反）
      * todo 自己的方式：遍历排序后的数组，判断当前元素是否跟上一元素相等。
      * @param nums
      * @return
      */
-    public List<List<Integer>> permuteUnique(int[] nums) {
+    public static List<List<Integer>> permuteUnique(int[] nums) {
         //先对数组进行排序，这样做目的是相同的值在数组中肯定是挨着的，
         //方便过滤掉重复的结果
         Arrays.sort(nums);
@@ -48,10 +48,9 @@ public class cPrientAllSortTwo {
         return res;
     }
 
-    public void backtrack(int[] nums, boolean[] used, List<Integer> tempList, List<List<Integer>> res) {
+    public static void backtrack(int[] nums, boolean[] used, List<Integer> tempList, List<List<Integer>> res) {
         //如果数组中的所有元素都使用完了，类似于到了叶子节点，
-        //我们直接把从根节点到当前叶子节点这条路径的元素加入
-        //到集合res中
+        //我们直接把从根节点到当前叶子节点这条路径的元素加入到集合res中
         if (tempList.size() == nums.length) {
             res.add(new ArrayList<>(tempList));
             return;
@@ -59,13 +58,15 @@ public class cPrientAllSortTwo {
         //遍历数组中的元素
         for (int i = 0; i < nums.length; i++) {
             //如果已经被使用过，则直接跳过
-            if (used[i])
+            if (used[i]){
                 continue;
+            }
             //注意，这里要剪掉重复的组合
             //如果当前元素和前一个一样，并且前一个被使用了，我们也跳过
-            if (i > 0 && nums[i - 1] == nums[i] && used[i - 1])
+            if (i > 0 && nums[i - 1] == nums[i] && used[i - 1]){
                 continue;
-            //否则我们就使用当前元素，把他标记为已使用
+            }
+            //否则我们就使用当前元素，把它标记为已使用
             used[i] = true;
             //把当前元素nums[i]添加到tempList中
             tempList.add(nums[i]);
@@ -75,9 +76,10 @@ public class cPrientAllSortTwo {
             used[i] = false;
             tempList.remove(tempList.size() - 1);
         }
+
     }
 
-    //////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
      *
@@ -97,6 +99,7 @@ public class cPrientAllSortTwo {
      * @param nums
      */
     private static void backtrack1(List<List<Integer>> list, List<Integer> tempList, int[] nums) {
+
         if (tempList.size() == nums.length) {
             list.add(new ArrayList<>(tempList));
             return;

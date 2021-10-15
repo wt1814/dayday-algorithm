@@ -1,4 +1,4 @@
-package nDFSAndBacktrack;
+package nDFSAndBacktrack.fTwoDimensional;
 
 /**
  * 剑指 Offer-使用DFS和BFS解机器人的运动范围

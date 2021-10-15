@@ -5,7 +5,11 @@ import java.util.List;
 
 /**
  * 46. 数组全排列
- * 给定一个没有重复数字的序列，返回其所有可能的全排列。
+ * 给定一个不含重复数字的数组 nums ，返回其 所有可能的全排列 。你可以 按任意顺序 返回答案。
+ *
+ * 示例 1：
+ * 输入：nums = [1,2,3]
+ * 输出：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
  */
 public class aPrientAllSortOfOneself {
 
@@ -17,17 +21,21 @@ public class aPrientAllSortOfOneself {
 
     }
 
-
+    /**
+     *
+     * @param nums
+     * @return
+     */
     public static List<List<Integer>> permute(int[] nums) {
 
         List<List<Integer>> result = new ArrayList();
-        permute1(result,nums,0);
+        permute(result,nums,0);
         return result;
     }
 
-    public static void permute1(List<List<Integer>> result,int[] nums,int index){
+    public static void permute(List<List<Integer>> result,int[] nums,int index){
 
-        if(index == nums.length-1){
+        if(index == nums.length-1){   // todo 原数组回溯。要复制快照到新数组，用来添加。
             List<Integer> list = new ArrayList<>();
             for (int i = 0;i<nums.length;i++){
                 list.add(nums[i]);
@@ -38,7 +46,7 @@ public class aPrientAllSortOfOneself {
 
         for(int i = index;i<nums.length;i++){
             swap(nums,index,i);    // todo
-            permute1(result,nums,index+1);  // todo
+            permute(result,nums,index+1);  // todo
             swap(nums,i,index);   // todo
         }
 

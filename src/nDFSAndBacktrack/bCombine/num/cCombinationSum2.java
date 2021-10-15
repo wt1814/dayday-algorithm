@@ -9,7 +9,7 @@ package nDFSAndBacktrack.bCombine.num;
  * 示例 1: 输入: candidates = [10,1,2,7,6,1,5], target = 8, 所求解集为: [ [1, 7], [1, 2, 5], [2, 6], [1, 1, 6] ]
  * 示例 2: 输入: candidates = [2,5,2,1,2], target = 5, 所求解集为: [   [1,2,2],   [5] ]
  */
-public class dCombinationSum2 {
+public class cCombinationSum2 {
 
 
     // https://programmercarl.com/0040.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8CII.html

@@ -18,6 +18,8 @@ public class gPrintAllSubsquenceOfOneself {
 
     }
 
+
+
     /**
      *
      * @param str
