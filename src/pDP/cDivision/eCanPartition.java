@@ -1,4 +1,4 @@
-package pDP.bDivision;
+package pDP.cDivision;
 
 /**
  * 416. 动态规划解分割等和子集

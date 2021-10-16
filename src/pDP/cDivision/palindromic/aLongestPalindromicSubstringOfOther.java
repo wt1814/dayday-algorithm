@@ -1,4 +1,4 @@
-package pDP.bDivision.palindromic;
+package pDP.cDivision.palindromic;
 
 /**
  * 5. 最长回文子串

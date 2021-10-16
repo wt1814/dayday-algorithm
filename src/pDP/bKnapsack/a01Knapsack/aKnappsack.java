@@ -1,10 +1,11 @@
-package pDP.cKnapsack.aKnapasck;
+package pDP.bKnapsack.a01Knapsack;
 
 /**
  * 01背包
  * 容量为W的背包和N个物品，其中第i个物品的重量为wt[i]，价值为val[i]
  */
-public class bKnapsack {
+public class aKnappsack {
+
 
 
     public static void main(String[] args){
@@ -16,8 +17,11 @@ public class bKnapsack {
         System.out.println(knapsack(N,W,wt,val));
     }
 
+    // https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247485638&idx=1&sn=d7468955c5b121664031fd5c1b5a6f10&scene=21#wechat_redirect
 
 
+
+    /////////////////////////////////////////////////
     // https://mp.weixin.qq.com/s/RXfnhSpVBmVneQjDSUSAVQ
     /**
      *

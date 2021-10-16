@@ -1,4 +1,4 @@
-package pDP.bDivision;
+package pDP.cDivision;
 
 public class findTargetSumWays {
 

@@ -1,4 +1,4 @@
-package pDP.cKnapsack.bDeformation;
+package pDP.bKnapsack.zDeformation;
 
 /**
  * 474.

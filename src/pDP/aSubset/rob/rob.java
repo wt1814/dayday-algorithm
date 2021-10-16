@@ -15,4 +15,36 @@ public class rob {
 
     // https://leetcode-cn.com/problems/house-robber/
 
+
+
+    // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247489154&idx=1&sn=b91f94eb6c3fe27e0fc4fd7b40909fc1&chksm=fb4185a2cc360cb4ca4b16c1112b0f27dd27dca214457ff47739b17b6726a944706504a056d4&scene=178&cur_album_id=1360108212447526913#rd
+    /**
+     *
+     * @param nums
+     * @return
+     */
+    public int rob(int[] nums) {
+        return robHelper(nums, nums.length - 1);
+    }
+
+    /**
+     * 递归方式解打家劫舍
+     * @param nums
+     * @param i
+     * @return
+     */
+    private int robHelper(int[] nums, int i) {
+        //终止条件
+        if (i < 0)
+            return 0;
+        //偷上上家之前所能得到的最大值
+        int lastLast = robHelper(nums, i - 2);
+        //偷上家之前所能得到的最大值
+        int last = robHelper(nums, i - 1);
+        //偷上上家之前的还可以再偷当前这一家
+        int cur = lastLast + nums[i];
+        //然后返回偷当前这一家和不偷当前这一家的最大值
+        return Math.max(last, cur);
+    }
+
 }

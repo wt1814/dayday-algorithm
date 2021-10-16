@@ -1,4 +1,4 @@
-package pDP.bDivision;
+package pDP.cDivision;
 
 /**
  * 279. Perfect Squares (Medium)

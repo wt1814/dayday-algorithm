@@ -1,4 +1,4 @@
-package pDP.bDivision.palindromic;
+package pDP.cDivision.palindromic;
 
 /**
  * 动态规划解回文串分割 IV

@@ -1,5 +1,8 @@
 package pDP.aSubset;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 /**
  * 354. 俄罗斯套娃信封问题
  * 最长递增子序列之信封嵌套问题
@@ -16,14 +19,48 @@ package pDP.aSubset;
  */
 public class dMaxEnvelopes {
 
-    // https://mp.weixin.qq.com/s/PSDCjKlTh8MtANdgi-QIug
+    // https://leetcode-cn.com/problems/russian-doll-envelopes/solution/e-luo-si-tao-wa-xin-feng-wen-ti-by-leetc-wj68/
+    // todo 同时控制 www 和 hhh 两个维度并不是那么容易，因此我们考虑固定一个维度，再在另一个维度上进行选择。
+    public int maxEnvelopes(int[][] envelopes) {
+        if (envelopes.length == 0) {
+            return 0;
+        }
 
+        int n = envelopes.length;
+        // 按宽度升序排列，如果宽度一样，则按高度降序排列
+        Arrays.sort(envelopes, new Comparator<int[]>() {
+            public int compare(int[] e1, int[] e2) {
+                if (e1[0] != e2[0]) {
+                    return e1[0] - e2[0];
+                } else {
+                    return e2[1] - e1[1];
+                }
+            }
+        });
+
+        int[] f = new int[n];
+        Arrays.fill(f, 1);
+        int ans = 1;
+        for (int i = 1; i < n; ++i) {
+            for (int j = 0; j < i; ++j) {
+                if (envelopes[j][1] < envelopes[i][1]) {
+                    f[i] = Math.max(f[i], f[j] + 1);
+                }
+            }
+            ans = Math.max(ans, f[i]);
+        }
+        return ans;
+    }
+
+
+    // https://mp.weixin.qq.com/s/PSDCjKlTh8MtANdgi-QIug
     /**
      * todo 先对宽度w进行升序排序，如果遇到w相同的情况，则按照高度h降序排序。之后把所有的h作为一个数组，在这个数组上计算 LIS 的长度就是答案。
      * @param envelopes
      * @return
      */
-    public static int maxEnvelopes(int[][] envelopes) {
+    public static int maxEnvelopes1(int[][] envelopes) {
+
         return 0;
     }
 
