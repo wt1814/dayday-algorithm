@@ -28,6 +28,7 @@ public class aCombinationSum {
     private static void combineHelper(int n, int k,List<List<Integer>> result, LinkedList<Integer> path,int startIndex){
 
         if (path.size() == k) {
+            //todo 一般来说数组都是引用传递，当我们在一个分支修改了数组之后，其他分支上的数据也会改变，这也就造成了分支污染。所以在递归往下传递的时候我们都会新建一个数组，这样在当前分支的修改并不会影响到其他的分支，也就不会出错。
             result.add(new LinkedList<>(path));  // todo 一定初始化
             return;
         }
