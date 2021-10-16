@@ -15,8 +15,8 @@ package oBFS;
  * "hit" -> "hot" -> "dot" -> "dog" -> "cog"
  * "hit" -> "hot" -> "lot" -> "log" -> "cog"
  */
-public class bFindLadders {
+public class cFindLadders {
 
-    // https://leetcode-cn.com/problems/word-ladder-ii/
+    // https://leetcode-cn.com/problems/word-ladder-ii/solution/dan-ci-jie-long-ii-by-leetcode-solution/
 
 }
