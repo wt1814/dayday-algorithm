@@ -1,4 +1,4 @@
-package pDP.dTwoDimensional.path;
+package pDP.dTwoDimensional.cPath;
 
 /**
  * 动态规划求不同路径

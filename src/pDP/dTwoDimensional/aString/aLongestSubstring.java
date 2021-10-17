@@ -1,7 +1,9 @@
-package pDP.dTwoDimensional.bString.two;
+package pDP.dTwoDimensional.aString.two;
 
 /**
  * 牛客题霸第127题. 两个字符串的最长公共子串
+ * 输入：abcde bcd
+ * 输出：3
  */
 public class aLongestSubstring {
 

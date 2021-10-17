@@ -1,4 +1,4 @@
-package pDP.dTwoDimensional.path;
+package pDP.dTwoDimensional.cPath;
 
 /**
  * 递归和动态规划解三角形最小路径和

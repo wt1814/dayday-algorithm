@@ -1,4 +1,4 @@
-package pDP.dTwoDimensional;
+package pDP.dTwoDimensional.bMatrix;
 
 import java.util.Arrays;
 
