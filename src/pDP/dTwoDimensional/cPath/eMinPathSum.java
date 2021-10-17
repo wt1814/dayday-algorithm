@@ -2,9 +2,15 @@ package pDP.dTwoDimensional.cPath;
 
 /**
  * 64. 矩阵的最小路径和
- * 给定一个 n * m 的矩阵 a，从左上角开始每次只能向右或者向下走，最后到达右下角的位置，路径上所有的数字累加起来就是路径和，输出所有的路径中最小的路径和。
+ * 给定一个包含非负整数的 m x n 网格 grid ，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。
+ * 说明：每次只能向下或者向右移动一步。
+ *
+ * 示例 1：
+ * 输入：grid = [[1,3,1],[1,5,1],[4,2,1]]
+ * 输出：7
+ * 解释：因为路径 1→3→1→1→1 的总和最小。
  */
-public class aMinPathSum {
+public class eMinPathSum {
 
     public static void main(String[] args){
         int[][] matrix = {{1,3,5,9},{8,1,3,4},{5,0,6,1},{8,8,4,0}};
@@ -12,7 +18,10 @@ public class aMinPathSum {
         System.out.println(i);
     }
 
+    // https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247485106&idx=1&sn=39adbde98707dc02a99e71f58cad5e7c&chksm=fd9cadadcaeb24bb2295d170f3de8dca0ce8e5acadccafbee82139dfe38ce1984435cd7a50ed&scene=178&cur_album_id=1773144264147812354#rd
 
+
+    //////////////////////////////////////////////////////////////////
     // https://mp.weixin.qq.com/s/SqNdZOu9vSMNQx37EkousQ
     /**
      * 第一行 只能从左往右  第一个元素 的值为 原数组的第一个元素 dp[0][0] = a[0][0]  dp[0][j] = a[0][j] + dp[0][j-1];
