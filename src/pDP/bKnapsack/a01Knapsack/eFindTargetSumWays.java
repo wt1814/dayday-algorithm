@@ -2,6 +2,8 @@ package pDP.bKnapsack.a01Knapsack;
 
 /**
  * 494. 目标和
+ * todo 参考 494. DFS解目标和问题
+ * todo 可以理解 DFS和动态规划 为什么能解部分相同类型问题
  */
 public class eFindTargetSumWays {
 
