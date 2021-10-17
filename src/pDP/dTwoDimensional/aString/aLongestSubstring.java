@@ -1,4 +1,4 @@
-package pDP.dTwoDimensional.aString.two;
+package pDP.dTwoDimensional.aString;
 
 /**
  * 牛客题霸第127题. 两个字符串的最长公共子串

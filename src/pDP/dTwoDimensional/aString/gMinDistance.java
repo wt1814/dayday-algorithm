@@ -1,4 +1,4 @@
-package pDP.dTwoDimensional.aString.two;
+package pDP.dTwoDimensional.aString;
 
 /**
  * 72. 编辑距离
@@ -16,7 +16,7 @@ package pDP.dTwoDimensional.aString.two;
  * rorse -> rose (删除 'r')
  * rose -> ros (删除 'e')
  */
-public class fMinDistance {
+public class gMinDistance {
 
     // https://mp.weixin.qq.com/s/ljrjbdIUAG50P2b0THknzw
     // https://mp.weixin.qq.com/s/uWzSvWWI-bWAV3UANBtyOw

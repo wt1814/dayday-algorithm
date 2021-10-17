@@ -1,4 +1,4 @@
-package pDP.dTwoDimensional.aString.two;
+package pDP.dTwoDimensional.aString;
 
 /**
  * KMP算法
@@ -6,7 +6,7 @@ package pDP.dTwoDimensional.aString.two;
  * todo 优化：当模式串有公共的前缀和后缀（acddddac，ac就是公共的前缀和后缀），直接移动到后缀的位置
  * kmp算法：当不匹配时，找最长公共前后缀，移动到后缀部分
  */
-public class dKMP {
+public class eKMP {
 
     // 字符串匹配的KMP算法
     //https://mp.weixin.qq.com/s?__biz=MzIwNTc4NTEwOQ==&mid=2247486950&idx=1&sn=61185c72b270891a0e1aa0db1f9a627f&chksm=972adc9ca05d558a3d5e8a505b29937768e6f47b6c318bc6cc478803d9634e2f4555c26179f9&mpshare=1&scene=1&srcid=&key=00a8e91eefd868fc0218770ad47efc19a0eb1837e26a2fde21a4e6ae367993f51dcfd216c2397954d6a4de33fa5f65dd63b8b620d6e981902b0f9ace3bbbf335784449a15c08450df602e9229d6857de&ascene=1&uin=MTE1MTYxNzY2MQ%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=eg5OolRG8y0%2Bw9bavl09Uyc6GPxVmhjvDrWe622XQSg9XG10VZWa9GR31nV6T9cV

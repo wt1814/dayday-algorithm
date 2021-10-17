@@ -1,4 +1,4 @@
-package pDP.dTwoDimensional.aString.two;
+package pDP.dTwoDimensional.aString;
 
 /**
  * 650. 只有两个键的键盘
@@ -17,7 +17,7 @@ package pDP.dTwoDimensional.aString.two;
  * 第 2 步, 使用 Paste 操作来获得 'AA'。
  * 第 3 步, 使用 Paste 操作来获得 'AAA'。
  */
-public class gMinSteps {
+public class hMinSteps {
 
 
 

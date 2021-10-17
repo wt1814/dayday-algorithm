@@ -12,11 +12,9 @@ import java.util.Arrays;
  * 输出：4
  * 解释：最长递增子序列是 [2,3,7,101]，因此长度为 4 。
  *
- *
  * 如果有多个答案，请输出其中 按数值(注：区别于按单个字符的ASCII码值)进行比较的 字典序最小的那个
  */
 public class cLongestIncreasingSequence {
-
 
 
     public static void main(String[] args){
@@ -40,7 +38,6 @@ public class cLongestIncreasingSequence {
         int[] ints = generateLIS(arr, dp);
         return ints;
     }
-
 
     /**
      * todo 生成dp数组

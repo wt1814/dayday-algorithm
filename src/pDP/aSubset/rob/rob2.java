@@ -12,8 +12,12 @@ package pDP.aSubset.rob;
  */
 public class rob2 {
 
+    public static void main(String[] args) {
+
+    }
+
     // https://leetcode-cn.com/problems/house-robber-ii/
-    public int rob(int[] nums) {
+    public static int rob(int[] nums) {
         int length = nums.length;
         if (length == 1) {
             return nums[0];
@@ -25,7 +29,7 @@ public class rob2 {
         return Math.max(robRange(nums, 0, length - 2), robRange(nums, 1, length - 1));
     }
 
-    public int robRange(int[] nums, int start, int end) {
+    public static int robRange(int[] nums, int start, int end) {
         int first = nums[start], second = Math.max(nums[start], nums[start + 1]);
         for (int i = start + 2; i <= end; i++) {
             int temp = second;
@@ -35,10 +39,8 @@ public class rob2 {
         return second;
     }
 
-
+    //////////////////////////////////////////////////////////////////////////////////
     // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247489372&idx=2&sn=3859b93d10949329f395b6afb67b933d&chksm=fb41847ccc360d6aa30e7e5e979b31d6a0ec48ad54b4cc17af6009f6be94c05864a91a57a7c8&scene=178&cur_album_id=1360108212447526913#rd
-
-
 
 
 }

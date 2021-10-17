@@ -1,4 +1,4 @@
-package pDP.dTwoDimensional.aString.two;
+package pDP.dTwoDimensional.aString;
 
 /**
  * 最长公共子序列

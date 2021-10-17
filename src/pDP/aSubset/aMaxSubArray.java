@@ -14,10 +14,6 @@ public class aMaxSubArray {
 
     }
 
-    // https://mp.weixin.qq.com/s/nrULqCsRsrPKi3Y-nUfnqg
-    // https://mp.weixin.qq.com/s/A1QjxToAE9bqRetsypJFog
-
-    /////////////////////////////
     /**
      * todo 自己写的
      * max sum of the subarray
@@ -54,13 +50,13 @@ public class aMaxSubArray {
         return result;
     }
 
-
     //////////////////////////////////
 
     // https://mp.weixin.qq.com/s/GvBPILaDVhjVhtVDQRLs5g
     // https://leetcode-cn.com/problems/maximum-subarray/
     // https://www.cnblogs.com/dddyyy/p/10746769.html
-    // https://mp.weixin.qq.com/s/GvBPILaDVhjVhtVDQRLs5g
+    // https://mp.weixin.qq.com/s/nrULqCsRsrPKi3Y-nUfnqg
+    // https://mp.weixin.qq.com/s/A1QjxToAE9bqRetsypJFog
 
     /**
      *

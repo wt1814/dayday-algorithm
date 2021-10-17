@@ -1,4 +1,4 @@
-package pDP.aSubset;
+package pDP.dTwoDimensional.aString;
 
 /**
  * 516. 最长回文子序列
@@ -9,12 +9,38 @@ package pDP.aSubset;
  */
 public class dLongestPalindromeSubseq {
 
+    public static void main(String[] args) {
 
+    }
 
-    // 回文子序列
-    // https://mp.weixin.qq.com/s/zNai1pzXHeB2tQE6AdOXTA
+    // todo 理解 https://mp.weixin.qq.com/s/zNai1pzXHeB2tQE6AdOXTA
+
+    ///////////////////////////////////////////////////////////////////////////////////
     // https://mp.weixin.qq.com/s/_YznW0t4z-_bzkBGQK6jpQ
-    // ~~https://mp.weixin.qq.com/s/FmWvxnlJLIzUYDI23u08Aw
+    public static int longestPalindromeSubseq3(String s) {
+        int n = s.length();
+        if (n <= 1) {
+            return n;
+        }
+
+        int[][] dp = new int[n][n];
+
+        // todo 先求长度为1的子序列，再求长度为2的，依次递增
+        for (int len = 1; len <= n; len++) {
+            for (int i = 0; i < n - len + 1; i++) {
+                int j = i + len - 1;
+                if (i == j) {
+                    dp[i][j] = 1;
+                } else if (s.charAt(i) == s.charAt(j)) {
+                    dp[i][j] = dp[i + 1][j - 1] + 2;
+                } else {
+                    dp[i][j] = Math.max(dp[i + 1][j], dp[i][j - 1]);
+                }
+            }
+        }
+
+        return dp[0][n - 1];
+    }
 
     ///////////////////////////////////////////////////////////////////////////////////
 
@@ -49,6 +75,9 @@ public class dLongestPalindromeSubseq {
 
     ///////////////////////////////////////////////////////////////////////////////////
     // todo https://leetcode-cn.com/problems/longest-palindromic-subsequence/solution/dong-tai-gui-hua-si-yao-su-by-a380922457-3/
+    // https://mp.weixin.qq.com/s/FmWvxnlJLIzUYDI23u08Aw
+    // https://mp.weixin.qq.com/s/_YznW0t4z-_bzkBGQK6jpQ
+
     /**
      * todo 动态规划，四要素
      * 1. 状态 f[i][j] 表示 s 的第 i 个字符到第 j 个字符组成的子串中，最长的回文序列长度是多少。
@@ -86,35 +115,5 @@ public class dLongestPalindromeSubseq {
         return f[0][n - 1];
 
     }
-
-
-    ///////////////////////////////////////////////////////////////////////////////////
-
-    public static int longestPalindromeSubseq3(String s) {
-        int n = s.length();
-        if (n <= 1) {
-            return n;
-        }
-
-        int[][] dp = new int[n][n];
-
-        // 先求长度为1的子序列，再求长度为2的，依次递增
-        for (int len = 1; len <= n; len++) {
-            for (int i = 0; i < n - len + 1; i++) {
-                int j = i + len - 1;
-                if (i == j) {
-                    dp[i][j] = 1;
-                } else if (s.charAt(i) == s.charAt(j)) {
-                    dp[i][j] = dp[i + 1][j - 1] + 2;
-                } else {
-                    dp[i][j] = Math.max(dp[i + 1][j], dp[i][j - 1]);
-                }
-            }
-        }
-
-        return dp[0][n - 1];
-    }
-
-
 
 }

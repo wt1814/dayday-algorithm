@@ -5,6 +5,11 @@ package pDP.aSubset;
  */
 public class bNotAdjacentSubsequence {
 
+
+    public static void main(String[] args) {
+
+    }
+
     /**
      * todo 错误写法
      *  if(array[i]>0){
@@ -21,7 +26,7 @@ public class bNotAdjacentSubsequence {
      * @param array
      * @return
      */
-    public long subsequence (int n, int[] array) {
+    public static long subsequence (int n, int[] array) {
         // write code here
         //todo n+1，一维数组长度加1，设置哑节点
         long[] dp = new long[n + 1];
@@ -37,7 +42,7 @@ public class bNotAdjacentSubsequence {
 
 
     //////////////////////////////////////////////////////////
-    public long subsequence1 (int n, int[] array) {
+    public static long subsequence1 (int n, int[] array) {
         // write code here
         int len = array.length;
         if(len == 0){
@@ -58,7 +63,7 @@ public class bNotAdjacentSubsequence {
         return result;
     }
 
-    public long[] getDp(int[] array){
+    public static long[] getDp(int[] array){
 
         long[] result = new long[array.length];
         result[0] = array[0];
