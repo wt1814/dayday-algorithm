@@ -1,4 +1,4 @@
-package sProducerConsumer;
+package bJava;
 
 /**
  * 多线程顺序打印ABC
