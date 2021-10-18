@@ -15,7 +15,6 @@ public class bThreeSum {
 
 
     // https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247484423&idx=1&sn=ff37a4bb96de487601d8ea7df59ef794&chksm=fd9caf18caeb260e101a6efe1809663dda5ef7d83d0f8a5df3d7e5e4edb6634f67ea39fab4cf&scene=178&cur_album_id=1748659352518868992#rd
-
     /**
      * 对数组进行排序，使用三个指针 i、j 和 k 分别代表要找的三个数。
      *
@@ -28,16 +27,42 @@ public class bThreeSum {
      *         sum < 0：j 右移，使 sum 变大
      *         sum = 0：找到符合要求的答案，存起来
      */
+    public List<List<Integer>> threeSum(int[] nums) {
+        Arrays.sort(nums);
+        int n = nums.length;
+        List<List<Integer>> ans = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
+            for (int j = i + 1, k = n - 1; j < k; j++) {
+                if (j > i + 1 && nums[j] == nums[j - 1]) {
+                    continue;
+                }
+                while (k - 1 > j && nums[i] + nums[j] + nums[k - 1] >= 0) {
+                    k--;
+                }
+                if (nums[i] + nums[j] + nums[k] == 0) {
+                    ans.add(Arrays.asList(nums[i], nums[j], nums[k]));
+                }
+            }
+        }
+        return ans;
+    }
+    // todo 时间复杂度：排序的复杂度为 ，对于每个 i 而言，最坏的情况 j 和 k 都要扫描一遍数组的剩余部分，复杂度为 。整体复杂度为
+    // todo 空间复杂度：
 
 
 
+
+    ////////////////////////////////////////////////////////////////////////////
     // https://mp.weixin.qq.com/s/NvPpOIbCc_0SRpJqKMgcrA
     /**
      *
      * @param num
      * @return
      */
-    public static List<List<Integer>> threeSum(int[] num) {
+    public static List<List<Integer>> threeSum1(int[] num) {
         //先对数组进行排序
         Arrays.sort(num);
         List<List<Integer>> res = new ArrayList<>();
@@ -80,7 +105,7 @@ public class bThreeSum {
     }
 
 /*
-    排序的时间复杂度是O(nlogn)，for循环中的时间复杂度是O(n)，for循环里面的时间复杂度是O(n)，他们是相乘的关系，所以他们的时间复杂度是O(n^2)，整个代码的时间复杂度就是O(nlogn)+O(n^2)，也就是O(n^2)。
+    todo 排序的时间复杂度是O(nlogn)，for循环中的时间复杂度是O(n)，for循环里面的时间复杂度是O(n)，他们是相乘的关系，所以他们的时间复杂度是O(n^2)，整个代码的时间复杂度就是O(nlogn)+O(n^2)，也就是O(n^2)。
 */
 
 }

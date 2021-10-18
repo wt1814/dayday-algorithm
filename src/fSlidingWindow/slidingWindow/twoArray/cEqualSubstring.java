@@ -15,6 +15,10 @@ package fSlidingWindow.slidingWindow.twoArray;
  */
 public class cEqualSubstring {
 
+
+
+    // https://mp.weixin.qq.com/s/s9Kk9JtbMxvQdofmuWa7TQ
+
     // https://www.cnblogs.com/huansky/p/13488234.html
     public int equalSubstring(String s, String t, int maxCost) {
         int left = 0, right =0;
