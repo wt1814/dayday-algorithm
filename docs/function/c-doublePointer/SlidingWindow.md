@@ -18,7 +18,12 @@ https://www.cnblogs.com/huansky/p/13488234.html
 https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583ad935e76e9a3f6793792e60734&chksm=9bd7f8ddaca071cbb7570b2433290e5e2628d20473022a5517271de6d6e50783961bebc3dd3b&scene=21#wechat_redirect
 -->
 
+&emsp; 滑动窗口 求解 最xx的连续xx。  
+
+
 ## 1.1. 双指针与滑动窗口
+&emsp; 双指针 + 哈希表解法（滑动窗口）  
+
 &emsp; 双指针
 
 * 计算过程仅与两端点相关的称为双指针。

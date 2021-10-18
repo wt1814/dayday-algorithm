@@ -12,7 +12,6 @@ public class dQuickSortToFindKth {
     }
 
 
-
     public static int findKth(int[] a, int n, int K) {
 
         return quickSort(a,0,n-1,K);

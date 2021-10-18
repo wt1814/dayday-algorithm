@@ -14,6 +14,8 @@ package pDP.aSubset;
  */
 public class eNumberOfArithmeticSlices {
 
+    //////
+    // 滑动窗口 https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247488137&idx=1&sn=71e9f2adc320ffd74493c4f3e4b132bf&chksm=fd9cb996caeb30803b3a28b2a4c6f16b05f6cc6209c1e025e32e7ef6578e8e5ed42dc68805af&scene=178&cur_album_id=1748659352518868992#rd
 
     // todo 滑动窗口、动态规划（Java）
     // https://leetcode-cn.com/problems/arithmetic-slices/solution/hua-dong-chuang-kou-dong-tai-gui-hua-jav-3vpp/

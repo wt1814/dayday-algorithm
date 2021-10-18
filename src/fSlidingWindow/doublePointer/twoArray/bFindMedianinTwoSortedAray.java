@@ -1,12 +1,14 @@
-package eSearch;
+package fSlidingWindow.doublePointer.twoArray;
 
 /**
  * 在两个长度相等的排序数组中找到上中位数
  * todo 双指针法
  */
-public class fFindMedianinTwoSortedAray {
+public class bFindMedianinTwoSortedAray {
 
+    public static void main(String[] args) {
 
+    }
 
     /**
      * 首先求出上中位数的下标，然后在合并的过程中求出下标对应的数。

@@ -10,6 +10,7 @@ public class eMergeSortOfItera {
     //todo 迭代解题
     private static int count = 0;
     public int[] sort(int[] data) {
+
         return sort(data, 0, data.length - 1);
     }
 

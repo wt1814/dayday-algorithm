@@ -2,6 +2,7 @@ package fSlidingWindow.doublePointer;
 
 /**
  * 11. 盛最多水的容器
+ * leetcode： https://leetcode-cn.com/problems/container-with-most-water/
  * 给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。
  * 找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
  *
@@ -20,30 +21,36 @@ public class eMaxArea {
 
     public static void main(String[] args) {
 
+        int[] arr = new int[]{1,8,6,2,5,4,8,3,7};
+        int i = maxArea(arr);
+        System.out.println(i);
+
     }
 
 
     /**
      * 在初始时，左右指针分别指向数组的左右两端
-     * 此时我们需要移动一个指针。移动哪一个呢？直觉告诉我们，
+     * 此时需要移动一个指针。移动哪一个呢？直觉告诉我们，
      * todo 应该移动对应数字较小的那个指针（即此时的左指针）。
      * 这是因为，由于容纳的水量是由两个指针指向的数字中较小值∗指针之间的距离
      */
     public static int maxArea(int[] height) {
-        int l = 0, r = height.length - 1;
+        int l = 0, r = height.length - 1;  // 定义左右指针
         int ans = 0;
         while (l < r) {
             int area = Math.min(height[l], height[r]) * (r - l);
             ans = Math.max(ans, area);
             if (height[l] <= height[r]) {
                 ++l;
-            }
-            else {
+            } else {
                 --r;
             }
         }
         return ans;
     }
+
+    ///////////////////////////////////////////////////////////////////////////
+    // https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247484229&idx=2&sn=e3d730a608987d3c764f17578ab4e8af&chksm=fd9ca85acaeb214cb2ab0e66b3ee5f8b20a5159aef56e23b92669669b039187836d53ce48bb7&scene=178&cur_album_id=1748659352518868992#rd
 
 
 

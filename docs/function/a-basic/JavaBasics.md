@@ -39,6 +39,21 @@ System.out.print(stack.pop());
 https://blog.csdn.net/sixabs/article/details/82708318
 -->
 
+```text
+for(int k=i*2+1;k<length;k=k*2+1){ 
+
+}
+
+while (childIndex < length) {
+    //todo 选取孩子结点的左孩子结点，继续向下筛选
+    //todo 对比for循环的区别，while循环此处要编码修改指针
+    parentIndex = childIndex;
+    childIndex = 2 * childIndex + 1;
+}
+```
+
+&emsp; for循环，在迭代条件里更新下标；while循环需要额外编码实现指针移动。  
+
 
 ## ~~递归和迭代~~
 <!-- 

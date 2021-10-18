@@ -3,7 +3,7 @@ package bJava;
 /**
  *
  */
-public class synchronizedTest {
+public class SynchronizedTest {
 
 
 

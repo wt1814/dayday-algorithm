@@ -3,7 +3,7 @@ package fSlidingWindow.doublePointer.twoArray;
 /**
  * 88. 合并两个有序数组
  */
-public class cMergeArray {
+public class aMergeArray {
 
     // https://www.nowcoder.com/practice/89865d4375634fc484f3a24b7fe65665?tpId=188&&tqId=38585&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
     // https://leetcode-cn.com/problems/merge-sorted-array/solution/he-bing-liang-ge-you-xu-shu-zu-by-leetco-rrb0/
@@ -15,7 +15,7 @@ public class cMergeArray {
      * @param nums2
      * @param n
      */
-    public void merge(int[] nums1, int m, int[] nums2, int n) {
+    public static void merge(int[] nums1, int m, int[] nums2, int n) {
 
         // 新建数组
         int[] sorted = new int[m + n];
@@ -47,7 +47,7 @@ public class cMergeArray {
      * @param nums2
      * @param n
      */
-    public void merge2(int[] nums1, int m, int[] nums2, int n) {
+    public static void merge2(int[] nums1, int m, int[] nums2, int n) {
         int p1 = m - 1, p2 = n - 1;
         int tail = m + n - 1;
         int cur;
@@ -66,7 +66,7 @@ public class cMergeArray {
     }
 
 
-    public void merge3(int A[], int m, int B[], int n) {
+    public static void merge3(int A[], int m, int B[], int n) {
         //因为题目明确说了A数组足够大，所以直接在A数组操作
         int i = m - 1;
         int j = n - 1;

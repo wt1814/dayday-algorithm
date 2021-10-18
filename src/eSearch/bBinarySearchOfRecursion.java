@@ -3,7 +3,6 @@ package eSearch;
 /**
  * todo 递归解二分查找
  * todo 关键点：相撞指针到同一个中点，然后返回中点。
- * todo todo todo
  *
  * 二分查找，将一个集合分成三部分
  */
@@ -16,6 +15,7 @@ public class bBinarySearchOfRecursion {
             array[i] = i;
         }
         System.out.println(recursionBinarySearch(array, 0,array.length,173));
+
     }
 
     /**

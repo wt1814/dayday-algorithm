@@ -14,6 +14,23 @@ public class bThreeSum {
     }
 
 
+    // https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247484423&idx=1&sn=ff37a4bb96de487601d8ea7df59ef794&chksm=fd9caf18caeb260e101a6efe1809663dda5ef7d83d0f8a5df3d7e5e4edb6634f67ea39fab4cf&scene=178&cur_album_id=1748659352518868992#rd
+
+    /**
+     * 对数组进行排序，使用三个指针 i、j 和 k 分别代表要找的三个数。
+     *
+     * 1. 通过枚举 i 确定第一个数，
+     *  todo 另外两个指针 j，k 分别从左边 i + 1 和右边 n - 1 往中间移动，
+     *  找到满足 nums[i] + nums[j] + nums[k] == 0 的所有组合。
+     *
+     * 2. j 和 k 指针的移动逻辑，分情况讨论 sum = nums[i] + nums[j] + nums[k] ：
+     *         sum > 0：k 左移，使 sum 变小
+     *         sum < 0：j 右移，使 sum 变大
+     *         sum = 0：找到符合要求的答案，存起来
+     */
+
+
+
     // https://mp.weixin.qq.com/s/NvPpOIbCc_0SRpJqKMgcrA
     /**
      *
