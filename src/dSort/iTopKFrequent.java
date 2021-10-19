@@ -1,4 +1,4 @@
-package hQueue.priority;
+package dSort;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,13 +13,15 @@ import java.util.Set;
  * 输入: nums = [1,1,1,2,2,3], k = 2
  * 输出: [1,2]
  */
-public class TopKFrequent {
+public class iTopKFrequent {
 
 
     public static void main(String[] args) {
 
     }
 
+
+    // https://mp.weixin.qq.com/s/zVon8BE7l80-RT5bWdKCxA
     // https://programmercarl.com/0347.%E5%89%8DK%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0.html
 
     // 此时要思考一下，是使用小顶堆呢，还是大顶堆？
