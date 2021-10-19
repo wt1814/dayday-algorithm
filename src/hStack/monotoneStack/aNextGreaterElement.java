@@ -6,6 +6,7 @@ import java.util.Stack;
 
 /**
  *  519，单调栈解下一个更大元素 I
+ *  todo 单调队列 + List/HashMap(记录)
  *  给你两个没有重复元素的数组nums1和nums2，其中nums1是nums2 的子集。
  * 请你找出nums1中每个元素在nums2中的下一个比其大的值。
  * nums1中数字x的下一个更大元素是指x在nums2中对应位置的右边的第一个比x大的元素。如果不存在，对应位置输出-1。
