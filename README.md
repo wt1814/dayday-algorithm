@@ -20,6 +20,7 @@
 &emsp; [链表](/docs/function/d-structure/Linked.md)  
 &emsp; [栈](/docs/function/d-structure/stack.md)  
 &emsp; [队列](/docs/function/d-structure/queue.md)  
+&emsp; &emsp; [优先级队列](/docs/function/d-structure/priorityQueue.md)  
 &emsp; [哈希](/docs/function/d-structure/hash.md)   
 &emsp; [二叉树](/docs/function/d-structure/tree.md)  
 &emsp; [二叉排序(查找)树](/docs/function/d-structure/binarySort.md)  
