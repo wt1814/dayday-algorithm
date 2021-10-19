@@ -10,17 +10,6 @@ public class aInvertLinkedListOfIterate {
 
     public static void main(String[] args) {
 
-/*        aInvertLinkedListOfIterate linkedList = new aInvertLinkedListOfIterate();
-        int[] arr = {1, 2, 3, 4,5};
-        for (int i = 0; i < arr.length; i++) {
-            linkedList.addHead(arr[i]);
-        }
-        linkedList.print();
-        linkedList.iterationInvertLinkedList();
-        // 翻转后别忘了设置头结点的后继结点！
-        //linkedList.head = newHead;
-        linkedList.print(); // 打印 1，2，3，4*/
-
 
     }
 

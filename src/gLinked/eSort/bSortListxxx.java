@@ -1,4 +1,4 @@
-package gLinked.bSort;
+package gLinked.eSort;
 
 import gLinked.ListNode;
 
@@ -21,11 +21,12 @@ public class bSortListxxx {
     // todo 按照题目要求，在O(n log n)时间复杂度下，首先想到七大排序中的归并排序，因为快排的需要双指针，指向首尾，单链表后一个元素没有前一个元素指针。
 
     /**
-     * 1.归并排序思想	 		2.找到中间节点	 		3.进行归并排序
+     * 1.归并排序思想； 2.找到中间节点； 3.进行归并排序
      * @param head
      * @return
      */
     public static ListNode sortList(ListNode head) {
+
         return head == null ? head:mergeSort(head);
     }
 

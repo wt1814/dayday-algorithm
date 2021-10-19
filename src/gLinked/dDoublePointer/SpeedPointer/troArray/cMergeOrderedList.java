@@ -1,4 +1,4 @@
-package gLinked.fTwo;
+package gLinked.dDoublePointer.SpeedPointer.troArray;
 
 import gLinked.ListNode;
 
@@ -7,7 +7,7 @@ import gLinked.ListNode;
  * 要求重复利用已有空间
  * todo 移动节点 和 哨兵节点 的使用
  */
-public class hMergeOrderedList {
+public class cMergeOrderedList {
 
     public static void main(String[] args){
         ListNode listNode = new ListNode(5);

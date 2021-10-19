@@ -35,7 +35,7 @@ public class dReverseKGroup {
     }
 
 
-
+    // https://leetcode-cn.com/problems/reverse-nodes-in-k-group/solution/tu-jie-kge-yi-zu-fan-zhuan-lian-biao-by-user7208t/
     public static ListNode reverseKGroup(ListNode head, int k) {
 
         ListNode dummy = new ListNode(0);
@@ -61,7 +61,7 @@ public class dReverseKGroup {
             start.next = next;
             pre = start;
 
-            end = pre;
+            end = pre; // todo 更新下标，进行下一轮循环
         }
         return dummy.next;
 
@@ -81,6 +81,9 @@ public class dReverseKGroup {
 
 
     // https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
+
+
+    //////////////////////////////////////////////////////////////
     // https://www.nowcoder.com/practice/b49c3dc907814e9bbfa8437c251b028e?tpId=188&&tqId=38557&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
 
     /**

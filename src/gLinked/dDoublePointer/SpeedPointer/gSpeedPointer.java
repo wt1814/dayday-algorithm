@@ -1,4 +1,4 @@
-package gLinked.dDoublePointer;
+package gLinked.dDoublePointer.SpeedPointer;
 
 /**
  * 链表快慢指针找到单链表中间节点

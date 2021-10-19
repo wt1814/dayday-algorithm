@@ -2,6 +2,7 @@ package gLinked.cReset;
 
 /**
  * 725. 分隔链表
+ * https://leetcode-cn.com/problems/split-linked-list-in-parts/
  * 给你一个头结点为 head 的单链表和一个整数 k ，请你设计一个算法将链表分隔为 k 个连续的部分。
  * 每部分的长度应该尽可能的相等：任意两部分的长度差距不能超过 1 。这可能会导致有些部分为 null 。
  * 这 k 个部分应该按照在链表中出现的顺序排列，并且排在前面的部分的长度应该大于或等于排在后面的长度。
@@ -20,7 +21,10 @@ package gLinked.cReset;
  * 解释：
  * 输入被分成了几个连续的部分，并且每部分的长度相差不超过 1 。前面部分的长度大于等于后面部分的长度。
  */
-public class cSplitListToParts {
+public class cSplitListToPartsXXX {
+
+
+
 
 
 }

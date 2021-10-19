@@ -10,8 +10,6 @@ import gLinked.ListNode;
  * 示例 1:
  * 输入: 1->2->3->4->5->NULL
  * 输出: 1->3->5->2->4->NULL
- *
- * todo 链表分割
  */
 public class bOddEvenList {
 

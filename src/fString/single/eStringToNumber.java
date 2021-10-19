@@ -44,6 +44,12 @@ package fString.single;
 public class eStringToNumber {
 
     public static void main(String[] args) {
+
+        String str = "wordsAnd987";
+        char c = str.charAt(0);
+        int res = c - '0';
+        System.out.println(res);
+
         int i = atoi2("words and 987");
         System.out.println(i);
     }

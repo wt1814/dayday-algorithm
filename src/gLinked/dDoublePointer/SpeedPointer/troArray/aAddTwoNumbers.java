@@ -1,4 +1,4 @@
-package gLinked.fTwo;
+package gLinked.dDoublePointer.SpeedPointer.troArray;
 
 /**
  * 2. 两数相加

@@ -1,4 +1,4 @@
-package gLinked.dDoublePointer;
+package gLinked.dDoublePointer.SpeedPointer;
 
 import gLinked.ListNode;
 

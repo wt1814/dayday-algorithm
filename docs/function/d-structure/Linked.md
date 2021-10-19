@@ -34,7 +34,7 @@
 几乎刷完了力扣所有的链表题，我发现了这些东西。。。
 https://mp.weixin.qq.com/s/Ym7MhhJ--NcaRRnj1y1vFA
 
- 2021 秋招算法高频题汇总 - 链表篇 
+2021 秋招算法高频题汇总 - 链表篇 
 https://mp.weixin.qq.com/s/pJGRhBFhlLoHrYDZ4sUtRA
 -->
 
@@ -178,8 +178,6 @@ https://mp.weixin.qq.com/s/Ym7MhhJ--NcaRRnj1y1vFA
 ### 1.6.1. 引入哑节点（虚拟头）
 &emsp; 哑节点（dummy node）是初始值为NULL的节点，创建在使用到链表的函数中，可以起到避免处理头节点为空的边界问题的作用，减少代码执行异常的可能性。  
 &emsp; 也就是说，哑节点的使用可以对代码起到简化作用（省略当函数的入口参数为空时的判断）。  
-
-
 
 
 ### 1.6.2. 快慢指针  

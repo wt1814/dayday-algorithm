@@ -1,4 +1,4 @@
-package gLinked.fTwo;
+package gLinked.dDoublePointer.SpeedPointer.troArray;
 
 import gLinked.ListNode;
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 /**
  * 合并k个已排序的链表
  */
-public class mergeKLists {
+public class dMergeKLists {
 
 
     public ListNode mergeKLists(ArrayList<ListNode> lists) {

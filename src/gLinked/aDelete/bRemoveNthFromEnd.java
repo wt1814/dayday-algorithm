@@ -1,25 +1,15 @@
 package gLinked.aDelete;
 
+import gLinked.ListNode;
+
 /**
  * 19. 删除链表的倒数第 N 个结点
  */
 public class bRemoveNthFromEnd {
 
 
-
     public static void main(String[] args) {
-        bRemoveNthFromEnd bRemoveNthFromEnd = new bRemoveNthFromEnd();
-        int[] arr = {1,2,3,4,5};
-        for (int i = 0; i < arr.length; i++) {
-            bRemoveNthFromEnd.addHead(arr[i]);
-        }
-        bRemoveNthFromEnd.print();
 
-        bRemoveNthFromEnd.removeNodeByEndNum(bRemoveNthFromEnd.head,2);
-        bRemoveNthFromEnd.print(); // 打印 1，2，3，4
-
-        bRemoveNthFromEnd.removeNthFromEnd(bRemoveNthFromEnd.head,1);
-        bRemoveNthFromEnd.print(); // 打印 1，2，3，4
     }
 
 
@@ -65,11 +55,11 @@ public class bRemoveNthFromEnd {
 
     /**
      *
-     * @param listNode
+     * @param head
      * @param n
      * @return
      */
-    private ListNode removeNode(ListNode listNode, int n) {
+    private ListNode removeNode(ListNode head, int n) {
         ListNode dummy = new ListNode(0, head); //todo 引入哑节点
         ListNode first = head;
         ListNode second = dummy;
@@ -126,72 +116,5 @@ public class bRemoveNthFromEnd {
         return listNode;
     }
 
-
-
-
-
-
-    ////////////////////////////////////////////////////////////////////////
-
-    /**
-     * 内部节点类
-     */
-    public class ListNode {
-        private int data;
-        private ListNode next;
-
-        public ListNode(int data){
-            this.data = data;
-        }
-
-        ListNode(int val, ListNode next) { this.data = val; this.next = next; }
-    }
-
-    /**
-     * 链表属性
-     */
-    private ListNode head;
-    private int size;
-
-    public bRemoveNthFromEnd(){
-        this.head = null;
-        this.size = 0;
-    }
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    /**
-     * 在链表头节点添加元素
-     * @param obj
-     * @return
-     */
-    private Object addHead(int obj){
-
-        ListNode newHead = new ListNode(obj);
-        if (size == 0){
-            head = newHead;
-        }else {
-            newHead.next = head;
-            head = newHead;
-        }
-        size ++;
-        return newHead;
-
-    }
-
-    /**
-     * 打印节点
-     */
-    public void print() {
-        ListNode current = head;
-        while (current!=null){
-            if(current.next!=null)
-                System.out.print(current.data+"->");
-            else {
-                System.out.println(current.data);
-            }
-            current = current.next;
-        }
-    }
 
 }
