@@ -13,7 +13,7 @@ import java.util.Set;
  * 输入: nums = [1,1,1,2,2,3], k = 2
  * 输出: [1,2]
  */
-public class iTopKFrequent {
+public class jTopKFrequent {
 
 
     public static void main(String[] args) {
