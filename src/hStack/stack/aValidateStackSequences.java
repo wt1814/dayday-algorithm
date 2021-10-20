@@ -3,9 +3,15 @@ package hStack.stack;
 import java.util.Stack;
 
 /**
- * 438，剑指 Offer-栈的压入、弹出序列
- * 输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序。假设压入栈的所有数字均不相等。
- * 例如，序列 {1,2,3,4,5} 是某栈的压栈序列，序列 {4,5,3,2,1} 是该压栈序列对应的一个弹出序列，但 {4,3,5,1,2} 就不可能是该压栈序列的弹出序列。
+ * 946. 验证栈序列
+ * 给定 pushed 和 popped 两个序列，每个序列中的 值都不重复，只有当它们可能是在最初空栈上进行的推入 push 和弹出 pop 操作序列的结果时，返回 true；否则，返回 false 。
+ *
+ * 示例 1：
+ * 输入：pushed = [1,2,3,4,5], popped = [4,5,3,2,1]
+ * 输出：true
+ * 解释：我们可以按以下顺序执行：
+ * push(1), push(2), push(3), push(4), pop() -> 4,
+ * push(5), pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1
  */
 public class aValidateStackSequences {
 
@@ -21,6 +27,7 @@ public class aValidateStackSequences {
      * @return
      */
     public boolean validateStackSequences(int[] pushed, int[] popped) {
+
         Stack<Integer> stack = new Stack<>();
         int index = 0;
         for (int val : pushed) {
@@ -32,6 +39,7 @@ public class aValidateStackSequences {
             }
         }
         return stack.empty();
+
     }
 
 }

@@ -3,7 +3,7 @@ package iHash;
 import java.util.HashMap;
 
 /**
- * 第一个只出现一次的字符
+ * 387. 字符串中的第一个唯一字符
  */
 public class bFirstNotRepeatingChar {
 
