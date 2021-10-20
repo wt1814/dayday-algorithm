@@ -1,4 +1,4 @@
-package rLRU;
+package bJava.LRU;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
