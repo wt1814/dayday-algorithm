@@ -36,8 +36,8 @@ public class dNextGreaterElements {
         Stack<Integer> stack = new Stack<>();
         //相当于把数组循环两遍
         for (int i = 0; i < length * 2; i++) {
-            //遍历数组的第index（index从0开始）个元素，因为数组会遍历
-            //两遍，会导致数组越界异常，所以这里要对数组长度进行求余
+            //遍历数组的第index（index从0开始）个元素，
+            // todo 因为数组会遍历两遍，会导致数组越界异常，所以这里要对数组长度进行求余
             int index = i % length;
             //单调栈，他存储的是元素的下标，不是元素具体值，从栈顶
             //到栈底所对应的值是递增的（栈顶元素在数组中对应的值最小，

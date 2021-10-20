@@ -25,8 +25,10 @@ public class cDailyTemperatures {
      * @return
      */
     public int[] dailyTemperatures(int[] temperatures) {
+
         int length = temperatures.length;
         int[] ans = new int[length];
+
         Deque<Integer> stack = new LinkedList<Integer>();
         for (int i = 0; i < length; i++) {
             int temperature = temperatures[i];
