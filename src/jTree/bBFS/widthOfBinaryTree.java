@@ -10,9 +10,15 @@ import java.util.LinkedList;
  */
 public class widthOfBinaryTree {
 
-    // https://mp.weixin.qq.com/s/_eRzaIcg8Tt0vEvkDcIJHA
 
-    public int widthOfBinaryTree(TreeNode root) {
+
+    // https://mp.weixin.qq.com/s/_eRzaIcg8Tt0vEvkDcIJHA
+    /**
+     *
+     * @param root
+     * @return
+     */
+    public static int widthOfBinaryTree(TreeNode root) {
         if (root == null)
             return 0;
         //使用双端队列
