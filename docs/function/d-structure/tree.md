@@ -65,6 +65,7 @@ https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%80%BB%E7%BB%93%E7%AF%8
 &emsp; 6) 写代码，在代码中考虑如何把左树都信息和右树信息整合出整棵树的信息  
 
 
+深度优先和DFS...  
 
 
 # 1. 二叉树  

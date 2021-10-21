@@ -37,7 +37,7 @@ public class bLevelTraversalOfEnd {
 
         Queue<TreeNode> queue = new LinkedList<>();
 
-        queue.add(root);
+        queue.add(root); //todo 放入到队列的是节点TreeNode类型
         queue.add(null); //todo 一层结束放入null节点
         int level = 1;
 

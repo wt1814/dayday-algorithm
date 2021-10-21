@@ -4,7 +4,7 @@ import jTree.TreeNode;
 import java.util.*;
 
 /**
- * 层序遍历
+ * 层序遍历，打印节点
  */
 public class aLevelOrderTraversal {
 

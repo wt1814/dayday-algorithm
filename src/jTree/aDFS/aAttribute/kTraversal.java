@@ -1,9 +1,11 @@
-package jTree.bBFS;
+package jTree.aDFS.aAttribute;
 
 import jTree.TreeNode;
 
 /**
  * 513.找树左下角的值
+ * todo 使用前序遍历
+ * todo 前序遍历 和 层序遍历
  * 给定一个二叉树的 根节点 root，请找出该二叉树的 最底层 最左边 节点的值。
  * 假设二叉树中至少有一个节点。
  *
@@ -11,7 +13,7 @@ import jTree.TreeNode;
  * 输入: root = [2,1,3]
  * 输出: 1
  */
-public class hTraversal {
+public class kTraversal {
 
     // https://leetcode-cn.com/problems/find-bottom-left-tree-value/solution/ceng-xu-bian-li-by-ai-ru-shao-nian-m-bzrw/
     // https://leetcode-cn.com/problems/find-bottom-left-tree-value/solution/zi-jie-ti-ku-513-zhong-deng-zhao-shu-zuo-t56y/
