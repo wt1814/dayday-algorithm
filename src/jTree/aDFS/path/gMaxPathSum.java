@@ -113,8 +113,6 @@ public class gMaxPathSum {
             right = calculate(node.right);
         }
 
-
-
         int sum = node.val;
         if(left>0) {
             sum += left;
@@ -126,6 +124,7 @@ public class gMaxPathSum {
         // todo 记录左节点left、右节点right的最大值，再由MAX获取最终的最大值
         int maxTemp = Math.max(node.val, Math.max(left + node.val, right + node.val));
         return maxTemp;
+
     }
 
 }

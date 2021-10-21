@@ -22,7 +22,7 @@ public class bDiameterOfBinaryTreeXXX {
 
 
     // https://leetcode-cn.com/problems/diameter-of-binary-tree/solution/er-cha-shu-de-zhi-jing-by-leetcode-solution/
-    int ans;
+    int ans; // todo 全局变量
 
     public int diameterOfBinaryTree(TreeNode root) {
         ans = 1;
@@ -37,7 +37,7 @@ public class bDiameterOfBinaryTreeXXX {
         int L = depth(node.left); // 左儿子为根的子树的深度
         int R = depth(node.right); // 右儿子为根的子树的深度
         ans = Math.max(ans, L+R+1); // 计算d_node即L+R+1 并更新ans
-        return Math.max(L, R) + 1; // 返回该节点为根的子树的深度
+        return Math.max(L, R) + 1; // todo 返回该节点为根的子树的深度
     }
 
 }

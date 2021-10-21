@@ -16,8 +16,9 @@ public class cMinDepth {
 
     // https://mp.weixin.qq.com/s/WJj7rNR8I2gT3mKllP--VQ
     public int minDepth(TreeNode root) {
-        if (root == null)
+        if (root == null){
             return 0;
+        }
         //左子树的最小深度
         int left = minDepth(root.left);
         //右子树的最小深度
@@ -29,14 +30,17 @@ public class cMinDepth {
     }
 
     public static int minDepth2(TreeNode root) {
-        if (root == null)
+        if (root == null){
             return 0;
+        }
         //如果左子树等于空，我们返回右子树的最小高度+1
-        if (root.left == null)
+        if (root.left == null){
             return minDepth2(root.right) + 1;
+        }
         //如果右子树等于空，我们返回左子树的最小高度+1
-        if (root.right == null)
+        if (root.right == null){
             return minDepth2(root.left) + 1;
+        }
         //如果左右子树都不为空，我们返回左右子树深度最小的那个+1
         return Math.min(minDepth2(root.left), minDepth2(root.right)) + 1;
     }

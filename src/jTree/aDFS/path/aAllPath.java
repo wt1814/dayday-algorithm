@@ -52,17 +52,21 @@ public class aAllPath {
      * @param paths
      */
     public static void constructPaths(TreeNode root, String path, List<String> paths) {
-        if (root != null) {
-            StringBuffer pathSB = new StringBuffer(path);
-            pathSB.append(Integer.toString(root.val));
-            if (root.left == null && root.right == null) {  // 当前节点是叶子节点
-                paths.add(pathSB.toString());  // 把路径加入到答案中
-            } else {
-                pathSB.append("->");  // 当前节点不是叶子节点，继续递归遍历
-                constructPaths(root.left, pathSB.toString(), paths);
-                constructPaths(root.right, pathSB.toString(), paths);
-            }
+
+        if (root == null){
+            return;
         }
+
+        StringBuffer pathSB = new StringBuffer(path);  // todo 使用到了回溯算法，因为是字符串...
+        pathSB.append(Integer.toString(root.val));
+        if (root.left == null && root.right == null) {  // 当前节点是叶子节点
+            paths.add(pathSB.toString());  // 把路径加入到答案中
+        } else {
+            pathSB.append("->");  // 当前节点不是叶子节点，继续递归遍历
+            constructPaths(root.left, pathSB.toString(), paths);
+            constructPaths(root.right, pathSB.toString(), paths);
+        }
+
     }
 
 }

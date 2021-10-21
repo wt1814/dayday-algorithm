@@ -17,6 +17,7 @@ public class eIsBalanced {
     public static boolean isBalanced2(TreeNode head) {
 
         return process(head).isBalanced;
+
     }
 
     /**
@@ -60,37 +61,6 @@ public class eIsBalanced {
             isBalanced = i;
             height = h;
         }
-    }
-
-
-    ///////////////////////////////////////////////////////////////////////////////////////
-    /**
-     *
-     * @param root
-     * @return
-     */
-    public static boolean isBalenced2(TreeNode root){
-        if (root == null){
-            return true;
-        }
-
-        if (isBalenced2(root.left) && isBalenced2(root.right) && Math.abs(height(root.left)-height(root.right))<=1){
-            return true;
-        }else {
-            return false;
-        }
-    }
-
-    /**
-     * todo 求二叉树高度
-     * @param root
-     * @return
-     */
-    private static int height(TreeNode root) {
-        if (root == null){
-            return 0;
-        }
-        return Math.max(height(root.left),height(root.right))+1;
     }
 
 

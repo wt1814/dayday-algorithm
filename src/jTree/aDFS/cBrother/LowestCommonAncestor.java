@@ -20,6 +20,21 @@ public class LowestCommonAncestor {
     }
 
     // https://mp.weixin.qq.com/s/V73MWneaud5A97j_Ltxnmw
+    // https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/solution/236-er-cha-shu-de-zui-jin-gong-gong-zu-xian-hou-xu/
+    /**
+     * 根据 leftleftleft 和 rightrightright ，可展开为四种情况；
+     *
+     * 1. 当 leftleftleft 和 rightrightright 同时为空 ：说明 rootrootroot 的左 / 右子树中都不包含 p,qp,qp,q ，返回 nullnullnull ；
+     * 2. 当 leftleftleft 和 rightrightright 同时不为空 ：说明 p,qp, qp,q 分列在 rootrootroot 的 异侧 （分别在 左 / 右子树），因此 rootrootroot 为最近公共祖先，返回 rootrootroot ；
+     * 3. 当 leftleftleft 为空 ，rightrightright 不为空 ：p,qp,qp,q 都不在 rootrootroot 的左子树中，直接返回 rightrightright 。具体可分为两种情况：
+     *     1. p,qp,qp,q 其中一个在 rootrootroot 的 右子树 中，此时 rightrightright 指向 ppp（假设为 ppp ）；
+     *     2. p,qp,qp,q 两节点都在 rootrootroot 的 右子树 中，此时的 rightrightright 指向 最近公共祖先节点 ；
+     * 4. 当 leftleftleft 不为空 ， rightrightright 为空 ：与情况 3. 同理；
+     * @param cur
+     * @param p
+     * @param q
+     * @return
+     */
     public static TreeNode lowestCommonAncestor(TreeNode cur, TreeNode p, TreeNode q) {
         if (cur == null || cur == p || cur == q){
             return cur;

@@ -21,7 +21,7 @@ import java.util.Stack;
  *
  * todo 左叶子的明确定义：如果左节点不为空，且左节点没有左右孩子，那么这个节点就是左叶子
  */
-public class gSumOfLeftLeaves {
+public class gSumOfLeftLeavesXXX {
 
 
     public static void main(String[] args) {
