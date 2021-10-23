@@ -27,8 +27,9 @@ public class eGetMaximumGold {
 
     public int getMaximumGold(int[][] grid) {
         //边界条件判断
-        if (grid == null || grid.length == 0)
+        if (grid == null || grid.length == 0){
             return 0;
+        }
         //保存最大路径值
         int res = 0;
         //两个for循环，遍历每一个位置，让他们当做起点
@@ -41,13 +42,16 @@ public class eGetMaximumGold {
         }
         //返回最大路径值
         return res;
+
     }
 
     public int dfs(int[][] grid, int x, int y) {
+
         //边界条件的判断，x,y都不能越界，同时当前坐标的位置如果是0，表示有障碍物
         //或者遍历过了
-        if (x < 0 || x >= grid.length || y < 0 || y >= grid[0].length || grid[x][y] == 0)
+        if (x < 0 || x >= grid.length || y < 0 || y >= grid[0].length || grid[x][y] == 0){
             return 0;
+        }
         //先把当前坐标的值保存下来，最后再还原
         int temp = grid[x][y];
         //当前坐标已经访问过了，要把他标记为0，防止再次访问
@@ -63,6 +67,7 @@ public class eGetMaximumGold {
         grid[x][y] = temp;
         //返回最大路径值
         return grid[x][y] + max;
+
     }
 
 

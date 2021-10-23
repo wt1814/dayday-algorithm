@@ -8,6 +8,7 @@ import java.util.List;
  */
 public class cSplitToPalindromes {
 
+    // *** https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247487047&idx=1&sn=117c48f20778868442fce44e100d2ea8&chksm=fd9ca558caeb2c4eb1bff4f0878ff796feabe523657c2aafea0b2d1c7026e1c0572ab1e6d205&scene=178&cur_album_id=1748759631868280833#rd
     // *** https://mp.weixin.qq.com/s/SrBfADlsOXjeOX4Cr4pQNg
     // https://leetcode-cn.com/problems/palindrome-partitioning/
     // https://blog.csdn.net/zjg379569986/article/details/102505694

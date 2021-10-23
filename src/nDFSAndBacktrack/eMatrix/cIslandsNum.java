@@ -21,7 +21,7 @@ package nDFSAndBacktrack.eMatrix;
  * 返回值：
  * 3
  */
-public class bIslandsNum {
+public class cIslandsNum {
 
 
     /////////////////////////////todo DFS解决////////////////////////
@@ -30,14 +30,18 @@ public class bIslandsNum {
      * @param grid
      * @return
      */
-    public int numIslands(char[][] grid) {
-        //边界条件判断
-        if (grid == null || grid.length == 0)
-            return 0;
+    public static int numIslands(char[][] grid) {
+
         //统计岛屿的个数
         int count = 0;
+
+        //边界条件判断
+        if (grid == null || grid.length == 0){
+            return 0;
+        }
+
         //两个for循环遍历每一个格子
-        for (int i = 0; i < grid.length; i++)
+        for (int i = 0; i < grid.length; i++){
             for (int j = 0; j < grid[0].length; j++) {
                 //只有当前格子是1才开始计算
                 if (grid[i][j] == '1') {
@@ -49,21 +53,27 @@ public class bIslandsNum {
                     dfs(grid, i, j);
                 }
             }
+        }
+
         //最后返回岛屿的数量
         return count;
+
     }
 
     //这个方法会把当前格子以及他邻近的为1的格子都会置为1
-    public void dfs(char[][] grid, int i, int j) {
+    public static void dfs(char[][] grid, int i, int j) {
+
         //边界条件判断，不能越界
-        if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == '0')
+        if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == '0'){
             return;
+        }
         //把当前格子置为0，然后再从他的上下左右4个方向继续遍历
         grid[i][j] = '0';
         dfs(grid, i - 1, j);//上
         dfs(grid, i + 1, j);//下
         dfs(grid, i, j + 1);//左
         dfs(grid, i, j - 1);//右
+
     }
 
 

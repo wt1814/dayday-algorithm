@@ -16,7 +16,7 @@ import java.util.List;
  *
  * todo 写错，递归下标是 i ， 非startIndex
  */
-public class eCombinationSum {
+public class eCombinationSum3 {
 
     public static void main(String[] args) {
         List<List<Integer>> lists = combinationSum3(3, 9);

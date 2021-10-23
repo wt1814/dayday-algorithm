@@ -23,6 +23,7 @@ public class letterCombinations {
 
 
     // https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
+    // https://mp.weixin.qq.com/s/CYea68mh69FCV2di31ukxg
 
     public List<String> letterCombinations(String digits) {
         List<String> combinations = new ArrayList<String>();

@@ -17,7 +17,6 @@ public class aSubsets {
 
 
 
-    /////////////////////////////////////////////////////////////////////
 
     /**
      * 如果把 子集问题、组合问题、分割问题都抽象为一棵树的话，
@@ -27,13 +26,16 @@ public class aSubsets {
     // https://programmercarl.com/0078.%E5%AD%90%E9%9B%86.html
     List<List<Integer>> result = new ArrayList<>();// 存放符合条件结果的集合
     LinkedList<Integer> path = new LinkedList<>();// 用来存放符合条件结果
+
     public List<List<Integer>> subsets(int[] nums) {
+
         if (nums.length == 0){
             result.add(new ArrayList<>());
             return result;
         }
         subsetsHelper(nums, 0);
         return result;
+
     }
 
     private void subsetsHelper(int[] nums, int startIndex){

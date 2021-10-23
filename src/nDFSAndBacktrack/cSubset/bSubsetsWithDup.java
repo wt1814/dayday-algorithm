@@ -25,6 +25,7 @@ public class bSubsetsWithDup {
     List<List<Integer>> result = new ArrayList<>();// 存放符合条件结果的集合
     LinkedList<Integer> path = new LinkedList<>();// 用来存放符合条件结果
     boolean[] used;
+
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         if (nums.length == 0){
             result.add(path);

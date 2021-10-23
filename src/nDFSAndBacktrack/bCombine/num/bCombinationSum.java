@@ -29,7 +29,7 @@ public class bCombinationSum {
 
     public static List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>();
-        Arrays.sort(candidates); // 先进行排序
+        Arrays.sort(candidates); //todo 先进行排序
         backtracking(res, new ArrayList<>(), candidates, target, 0, 0);
         return res;
     }
@@ -46,7 +46,7 @@ public class bCombinationSum {
                 break;
             }
             path.add(candidates[i]);
-            backtracking(res, path, candidates, target, sum + candidates[i], i);
+            backtracking(res, path, candidates, target, sum + candidates[i], i); //todo 元素可被重复选取，下标从i开始，而不是i+1开始。
             path.remove(path.size() - 1); // 回溯，移除路径 path 最后一个元素
         }
     }

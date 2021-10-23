@@ -16,15 +16,16 @@ package nDFSAndBacktrack.eMatrix;
 public class solveSudoku {
 
 
-    // https://programmercarl.com/%E5%9B%9E%E6%BA%AF%E6%80%BB%E7%BB%93.html#%E8%A7%A3%E6%95%B0%E7%8B%AC%E9%97%AE%E9%A2%98
-
 
     // https://programmercarl.com/0037.%E8%A7%A3%E6%95%B0%E7%8B%AC.html#_37-%E8%A7%A3%E6%95%B0%E7%8B%AC
     public void solveSudoku(char[][] board) {
+
         solveSudokuHelper(board);
+
     }
 
     private boolean solveSudokuHelper(char[][] board){
+
         //「一个for循环遍历棋盘的行，一个for循环遍历棋盘的列，
         // 一行一列确定下来之后，递归遍历这个位置放9个数字的可能性！」
         for (int i = 0; i < 9; i++){ // 遍历行
@@ -49,6 +50,7 @@ public class solveSudoku {
         }
         // 遍历完没有返回false，说明找到了合适棋盘位置了
         return true;
+
     }
 
     /**
@@ -58,6 +60,7 @@ public class solveSudoku {
      *     9宫格里是否重复
      */
     private boolean isValidSudoku(int row, int col, char val, char[][] board){
+
         // 同行是否重复
         for (int i = 0; i < 9; i++){
             if (board[row][i] == val){
@@ -81,5 +84,7 @@ public class solveSudoku {
             }
         }
         return true;
+
     }
+
 }

@@ -35,7 +35,7 @@ public class aPrientAllSortOfOneself {
 
     public static void permute(List<List<Integer>> result,int[] nums,int index){
 
-        if(index == nums.length-1){   // todo 原数组回溯。要复制快照到新数组，用来添加。
+        if(index == nums.length-1){   // todo 原数组回溯。要复制快照到新数组，用来添加。 防止污染原数组
             List<Integer> list = new ArrayList<>();
             for (int i = 0;i<nums.length;i++){
                 list.add(nums[i]);
