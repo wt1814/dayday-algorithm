@@ -10,6 +10,9 @@ public class cSplitToPalindromes {
 
     // *** https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247487047&idx=1&sn=117c48f20778868442fce44e100d2ea8&chksm=fd9ca558caeb2c4eb1bff4f0878ff796feabe523657c2aafea0b2d1c7026e1c0572ab1e6d205&scene=178&cur_album_id=1748759631868280833#rd
     // *** https://mp.weixin.qq.com/s/SrBfADlsOXjeOX4Cr4pQNg
+    // *** 131. 分割回文串 https://mp.weixin.qq.com/s/pCAuQmSwqNSF2roIXcqtWg
+    // *** 132. 分割回文串 II https://mp.weixin.qq.com/s/BmJRd6hEZXbqNoXg21CsKw
+
     // https://leetcode-cn.com/problems/palindrome-partitioning/
     // https://blog.csdn.net/zjg379569986/article/details/102505694
     // https://programmercarl.com/0131.%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2.html#%E6%80%BB%E7%BB%93

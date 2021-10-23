@@ -10,6 +10,11 @@ https://baike.baidu.com/item/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/5411800?fr=ala
 https://mp.weixin.qq.com/s?__biz=MzI5MTU1MzM3MQ==&mid=2247483945&idx=1&sn=6f5b0d8c0ac60f40068986738d038a4d&scene=21#wechat_redirect
 贪心算法
 https://blog.csdn.net/qfikh/article/details/51959226
+
+
+https://blog.csdn.net/IT_moshang/article/details/80398597
+https://www.cnblogs.com/seaspring/p/11562304.html
+https://www.sohu.com/a/256022793_478315
 -->
 
 &emsp; 贪心算法（又称贪婪算法）是指，在对问题求解时，总是做出在当前看来是最好的选择。也就是说，不从整体最优上加以考虑，算法得到的是在某种意义上的局部最优解。  

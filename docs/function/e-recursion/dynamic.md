@@ -26,6 +26,13 @@
 
 # 1. 动态规划
 <!-- 
+动态规划到底有多难？ 
+https://mp.weixin.qq.com/s/yo1ZAY4ybic0mASB5QjQOg
+状压 DP 是什么？
+https://mp.weixin.qq.com/s/ecxTTrRvUJbdWwSFbKgDiw
+记忆化递归究竟怎么改成动态规划啊？ 
+https://mp.weixin.qq.com/s/afRM6owOL_KTKekmW7wzpQ
+
 
 https://mp.weixin.qq.com/s/Cw39C9MY9Wr2JlcvBQZMcA
 1、到底什么才叫「最优⼦结构」，和动态规划什么关系。 2、为什么动态规划遍历 dp 数组的⽅式五花⼋门，有的正着遍历，有的倒 着遍历，有的斜着遍历。  
