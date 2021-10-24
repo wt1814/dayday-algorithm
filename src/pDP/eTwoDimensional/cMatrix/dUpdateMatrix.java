@@ -1,16 +1,19 @@
-package pDP.eTwoDimensional.bMatrix;
+package pDP.eTwoDimensional.cMatrix;
 
 import java.util.Arrays;
 
 /**
  * 542. 01 矩阵
+ * todo 查看bfs
  * 给定一个由 0 和 1 组成的二维矩阵，求每个位置到最近的 0 的距离。
  */
 public class dUpdateMatrix {
 
+
+    /////////////////////动态规划解//////////////
+    // https://leetcode-cn.com/problems/01-matrix/solution/01ju-zhen-by-leetcode-solution/
     static int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
-    // https://leetcode-cn.com/problems/01-matrix/solution/01ju-zhen-by-leetcode-solution/
     public int[][] updateMatrix(int[][] matrix) {
         int m = matrix.length, n = matrix[0].length;
         // 初始化动态规划的数组，所有的距离值都设置为一个很大的数

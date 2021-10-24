@@ -1,4 +1,4 @@
-package pDP.eTwoDimensional.cPath;
+package pDP.eTwoDimensional.bPath;
 
 /**
  * 1301. 最大得分的路径数目

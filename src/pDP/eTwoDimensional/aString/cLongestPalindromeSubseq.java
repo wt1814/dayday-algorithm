@@ -7,7 +7,7 @@ package pDP.eTwoDimensional.aString;
  * 输入：s = "bbbab" 输出：4 解释：一个可能的最长回文子序列为 "bbbb" 。
  * 输入：s = "cbbd" 输出：2 解释：一个可能的最长回文子序列为 "bb" 。
  */
-public class dLongestPalindromeSubseq {
+public class cLongestPalindromeSubseq {
 
     public static void main(String[] args) {
 
@@ -52,7 +52,6 @@ public class dLongestPalindromeSubseq {
      * 3. dp数组如何初始化
      * todo 4. 确定遍历顺序
      * 5. 举例推导dp数组
-     *
      * @param s
      * @return
      */

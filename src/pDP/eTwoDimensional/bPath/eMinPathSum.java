@@ -1,4 +1,4 @@
-package pDP.eTwoDimensional.cPath;
+package pDP.eTwoDimensional.bPath;
 
 /**
  * 64. 矩阵的最小路径和
@@ -24,27 +24,24 @@ public class eMinPathSum {
     //////////////////////////////////////////////////////////////////
     // https://mp.weixin.qq.com/s/SqNdZOu9vSMNQx37EkousQ
     /**
-     * 第一行 只能从左往右  第一个元素 的值为 原数组的第一个元素 dp[0][0] = a[0][0]  dp[0][j] = a[0][j] + dp[0][j-1];
-     * 第一列元素 只能从上往下 dp[i][0] = dp[i-1][0] + a[i][0]
-     * 第二行第二列元素的可能从 当前节点的左节点 和上节点过来 那么该节点的最小值应为 当前节点的值 加上 min （ 上节点 左节点）
-     * dp[i][j] = a[i][j] + Math.min(dp[i][j-1],dp[i-1][j]);
-     * 那么最后一个节点的值就为最小的路径和
+     *
      * @param matrix
      * @return
      */
     public static int minPathSum (int[][] matrix) {
         int[][]  dp = new int[matrix.length][matrix[0].length];
 
-        //
         dp[0][0] = matrix[0][0];
+        // 第一行 只能从左往右  第一个元素 的值为 原数组的第一个元素 dp[0][0] = a[0][0]  dp[0][j] = a[0][j] + dp[0][j-1];
         for(int i =1; i< matrix.length; i++) {
             dp[i][0] =  dp[i-1][0] + matrix[i][0];
         }
+        // 第一列元素 只能从上往下 dp[i][0] = dp[i-1][0] + a[i][0]
         for(int i =1; i< matrix[0].length; i++) {
             dp[0][i] =  dp[0][i-1] + matrix[0][i];
         }
 
-        //
+        // 第二行第二列元素的可能从 当前节点的左节点 和上节点过来 那么该节点的最小值应为 当前节点的值 加上 min （ 上节点 左节点）dp[i][j] = a[i][j] + Math.min(dp[i][j-1],dp[i-1][j]);
         for (int i = 1; i < dp.length; i++) {
             for (int j = 1; j < dp[0].length; j++) {
                 dp[i][j] = matrix[i][j] + Math.min(dp[i-1][j], dp[i][j-1]);

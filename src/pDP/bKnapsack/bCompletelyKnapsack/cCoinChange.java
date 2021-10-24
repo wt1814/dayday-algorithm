@@ -7,27 +7,43 @@ import java.util.Arrays;
  */
 public class cCoinChange {
 
+
+
     // https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247486435&idx=1&sn=2464b01e9c0fb8d81fcea6dd4ed0ec92&chksm=fd9ca0fccaeb29ea9947456290099143c5bc9bdea0ccfb2408f5fd63f5e0fc13fcd8060d4251&token=646498266&lang=zh_CN&scene=21#wechat_redirect
+    /**
+     *
+     * @param cs
+     * @param cnt
+     * @return
+     */
+    public static int coinChange(int[] cs, int cnt) {
 
-    ////////////////////////////////////////
-    public int minMoney (int[] arr, int aim) {
+        int INF = Integer.MAX_VALUE;
+        int n = cs.length;
+        int[][] f = new int[n + 1][cnt + 1];
 
-        // write code here
-        int[] dp = new int[aim + 1];//dp[i]的含义是目标值为i的时候最少钱币数是多少。
+        // 初始化（没有任何硬币的情况）：只有 f[0][0] = 0；其余情况均为无效值。
+        // 这是由「状态定义」决定的，当不考虑任何硬币的时候，只能凑出总和为 0 的方案，所使用的硬币数量为 0
+        for (int i = 1; i <= cnt; i++) {
+            f[0][i] = Integer.MAX_VALUE;
+        }
 
-        dp[0] = 0;//总金额为0的时候所需钱币数一定是0
-        int Max = aim + 1;//定一个全局最大值
-        Arrays.fill(dp,Max);//把dp数组全部定为最大值
+        // 有硬币的情况
+        for (int i = 1; i <= n; i++) {
+            int val = cs[i - 1];
+            for (int j = 0; j <= cnt; j++) {
+                // 不考虑当前硬币的情况
+                f[i][j] = f[i - 1][j];
 
-        for(int i = 1;i <= aim;i ++){// 遍历目标值
-            for(int j = 0;j < arr.length;j ++){// 遍历钱币
-                if(arr[j] <= i){//如果当前的钱币比目标值小就可以兑换
-                    dp[i] = Math.min(dp[i],dp[i-arr[j]] + 1);
+                // 考虑当前硬币的情况（可选当前硬币个数基于当前容量大小）
+                for (int k = 1; k * val <= j; k++) {
+                    if (f[i - 1][j - k * val] != INF) {
+                        f[i][j] = Math.min(f[i][j], f[i-1][j-k*val] + k);
+                    }
                 }
             }
         }
-
-        return dp[aim] > aim ? -1 : dp[aim];
+        return f[n][cnt] == INF ? -1 : f[n][cnt];
 
     }
 
@@ -50,8 +66,6 @@ public class cCoinChange {
     关于依据中的第二个值，可以通过公式推导得到。可以查看文末的参考资料详细了解。*/
 
 
-
-
 /*    典型的动态规划问题，如果输入值为一个以上，可以考虑使用二维数组。
 输入值为面值数组 arr 和找零数 aim，所以我们可以创建一个二维数组 dp[m][n]，纵轴 m 表示所有面值，横轴 n 表示使用面值 m 支付时剩余零钱数。
     动态规划的问题需在解题之前明确阶段、状态、边界。每个阶段的任务都会推进状态的更新，最后到达边界时解决问题。本题中每个阶段的任务是“若当前剩余需找零数为 m 时，考虑是否使用一张当前面值的钱”，状态记录每个阶段任务计算出的数据，即本题中的使用货币的最小张数。数组从左上角开始计算，到右下角结束，所以边界为遍历完数组。
@@ -60,6 +74,7 @@ public class cCoinChange {
     在 (3) 中描述的两种方法，如果最少货币数为 0 则不取*/
 
     public int minMoney2 (int[] arr, int aim) {
+
         // 二维数组 dp[m][n], m 表示货币种类, n表示剩余找零
         int[][] dp = new int[arr.length][aim + 1];
         // 初始化第一种面值，若能被剩余找零整除，就在数组中填该货币使用的张数。
@@ -78,7 +93,7 @@ public class cCoinChange {
                     dp[m][n] = 1;
                 } else if (dp[m][n - arr[m]] != 0 &&  dp[m - 1][n] != 0) {
                     // 若使用一张当前货币和不使用当前货币都有值，取最小那个
-                    dp[m][n] = min(dp[m][n - arr[m]] + 1, dp[m - 1][n]);
+                    dp[m][n] = Math.min(dp[m][n - arr[m]] + 1, dp[m - 1][n]);
                 } else {
                     // 若其中一个为 0，取不为 0 的那一个
                     dp[m][n] = dp[m][n - arr[m]] != 0 ? dp[m][n - arr[m]] + 1 : dp[m - 1][n];
@@ -89,10 +104,29 @@ public class cCoinChange {
         return dp[arr.length-1][aim] == 0 ? -1 : dp[arr.length-1][aim];
     }
 
-    private int min (int a, int b) {
 
-        return a < b ? a : b;
+    ////////////////////////////////////////////////////////////////////
+    public int minMoney (int[] arr, int aim) {
+
+        // write code here
+        int[] dp = new int[aim + 1];//dp[i]的含义是目标值为i的时候最少钱币数是多少。
+
+        dp[0] = 0;//总金额为0的时候所需钱币数一定是0
+        int Max = aim + 1;//定一个全局最大值
+        Arrays.fill(dp,Max);//把dp数组全部定为最大值
+
+        for(int i = 1;i <= aim;i ++){// 遍历目标值
+            for(int j = 0;j < arr.length;j ++){// 遍历钱币
+                if(arr[j] <= i){//如果当前的钱币比目标值小就可以兑换
+                    dp[i] = Math.min(dp[i],dp[i-arr[j]] + 1);
+                }
+            }
+        }
+
+        return dp[aim] > aim ? -1 : dp[aim];
+
     }
+
 
 }
 

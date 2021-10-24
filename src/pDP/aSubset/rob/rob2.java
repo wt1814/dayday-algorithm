@@ -18,6 +18,7 @@ public class rob2 {
 
     // https://leetcode-cn.com/problems/house-robber-ii/
     public static int rob(int[] nums) {
+
         int length = nums.length;
         if (length == 1) {
             return nums[0];
@@ -27,9 +28,11 @@ public class rob2 {
         // todo 如何才能保证第一间房屋和最后一间房屋不同时偷窃呢？如果偷窃了第一间房屋，则不能偷窃最后一间房屋，因此偷窃房屋的范围是第一间房屋到最后第二间房屋；
         //  如果偷窃了最后一间房屋，则不能偷窃第一间房屋，因此偷窃房屋的范围是第二间房屋到最后一间房屋。
         return Math.max(robRange(nums, 0, length - 2), robRange(nums, 1, length - 1));
+
     }
 
     public static int robRange(int[] nums, int start, int end) {
+
         int first = nums[start], second = Math.max(nums[start], nums[start + 1]);
         for (int i = start + 2; i <= end; i++) {
             int temp = second;
@@ -37,6 +40,7 @@ public class rob2 {
             first = temp;
         }
         return second;
+
     }
 
     //////////////////////////////////////////////////////////////////////////////////

@@ -1,4 +1,4 @@
-package pDP.eTwoDimensional.aString;
+package pDP.eTwoDimensional.dHard;
 
 /**
  * 650. 只有两个键的键盘

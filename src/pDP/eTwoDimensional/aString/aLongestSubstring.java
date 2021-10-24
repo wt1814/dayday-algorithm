@@ -62,6 +62,7 @@ public class aLongestSubstring {
         }
         System.out.println("最长公共子串，第一个字符串的尾标： "+endIndex);
         return result;
+
     }
 
 

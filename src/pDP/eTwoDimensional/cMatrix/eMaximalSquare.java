@@ -1,4 +1,4 @@
-package pDP.eTwoDimensional.bMatrix;
+package pDP.eTwoDimensional.cMatrix;
 
 /**
  * 221. 给定一个二维的 0-1 矩阵，求全由 1 构成的最大正方形面积。
@@ -7,11 +7,31 @@ public class eMaximalSquare {
 
 
     // https://mp.weixin.qq.com/s/nSQbgqcngC4KEA-GJb-o9Q
-    // https://mp.weixin.qq.com/s/QehNMzsisC9ZAPZyxCGBzw
-
-    // 数据结构和算法 530
-
     public int maximalSquare(char[][] matrix) {
+
+        //二维矩阵的宽和高
+        int height = matrix.length;
+        int width = matrix[0].length;
+        int[][] dp = new int[height + 1][width + 1];
+        int maxSide = 0;//最大正方形的宽
+        for (int i = 1; i <= height; i++) {
+            for (int j = 1; j <= width; j++) {
+                if (matrix[i - 1][j - 1] == '1') {
+                    //递推公式
+                    dp[i][j] = Math.min(dp[i - 1][j], Math.min(dp[i - 1][j - 1], dp[i][j - 1])) + 1;
+                    //记录最大的边长
+                    maxSide = Math.max(maxSide, dp[i][j]);
+                }
+            }
+        }
+        //返回正方形的面积
+        return maxSide * maxSide;
+
+    }
+
+
+    ///////////
+    public int maximalSquare1(char[][] matrix) {
         int maxSide = 0;
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return maxSide;

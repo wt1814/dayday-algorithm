@@ -1,4 +1,4 @@
-package pDP.eTwoDimensional.cPath;
+package pDP.eTwoDimensional.bPath;
 
 /**
  * 1575. 统计所有可行路径

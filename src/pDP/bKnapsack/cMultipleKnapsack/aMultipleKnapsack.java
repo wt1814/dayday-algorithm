@@ -2,6 +2,7 @@ package pDP.bKnapsack.cMultipleKnapsack;
 
 /**
  * 多重背包
+ * todo 其实就是在 0-1 背包问题的基础上，增加了每件物品可以选择「有限次数」的特点（在容量允许的情况下）。
  */
 public class aMultipleKnapsack {
 

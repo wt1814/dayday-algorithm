@@ -3,10 +3,11 @@ package pDP.cStockTrading;
 /**
  * 股票交易
  */
-public class StockTrading {
+public class aStockTrading {
+
+    // https://zhuanlan.zhihu.com/p/92908822
 
 
-    // 谷歌学长的题解指南  7.8章节
     // https://mp.weixin.qq.com/s/B6me-d3bgLNfYfY2yTyLeA
 
     // https://mp.weixin.qq.com/s/SjKfv79fXlQMLvrPx58PSw

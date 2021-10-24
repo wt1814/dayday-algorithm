@@ -1,4 +1,4 @@
-package pDP.eTwoDimensional.cPath;
+package pDP.eTwoDimensional.bPath;
 
 /**
  * 576. 出界的路径数
