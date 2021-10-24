@@ -15,6 +15,9 @@ https://blog.csdn.net/qfikh/article/details/51959226
 https://blog.csdn.net/IT_moshang/article/details/80398597
 https://www.cnblogs.com/seaspring/p/11562304.html
 https://www.sohu.com/a/256022793_478315
+
+动态规划和贪心算法的区别
+https://blog.csdn.net/HerosOfEarth/article/details/52374337
 -->
 
 &emsp; 贪心算法（又称贪婪算法）是指，在对问题求解时，总是做出在当前看来是最好的选择。也就是说，不从整体最优上加以考虑，算法得到的是在某种意义上的局部最优解。  
