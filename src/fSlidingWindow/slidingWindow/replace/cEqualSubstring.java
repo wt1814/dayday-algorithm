@@ -1,4 +1,4 @@
-package fSlidingWindow.slidingWindow.twoArray;
+package fSlidingWindow.slidingWindow.replace;
 
 /**
  * 1208. 尽可能使字符串相等
@@ -20,7 +20,7 @@ public class cEqualSubstring {
     // https://mp.weixin.qq.com/s/s9Kk9JtbMxvQdofmuWa7TQ
 
     // https://www.cnblogs.com/huansky/p/13488234.html
-    public int equalSubstring(String s, String t, int maxCost) {
+    public static int equalSubstring(String s, String t, int maxCost) {
         int left = 0, right =0;
         int sum = 0;
         int res = 0;
@@ -42,7 +42,7 @@ public class cEqualSubstring {
 
 
     // https://leetcode-cn.com/problems/get-equal-substrings-within-budget/solution/jin-ke-neng-shi-zi-fu-chuan-xiang-deng-b-higz/
-    public int equalSubstring1(String s, String t, int maxCost) {
+    public static int equalSubstring1(String s, String t, int maxCost) {
         int n = s.length();
         int[] diff = new int[n];
         for (int i = 0; i < n; i++) {

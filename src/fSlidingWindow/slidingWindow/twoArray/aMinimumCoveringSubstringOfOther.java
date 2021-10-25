@@ -59,7 +59,7 @@ public class aMinimumCoveringSubstringOfOther {
             if(need.containsKey(c)){
                 window.put(c,window.getOrDefault(c,0) + 1);
 
-                if(window.get(c).equals(need.get(c))){
+                if(window.get(c).equals(need.get(c))){ // todo 进行比较
                     valid++;
                 }
             }
