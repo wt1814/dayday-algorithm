@@ -6,15 +6,18 @@ package dSort;
 public class eMergeSortOfItera {
 
 
+
+
     // https://www.cnblogs.com/sheeva/p/6600666.html
     //todo 迭代解题
     private static int count = 0;
-    public int[] sort(int[] data) {
+
+    public static int[] sort(int[] data) {
 
         return sort(data, 0, data.length - 1);
     }
 
-    private int[] sort(int[] data, int low, int high) {
+    private static int[] sort(int[] data, int low, int high) {
         if (low == high) {
             return new int[] { data[low] };
         }

@@ -3,6 +3,7 @@ package fSlidingWindow.slidingWindow;
 /**
  * todo 固定窗口
  * 1456. 定长子串中元音的最大数目
+ * https://leetcode-cn.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/solution/ding-chang-zi-chuan-zhong-yuan-yin-de-zu-4ka7/
  * 给你字符串 s 和整数 k 。
  * 请返回字符串 s 中长度为 k 的单个子字符串中可能包含的最大元音字母数。
  * 英文中的 元音字母 为（a, e, i, o, u）。
@@ -14,7 +15,10 @@ package fSlidingWindow.slidingWindow;
  */
 public class gMaxVowels {
 
-    // https://leetcode-cn.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/solution/ding-chang-zi-chuan-zhong-yuan-yin-de-zu-4ka7/
+
+    public static void main(String[] args) {
+
+    }
 
     // https://www.cnblogs.com/huansky/p/13488234.html
     /**
@@ -23,7 +27,7 @@ public class gMaxVowels {
      * @param k
      * @return
      */
-    public int maxVowels(String s, int k) {
+    public static int maxVowels(String s, int k) {
         int right =0;
         int sum = 0;
         int max = 0;
@@ -38,7 +42,8 @@ public class gMaxVowels {
         return max;
     }
 
-    public int isYuan(char s) {
+    public static int isYuan(char s) {
+
         return s=='a' || s=='e' ||s=='i' ||s=='o' ||s=='u' ? 1:0;
     }
 

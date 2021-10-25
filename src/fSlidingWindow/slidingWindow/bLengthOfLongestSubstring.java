@@ -21,7 +21,7 @@ public class bLengthOfLongestSubstring {
     // todo https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247487526&idx=1&sn=000b9cbf7db449c8ec7e09e26a911c2e&chksm=fb418306cc360a105d98b39290315f2b89744c9d7cbdb04b2262ef9bc5de77274d42f8b5afbe&scene=21#wechat_redirect
 
     /**
-     * todo 双指针 + 哈希表解法（滑动窗口）
+     * todo 双指针 + 哈希表（滑动窗口）
      * 最开始的时候两个指针i和j都指向第一个元素，然后i往后移，把扫描过的元素都放到map中，如果i扫描过的元素没有重复的，就顺便记录一下最大值max，如果i扫描过的元素有重复的，就改变j的位置，要保证j到i之间不能有重复的元素。
      * @param s
      * @return

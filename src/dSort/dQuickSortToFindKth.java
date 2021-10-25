@@ -43,6 +43,7 @@ public class dQuickSortToFindKth {
             quickSort(a,point+1,right,k);
         }
         return a[k-1];
+
     }
 
     //分割

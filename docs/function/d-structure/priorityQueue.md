@@ -23,6 +23,31 @@ https://baijiahao.baidu.com/s?id=1665383380422326763&wfr=spider&for=pc
 （5）peek：查询队顶元素。  
 
 
+## 构建大/小顶堆
+<!-- 
+https://blog.csdn.net/weixin_30363263/article/details/80862578
+-->
+
+PriorityQueue默认是一个小顶堆，然而可以通过传入自定义的Comparator函数来实现大顶堆。如下代码实现了一个初始大小为11的大顶堆。这里只是简单的传入一个自定义的Comparator函数，就可以实现大顶堆了。  
+
+```java
+PriorityQueue<Integer> maxHeap=new PriorityQueue<Integer>((o1, o2) -> o1-o2);
+```
+
+```java
+/**
+ * PriorityQueue(int initialCapacity,
+ *                          Comparator<? super E> comparator)
+ */
+PriorityQueue<Integer> maxHeap1=new PriorityQueue<Integer>(Integer.MAX_VALUE, new Comparator<Integer>() {
+    @Override
+    public int compare(Integer o1, Integer o2) {
+        return o2 - o1;
+    }
+});
+```
+
+
 ## 优先级队列使用
 1. 股票交易  
 &emsp; 我们的股票屏幕上总是给出最好或者是表现最差的那些股票。就可以基于优先级队列。方法其实是和找出前K个最大最小的元素方法类似。可以类比到股票中。  

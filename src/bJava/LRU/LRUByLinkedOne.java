@@ -37,19 +37,7 @@ public class LRUByLinkedOne {
         map = new LinkedHashMap<>();
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    public int get(int key){
-        //如果没有找到
-        if (!map.containsKey(key)){
-            return -1;
-        }
-        //找到了就刷新数据
-        Integer value = map.remove(key);
-        map.put(key,value);
-        return value;
-    }
-
+    /////////////////////////////////
 
     // https://blog.csdn.net/varyall/article/details/82319443
     // https://blog.csdn.net/weixin_45640609/article/details/105069981
@@ -69,5 +57,21 @@ public class LRUByLinkedOne {
             map.remove(map.entrySet().iterator().next().getKey()); // todo 删除最久没用的，即第一个
         }
     }
+
+
+
+    public int get(int key){
+        //如果没有找到
+        if (!map.containsKey(key)){
+            return -1;
+        }
+        //找到了就刷新数据
+        Integer value = map.remove(key);
+        map.put(key,value);
+        return value;
+    }
+
+
+
 
 }

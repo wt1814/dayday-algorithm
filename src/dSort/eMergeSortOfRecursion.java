@@ -30,7 +30,7 @@ public class eMergeSortOfRecursion {
         }
 
         int mid = (left+right)/2;
-        mergeSort(array,left,mid);        //todo 先分再合
+        mergeSort(array,left,mid);   //todo 先分再合
         mergeSort(array,mid+1,right);
 
         // 在排序前，先建好一个长度等于原数组长度的临时数组，避免递归中频繁开辟空间
