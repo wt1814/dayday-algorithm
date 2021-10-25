@@ -2,6 +2,7 @@ package fSlidingWindow.slidingWindow.replace;
 
 /**
  * 1208. 尽可能使字符串相等
+ * https://leetcode-cn.com/problems/get-equal-substrings-within-budget/solution/jin-ke-neng-shi-zi-fu-chuan-xiang-deng-b-higz/
  * 给你两个长度相同的字符串，s 和 t。
  * 将 s 中的第 i 个字符变到 t 中的第 i 个字符需要 |s[i] - t[i]| 的开销（开销可能为 0），也就是两个字符的 ASCII 码值的差的绝对值。
  * 用于变更字符串的最大预算是 maxCost。在转化字符串时，总开销应当小于等于该预算，这也意味着字符串的转化可能是不完全的。
@@ -16,10 +17,18 @@ package fSlidingWindow.slidingWindow.replace;
 public class cEqualSubstring {
 
 
+    public static void main(String[] args) {
 
-    // https://mp.weixin.qq.com/s/s9Kk9JtbMxvQdofmuWa7TQ
+    }
 
     // https://www.cnblogs.com/huansky/p/13488234.html
+    /**
+     *
+     * @param s
+     * @param t
+     * @param maxCost
+     * @return
+     */
     public static int equalSubstring(String s, String t, int maxCost) {
         int left = 0, right =0;
         int sum = 0;
@@ -40,28 +49,8 @@ public class cEqualSubstring {
     }
 
 
-
-    // https://leetcode-cn.com/problems/get-equal-substrings-within-budget/solution/jin-ke-neng-shi-zi-fu-chuan-xiang-deng-b-higz/
-    public static int equalSubstring1(String s, String t, int maxCost) {
-        int n = s.length();
-        int[] diff = new int[n];
-        for (int i = 0; i < n; i++) {
-            diff[i] = Math.abs(s.charAt(i) - t.charAt(i));
-        }
-        int maxLength = 0;
-        int start = 0, end = 0;
-        int sum = 0;
-        while (end < n) {
-            sum += diff[end];
-            while (sum > maxCost) {
-                sum -= diff[start];
-                start++;
-            }
-            maxLength = Math.max(maxLength, end - start + 1);
-            end++;
-        }
-        return maxLength;
-    }
+    ////////////////////////////////////////////////////////
+    // https://mp.weixin.qq.com/s/s9Kk9JtbMxvQdofmuWa7TQ
 
 
 }

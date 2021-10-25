@@ -50,13 +50,13 @@ public class dCheckInclusion {
             // 如果该字符存在于字符串 s1 中，则更新窗口数据以及 vaild (不存在的话没有更新的必要)
             if (need.containsKey(newChar)) {
                 window.put(newChar, window.getOrDefault(newChar, 0) + 1);
-                // 若窗口中的该字符满足 need 条件，则 vaild ++
+                //todo 若窗口中的该字符满足 need 条件，则 vaild ++
                 if (window.get(newChar).equals(need.get(newChar))) {
                     vaild ++;
                 }
             }
 
-            // 窗口中的字符数量等于 need 的大小(s1 中不同字符的个数), 则收缩窗口
+            //todo 窗口中的字符数量等于 need 的大小(s1 中不同字符的个数), 则收缩窗口
             while (right - left == s1.length()) {
                 if (vaild == need.size()) {
                     return true;
@@ -66,7 +66,7 @@ public class dCheckInclusion {
                 char removeChar = s2.charAt(left);
                 left ++;
 
-                // 如果被移除掉的字符存在于字符串 s1 中，则更新窗口数据以及 vaild (不存在的话没有更新的必要)
+                //todo 如果被移除掉的字符存在于字符串 s1 中，则更新窗口数据以及 vaild (不存在的话没有更新的必要)
                 if (need.containsKey(removeChar)) {
                     if (window.get(removeChar).equals(need.get(removeChar))) {
                         vaild --;

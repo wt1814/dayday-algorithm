@@ -42,6 +42,7 @@ public class fMinSubArrayLen {
         }
         return ans == Integer.MAX_VALUE ? 0 : ans;
     }
-
+    //todo 时间复杂度：O(n)，其中 nnn 是数组的长度。指针 start\textit{start}start 和 end\textit{end}end 最多各移动 nnn 次。
+    //todo 空间复杂度：O(1)。
 
 }
