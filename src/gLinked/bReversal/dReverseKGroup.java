@@ -4,6 +4,7 @@ import gLinked.ListNode;
 
 /**
  * 25. K 个一组翻转链表
+ * https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
  * 给你一个链表，每 k 个节点一组进行翻转，请你返回翻转后的链表。
  * k 是一个正整数，它的值小于或等于链表的长度。
  * 如果节点总数不是 k 的整数倍，那么请将最后剩余的节点保持原有顺序。
@@ -29,63 +30,13 @@ public class dReverseKGroup {
         ListNode node4 = new ListNode(4,node3);
         ListNode node5 = new ListNode(5,node4);
 
-        ListNode listNode = reverseKGroup(node5, 3);
+        ListNode listNode = reverseKGroup1(node5, 3);
         System.out.println(listNode.val);
 
     }
 
 
-    // https://leetcode-cn.com/problems/reverse-nodes-in-k-group/solution/tu-jie-kge-yi-zu-fan-zhuan-lian-biao-by-user7208t/
-    public static ListNode reverseKGroup(ListNode head, int k) {
-
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-
-        ListNode pre = dummy;
-        ListNode end = dummy;
-
-        while (end.next != null) {
-            for (int i = 0; i < k && end != null; i++) {
-                end = end.next;
-            }
-            if (end == null) {
-                break;
-            }
-
-            // todo 记录开始节点与下一组的开始节点
-            ListNode start = pre.next;
-            ListNode next = end.next;
-
-            end.next = null;
-            pre.next = reverse(start);
-            start.next = next;
-            pre = start;
-
-            end = pre; // todo 更新下标，进行下一轮循环
-        }
-        return dummy.next;
-
-    }
-
-    private static ListNode reverse(ListNode head) {
-        ListNode pre = null;
-        ListNode curr = head;
-        while (curr != null) {
-            ListNode next = curr.next;
-            curr.next = pre;
-            pre = curr;
-            curr = next;
-        }
-        return pre;
-    }
-
-
-    // https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
-
-
-    //////////////////////////////////////////////////////////////
     // https://www.nowcoder.com/practice/b49c3dc907814e9bbfa8437c251b028e?tpId=188&&tqId=38557&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
-
     /**
      *
      * @param head
@@ -123,11 +74,58 @@ public class dReverseKGroup {
                 temp.next = pre.next;
                 pre.next = temp;
             }
-            //每个子序列反序完成后，pre，cur需要更新至下一子序列的头部
+            //todo 每个子序列反序完成后，pre，cur需要更新至下一子序列的头部
             pre = cur;
             cur = cur.next;
         }
         return res.next;
+
+    }
+
+    ////////////////////////////////////////////////////////////////////
+    // https://leetcode-cn.com/problems/reverse-nodes-in-k-group/solution/tu-jie-kge-yi-zu-fan-zhuan-lian-biao-by-user7208t/
+    public static ListNode reverseKGroup2(ListNode head, int k) {
+
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+
+        ListNode pre = dummy;
+        ListNode end = dummy;
+
+        while (end.next != null) {
+            for (int i = 0; i < k && end != null; i++) {
+                end = end.next;
+            }
+            if (end == null) {
+                break;
+            }
+
+            // todo 记录开始节点与下一组的开始节点
+            ListNode start = pre.next;
+            ListNode next = end.next;
+
+            end.next = null;
+            pre.next = reverse(start);
+            start.next = next;
+            pre = start;
+
+            end = pre; // todo 更新下标，进行下一轮循环
+        }
+        return dummy.next;
+
+    }
+
+    private static ListNode reverse(ListNode head) {
+
+        ListNode pre = null;
+        ListNode curr = head;
+        while (curr != null) {
+            ListNode next = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = next;
+        }
+        return pre;
 
     }
 

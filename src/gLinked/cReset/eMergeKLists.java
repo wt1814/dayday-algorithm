@@ -30,7 +30,6 @@ public class eMergeKLists {
 
     // https://www.nowcoder.com/practice/65cfde9e5b9b4cf2b6bafa5f3ef33fa6?tpId=188&&tqId=38611&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
     // https://leetcode-cn.com/problems/merge-k-sorted-lists/solution/he-bing-kge-pai-xu-lian-biao-by-leetcode-solutio-2/
-
     /**
      *
      * @param lists
@@ -39,6 +38,7 @@ public class eMergeKLists {
      * @return
      */
     public ListNode merge(ArrayList<ListNode> lists, int l, int r){
+
         // 左右相等说明不能再分
         if(l == r){
             return lists.get(l);
@@ -52,6 +52,7 @@ public class eMergeKLists {
         ListNode merge1 = merge(lists, mid + 1, r);
 
         return mergeTwoList(merge,merge1);
+
     }
 
     /**
@@ -61,6 +62,7 @@ public class eMergeKLists {
      * @return
      */
     public ListNode mergeTwoList(ListNode node1, ListNode node2){
+
         ListNode node = new ListNode(-1);
         ListNode tmp = node;
         while(node1!=null && node2!=null){
@@ -75,6 +77,7 @@ public class eMergeKLists {
         }
         tmp.next = node1!=null?node1:node2;
         return node.next;
+
     }
 
 }

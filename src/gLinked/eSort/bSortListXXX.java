@@ -12,7 +12,7 @@ import gLinked.ListNode;
  * 输入：head = [4,2,1,3]
  * 输出：[1,2,3,4]
  */
-public class bSortListxxx {
+public class bSortListXXX {
 
     // https://leetcode-cn.com/problems/sort-list/
     // https://www.cnblogs.com/du001011/p/10610522.html
@@ -36,6 +36,7 @@ public class bSortListxxx {
      * @return
      */
     private static ListNode mergeSort(ListNode head) {
+
         if (head.next == null) {
             return head;
         }

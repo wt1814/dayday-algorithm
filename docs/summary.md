@@ -497,12 +497,59 @@ public class bBinarySearchOfRecursion {
 ## 1.5. 双指针
 &emsp; `双重for循环可以使用相向指针 + 单循环，替代。`  
 
+## 链表
+1. 链表删除节点的两种方式
+    1. 如上图中的( b)所示：要删除i结点，必须从头扫描，扫到h(i的前一个结点),然后让其next值指向j(i的下一个位置)，然后就可以删除i了。  
+    2. 如上图中的（c）所示：要删除i结点，可以先把i的下一节点的值赋给i结点，然后让i的next值指向下一节点的下一结点，就相当于删除i结点。  
+
+2. 链表反转  
+   1. 反转指针  
+        ```java
+        /**
+         * 在遍历链表时，将当前节点的 next指针改为指向前一个节点。
+         * 由于节点没有引用其前一个节点，因此必须事先存储其前一个节点。
+         * 在更改引用之前，还需要存储后一个节点。最后返回新的头引用。
+         * @param head
+         * @return
+         */
+        public ListNode reverseList(ListNode head) {
+        
+            ListNode prev = null;
+            ListNode curr = head;
+            while (curr != null) {
+                /**
+                 * 务必注意：在 cur 指向 pre 之前一定要先保留 cur 的后继结点，不然 cur 指向 pre 后就再也找不到后继结点了
+                 * 也就无法对 cur 后继之后的结点进行翻转了
+                 */
+                ListNode next = curr.next;   // todo 保存当前节点的下一节点
+                curr.next = prev;   // todo 反转
+                // todo 矫正pre 和 cur 以便下一次
+                prev = curr;  curr = next;
+        
+                     /* # 留下联系方式
+                        next = cur.next
+                        # 修改指针
+                        cur.next = pre
+                        # 继续往下走
+                        pre = cur
+                        cur = next*/
+            }
+            return prev;
+        
+        }
+        ```
+    2. 类似头插法
+        1.首先理解头插法。
+       
+
+## 队列
+&emsp; **<font color = "clime">队列通常用于对“历史”的回放，也就是按照“历史”顺序，把“历史”重演一遍。</font>**
+
+
 ## 栈
 &emsp; **栈的应用：**栈的输出顺序和输入顺序相反，所以 **<font color = "red">栈通常用于“历史”的回溯，也就是逆流而上追溯“历史”。例如：实现递归的逻辑，就可以用栈来代替。</font>** 因为栈可以回溯方法的调用链。  
 
 
-## 队列
-&emsp; **<font color = "clime">队列通常用于对“历史”的回放，也就是按照“历史”顺序，把“历史”重演一遍。</font>**  
 
 ## 1.6. 二叉树
 

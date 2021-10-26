@@ -5,10 +5,10 @@ import gLinked.ListNode;
 /**
  * 92. 反转链表 II
  * NC21：链表内指定区间反转
- * 将一个节点数为 size 链表 m 位置到 n 位置之间的区间反转，要求时间复杂度 O(n)O(n)O(n)，空间复杂度 O(1)O(1)O(1)。
+ * 将一个节点数为 size 链表 m 位置到 n 位置之间的区间反转，要求时间复杂度 O(n)，空间复杂度 O(1)。
  * todo 将待移动节点移动到前驱节点后，类似头插法
  */
-public class cReverseBetween {
+public class cZZZReverseBetween {
 
 
     public static void main(String[] args) {
@@ -41,6 +41,7 @@ public class cReverseBetween {
      * @return
      */
     public static ListNode reverseBetween (ListNode head, int m, int n) {
+
         // write code here
         // 设置哑节点的好处：
         //在m=1时，我们也有前驱节点，也可以将cur的next节点依次插入到pre的后面
@@ -67,7 +68,7 @@ public class cReverseBetween {
         // 第5次i=6：0->1->7->6->5->4->3->2->8->9->10
         // 第6次i=7：0->1->8->7->6->5->4->3->2->9->10
         return dummy.next;
-    }
 
+    }
 
 }

@@ -1,9 +1,10 @@
-package gLinked.dDoublePointer.troArray;
+package gLinked.dDoublePointer.SpeedPointer;
 
 import gLinked.ListNode;
 
 /**
  * 160. 相交链表
+ * todo 快慢指针
  * https://leetcode-cn.com/problems/intersection-of-two-linked-lists/
  * 给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表没有交点，返回 null 。
  * 图示两个链表在节点 c1 开始相交：
@@ -17,7 +18,7 @@ import gLinked.ListNode;
  * 从各自的表头开始算起，链表 A 为 [4,1,8,4,5]，链表 B 为 [5,0,1,8,4,5]。
  * 在 A 中，相交节点前有 2 个节点；在 B 中，相交节点前有 3 个节点。
  */
-public class getIntersectionNode {
+public class dGetIntersectionNode {
 
 
 

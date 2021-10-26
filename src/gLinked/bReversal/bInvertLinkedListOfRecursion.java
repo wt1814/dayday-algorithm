@@ -22,8 +22,6 @@ public class bInvertLinkedListOfRecursion {
 
         ListNode newHead = invertLinkedList(node1);
         //todo 翻转后别忘了设置头结点的后继结点！
-
-
     }
 
 

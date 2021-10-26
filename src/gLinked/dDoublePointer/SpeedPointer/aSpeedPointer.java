@@ -3,18 +3,18 @@ package gLinked.dDoublePointer.SpeedPointer;
 /**
  * 链表快慢指针找到单链表中间节点
  */
-public class gSpeedPointer {
+public class aSpeedPointer {
 
     public static void main(String[] args){
 
-        gSpeedPointer gSpeedPointer = new gSpeedPointer();
+        aSpeedPointer aSpeedPointer = new aSpeedPointer();
         int arr[] = {1,2,3,4};
 
         for (int i = 0 ; i < arr.length; i++){
-            gSpeedPointer.addHead(arr[i]);
+            aSpeedPointer.addHead(arr[i]);
         }
-        gSpeedPointer.print();
-        Node middleNodeWithSlowFastPointer = gSpeedPointer.findMiddleNodeWithSlowFastPointer();
+        aSpeedPointer.print();
+        Node middleNodeWithSlowFastPointer = aSpeedPointer.findMiddleNodeWithSlowFastPointer();
         System.out.println(middleNodeWithSlowFastPointer.data);
 
     }
@@ -60,7 +60,7 @@ public class gSpeedPointer {
     private Node head;
     private int size;
 
-    public gSpeedPointer(){
+    public aSpeedPointer(){
         this.head = null;
         this.size = 0;
     }

@@ -3,27 +3,27 @@ package gLinked.dDoublePointer.SpeedPointer;
 /**
  * 链表环
  */
-public class iCrossLink {
+public class bCrossLink {
 
 
     //理解 链表中环的入口结点 https://blog.nowcoder.net/n/9d3ffa4b004e43d1aff512141d0d7dac
 
     public static void main(String[] args){
-        iCrossLink iCrossLink = new iCrossLink();
+        bCrossLink bCrossLink = new bCrossLink();
         int[] arr = {1,2,3,4,5,2};
         for (int i = 0; i< arr.length; i++){
-            iCrossLink.addHead(arr[i]);
+            bCrossLink.addHead(arr[i]);
         }
-        iCrossLink.print();
+        bCrossLink.print();
 
-        Node node = iCrossLink.detectCrossNode();
+        Node node = bCrossLink.detectCrossNode();
         if (node == null){
             System.out.println("链表无环");
         }else {
             System.out.println("链表有环，快慢指针相遇节点"+node.data);
         }
 
-        Node ringEntryNode = iCrossLink.getRingEntryNode();
+        Node ringEntryNode = bCrossLink.getRingEntryNode();
         if (ringEntryNode == null){
             System.out.println("链表无环");
         }else {
@@ -109,7 +109,7 @@ public class iCrossLink {
     private Node head;
     private int size;
 
-    public iCrossLink(){
+    public bCrossLink(){
         this.head = null;
         this.size = 0;
     }

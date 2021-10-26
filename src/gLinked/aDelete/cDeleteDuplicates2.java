@@ -12,7 +12,7 @@ import gLinked.ListNode;
  * 输入：head = [1,1,2]
  * 输出：[1,2]
  */
-public class dDeleteDuplicates2 {
+public class cDeleteDuplicates2 {
 
 
     public static void main(String[] args) {

@@ -23,7 +23,7 @@ import java.util.LinkedList;
  * 3，5，从3开始报数，3->1，5->2编号为5的人离开
  * 最后留下人的编号是3
  */
-public class jCrossJosephXXX {
+public class cCrossJosephXXX {
 
 
     public static void main(String[] args){

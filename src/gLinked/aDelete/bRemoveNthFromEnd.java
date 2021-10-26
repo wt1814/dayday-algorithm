@@ -52,7 +52,6 @@ public class bRemoveNthFromEnd {
 
     //https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/solution/shan-chu-lian-biao-de-dao-shu-di-nge-jie-dian-b-61/
     // 删除链表倒数第N个节点
-
     /**
      *
      * @param head
