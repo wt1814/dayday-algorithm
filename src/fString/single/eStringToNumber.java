@@ -89,6 +89,7 @@ public class eStringToNumber {
             if (digit < 0 || digit > 9){
                 break;
             }
+
             //todo 越界处理
             if (res > Integer.MAX_VALUE / 10 || (res == Integer.MAX_VALUE / 10 && digit > Integer.MAX_VALUE % 10)){
                 return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
@@ -97,6 +98,7 @@ public class eStringToNumber {
                 res = res * 10 + digit;
             }
         }
+
         return sign * res;
 
     }

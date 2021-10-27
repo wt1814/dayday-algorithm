@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 最大堆排序
  */
-public class hHeapSort {
+public class hZZZHeapSort {
 
     public static void main(String[] args) {
 

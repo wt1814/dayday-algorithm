@@ -13,6 +13,7 @@ public class bStringReverse {
     }
 
     public static String swapWords(String s) {
+
         if (s == null) {
             return null;
         }
@@ -37,6 +38,7 @@ public class bStringReverse {
         }
         ret = new String(charArr);
         return ret;
+
     }
 
     // 翻转一段字符串

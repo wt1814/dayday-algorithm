@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
  * 703. 数据流中的第 K 大元素
  *
  */
-public class jKthLargest {
+public class jZZZKthLargest {
 
     // https://mp.weixin.qq.com/s/zVon8BE7l80-RT5bWdKCxA
     //         queue = new PriorityQueue<>(k, (a,b)->Integer.compare(a,b));
