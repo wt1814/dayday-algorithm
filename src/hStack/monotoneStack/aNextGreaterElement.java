@@ -25,6 +25,7 @@ public class aNextGreaterElement {
 
     }
 
+    // https://mp.weixin.qq.com/s/kyqZpixS9dZl2L4aSHpggQ
     // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490238&idx=1&sn=436de0fa6cd0e3481e429e8402b73450&chksm=fb41899ecc36008808080bbb802501cd976dd94136f30a3a8f05d5302f269b2a4dcbca122a71&scene=21#wechat_redirect
     /**
      * 首先遍历nums2的所有元素，遍历的时候判断栈是否为空：
