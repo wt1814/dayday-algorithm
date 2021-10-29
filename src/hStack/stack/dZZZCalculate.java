@@ -13,7 +13,7 @@ import java.util.Stack;
  * 输入：s = "3+2*2"
  * 输出：7
  */
-public class dCalculate {
+public class dZZZCalculate {
 
     public static void main(String[] args) {
 
@@ -21,18 +21,20 @@ public class dCalculate {
 
     // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490373&idx=1&sn=0df0252b8a183aac5bf47b7a24173c24&chksm=fb418865cc360173d488b5a0f252423c4e020d797f75a012b33c843a8964e1754797975eda47&token=1745824839&lang=zh_CN#rd
 
+    public static int calculate(String s) {
 
-
-    public int calculate(String s) {
         //记录每个数字前面的符号，如果是乘法和除法就直接和前面的数字运算，
-        //然后在存放到栈中，如果是加法和减法直接存放到栈中
+        //然后再存放到栈中，如果是加法和减法直接存放到栈中
+
         int preSign = '+';
         Stack<Integer> stack = new Stack<>();
         int length = s.length();
+
         for (int i = 0; i < length; i++) {
             int ch = s.charAt(i);
-            if (ch == ' ')//过滤掉空格
+            if (ch == ' '){ //过滤掉空格
                 continue;
+            }
             //如果是数字
             if (ch >= '0' && ch <= '9') {
                 //找到连续的数字字符串，把它转化为整数
@@ -65,6 +67,8 @@ public class dCalculate {
         return res;
     }
 
+
+
     ///////////////////////////////////////////////////////
 
     // https://leetcode-cn.com/problems/basic-calculator-ii/solution/ji-ben-ji-suan-qi-ii-by-leetcode-solutio-cm28/
@@ -81,7 +85,8 @@ public class dCalculate {
      * @return
      */
     public static int calculate1(String s) {
-        Deque<Integer> stack = new LinkedList<Integer>();
+
+        Deque<Integer> stack = new LinkedList<>();
         char preSign = '+';
         int num = 0;
         int n = s.length();
@@ -112,6 +117,7 @@ public class dCalculate {
             ans += stack.pop();
         }
         return ans;
+
     }
 
 

@@ -12,7 +12,7 @@ import java.util.LinkedList;
  * 输入: temperatures = [73,74,75,71,69,72,76,73]
  * 输出: [1,1,4,2,1,1,0,0]
  */
-public class cDailyTemperatures {
+public class dDailyTemperatures {
 
 
     public static void main(String[] args) {

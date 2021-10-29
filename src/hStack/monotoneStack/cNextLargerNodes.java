@@ -17,7 +17,7 @@ import java.util.Stack;
  * 输入：[2,1,5]
  * 输出：[5,5,0]
  */
-public class bNextLargerNodes {
+public class cNextLargerNodes {
 
     public static void main(String[] args) {
 
@@ -30,6 +30,7 @@ public class bNextLargerNodes {
      * @return
      */
     public static int[] nextLargerNodes(ListNode head) {
+
         List<Integer> list = new ArrayList<>();
         //链表元素存储到集合中
         while (head != null) {
@@ -48,6 +49,7 @@ public class bNextLargerNodes {
             stack.push(i);
         }
         return res;
+
     }
 
 }
