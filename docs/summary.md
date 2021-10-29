@@ -555,11 +555,10 @@ public class bBinarySearchOfRecursion {
 
 
 ## 1.9. 二叉树
-
-### 1.9.1. BFS
-
-
 ### 1.9.2. DFS
 
+
+### 1.9.1. BFS
+&emsp; BFS和前序遍历  
 
 
