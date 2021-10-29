@@ -1,4 +1,4 @@
-package jTree.aDFS.bDepth;
+package jTree.aDFS.aAttribute;
 
 import jTree.TreeNode;
 
@@ -12,10 +12,14 @@ import jTree.TreeNode;
  * 输入：root = [3,9,20,null,null,15,7]
  * 输出：2
  */
-public class cMinDepth {
+public class dMinDepth {
+
+    public static void main(String[] args) {
+
+    }
 
     // https://mp.weixin.qq.com/s/WJj7rNR8I2gT3mKllP--VQ
-    public int minDepth(TreeNode root) {
+    public static int minDepth(TreeNode root) {
         if (root == null){
             return 0;
         }

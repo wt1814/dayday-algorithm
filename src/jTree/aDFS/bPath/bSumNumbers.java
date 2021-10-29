@@ -1,4 +1,4 @@
-package jTree.aDFS.path;
+package jTree.aDFS.bPath;
 
 import jTree.TreeNode;
 
@@ -13,15 +13,12 @@ import jTree.TreeNode;
  *
  *
  * 示例 1:
- *
  *     输入: [1,2,3]
- *
  *         1
  *
  *        / \
  *
  *       2   3
- *
  *
  *     输出: 25
  *     解释:
@@ -29,7 +26,7 @@ import jTree.TreeNode;
  *     从根到叶子节点路径 1->3 代表数字 13.
  *     因此，数字总和 = 12 + 13 = 25.
  */
-public class cSumNumbers {
+public class bSumNumbers {
 
     public static void main(String[] args) {
 

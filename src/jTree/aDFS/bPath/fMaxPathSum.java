@@ -1,4 +1,4 @@
-package jTree.aDFS.path;
+package jTree.aDFS.bPath;
 
 import jTree.TreeNode;
 
@@ -13,7 +13,7 @@ import jTree.TreeNode;
  * 输出：42
  * 解释：最优路径是 15 -> 20 -> 7 ，路径和为 15 + 20 + 7 = 42
  */
-public class gMaxPathSum {
+public class fMaxPathSum {
 
     public static void main(String[] args) {
 
@@ -26,8 +26,6 @@ public class gMaxPathSum {
         System.out.println(maxPathSum(treeNode));
 
     }
-
-
 
     // https://mp.weixin.qq.com/s/EY3wOMmlVkX4Lzo6mfzFoQ
     // https://blog.csdn.net/qq_28114615/article/details/86561069

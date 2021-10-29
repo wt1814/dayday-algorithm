@@ -9,7 +9,7 @@ import java.util.Queue;
 /**
  * 层序遍历
  */
-public class cLevelTraversalOfOneSelf {
+public class cZZZLevelTraversalOfOneSelf {
 
     public static void main(String[] args){
 

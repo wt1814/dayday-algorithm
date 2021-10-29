@@ -6,7 +6,7 @@ import jTree.TreeNode;
  * 110. 平衡二叉树
  * todo 左神 课程8 《二叉树的递归套路》
  */
-public class eIsBalanced {
+public class aIsBalanced {
 
     public static void main(String[] args) {
 
@@ -17,7 +17,6 @@ public class eIsBalanced {
     public static boolean isBalanced2(TreeNode head) {
 
         return process(head).isBalanced;
-
     }
 
     /**
@@ -38,7 +37,6 @@ public class eIsBalanced {
         Info leftInfo = process(x.left);
         Info rightInfo = process(x.right);
 
-
         int height = Math.max(leftInfo.height, rightInfo.height)  + 1;
         boolean isBalanced = true;
         if(!leftInfo.isBalanced) {
@@ -51,9 +49,14 @@ public class eIsBalanced {
             isBalanced = false;
         }
         return new Info(isBalanced, height);
+
     }
 
+    /**
+     *
+     */
     public static class Info{
+
         public boolean isBalanced;
         public int height;
 
@@ -61,10 +64,13 @@ public class eIsBalanced {
             isBalanced = i;
             height = h;
         }
+
     }
 
 
     //////////////////////////////////////////////////////////////////////////////////////////
     // https://programmercarl.com/0110.%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91.html#java
+
+
 
 }

@@ -1,4 +1,4 @@
-package jTree.aDFS.path;
+package jTree.aDFS.bPath;
 
 import jTree.TreeNode;
 
@@ -20,19 +20,15 @@ public class aAllPathOfNum {
         TreeNode treeNode4 = new TreeNode(5);
         TreeNode treeNode5 = new TreeNode(6);
         TreeNode treeNode6 = new TreeNode(7);
-
         treeNode.left = treeNode1;
         treeNode.right = treeNode2;
         treeNode1.left = treeNode3;
         treeNode2.left = treeNode4;
         treeNode3.left = treeNode5;
         treeNode3.right = treeNode6;
-
-
 /*        1 2 4 6
         1 2 4 7
         1 3 5*/
-
         ArrayList<ArrayList<Integer>> result = new ArrayList();
         ArrayList<Integer> nums = new ArrayList<>();
         preOrder(result,nums,treeNode);
@@ -61,7 +57,7 @@ public class aAllPathOfNum {
         nums.add(root.val); // todo 先添加节点，再判断该节点是否叶节点
 
         if(root.left == null && root.right == null){
-            ArrayList<Integer> temp = new ArrayList<>();
+            ArrayList<Integer> temp = new ArrayList<>(); //todo 新建集合，防止污染原有集合
             for (int i = 0;i<nums.size();i++){
                 temp.add(nums.get(i));
             }

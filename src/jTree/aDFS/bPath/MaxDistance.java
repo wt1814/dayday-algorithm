@@ -1,4 +1,4 @@
-package jTree.aDFS.path;
+package jTree.aDFS.bPath;
 
 import jTree.TreeNode;
 

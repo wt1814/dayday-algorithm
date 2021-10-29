@@ -1,4 +1,4 @@
-package jTree.aDFS.path;
+package jTree.aDFS.bPath;
 
 import jTree.TreeNode;
 
@@ -18,19 +18,25 @@ import jTree.TreeNode;
  * 返回 3, 它的长度是路径 [4,2,1,3] 或者 [5,2,1,3]。
  * 注意：两结点之间的路径长度是以它们之间边的数目表示。
  */
-public class bDiameterOfBinaryTreeXXX {
+public class gZZZDiameterOfBinaryTree {
 
 
+    public static void main(String[] args) {
+
+    }
+
+
+    ///////////////////////////////
     // https://leetcode-cn.com/problems/diameter-of-binary-tree/solution/er-cha-shu-de-zhi-jing-by-leetcode-solution/
-    int ans; // todo 全局变量
+    static int ans; // todo 全局变量
 
-    public int diameterOfBinaryTree(TreeNode root) {
+    public static int diameterOfBinaryTree(TreeNode root) {
         ans = 1;
         depth(root);
         return ans - 1;
     }
 
-    public int depth(TreeNode node) {
+    public static int depth(TreeNode node) {
         if (node == null) {
             return 0; // 访问到空节点了，返回0
         }

@@ -1,4 +1,4 @@
-package jTree.aDFS.bDepth;
+package jTree.aDFS.aAttribute;
 
 import jTree.TreeNode;
 
@@ -17,7 +17,7 @@ import jTree.TreeNode;
  *    15   7
  * 返回它的最大深度 3 。
  */
-public class cMaxDepth {
+public class dMaxDepth {
 
 
     public static void main(String[] args) {

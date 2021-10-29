@@ -31,11 +31,20 @@ import jTree.TreeNode;
  *     输入：A = [1,2,3], B = [3,1]
  *     输出：false
  */
-public class jIsSubStructure {
+public class eIsSubStructure {
+
+    public static void main(String[] args) {
+
+    }
 
     // https://mp.weixin.qq.com/s/yNp0HuJjFWz8QviRcI6iCQ
-
-    public boolean isSubStructure(TreeNode A, TreeNode B) {
+    /**
+     *
+     * @param A
+     * @param B
+     * @return
+     */
+    public static boolean isSubStructure(TreeNode A, TreeNode B) {
         if (A == null || B == null){
             return false;
         }
@@ -44,7 +53,7 @@ public class jIsSubStructure {
         return isSub(A, B) || isSubStructure(A.left, B) || isSubStructure(A.right, B);
     }
 
-    boolean isSub(TreeNode A, TreeNode B) {
+    public static boolean isSub(TreeNode A, TreeNode B) {
         //这里如果B为空，说明B已经访问完了，确定是A的子结构
         if (B == null){
             return true;

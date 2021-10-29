@@ -12,7 +12,7 @@ import java.util.Queue;
  * 层序遍历，key在哪一层
  * todo 可以通过设置flag变量的方式，来发现某一层的结束。
  */
-public class hTreeMaxWidth {
+public class eTreeMaxWidth {
 
     public static void main(String[] args) {
         int maxLevel = 10;
@@ -28,7 +28,7 @@ public class hTreeMaxWidth {
     }
 
     /**
-     * 使用map统计，新层到来，统计旧层
+     * todo 使用map统计，新层到来，统计旧层
      * 每个节点进队列时设置层数
      * 弹出节点时，取出当前节点层数
      * 如果弹出节点层是当前层，则统计节点加1
@@ -37,6 +37,7 @@ public class hTreeMaxWidth {
      * @return
      */
     public static int maxWidthUseMap(Node head) {
+
         if (head == null) {
             return 0;
         }
@@ -71,6 +72,7 @@ public class hTreeMaxWidth {
         }
         max = Math.max(max, curLevelNodes);
         return max;
+
     }
 
     /**

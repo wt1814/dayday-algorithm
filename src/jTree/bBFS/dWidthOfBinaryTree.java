@@ -8,9 +8,11 @@ import java.util.LinkedList;
 /**
  * 662. 二叉树最大宽度
  */
-public class widthOfBinaryTree {
+public class dWidthOfBinaryTree {
 
+    public static void main(String[] args) {
 
+    }
 
     // https://mp.weixin.qq.com/s/_eRzaIcg8Tt0vEvkDcIJHA
     /**
@@ -19,6 +21,7 @@ public class widthOfBinaryTree {
      * @return
      */
     public static int widthOfBinaryTree(TreeNode root) {
+
         if (root == null)
             return 0;
         //使用双端队列

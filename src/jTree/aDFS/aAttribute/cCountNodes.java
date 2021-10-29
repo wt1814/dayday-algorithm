@@ -11,7 +11,7 @@ import jTree.TreeNode;
  * 输入：root = [1,2,3,4,5,6]
  * 输出：6
  */
-public class aCountNodes {
+public class cCountNodes {
 
     public static void main(String[] args) {
 
