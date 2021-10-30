@@ -62,7 +62,7 @@ public class aWordBreak {
         }
         //开始拆分字符串s，
         for (int i = start + 1; i <= s.length(); i++) {
-            //如果截取的子串不在字典中，继续截取更大的子串\
+            //如果截取的子串不在字典中，继续截取更大的子串
             String substring = s.substring(start, i);
             if (!wordDict.contains(substring)){
                 continue;
