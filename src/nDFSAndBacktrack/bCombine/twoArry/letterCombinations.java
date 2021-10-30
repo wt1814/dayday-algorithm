@@ -1,4 +1,4 @@
-package nDFSAndBacktrack.bCombine;
+package nDFSAndBacktrack.bCombine.twoArry;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,6 +7,8 @@ import java.util.Map;
 
 /**
  * 17.电话号码的字母组合
+ * todo 不同集合间的组合。递归迭代的是不同集合，每次遍历一个集合。
+ * https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
  * 给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。答案可以按 任意顺序 返回。
  * 给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。
  *
@@ -21,11 +23,17 @@ public class letterCombinations {
 
     }
 
+    // BFS和DFS https://mp.weixin.qq.com/s/CYea68mh69FCV2di31ukxg
 
-    // https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
-    // https://mp.weixin.qq.com/s/CYea68mh69FCV2di31ukxg
 
+    //
+    /**
+     * https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/solution/dian-hua-hao-ma-de-zi-mu-zu-he-by-leetcode-solutio/
+     * @param digits
+     * @return
+     */
     public List<String> letterCombinations(String digits) {
+
         List<String> combinations = new ArrayList<String>();
         if (digits.length() == 0) {
             return combinations;
@@ -45,18 +53,21 @@ public class letterCombinations {
     }
 
     public void backtrack(List<String> combinations, Map<Character, String> phoneMap, String digits, int index, StringBuffer combination) {
+
         if (index == digits.length()) {
             combinations.add(combination.toString());
-        } else {
-            char digit = digits.charAt(index);
-            String letters = phoneMap.get(digit);
-            int lettersCount = letters.length();
-            for (int i = 0; i < lettersCount; i++) {
-                combination.append(letters.charAt(i));
-                backtrack(combinations, phoneMap, digits, index + 1, combination);
-                combination.deleteCharAt(index);
-            }
+            return;
         }
+
+        char digit = digits.charAt(index);
+        String letters = phoneMap.get(digit);
+        int lettersCount = letters.length();
+        for (int i = 0; i < lettersCount; i++) { //todo 遍历每个集合
+            combination.append(letters.charAt(i));
+            backtrack(combinations, phoneMap, digits, index + 1, combination); // todo 多集合间的组合，递归的是下个集合
+            combination.deleteCharAt(index);
+        }
+
     }
 
     ////////////////////////////////////////////////////////////////////////////////
@@ -65,6 +76,11 @@ public class letterCombinations {
     //设置全局列表存储最后的结果
     List<String> list = new ArrayList<>();
 
+    /**
+     *
+     * @param digits
+     * @return
+     */
     public List<String> letterCombinations1(String digits) {
         if (digits == null || digits.length() == 0) {
             return list;

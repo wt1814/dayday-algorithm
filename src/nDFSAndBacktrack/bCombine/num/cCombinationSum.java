@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * todo XXXXX 再看看
  * 39. 组合总和   candidates 中的数字可以无限制重复被选取
+ * todo 元素可被重复选取，下标从i开始，而不是i+1开始。
  * 给定一个无重复元素的数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。
  * candidates 中的数字可以无限制重复被选取。
  * 说明：
@@ -15,7 +15,7 @@ import java.util.List;
  * 示例 1： 输入：candidates = [2,3,6,7], target = 7, 所求解集为： [ [7], [2,2,3] ]
  * 示例 2： 输入：candidates = [2,3,5], target = 8, 所求解集为： [   [2,2,2,2],   [2,3,3],   [3,5] ]
  */
-public class bCombinationSum {
+public class cCombinationSum {
 
     public static void main(String[] args) {
         int[] candidates = {2,3,6,7};
@@ -28,13 +28,16 @@ public class bCombinationSum {
     // https://mp.weixin.qq.com/s/4R7-pXNx12OBWManoV3qGw
 
     public static List<List<Integer>> combinationSum(int[] candidates, int target) {
+
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(candidates); //todo 先进行排序
         backtracking(res, new ArrayList<>(), candidates, target, 0, 0);
         return res;
+
     }
 
     public static void backtracking(List<List<Integer>> res, List<Integer> path, int[] candidates, int target, int sum, int idx) {
+
         // 找到了数字和为 target 的组合
         if (sum == target) {
             res.add(new ArrayList<>(path)); // todo
@@ -49,6 +52,7 @@ public class bCombinationSum {
             backtracking(res, path, candidates, target, sum + candidates[i], i); //todo 元素可被重复选取，下标从i开始，而不是i+1开始。
             path.remove(path.size() - 1); // 回溯，移除路径 path 最后一个元素
         }
+
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////

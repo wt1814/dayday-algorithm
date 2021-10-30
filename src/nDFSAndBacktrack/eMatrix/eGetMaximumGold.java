@@ -25,7 +25,7 @@ public class eGetMaximumGold {
 
     // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247488484&idx=1&sn=924f9749342d559cb235488e5bc53296&chksm=fb4180c4cc3609d277c3dead24dd979e64962c9ca9820159332c52e022bbf6587d3d4420b732&scene=21#wechat_redirect
 
-    public int getMaximumGold(int[][] grid) {
+    public static int getMaximumGold(int[][] grid) {
         //边界条件判断
         if (grid == null || grid.length == 0){
             return 0;
@@ -45,7 +45,7 @@ public class eGetMaximumGold {
 
     }
 
-    public int dfs(int[][] grid, int x, int y) {
+    public static int dfs(int[][] grid, int x, int y) {
 
         //边界条件的判断，x,y都不能越界，同时当前坐标的位置如果是0，表示有障碍物
         //或者遍历过了

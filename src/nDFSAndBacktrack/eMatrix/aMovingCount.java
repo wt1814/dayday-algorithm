@@ -13,6 +13,10 @@ public class aMovingCount {
 
 
 
+    public static void main(String[] args) {
+
+    }
+
 
     // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247487853&idx=2&sn=c1251de81a7c127eced39aecb14a140f&chksm=fb41824dcc360b5b6ba9ea9a30c2abbc4b8e22161366d8847c4689c6cab8894071d735198aa4&scene=21#wechat_redirect
     /**
@@ -22,7 +26,7 @@ public class aMovingCount {
      * @param k 不能进入行坐标和列坐标的数位之和大于k的格子
      * @return
      */
-    public int movingCount(int m, int n, int k) {
+    public static int movingCount(int m, int n, int k) {
         //临时变量visited记录格子是否被访问过
         boolean[][] visited = new boolean[m][n];
         return dfs(0, 0, m, n, k, visited);
@@ -39,7 +43,7 @@ public class aMovingCount {
      * @param visited
      * @return
      */
-    public int dfs(int i, int j, int m, int n, int k, boolean[][] visited) {
+    public static int dfs(int i, int j, int m, int n, int k, boolean[][] visited) {
 
         //i >= m || j >= n是边界条件的判断，k < sum(i, j)判断当前格子坐标是否
         // 满足条件，visited[i][j]判断这个格子是否被访问过
@@ -51,12 +55,13 @@ public class aMovingCount {
         //沿着当前格子的右边和下边继续访问
         int left = dfs(i + 1, j, m, n, k, visited);
         int down = dfs(i, j + 1, m, n, k, visited);
+
         return 1 + left + down;
 
     }
 
     //计算两个坐标数字的和
-    private int sum(int i, int j) {
+    private static int sum(int i, int j) {
         int sum = 0;
         while (i != 0) {
             sum += i % 10;
@@ -68,5 +73,8 @@ public class aMovingCount {
         }
         return sum;
     }
+
+
+
 
 }

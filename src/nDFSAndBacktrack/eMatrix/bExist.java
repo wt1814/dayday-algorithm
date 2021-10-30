@@ -12,6 +12,10 @@ package nDFSAndBacktrack.eMatrix;
 public class bExist {
 
 
+    public static void main(String[] args) {
+
+    }
+
     //////////////////////////////////////////////////////
     // https://mp.weixin.qq.com/s/yZY1JlpCtiaMysN8LUHxKg
     // https://mp.weixin.qq.com/s/g6YKx_VoHOpVG6toLCpGtQ
@@ -23,7 +27,7 @@ public class bExist {
      * @param word
      * @return
      */
-    public boolean exist(char[][] board, String word) {
+    public static boolean exist(char[][] board, String word) {
 
         char[] words = word.toCharArray();
         for (int i = 0; i < board.length; i++) {
@@ -47,7 +51,7 @@ public class bExist {
      * @param index
      * @return
      */
-    boolean dfs(char[][] board, char[] word, int i, int j, int index) {
+    public static boolean dfs(char[][] board, char[] word, int i, int j, int index) {
 
         //边界的判断，如果越界直接返回false。index表示的是查找到字符串word的第几个字符，
         //如果这个字符不等于board[i][j]，说明验证这个坐标路径是走不通的，直接返回false
@@ -70,7 +74,6 @@ public class bExist {
         return res;
 
     }
-
 
 
     //////////////////////////////////////////////////////

@@ -9,9 +9,10 @@ import java.util.List;
  * 给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。
  * 示例: 输入: n = 4, k = 2 输出: [ [2,4], [3,4], [2,3], [1,2], [1,3], [1,4], ]
  */
-public class aCombinationSum {
+public class aZZZCombinationSum {
 
     public static void main(String[] args) {
+
         List<List<Integer>> combine = combine(4, 2);
         System.out.println(combine);
 
@@ -37,6 +38,7 @@ public class aCombinationSum {
             combineHelper(n, k, result,path,i + 1); // 递归
             path.removeLast(); // 回溯，撤销处理的节点
         }
+
     }
 
     //////////////////////////////////////////////////////////todo 剪枝优化

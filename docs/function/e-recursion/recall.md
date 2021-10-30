@@ -211,7 +211,7 @@ void back_trace(已选择的集合，当前解的状态，可选择的解的集�
 ```text
 void backtracking(参数) {
     
-    if(不满足条件){  // todo 剪枝
+    if(不满足条件){  // todo 剪枝一
         return;
     }
 
@@ -220,6 +220,9 @@ void backtracking(参数) {
         return;
     }
     for (选择：本层集合中元素（树中节点孩⼦的数量就是集合的⼤⼩） ) {  //todo 剪枝要修改的地方
+        if(不满足条件){  // todo 剪枝二
+            return;
+        }
         处理节点; // 做选择
         backtracking(路径，选择列表); // 递归
         回溯，撤销处理结果  // 撤销选择

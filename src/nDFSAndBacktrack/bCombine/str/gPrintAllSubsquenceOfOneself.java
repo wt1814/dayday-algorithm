@@ -26,6 +26,7 @@ public class gPrintAllSubsquenceOfOneself {
      * @return
      */
     public static List<String> printAllSubString(String str){
+
         List<String> result = new ArrayList<>();
         if (str == null || str.trim().equals("")){
             return result;

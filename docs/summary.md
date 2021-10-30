@@ -67,6 +67,13 @@ latex 插件我用的是 tex-all-the-things。地址：https://chrome.google.com
 
 数据结构和算法更多是用作程序员的工具，它们作为构思算法的辅助工具，而不是完全的数据存储工具。  
 
+--------
+
+&emsp; 前置操作：  
+1. 对结果数组进行填充  
+2. 将数组进行排序。`Arrays.sort(nums);`  
+
+
 ## 1.2. java语法基础
 
 ```java
@@ -560,5 +567,9 @@ public class bBinarySearchOfRecursion {
 
 ### 1.9.1. BFS
 &emsp; BFS和前序遍历  
+
+
+## DFS
+&emsp; 如果把 子集问题、组合问题、分割问题都抽象为一棵树的话，那么组合问题和分割问题都是收集树的叶子节点，而子集问题是找树的所有节点！  
 
 

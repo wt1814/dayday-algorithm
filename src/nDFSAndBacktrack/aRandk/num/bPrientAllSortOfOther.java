@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 46. 数组全排列
  */
-public class bPrientAllSortOfther {
+public class bPrientAllSortOfOther {
 
     public static void main(String[] args) {
 
