@@ -11,7 +11,7 @@ import java.util.Arrays;
  *     输出：True
  *     说明：有可能将其分成 4 个子集(5)，(1,4)，(2,3)，(2,3)等于总和。
  */
-public class fCanPartitionKSubsets {
+public class hCanPartitionKSubsets {
 
     // 回溯算法解划分为k个相等的子集
     // https://mp.weixin.qq.com/s/F_uNCN-ldK1ReMjDwD8moQ
@@ -20,7 +20,6 @@ public class fCanPartitionKSubsets {
     // https://blog.csdn.net/qq_39445165/article/details/119476303
 
     // https://blog.csdn.net/weixin_42956047/article/details/106404967
-    // https://mp.weixin.qq.com/s/F_uNCN-ldK1ReMjDwD8moQ
 
 
     public static void main(String[] args) {
@@ -133,5 +132,7 @@ public class fCanPartitionKSubsets {
         //如果不能构成正k边形，直接返回false
         return false;
     }
+
+
 
 }

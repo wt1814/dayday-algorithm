@@ -17,7 +17,7 @@ package nDFSAndBacktrack.dDivision;
  * +1 + 1 + 1 - 1 + 1 = 3
  * +1 + 1 + 1 + 1 - 1 = 3
  */
-public class gFindTargetSumWays {
+public class fZZZFindTargetSumWays {
 
     // https://mp.weixin.qq.com/s/ZNY-7G7IGAFFLxrWD3eAcQ
     // 在数组中每个元素前面添加'+'或'-'，组成算术表达式并且他的和等于target，问有多少种方式。每个元素只能有两种选择，要么添加'+'要么添加'-'，所以我们很容易想到的是二叉树。假如使用数组[1,1,1,1]中的所有元素通过'+'或'-'符号构成2
@@ -36,13 +36,14 @@ public class gFindTargetSumWays {
         //判断从根节点到当前叶子节点这条路径是否走完了
         if (index == nums.length) {
             //如果当前累加值等于target，说明找到了一条符号条件的表达式
-            if (target == sum)
+            if (target == sum){
                 count++;
+            }
             return;
         }
-        //左子树数负数，要减去
+        //todo 左子树数负数，要减去
         dfs(nums, target, sum - nums[index], index + 1);
-        //右子树是正数，要加上
+        //todo 右子树是正数，要加上
         dfs(nums, target, sum + nums[index], index + 1);
     }
 

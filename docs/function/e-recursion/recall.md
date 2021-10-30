@@ -21,6 +21,12 @@
 
 
 <!-- 
+什么时候需要startIndex，什么时候不需要startIndex。
+https://mp.weixin.qq.com/s/SrBfADlsOXjeOX4Cr4pQNg
+那么在代码里什么是切割线呢？  
+在处理组合问题的时候，递归参数需要传入startIndex，表示下一轮递归遍历的起始位置，这个startIndex就是切割线。  
+
+
 宫水 
 https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzU4NDE3MTEyMA==&scene=1&album_id=1748759631868280833&count=3#wechat_redirect
 
@@ -109,11 +115,22 @@ https://blog.csdn.net/u014303647/article/details/88328526
 树的深度。  
 &emsp; 递归就要有终⽌条件，所以必然是⼀颗⾼度有限的树（N叉树）。  
 
+&emsp; `切割问题类似组合问题。`  
+&emsp; 例如对于字符串abcdef：  
+
+    组合问题：选取一个a之后，在bcdef中再去选取第二个，选取b之后在cdef中在选组第三个.....。
+    切割问题：切割一个a之后，在bcdef中再去切割第二段，切割b之后在cdef中在切割第三段.....。
+
+
+
 
 ## 1.3. 回溯算法三部曲
 <!-- 
 https://programmercarl.com/0077.%E7%BB%84%E5%90%88.html#%E5%9B%9E%E6%BA%AF%E6%B3%95%E4%B8%89%E9%83%A8%E6%9B%B2
+https://mp.weixin.qq.com/s/SrBfADlsOXjeOX4Cr4pQNg
 -->
+
+递归用来纵向遍历，for循环用来横向遍历。  
 
 输出参数、输入参数、操作下标  
 
