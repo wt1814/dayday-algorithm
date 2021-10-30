@@ -5,6 +5,8 @@
 <!-- 
 https://baike.baidu.com/item/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/5411800?fr=aladdin
 
+贪心算法
+https://mp.weixin.qq.com/s/ZLyJbgMtHNBIiNgnlcsvTw
 
 拜托，别再问我贪心算法了！ 
 https://mp.weixin.qq.com/s?__biz=MzI5MTU1MzM3MQ==&mid=2247483945&idx=1&sn=6f5b0d8c0ac60f40068986738d038a4d&scene=21#wechat_redirect
@@ -18,6 +20,9 @@ https://www.sohu.com/a/256022793_478315
 
 动态规划和贪心算法的区别
 https://blog.csdn.net/HerosOfEarth/article/details/52374337
+
+
+
 -->
 
 &emsp; 贪心算法（又称贪婪算法）是指，在对问题求解时，总是做出在当前看来是最好的选择。也就是说，不从整体最优上加以考虑，算法得到的是在某种意义上的局部最优解。  

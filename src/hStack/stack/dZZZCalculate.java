@@ -6,6 +6,7 @@ import java.util.Stack;
 
 /**
  * 227. 使用栈解基本计算器 II
+ * todo 算术计算，优先级高的先计算，计算的结果入栈，优先级低的直接入栈，最后再统计栈中所有元素的和即可。
  * 给你一个字符串表达式 s ，请你实现一个基本计算器来计算并返回它的值。
  * 整数除法仅保留整数部分。
  *
@@ -19,12 +20,16 @@ public class dZZZCalculate {
 
     }
 
+
+
     // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490373&idx=1&sn=0df0252b8a183aac5bf47b7a24173c24&chksm=fb418865cc360173d488b5a0f252423c4e020d797f75a012b33c843a8964e1754797975eda47&token=1745824839&lang=zh_CN#rd
-
+    /**
+     * 记录每个数字前面的符号，如果是乘法和除法就直接和前面的数字运算，
+     * 然后再存放到栈中，如果是加法和减法直接存放到栈中
+     * @param s
+     * @return
+     */
     public static int calculate(String s) {
-
-        //记录每个数字前面的符号，如果是乘法和除法就直接和前面的数字运算，
-        //然后再存放到栈中，如果是加法和减法直接存放到栈中
 
         int preSign = '+';
         Stack<Integer> stack = new Stack<>();
@@ -45,7 +50,7 @@ public class dZZZCalculate {
                 }
                 //这个是为了抵消上面for循环中的i++
                 i--;
-                //乘法和除法，运算之后在存放到栈中。加法和减法直接存放到栈中
+                //todo 乘法和除法，运算之后在存放到栈中。加法和减法直接存放到栈中
                 if (preSign == '*') {
                     stack.push(num * stack.pop());
                 } else if (preSign == '/') {
