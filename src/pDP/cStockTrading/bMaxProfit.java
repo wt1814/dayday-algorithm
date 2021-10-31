@@ -16,13 +16,15 @@ package pDP.cStockTrading;
 public class bMaxProfit {
 
 
+
+
     /**
      * todo 暴力法
      * 需要找出给定数组中两个数字之间的最大差值（即，最大利润）。此外，第二个数字（卖出价格）必须大于第一个数字（买入价格）。
      * @param prices
      * @return
      */
-    public int maxProfit(int prices[]) {
+    public static int maxProfit(int prices[]) {
         int maxprofit = 0;
         for (int i = 0; i < prices.length - 1; i++) {
             for (int j = i + 1; j < prices.length; j++) {
@@ -45,7 +47,7 @@ public class bMaxProfit {
      * @param prices
      * @return
      */
-    public int maxProfit1(int prices[]) {
+    public static int maxProfit1(int prices[]) {
         int minprice = Integer.MAX_VALUE;
         int maxprofit = 0;
         for (int i = 0; i < prices.length; i++) {
@@ -58,5 +60,25 @@ public class bMaxProfit {
         return maxprofit;
     }
 
+    //////////////////////////////动态规划
+    // https://mp.weixin.qq.com/s/B6me-d3bgLNfYfY2yTyLeA
+    public static int maxProfit(int[] prices, int fee) {
+        //边界条件判断
+        if (prices == null || prices.length < 2)
+            return 0;
+        int length = prices.length;
+        int[][] dp = new int[length][2];
+        //初始条件
+        dp[0][1] = -prices[0];
+        dp[0][0] = 0;
+        for (int i = 1; i < length; i++) {
+            //递推公式
+            dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] + prices[i] - fee);
+            dp[i][1] = Math.max(dp[i - 1][1], dp[i - 1][0] - prices[i]);
+        }
+        //最后一天肯定是手里没有股票的时候，利润才会最大，
+        //只需要返回dp[length - 1][0]即可
+        return dp[length - 1][0];
+    }
 
 }

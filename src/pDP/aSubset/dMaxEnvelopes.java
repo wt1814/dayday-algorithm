@@ -19,9 +19,13 @@ import java.util.Comparator;
  */
 public class dMaxEnvelopes {
 
+    public static void main(String[] args) {
+
+    }
+
     // https://leetcode-cn.com/problems/russian-doll-envelopes/solution/e-luo-si-tao-wa-xin-feng-wen-ti-by-leetc-wj68/
     // todo 同时控制 www 和 hhh 两个维度并不是那么容易，因此我们考虑固定一个维度，再在另一个维度上进行选择。
-    public int maxEnvelopes(int[][] envelopes) {
+    public static int maxEnvelopes(int[][] envelopes) {
         if (envelopes.length == 0) {
             return 0;
         }
@@ -52,7 +56,7 @@ public class dMaxEnvelopes {
         return ans;
     }
 
-
+    ////////////////////////////// XXXXXX ///////////
     // https://mp.weixin.qq.com/s/PSDCjKlTh8MtANdgi-QIug
     /**
      * todo 先对宽度w进行升序排序，如果遇到w相同的情况，则按照高度h降序排序。之后把所有的h作为一个数组，在这个数组上计算 LIS 的长度就是答案。

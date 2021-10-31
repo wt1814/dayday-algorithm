@@ -2,6 +2,7 @@ package pDP.cStockTrading;
 
 /**
  * 122. 买卖股票的最佳时机 II
+ * todo 可以尽可能地完成更多的交易（多次买卖一支股票）
  * https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
  * 给定一个数组 prices ，其中 prices[i] 是一支给定股票第 i 天的价格。
  * 设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。
@@ -17,17 +18,31 @@ package pDP.cStockTrading;
  */
 public class cMaxProfit {
 
+    public static void main(String[] args) {
 
-    public int maxProfit(int[] prices) {
+    }
+
+    // https://mp.weixin.qq.com/s/SjKfv79fXlQMLvrPx58PSw
+    public static int maxProfit(int[] prices) {
         int n = prices.length;
         int[][] dp = new int[n][2];
         dp[0][0] = 0;
-        dp[0][1] = -prices[0];
+        dp[0][1] = -prices[0];  // 第1天如果买入：dp[0][1]=-prices[0];
         for (int i = 1; i < n; ++i) {
+            /**
+             * 当天交易完之后手里没有股票可能有两种情况，
+             * 一种是当天没有进行任何交易，又因为当天手里没有股票，所以当天没有股票的利润只能取前一天手里没有股票的利润。一种是把当天手里的股票给卖了，既然能卖，说明手里是有股票的，所以这个时候当天没有股票的利润要取前一天手里有股票的利润加上当天股票能卖的价格。这两种情况我们取利润最大的即可，所以可以得到
+             */
             dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] + prices[i]);
+            /**
+             * 当天交易完之后手里持有股票也有两种情况，
+             * 一种是当天没有任何交易，又因为当天手里持有股票，所以当天手里持有的股票其实前一天就已经持有了。还一种是当天买入了股票，当天能卖股票，说明前一天手里肯定是没有股票的，我们取这两者的最大值，所以可以得到
+             */
             dp[i][1] = Math.max(dp[i - 1][1], dp[i - 1][0] - prices[i]);
         }
         return dp[n - 1][0];
     }
+
+
 
 }

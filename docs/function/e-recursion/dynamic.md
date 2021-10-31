@@ -295,3 +295,7 @@ https://www.bilibili.com/video/BV15B4y1P7X7
 ![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-57.png)  
 &emsp; 对动态规划进行空间压缩  
 
+&emsp; 背包问题：  
+&emsp; 求的东西不一样，但问题的本质没有发生改变，同样属于「组合优化」问题。  
+&emsp; 你可以这样来理解什么是「组合问题」：  
+&emsp; 被选物品之间不需要满足特定关系，只需要选择物品，以达到「全局最优」或者「特定状态」即可。  

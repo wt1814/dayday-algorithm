@@ -4,10 +4,21 @@ import java.util.Arrays;
 
 /**
  * 322. 零钱兑换
+ * 给定不同面额的硬币 coins 和一个总金额 amount。
+ * 编写一个函数来计算可以凑成总金额所需的最少的硬币个数。
+ * 如果没有任何一种硬币组合能组成总金额，返回 -1。
+ * 你可以认为每种硬币的数量是无限的。
+ *
+ * 示例 1：
+ * 输入：coins = [1, 2, 5], amount = 11
+ * 输出：3
+ * 解释：11 = 5 + 5 + 1
  */
 public class cCoinChange {
 
+    public static void main(String[] args) {
 
+    }
 
     // https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247486435&idx=1&sn=2464b01e9c0fb8d81fcea6dd4ed0ec92&chksm=fd9ca0fccaeb29ea9947456290099143c5bc9bdea0ccfb2408f5fd63f5e0fc13fcd8060d4251&token=646498266&lang=zh_CN&scene=21#wechat_redirect
     /**
@@ -47,6 +58,29 @@ public class cCoinChange {
 
     }
 
+
+    ////////////////////////////////////////////////////////////////////
+    // https://leetcode-cn.com/problems/coin-change/solution/322-ling-qian-dui-huan-by-leetcode-solution/
+    public int minMoney (int[] arr, int aim) {
+
+        // write code here
+        int[] dp = new int[aim + 1];//dp[i]的含义是目标值为i的时候最少钱币数是多少。
+
+        dp[0] = 0;//总金额为0的时候所需钱币数一定是0
+        int Max = aim + 1;//定一个全局最大值
+        Arrays.fill(dp,Max);//把dp数组全部定为最大值
+
+        for(int i = 1;i <= aim;i ++){// 遍历目标值
+            for(int j = 0;j < arr.length;j ++){// 遍历钱币
+                if(arr[j] <= i){//如果当前的钱币比目标值小就可以兑换
+                    dp[i] = Math.min(dp[i],dp[i-arr[j]] + 1);
+                }
+            }
+        }
+
+        return dp[aim] > aim ? -1 : dp[aim];
+
+    }
 
     //////////////////
 /*    在本题中，构造这样二维动态规划表，dp[i][j]，其中，i j的含义如下：
@@ -102,29 +136,6 @@ public class cCoinChange {
             }
         }
         return dp[arr.length-1][aim] == 0 ? -1 : dp[arr.length-1][aim];
-    }
-
-
-    ////////////////////////////////////////////////////////////////////
-    public int minMoney (int[] arr, int aim) {
-
-        // write code here
-        int[] dp = new int[aim + 1];//dp[i]的含义是目标值为i的时候最少钱币数是多少。
-
-        dp[0] = 0;//总金额为0的时候所需钱币数一定是0
-        int Max = aim + 1;//定一个全局最大值
-        Arrays.fill(dp,Max);//把dp数组全部定为最大值
-
-        for(int i = 1;i <= aim;i ++){// 遍历目标值
-            for(int j = 0;j < arr.length;j ++){// 遍历钱币
-                if(arr[j] <= i){//如果当前的钱币比目标值小就可以兑换
-                    dp[i] = Math.min(dp[i],dp[i-arr[j]] + 1);
-                }
-            }
-        }
-
-        return dp[aim] > aim ? -1 : dp[aim];
-
     }
 
 
