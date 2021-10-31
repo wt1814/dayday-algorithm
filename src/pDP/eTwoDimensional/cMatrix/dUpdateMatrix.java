@@ -9,18 +9,23 @@ import java.util.Arrays;
  */
 public class dUpdateMatrix {
 
+    public static void main(String[] args) {
+
+    }
 
     /////////////////////动态规划解//////////////
     // https://leetcode-cn.com/problems/01-matrix/solution/01ju-zhen-by-leetcode-solution/
     static int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
     public int[][] updateMatrix(int[][] matrix) {
+
         int m = matrix.length, n = matrix[0].length;
         // 初始化动态规划的数组，所有的距离值都设置为一个很大的数
         int[][] dist = new int[m][n];
         for (int i = 0; i < m; ++i) {
             Arrays.fill(dist[i], Integer.MAX_VALUE / 2);
         }
+
         // 如果 (i, j) 的元素为 0，那么距离为 0
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
@@ -29,6 +34,7 @@ public class dUpdateMatrix {
                 }
             }
         }
+
         // 只有 水平向左移动 和 竖直向上移动，注意动态规划的计算顺序
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
@@ -73,6 +79,7 @@ public class dUpdateMatrix {
                 }
             }
         }
+
         return dist;
     }
 

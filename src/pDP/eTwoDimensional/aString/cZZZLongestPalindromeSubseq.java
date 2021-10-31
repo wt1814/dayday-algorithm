@@ -7,7 +7,7 @@ package pDP.eTwoDimensional.aString;
  * 输入：s = "bbbab" 输出：4 解释：一个可能的最长回文子序列为 "bbbb" 。
  * 输入：s = "cbbd" 输出：2 解释：一个可能的最长回文子序列为 "bb" 。
  */
-public class cLongestPalindromeSubseq {
+public class cZZZLongestPalindromeSubseq {
 
     public static void main(String[] args) {
 

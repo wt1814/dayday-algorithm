@@ -1,5 +1,7 @@
 package pDP.eTwoDimensional.bPath;
 
+import java.util.List;
+
 /**
  * 120. 三角形最小路径和
  * https://leetcode-cn.com/problems/triangle/
@@ -18,7 +20,37 @@ package pDP.eTwoDimensional.bPath;
  */
 public class fMinimumTotal {
 
+    public static void main(String[] args) {
+
+    }
+
+
+    ///////////////////////////////////
     // https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247485123&idx=1&sn=8a427e56d472d1517b0983d8cdc5c629&chksm=fd9caddccaeb24caea7a272ddaf11d9bd476d4af710d0581c4b12223a11dd6edf33091006731&scene=178&cur_album_id=1773144264147812354#rd
+    public static int minimumTotal(List<List<Integer>> tri) {
+        int n = tri.size();
+        int ans = Integer.MAX_VALUE;
+
+        int[][] f = new int[n][n];
+
+        f[0][0] = tri.get(0).get(0);
+
+        for (int i = 1; i < n; i++) {
+            for (int j = 0; j < i + 1; j++) {
+                int val = tri.get(i).get(j);
+                f[i][j] = Integer.MAX_VALUE;
+                if (j != 0) f[i][j] = Math.min(f[i][j], f[i - 1][j - 1] + val);
+                if (j != i) f[i][j] = Math.min(f[i][j], f[i - 1][j] + val);
+            }
+        }
+
+        for (int i = 0; i < n; i++) {
+            ans = Math.min(ans, f[n - 1][i]);
+        }
+        return ans;
+    }
+
+    ////////////////////////////////////////////////////////
     // https://mp.weixin.qq.com/s/osILrlqPtvfg1G-2GySjHw
 
 

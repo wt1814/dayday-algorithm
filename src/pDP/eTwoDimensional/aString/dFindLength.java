@@ -14,6 +14,11 @@ package pDP.eTwoDimensional.aString;
  */
 public class dFindLength {
 
+    public static void main(String[] args) {
+
+    }
+
+
     // https://mp.weixin.qq.com/s/pKqJ3NOfrCCa3axBbM3T-A
     public int findLength(int[] A, int[] B) {
         int max = 0;
