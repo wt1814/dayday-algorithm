@@ -16,14 +16,11 @@ import java.util.Set;
  */
 public class kZZZTopKFrequent {
 
-
     public static void main(String[] args) {
 
     }
 
-
     // https://programmercarl.com/0347.%E5%89%8DK%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0.html
-
     // 此时要思考一下，是使用小顶堆呢，还是大顶堆？
     //有的同学一想，题目要求前 K 个高频元素，那么果断用大顶堆啊。
     //todo 那么问题来了，定义一个大小为k的大顶堆，在每次移动更新大顶堆的时候，每次弹出都把最大的元素弹出去了，那么怎么保留下来前K个高频元素呢。
@@ -31,13 +28,14 @@ public class kZZZTopKFrequent {
     public int[] topKFrequent(int[] nums, int k) {
 
         int[] result = new int[k];
+
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int num : nums) {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
-
         Set<Map.Entry<Integer, Integer>> entries = map.entrySet();
-        // 根据map的value值正序排，相当于一个小顶堆
+
+        // todo 根据map的value值正序排，相当于一个小顶堆
         PriorityQueue<Map.Entry<Integer, Integer>> queue = new PriorityQueue<>((o1, o2) -> o1.getValue() - o2.getValue());
         for (Map.Entry<Integer, Integer> entry : entries) {
             queue.offer(entry); //todo 添加数据
@@ -45,6 +43,7 @@ public class kZZZTopKFrequent {
                 queue.poll();
             }
         }
+
         for (int i = k - 1; i >= 0; i--) {
             result[i] = queue.poll().getKey();
         }

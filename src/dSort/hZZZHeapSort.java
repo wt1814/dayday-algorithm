@@ -28,7 +28,7 @@ public class hZZZHeapSort {
     public static void heapSort(int[] array) {
 
         // todo 1. 把无序数组构建成最大堆。
-        for (int i = (array.length-2)/2; i >= 0; i--) {  //第一个非叶子结点 arr.length/2-1
+        for (int i = (array.length-2)/2; i >= 0; i--) {  //todo 第一个非叶子结点 arr.length/2-1
             //从第一个非叶子结点从下至上，从右至左调整结构
             downAdjust(array, i, array.length);
         }
@@ -59,7 +59,7 @@ public class hZZZHeapSort {
     public static void adjustHeap(int[] arr, int i, int length){
 
         int temp = arr[i]; //先取出当前元素i
-        for(int k=i*2+1;k<length;k=k*2+1){ //从i结点的左子结点开始，也就是2i+1处开始
+        for(int k = i*2+1; k < length; k = k*2+1){ //todo 从i结点的左子结点开始，也就是2i+1处开始
             if(k+1<length && arr[k]<arr[k+1]){ //处理左节点还是右节点？如果左子结点小于右子结点，k指向右子结点
                 k++;
             }

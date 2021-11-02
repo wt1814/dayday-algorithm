@@ -10,7 +10,7 @@ import java.util.Arrays;
  * todo 一种是找到右边比baseData大的，找到左边比baseData小的，再交换， 最后交换两指针重合位置的值和baseData
  * todo 一种是找到右边比baseData大的，就交换baseData和右边值 （推荐这种）
  */
-public class dQuickSort {
+public class dZZZQuickSort {
 
     public static void main(String[] args) {
         int[] arr = new int[] {4,4,6,5,3,2,8,1};

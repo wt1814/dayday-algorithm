@@ -33,7 +33,6 @@ public class dRotatedBinarySearch {
             // 1. 中位数和旋转点比较
             // 2. 最 左/右 侧元素 、 查找目标 、 中位数 比较
             // 3. 查找目标是在中位数 左侧还是右侧
-
             else if(array[mid]>=array[start]) {  //todo 情况A：旋转点在中位数右侧
                 //最左侧元素 <= 查找目标 < 中位数
                 if(array[start]<=target && array[mid]>target){  // todo 旋转点在中位数右侧，考虑左侧

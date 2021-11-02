@@ -9,7 +9,7 @@ import java.util.Arrays;
  * todo 2. 合的时候，设置移动指针，合并“两个待排序数组”
  * todo 2. 1). 双指针同时移动比较， 2). 若左边还有剩余
  */
-public class eMergeSortOfRecursion {
+public class eZZZMergeSortOfRecursion {
 
     public static void main(String[] args) {
         int[] arr = new int[] {4,7,6,5,3,2,8,1};
@@ -39,7 +39,6 @@ public class eMergeSortOfRecursion {
 
         return;
     }
-
 
     /**
      * 两数组合并
