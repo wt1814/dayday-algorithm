@@ -1,7 +1,7 @@
 package fSlidingWindow.doublePointer;
 
 /**
- * 539，双指针解删除有序数组中的重复项
+ * 26. 双指针解删除有序数组中的重复项
  */
 public class aRemoveDuplicates {
 
