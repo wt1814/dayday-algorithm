@@ -13,6 +13,7 @@
     * [滑动窗口](/docs/function/c-doublePointer/SlidingWindow.md)  
 * [基本数据结构](/docs/function/d-structure/structure.md)      
     * [数组](/docs/function/d-structure/array.md)  
+        * [前缀和](/docs/function/d-structure/prefixAnd.md)  
     * [链表](/docs/function/d-structure/Linked.md)  
     * [栈](/docs/function/d-structure/stack.md)
     * [队列](/docs/function/d-structure/queue.md)
