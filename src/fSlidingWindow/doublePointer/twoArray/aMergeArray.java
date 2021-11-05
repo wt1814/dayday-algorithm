@@ -5,9 +5,13 @@ package fSlidingWindow.doublePointer.twoArray;
  */
 public class aMergeArray {
 
+
+    public static void main(String[] args) {
+
+    }
+
     // https://www.nowcoder.com/practice/89865d4375634fc484f3a24b7fe65665?tpId=188&&tqId=38585&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
     // https://leetcode-cn.com/problems/merge-sorted-array/solution/he-bing-liang-ge-you-xu-shu-zu-by-leetco-rrb0/
-
     /**
      * 双指针
      * @param nums1

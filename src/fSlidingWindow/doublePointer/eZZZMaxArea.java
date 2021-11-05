@@ -16,7 +16,7 @@ package fSlidingWindow.doublePointer;
  * 输出：1
  *
  */
-public class eMaxArea {
+public class eZZZMaxArea {
 
     public static void main(String[] args) {
 
@@ -27,6 +27,7 @@ public class eMaxArea {
     }
 
 
+    // 理解： https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247484229&idx=2&sn=e3d730a608987d3c764f17578ab4e8af&chksm=fd9ca85acaeb214cb2ab0e66b3ee5f8b20a5159aef56e23b92669669b039187836d53ce48bb7&scene=178&cur_album_id=1748659352518868992#rd
     /**
      * 在初始时，左右指针分别指向数组的左右两端
      * 此时需要移动一个指针。移动哪一个呢？直觉告诉我们，
@@ -47,10 +48,6 @@ public class eMaxArea {
         }
         return ans;
     }
-
-    ///////////////////////////////////////////////////////////////////////////
-    // https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247484229&idx=2&sn=e3d730a608987d3c764f17578ab4e8af&chksm=fd9ca85acaeb214cb2ab0e66b3ee5f8b20a5159aef56e23b92669669b039187836d53ce48bb7&scene=178&cur_album_id=1748659352518868992#rd
-
 
 
     ///////////////////////////////////////////////////////////////////////////
