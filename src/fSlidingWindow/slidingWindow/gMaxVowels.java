@@ -28,9 +28,11 @@ public class gMaxVowels {
      * @return
      */
     public static int maxVowels(String s, int k) {
+
         int right =0;
         int sum = 0;
         int max = 0;
+
         while (right < s.length()) { //todo 右指针
             sum += isYuan(s.charAt(right)) ;
             right++;
@@ -40,6 +42,7 @@ public class gMaxVowels {
             }
         }
         return max;
+
     }
 
     public static int isYuan(char s) {

@@ -10,7 +10,7 @@ package fSlidingWindow.slidingWindow.replace;
  * 输出：4
  * 解释：用两个'A'替换为两个'B',反之亦然。
  */
-public class dCharacterReplacement {
+public class dZZZCharacterReplacement {
 
     public static void main(String[] args) {
         int i = characterReplacement("ABAB", 2);
@@ -30,6 +30,7 @@ public class dCharacterReplacement {
      * @return
      */
     public static int characterReplacement(String s, int k) {
+
         //字符串的长度
         int length = s.length();
         //用来存放对应字母的个数，比如字母A的个数是map[0],
@@ -56,6 +57,7 @@ public class dCharacterReplacement {
             }
         }
         return maxWindow;
+
     }
 
 }

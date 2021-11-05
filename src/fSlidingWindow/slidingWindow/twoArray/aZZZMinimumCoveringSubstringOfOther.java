@@ -5,12 +5,9 @@ import java.util.HashMap;
 /**
  * 76. 最小覆盖子串
  */
-public class aMinimumCoveringSubstringOfOther {
+public class aZZZMinimumCoveringSubstringOfOther {
 
-    // todo labuladong https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583ad935e76e9a3f6793792e60734&chksm=9bd7f8ddaca071cbb7570b2433290e5e2628d20473022a5517271de6d6e50783961bebc3dd3b&scene=21#wechat_redirect
-    // new https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490774&idx=1&sn=cdada4b7ff9e1bfed0de8104541d9d11&chksm=fb418ff6cc3606e0b0d264a07f0730d04e9516b8eebb7421da81c93e8fd7f1b0582b739bc74e&scene=21#wechat_redirect
-    // https://leetcode-cn.com/problems/minimum-window-substring/solution/zui-xiao-fu-gai-zi-chuan-by-leetcode-solution/
-    // https://www.nowcoder.com/practice/c466d480d20c4c7c9d322d12ca7955ac?tpId=188&&tqId=38617&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
+
 
     public static void main(String[] args){
         int[] arr = {2,2,3,4,8,99,3};
@@ -19,6 +16,13 @@ public class aMinimumCoveringSubstringOfOther {
         System.out.println(minWindow(s,t));
 
     }
+
+
+    // todo labuladong https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583ad935e76e9a3f6793792e60734&chksm=9bd7f8ddaca071cbb7570b2433290e5e2628d20473022a5517271de6d6e50783961bebc3dd3b&scene=21#wechat_redirect
+    // new https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490774&idx=1&sn=cdada4b7ff9e1bfed0de8104541d9d11&chksm=fb418ff6cc3606e0b0d264a07f0730d04e9516b8eebb7421da81c93e8fd7f1b0582b739bc74e&scene=21#wechat_redirect
+    // https://leetcode-cn.com/problems/minimum-window-substring/solution/zui-xiao-fu-gai-zi-chuan-by-leetcode-solution/
+    // https://www.nowcoder.com/practice/c466d480d20c4c7c9d322d12ca7955ac?tpId=188&&tqId=38617&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
+
 
     /**
      *
@@ -87,5 +91,6 @@ public class aMinimumCoveringSubstringOfOther {
         // 返回最小覆盖子串
         return len == Integer.MAX_VALUE ? "" : s.substring(start,start + len);
     }
+
 
 }

@@ -509,6 +509,7 @@ public class bBinarySearchOfRecursion {
 
 ## 1.5. 双指针
 &emsp; `双重for循环可以使用相向指针 + 单循环，替代。`  
+&emsp; `双指针 + 哈希表（滑动窗口）`  
 
 ## 1.6. 链表
 1. 链表删除节点的两种方式

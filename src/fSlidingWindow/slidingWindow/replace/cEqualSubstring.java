@@ -30,9 +30,11 @@ public class cEqualSubstring {
      * @return
      */
     public static int equalSubstring(String s, String t, int maxCost) {
+
         int left = 0, right =0;
         int sum = 0;
         int res = 0;
+
         // 构造窗口
         while (right < s.length()) {
             sum += Math.abs(s.charAt(right) - t.charAt(right));

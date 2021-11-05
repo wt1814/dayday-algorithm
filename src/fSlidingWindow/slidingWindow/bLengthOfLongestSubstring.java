@@ -32,9 +32,11 @@ public class bLengthOfLongestSubstring {
             return 0;
         }
 
-        HashMap<Character, Integer> map = new HashMap<>();
+        int i = 0; int j = 0; // i，快指针；j，慢指针
+        HashMap<Character, Integer> map = new HashMap<>(); // 哈希表
         int max = 0;
-        for (int i = 0, j = 0; i < s.length(); ++i) {
+
+        for (; i < s.length(); ++i) {
             //如果有重复的，就修改j的值
             // 使用一个map来存储扫描过的元素，其中i指针是一直往右移动的，如果i指向的元素在map中出现过，说明出现了重复的元素，要更新j的值。
             // todo 并且这个j的值只能增大不能减小，也就是说j只能往右移动，不能往左移动，所以下面代码中j取的是重复元素位置的下一个值和j这两个值的最大值。

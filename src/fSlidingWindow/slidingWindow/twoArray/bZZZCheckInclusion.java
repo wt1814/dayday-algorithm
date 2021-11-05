@@ -13,7 +13,7 @@ import java.util.HashMap;
  * 输出：true
  * 解释：s2 包含 s1 的排列之一 ("ba").
  */
-public class dZZZCheckInclusion {
+public class bZZZCheckInclusion {
 
     public static void main(String[] args) {
 

@@ -23,15 +23,16 @@ public class bNoRepetition {
      */
     public static int maxLength (int[] arr) {
         // write code here
-        int result = 0;
 
         if(arr.length == 0){
-            return result;
+            return 0;
         }
 
-        HashMap<Integer,Integer> hashTemp = new HashMap(); // key存储数组中的值，value存储下标
+        int result = 0;
         int start = 0;
         int end = 0;
+        HashMap<Integer,Integer> hashTemp = new HashMap(); // key存储数组中的值，value存储下标
+
         for(int i = 0;i<arr.length;i++){
             end = i;
             Integer isHave = hashTemp.get(arr[i]);
@@ -51,6 +52,7 @@ public class bNoRepetition {
             hashTemp.put(arr[i],i);
         }
         return result;
+
     }
 
 
