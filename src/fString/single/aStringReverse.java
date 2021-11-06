@@ -18,6 +18,7 @@ public class aStringReverse {
      * @return
      */
     public static String swapWords(String s) {
+
         if (s == null) {
             return null;
         }

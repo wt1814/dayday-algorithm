@@ -6,7 +6,7 @@ import gLinked.ListNode;
  * 不带头节点单向链表，双指针迭代反转链表
  * todo 指针反转
  */
-public class aInvertLinkedListOfIterate {
+public class aZZZInvertLinkedListOfIterate {
 
     public static void main(String[] args) {
 

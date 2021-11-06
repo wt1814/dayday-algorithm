@@ -9,7 +9,7 @@ import java.util.LinkedList;
  *
  *  编号为 1 到 n 的 n 个人围成一圈。从编号为 1 的人开始报数，报到 m 的人离开。
  * 下一个人继续从 1 开始报数。
- * n-1 轮结束以后，只剩下一个人，问最后留下的这个人编号是多少？
+ * todo n-1 轮结束以后，只剩下一个人，问最后留下的这个人编号是多少？
  *
  * 数据范围： 1≤n,m≤100001 \le n , m \le 100001≤n,m≤10000
  * 进阶：空间复杂度 O(1)O(1)O(1)，时间复杂度 O(n)O(n)O(n)
@@ -23,7 +23,7 @@ import java.util.LinkedList;
  * 3，5，从3开始报数，3->1，5->2编号为5的人离开
  * 最后留下人的编号是3
  */
-public class cCrossJosephXXX {
+public class cZZZCrossJoseph {
 
 
     public static void main(String[] args){
@@ -53,14 +53,15 @@ public class cCrossJosephXXX {
         ListNode pre=tail;
         int k=0;
 
-        while(index.next!=null&&index.next!=index){
+        while(index.next!=null && index.next != index){ // todo 最后只留下一个节点
+
             k++;
             ListNode next=index.next;
-            if(k==m){ // todo
+
+            if(k==m){ // todo 报到 m 的人离开
                 pre.next=pre.next.next;
                 k=0;
             }
-
             pre=index;
             index=next;
         }
@@ -68,7 +69,7 @@ public class cCrossJosephXXX {
     }
 
 
-    /////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////
     /**
      * 将[1,n]依次存储在链表中
      * 只要链表的长度不为1，就一直循环，如果到了第m个就remove；否则将其添加到链表尾部

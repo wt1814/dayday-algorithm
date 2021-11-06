@@ -20,7 +20,7 @@ import gLinked.ListNode;
  * 输入：head = [1,2,3,4,5], k = 3
  * 输出：[3,2,1,4,5]
  */
-public class dReverseKGroup {
+public class dZZZReverseKGroup {
 
 
     public static void main(String[] args) {
@@ -65,16 +65,16 @@ public class dReverseKGroup {
          * todo 分段使用头插法将链表反序
          */
         for(int i=0; i<length/k; i++){
-            //pre作为每一小段链表的头节点，负责衔接
+            //todo todo todo pre作为每一小段链表的头节点，负责衔接
             for(int j=1; j<k; j++){
                 temp = cur.next;
                 cur.next = temp.next;
-                //相当于头插法，注意：
-                //temp.next = cur是错误的，temp需要连接的不是前一节点，而是子序列的头节点
+                //todo todo todo 相当于头插法，
+                // 注意：temp.next = cur是错误的，temp需要连接的不是前一节点，而是子序列的头节点
                 temp.next = pre.next;
                 pre.next = temp;
             }
-            //todo 每个子序列反序完成后，pre，cur需要更新至下一子序列的头部
+            //todo todo todo 每个子序列反序完成后，pre，cur需要更新至下一子序列的头部
             pre = cur;
             cur = cur.next;
         }
