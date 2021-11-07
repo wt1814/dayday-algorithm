@@ -14,8 +14,8 @@ public class aPriorityQueue {
         priorityQueue.add(1);
         priorityQueue.add(2);
         priorityQueue.add(3);
-        System.out.println(priorityQueue.peek());  // peek：查询队顶元素
-        System.out.println(priorityQueue.poll());  // poll：删除一个元素，并返回删除的元素
+        System.out.println(priorityQueue.peek());  // todo peek：查询队顶元素
+        System.out.println(priorityQueue.poll());  // todo poll：删除一个元素，并返回删除的元素
         System.out.println(priorityQueue.peek());
 
 

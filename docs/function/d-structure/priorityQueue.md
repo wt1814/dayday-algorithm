@@ -5,7 +5,11 @@
 <!--
 
 https://baijiahao.baidu.com/s?id=1665383380422326763&wfr=spider&for=pc
-
+实现PriorityQueue的关键在于提供的UserComparator对象
+https://www.liaoxuefeng.com/wiki/1252599548343744/1265120632401152
+https://www.jianshu.com/p/c577796e537a
+Java中PriorityQueue的排序，堆排序
+https://blog.csdn.net/cyp331203/article/details/25310733
 -->
 
 ## 什么是优先级队列？  
