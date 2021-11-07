@@ -1,10 +1,10 @@
-package hStack.monotoneStack;
+package hStack.bMonotoneStack;
 
 import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * 42. 双指针求接雨水问题
+ * 42. 接雨水问题
  * https://leetcode-cn.com/problems/trapping-rain-water/
  * todo 数组遍历两次。改写遍历一次，可以使用双指针、辅助结构-单调栈。
  * 给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。

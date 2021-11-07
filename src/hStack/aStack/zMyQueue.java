@@ -1,4 +1,4 @@
-package hStack.stack;
+package hStack.aStack;
 
 import java.util.Stack;
 
@@ -31,22 +31,22 @@ import java.util.Stack;
  * myQueue.pop(); // return 1, queue is [2]
  * myQueue.empty(); // return false
  */
-public class eMyQueue {
+public class zMyQueue {
 
 
     // 栈实现队列，用两个栈实现队列方法详解（含实现代码） http://data.biancheng.net/view/110.html
 
     public static void main(String[] args)throws Exception{
 
-        eMyQueue eMyQueue = new eMyQueue();
-        eMyQueue.push(1);
-        eMyQueue.push(2);
-        eMyQueue.push(3);
+        zMyQueue zMyQueue = new zMyQueue();
+        zMyQueue.push(1);
+        zMyQueue.push(2);
+        zMyQueue.push(3);
 
-        System.out.println(eMyQueue.pop());
-        System.out.println(eMyQueue.pop());
-        System.out.println(eMyQueue.pop());
-        System.out.println(eMyQueue.pop());
+        System.out.println(zMyQueue.pop());
+        System.out.println(zMyQueue.pop());
+        System.out.println(zMyQueue.pop());
+        System.out.println(zMyQueue.pop());
 
     }
 

@@ -1,4 +1,4 @@
-package hStack.monotoneStack;
+package hStack.bMonotoneStack;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,7 +31,7 @@ public class aNextGreaterElement {
      * 首先遍历nums2的所有元素，遍历的时候判断栈是否为空：
      * 一，如果栈为空，就把遍历的元素加入到栈中。
      * 二，如果栈不为空，查看栈顶元素是否小于这个遍历的元素：
-     *      1，如果小于，说明栈顶元素遇到右边第一个比他大的值，然后栈顶元素出栈，记录下这个值。如果栈还不为空，继续判断……
+     * todo 1，如果小于，说明栈顶元素遇到右边第一个比他大的值，然后栈顶元素出栈，记录下这个值。如果栈还不为空，继续判断……
      * todo 2，如果不小于，把当前遍历的元素加入到栈中。
      * 上面关键一点是怎么记录右边第一个比他大的，我们可以使用Map。
      * @param nums1

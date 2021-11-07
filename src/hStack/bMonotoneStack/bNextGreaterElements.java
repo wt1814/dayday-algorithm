@@ -1,4 +1,4 @@
-package hStack.monotoneStack;
+package hStack.bMonotoneStack;
 
 import java.util.Arrays;
 import java.util.Stack;

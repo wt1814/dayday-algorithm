@@ -70,7 +70,7 @@ public class bDepthOrderTraveralWithStack {
             Stack<TreeNode> stack = new Stack<>();
             while (!stack.isEmpty() || root != null){
                 if (root != null){
-                    stack.push(root);  // todo 1). 整条左边界依次入栈 （while条件、if条件、stack.push 3者是要把左子树全压到栈中）
+                    stack.push(root);  // todo 1). 整条左边界依次入栈 （while条件、if条件、aStack.push 3者是要把左子树全压到栈中）
                     root = root.left;
                 }else {
                     root = stack.pop(); // todo  1)无法执行，弹出节点并打印

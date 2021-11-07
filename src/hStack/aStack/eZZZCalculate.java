@@ -1,4 +1,4 @@
-package hStack.stack;
+package hStack.aStack;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -14,7 +14,7 @@ import java.util.Stack;
  * 输入：s = "3+2*2"
  * 输出：7
  */
-public class dZZZCalculate {
+public class eZZZCalculate {
 
     public static void main(String[] args) {
 

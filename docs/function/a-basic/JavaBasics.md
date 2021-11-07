@@ -11,7 +11,7 @@ System.out.print(stack.pop());
 // print 输出字符后，下一个输出字符不会会换展示
 // 输出 uoy era woh
 
-//System.out.println(stack.pop());
+aStack
 // println 输出字符后，下一个输出的字符会换行展示
 // 输出u
 //o
