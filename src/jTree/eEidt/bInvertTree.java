@@ -5,7 +5,7 @@ import jTree.TreeNode;
 /**
  * 226. 翻转二叉树
  */
-public class invertTree {
+public class bInvertTree {
 
 
     // 将整棵树的节点翻转

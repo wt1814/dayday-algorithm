@@ -7,7 +7,7 @@ import jTree.TreeNode;
  * 已知两颗二叉树，将它们合并成一颗二叉树。合并规则是：都存在的结点，就将结点值加起来，否则空的位置就由另一个树的结点来代替。
  * todo 递归的深入理解
  */
-public class eMergeTrees {
+public class aMergeTrees {
 
 
     // https://www.nowcoder.com/practice/7298353c24cc42e3bd5f0e0bd3d1d759?tpId=188&&tqId=38652&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking

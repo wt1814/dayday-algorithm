@@ -7,6 +7,7 @@ import java.util.Queue;
 
 /**
  * 层序遍历，每一层结束
+ * todo 判断每一层结束
  */
 public class bZZZLevelTraversalOfEnd {
 
@@ -67,6 +68,5 @@ public class bZZZLevelTraversalOfEnd {
         }
         level++;
     }
-
 
 }

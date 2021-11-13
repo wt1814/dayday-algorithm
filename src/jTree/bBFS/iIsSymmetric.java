@@ -10,7 +10,7 @@ import java.util.Queue;
 /**
  * 101. 对称二叉树
  */
-public class gIsSymmetric {
+public class iIsSymmetric {
 
 
     public static void main(String[] args) throws Exception {
