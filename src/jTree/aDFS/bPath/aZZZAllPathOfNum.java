@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * 二叉树所有路径
  * todo todo todo 回溯
  */
-public class aAllPathOfNum {
+public class aZZZAllPathOfNum {
 
     public static void main(String[] args) {
 
@@ -69,5 +69,7 @@ public class aAllPathOfNum {
         nums.remove(nums.size()-1);   //todo todo todo 回溯
 
     }
+
+
 
 }

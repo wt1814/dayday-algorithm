@@ -26,7 +26,7 @@ import jTree.TreeNode;
  *     从根到叶子节点路径 1->3 代表数字 13.
  *     因此，数字总和 = 12 + 13 = 25.
  */
-public class bSumNumbers {
+public class bSumNumbersXXX {
 
     public static void main(String[] args) {
 
@@ -39,19 +39,21 @@ public class bSumNumbers {
     }
 
     private static int dfs(TreeNode root, int sum) {
+
         //终止条件的判断
         if (root == null){
             return 0;
         }
+
         //计算当前节点的值
         sum = sum * 10 + root.val;
-        //如果当前节点是叶子节点，说明找到了一条完整路径，直接
-        //返回这条路径的值即可
+        //如果当前节点是叶子节点，说明找到了一条完整路径，直接返回这条路径的值即可
         if (root.left == null && root.right == null){
             return sum;
         }
         //如果当前节点不是叶子结点，返回左右子节点的路径和
         return dfs(root.left, sum) + dfs(root.right, sum);
+
     }
 
 }

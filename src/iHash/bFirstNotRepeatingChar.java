@@ -7,6 +7,10 @@ import java.util.HashMap;
  */
 public class bFirstNotRepeatingChar {
 
+    public static void main(String[] args) {
+
+    }
+
     // 遍历一遍字符串，统计每个字符出现的次数。
     // todo 然后再遍历一遍字符串，找出答案。
     //  非遍历map

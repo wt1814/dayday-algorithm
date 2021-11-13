@@ -88,8 +88,9 @@ public class isCousins {
     }
 
     public void dfs(TreeNode root, TreeNode parent, int x, int y, int depth) {
-        if (root == null)
+        if (root == null){
             return;
+        }
         if (root.val == x) {
             //如果找到了x节点，就把他的父节点和深度记录下来
             xParent = parent;
@@ -100,13 +101,12 @@ public class isCousins {
             yDepth = depth;
         }
         //如果确定他俩是堂兄弟节点了，直接返回，不用再往下遍历了
-        if (xDepth == yDepth && xParent != yParent)
+        if (xDepth == yDepth && xParent != yParent){
             return;
+        }
         dfs(root.left, root, x, y, depth + 1);
         dfs(root.right, root, x, y, depth + 1);
     }
-
-
 
 
 }

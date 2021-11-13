@@ -33,6 +33,7 @@ import jTree.TreeNode;
  */
 public class eIsSubStructure {
 
+
     public static void main(String[] args) {
 
     }
@@ -45,12 +46,14 @@ public class eIsSubStructure {
      * @return
      */
     public static boolean isSubStructure(TreeNode A, TreeNode B) {
+
         if (A == null || B == null){
             return false;
         }
         //先从根节点判断B是不是A的子结构，如果不是在分别从左右两个子树判断，
         //只要有一个为true，就说明B是A的子结构
         return isSub(A, B) || isSubStructure(A.left, B) || isSubStructure(A.right, B);
+
     }
 
     public static boolean isSub(TreeNode A, TreeNode B) {

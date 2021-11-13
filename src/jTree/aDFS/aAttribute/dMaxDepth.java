@@ -29,9 +29,11 @@ public class dMaxDepth {
      * 递归法
      */
     public static int maxdepth(TreeNode root) {
+
         if (root == null) {
             return 0;
         }
+
         int leftdepth = maxdepth(root.left);
         int rightdepth = maxdepth(root.right);
         return Math.max(leftdepth, rightdepth) + 1;

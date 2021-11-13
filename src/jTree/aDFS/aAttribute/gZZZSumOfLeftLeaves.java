@@ -20,7 +20,7 @@ import java.util.Stack;
  *
  * todo 左叶子的明确定义：如果左节点不为空，且左节点没有左右孩子，那么这个节点就是左叶子
  */
-public class gSumOfLeftLeavesXXX {
+public class gZZZSumOfLeftLeaves {
 
 
     public static void main(String[] args) {
@@ -52,13 +52,14 @@ public class gSumOfLeftLeavesXXX {
             return 0;
         }
 
-        int leftValue = sumOfLeftLeaves(root.left);    // 左
-        int rightValue = sumOfLeftLeaves(root.right);  // 右
+        int leftValue = sumOfLeftLeaves(root.left);    // 1. 左
+        int rightValue = sumOfLeftLeaves(root.right);  // 2. 右
 
-        int midValue = 0; // todo 返回结果
+        int midValue = 0; // 3. 中
         if (root.left != null && root.left.left == null && root.left.right == null) { // 中
             midValue = root.left.val;
         }
+
         int sum = midValue + leftValue + rightValue;
         return sum;
 

@@ -25,7 +25,7 @@ public class cCountNodes {
      */
     public static int countNodes(TreeNode root) {
 
-        if(root == null) {
+        if(root == null) {  // todo 递归结束条件
             return 0;
         }
         return countNodes(root.left) + countNodes(root.right) + 1;

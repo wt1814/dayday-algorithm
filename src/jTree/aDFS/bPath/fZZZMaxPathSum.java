@@ -13,7 +13,7 @@ import jTree.TreeNode;
  * 输出：42
  * 解释：最优路径是 15 -> 20 -> 7 ，路径和为 15 + 20 + 7 = 42
  */
-public class fMaxPathSum {
+public class fZZZMaxPathSum {
 
     public static void main(String[] args) {
 

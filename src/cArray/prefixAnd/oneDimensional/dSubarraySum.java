@@ -1,7 +1,7 @@
-package iHash;
+package cArray.prefixAnd.oneDimensional;
 
 /**
- * 前缀和
+ * 560. 和为K的子数组
  */
 public class dSubarraySum {
 
