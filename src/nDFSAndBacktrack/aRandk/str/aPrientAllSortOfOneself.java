@@ -32,7 +32,6 @@ public class aPrientAllSortOfOneself {
         char[] strs = str.toCharArray();
 
         permutation(strs,0,result);
-
 /*
         HashSet<String> set = new HashSet();
         for(int i = 0;i<strs.length-1;i++){
@@ -42,10 +41,15 @@ public class aPrientAllSortOfOneself {
             result.add(s);
         }
 */
-
         return result;
     }
 
+    /**
+     *
+     * @param strs
+     * @param i
+     * @param result
+     */
     public static void permutation(char[] strs,int i,ArrayList<String> result) {
 
         if(i == strs.length){

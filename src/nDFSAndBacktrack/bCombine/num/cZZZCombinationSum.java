@@ -15,7 +15,8 @@ import java.util.List;
  * 示例 1： 输入：candidates = [2,3,6,7], target = 7, 所求解集为： [ [7], [2,2,3] ]
  * 示例 2： 输入：candidates = [2,3,5], target = 8, 所求解集为： [   [2,2,2,2],   [2,3,3],   [3,5] ]
  */
-public class cCombinationSum {
+public class
+cZZZCombinationSum {
 
     public static void main(String[] args) {
         int[] candidates = {2,3,6,7};
@@ -49,7 +50,8 @@ public class cCombinationSum {
                 break;
             }
             path.add(candidates[i]);
-            backtracking(res, path, candidates, target, sum + candidates[i], i); //todo 元素可被重复选取，下标从i开始，而不是i+1开始。
+            //todo 元素可被重复选取，下标从i开始，而不是i+1开始。
+            backtracking(res, path, candidates, target, sum + candidates[i], i);
             path.remove(path.size() - 1); // 回溯，移除路径 path 最后一个元素
         }
 

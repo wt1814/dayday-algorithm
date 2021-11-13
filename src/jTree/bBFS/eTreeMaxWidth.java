@@ -35,12 +35,15 @@ public class eTreeMaxWidth {
         }
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(head);
-        //todo key 在 哪一层，value
-        HashMap<TreeNode, Integer> levelMap = new HashMap<>();
-        levelMap.put(head, 1);
+
         int curLevel = 1; //todo 当前你正在统计哪一层的宽度
         int curLevelNodes = 0; //todo 当前层curLevel层，宽度目前是多少
         int max = 0;
+
+        //todo key 在 哪一层，value
+        HashMap<TreeNode, Integer> levelMap = new HashMap<>();
+        levelMap.put(head, 1);
+
         while (!queue.isEmpty()) {
             TreeNode cur = queue.poll();
             int curNodeLevel = levelMap.get(cur); //当前节点的层数
@@ -53,7 +56,6 @@ public class eTreeMaxWidth {
                 levelMap.put(cur.right, curNodeLevel + 1);
                 queue.add(cur.right);
             }
-
 
             if (curNodeLevel == curLevel) { // 当前节点的层数就是当前统计的层数
                 curLevelNodes++;

@@ -1,4 +1,4 @@
-package nDFSAndBacktrack.eMatrix;
+package nDFSAndBacktrack.eMatrix.twoDimensional;
 
 /**
  * NC109 岛屿数量

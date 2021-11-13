@@ -1,4 +1,4 @@
-package nDFSAndBacktrack.eMatrix;
+package nDFSAndBacktrack.eMatrix.twoDimensional;
 
 /**
  * 1219. 黄金矿工

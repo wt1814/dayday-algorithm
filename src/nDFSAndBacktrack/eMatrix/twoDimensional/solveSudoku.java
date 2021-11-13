@@ -1,4 +1,4 @@
-package nDFSAndBacktrack.eMatrix;
+package nDFSAndBacktrack.eMatrix.twoDimensional;
 
 /**
  * 37. 解数独

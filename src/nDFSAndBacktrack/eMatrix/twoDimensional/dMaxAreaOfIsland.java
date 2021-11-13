@@ -1,4 +1,4 @@
-package nDFSAndBacktrack.eMatrix;
+package nDFSAndBacktrack.eMatrix.twoDimensional;
 
 /**
  * BFS和DFS两种方式求岛屿的最大面积

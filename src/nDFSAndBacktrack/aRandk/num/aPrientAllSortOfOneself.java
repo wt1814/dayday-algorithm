@@ -29,11 +29,17 @@ public class aPrientAllSortOfOneself {
     public static List<List<Integer>> permute(int[] nums) {
 
         List<List<Integer>> result = new ArrayList();
-        permute(result,nums,0);
+        permuteHelper(result,nums,0);
         return result;
     }
 
-    public static void permute(List<List<Integer>> result,int[] nums,int index){
+    /**
+     *
+     * @param result
+     * @param nums
+     * @param index
+     */
+    public static void permuteHelper(List<List<Integer>> result,int[] nums,int index){
 
         if(index == nums.length-1){   // todo 原数组回溯。要复制快照到新数组，用来添加。 防止污染原数组
             List<Integer> list = new ArrayList<>();
@@ -45,9 +51,9 @@ public class aPrientAllSortOfOneself {
         }
 
         for(int i = index;i<nums.length;i++){
-            swap(nums,index,i);    // todo
-            permute(result,nums,index+1);  // todo
-            swap(nums,i,index);   // todo
+            swap(nums,index,i);
+            permuteHelper(result,nums,index+1);  // todo
+            swap(nums,i,index);   // todo 回溯
         }
 
     }

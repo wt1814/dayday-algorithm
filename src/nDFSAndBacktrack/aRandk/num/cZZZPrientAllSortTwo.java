@@ -15,7 +15,7 @@ import java.util.List;
  *      [1,2,1],
  *      [2,1,1]]
  */
-public class cPrientAllSortTwo {
+public class cZZZPrientAllSortTwo {
 
     public static void main(String[] args) {
 
@@ -50,6 +50,13 @@ public class cPrientAllSortTwo {
         return res;
     }
 
+    /**
+     *
+     * @param nums
+     * @param used
+     * @param tempList
+     * @param res
+     */
     public static void backtrack(int[] nums, boolean[] used, List<Integer> tempList, List<List<Integer>> res) {
         //如果数组中的所有元素都使用完了，类似于到了叶子节点，
         //我们直接把从根节点到当前叶子节点这条路径的元素加入到集合res中
@@ -57,6 +64,7 @@ public class cPrientAllSortTwo {
             res.add(new ArrayList<>(tempList));
             return;
         }
+        // todo 输入数字有重复，下标从 0 开始
         //遍历数组中的元素
         for (int i = 0; i < nums.length; i++) {
             //如果已经被使用过，则直接跳过

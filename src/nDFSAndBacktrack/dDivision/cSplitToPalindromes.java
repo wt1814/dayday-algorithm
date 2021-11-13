@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * 551，回溯算法解分割回文串
+ * 131，回溯算法解分割回文串
  * https://leetcode-cn.com/problems/palindrome-partitioning/
  * 给你一个字符串 s，请你将 s 分割成一些子串，使每个子串都是「回文串」。
  * 返回 s 所有可能的分割方案。
@@ -28,7 +28,7 @@ public class cSplitToPalindromes {
     }
 
 
-    // *** 131. 分割回文串动态规划 + 回溯算法  https://mp.weixin.qq.com/s/pCAuQmSwqNSF2roIXcqtWg
+    // *** 131. 分割回文串 动态规划 + 回溯算法  https://mp.weixin.qq.com/s/pCAuQmSwqNSF2roIXcqtWg
 
 
     ///////////////////////////////////////////////////////////////////////

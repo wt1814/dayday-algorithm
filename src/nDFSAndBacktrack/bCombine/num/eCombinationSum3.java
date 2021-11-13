@@ -45,7 +45,7 @@ public class eCombinationSum3 {
         for (int i = startIndex;i<=9;i++){
             path.add(i);
             sum = sum +i;
-            helper(result,path,k,n,sum,i+1); // todo todo todo 注意注意 递归下标是 i ， 非startIndex
+            helper(result,path,k,n,sum,i+1); // todo todo todo 注意注意 递归下标是 i，非startIndex
             sum = sum - i;
             path.removeLast();
         }
