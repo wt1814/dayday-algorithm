@@ -15,7 +15,7 @@ package pDP.aSubset.rob;
  * 输出: 7
  * 解释: 小偷一晚能够盗取的最高金额 = 3 + 3 + 1 = 7.
  */
-public class rob3 {
+public class rob3XXX {
 
     // https://mp.weixin.qq.com/s/oBNJn9FDnlQ6uFeVvVIqhQ
     // https://leetcode-cn.com/problems/house-robber-iii/

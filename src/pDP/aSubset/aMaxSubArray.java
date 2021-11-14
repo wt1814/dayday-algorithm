@@ -6,7 +6,6 @@ package pDP.aSubset;
  */
 public class aMaxSubArray {
 
-
     public static void main(String[] args){
         int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
         System.out.println(maxsumofSubarray(nums));
@@ -70,9 +69,9 @@ public class aMaxSubArray {
         }
 
         // dp数组
-        int res = 0;
+        int res = 0;  // todo 最终结果
         // base case
-        int max = array[0];
+        int max = array[0];  // todo 局部结果
 
         for (int i = 1; i < array.length; i++) {
             max = Math.max(max + array[i], array[i]); // todo 状态转移方程

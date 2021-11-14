@@ -26,12 +26,13 @@ public class cLongestIncreasingSequence {
     /////////////////////////////最长递增子序列长度 //////////////////////
     // https://mp.weixin.qq.com/s/HJTbehi5JfvOFM1ZSxDxow
     public int lengthOfLIS(int[] nums) {
+
         //边界条件判断
         if (nums == null || nums.length == 0) {
             return 0;
         }
         int[] dp = new int[nums.length];
-        //初始化数组dp的每个值为1
+        // todo 初始化数组dp的每个值为1
         Arrays.fill(dp, 1);
         int max = 1;
         for (int i = 1; i < nums.length; i++) {
@@ -39,13 +40,14 @@ public class cLongestIncreasingSequence {
                 //如果当前值nums[i]大于nums[j]，说明nums[i]可以和
                 //nums[j]结尾的上升序列构成一个新的上升子序列
                 if (nums[i] > nums[j]) {
-                    dp[i] = Math.max(dp[i], dp[j] + 1);
+                    dp[i] = Math.max(dp[i], dp[j] + 1);  // todo 局部结果
                     //记录构成的最大值
-                    max = Math.max(max, dp[i]);
+                    max = Math.max(max, dp[i]);  // todo 最终结果
                 }
             }
         }
         return max;
+
     }
 
     ///////////////////////////////////////////////////

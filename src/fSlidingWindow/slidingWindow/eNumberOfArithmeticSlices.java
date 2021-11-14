@@ -1,4 +1,4 @@
-package pDP.aSubset;
+package fSlidingWindow.slidingWindow;
 
 /**
  * 413. 等差数列划分
@@ -15,38 +15,9 @@ package pDP.aSubset;
  */
 public class eNumberOfArithmeticSlices {
 
-
-    public static void main(String[] args) {
-
-    }
-
-
     // todo 滑动窗口、动态规划（Java）
     // https://leetcode-cn.com/problems/arithmetic-slices/solution/hua-dong-chuang-kou-dong-tai-gui-hua-jav-3vpp/
     //  https://mp.weixin.qq.com/s/lVONbve_on-HY3lKAcgfyg
-    /**
-     *
-     * @param nums
-     * @return
-     */
-    public static int numberOfArithmeticSlices(int[] nums) {
-        int len = nums.length;
-        if (len < 3) {
-            return 0;
-        }
-
-        // dp[i] 表示以：nums[i] 结尾的、且长度大于等于 3 的连续等差数列的个数
-        int[] dp = new int[len];
-        int res = 0;
-        // 从下标 2 开始，才有可能构成长度至少大于等于 3 的等差数列
-        for (int i = 2; i < len; i++) {
-            if (nums[i] - nums[i - 1] == nums[i - 1] - nums[i - 2]) {
-                dp[i] = dp[i - 1] + 1; // 如果 nums[i] 能够接在 nums[i - 1] 之后形成一个长度更长的（在原数组上连续的）等差数列，那么 dp[i] = dp[i - 1] + 1 。
-                res += dp[i];
-            }
-        }
-        return res;
-    }
 
     ////////////////////////////// 双指针
     // 滑动窗口 https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247488137&idx=1&sn=71e9f2adc320ffd74493c4f3e4b132bf&chksm=fd9cb996caeb30803b3a28b2a4c6f16b05f6cc6209c1e025e32e7ef6578e8e5ed42dc68805af&scene=178&cur_album_id=1748659352518868992#rd

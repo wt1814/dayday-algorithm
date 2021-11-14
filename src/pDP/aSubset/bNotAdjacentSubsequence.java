@@ -27,8 +27,9 @@ public class bNotAdjacentSubsequence {
      * @return
      */
     public static long subsequence (int n, int[] array) {
+
         // write code here
-        //todo n+1，一维数组长度加1，设置哑节点
+        // todo n+1，一维数组长度加1，设置哑节点
         long[] dp = new long[n + 1];
 
         dp[0] = 0;
@@ -38,6 +39,7 @@ public class bNotAdjacentSubsequence {
             dp[i] = Math.max(dp[i-1],dp[i-2] + array[i-1]);
         }
         return dp[n];
+
     }
 
 

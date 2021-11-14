@@ -14,6 +14,7 @@ public class aKnappsack {
         int[] wt = {2,1,3};
         int[] val = {4,2,3};
         System.out.println(knapsack(N,W,wt,val));
+        
     }
 
     // todo 理解：https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247485638&idx=1&sn=d7468955c5b121664031fd5c1b5a6f10&scene=21#wechat_redirect
