@@ -4,6 +4,7 @@ package bJava;
  * 多线程顺序打印ABC
  */
 public class JoinTest {
+
     public static void main(String[] args) {
         ThreadA threadA = new ThreadA();
         ThreadB threadB = new ThreadB(threadA);
@@ -12,9 +13,11 @@ public class JoinTest {
         threadB.start();
         threadC.start();
     }
+
 }
 
 class ThreadA extends Thread{
+
     @Override
     public void run() {
         // TODO Auto-generated method stub
@@ -22,11 +25,16 @@ class ThreadA extends Thread{
     }
 
 }
+
+
 class ThreadB extends Thread{
+
     private ThreadA threadA;
     public ThreadB(ThreadA threadA){
+
         this.threadA =threadA;
     }
+
     @Override
     public void run() {
         // TODO Auto-generated method stub
@@ -40,11 +48,15 @@ class ThreadB extends Thread{
     }
 
 }
+
 class ThreadC extends Thread{
+
     private ThreadB threadB;
     public ThreadC(ThreadB threadB){
+
         this.threadB =threadB;
     }
+
     @Override
     public void run() {
         // TODO Auto-generated method stub
@@ -56,4 +68,5 @@ class ThreadC extends Thread{
         }
         System.out.print("C");
     }
+
 }

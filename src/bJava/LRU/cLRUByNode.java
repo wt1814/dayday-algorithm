@@ -13,11 +13,11 @@ import java.util.HashMap;
  * @UpdateRemark:
  * @Version: V1.0
  **/
-public class LRUByNode {
+public class cLRUByNode {
 
 
     public static void main(String[] args) {
-        LRUByNode lruCache = new LRUByNode(5);
+        cLRUByNode lruCache = new cLRUByNode(5);
         lruCache.put("001", "用户1信息");
         lruCache.put("002", "用户2信息");
         lruCache.put("003", "用户3信息");
@@ -39,7 +39,7 @@ public class LRUByNode {
 
     private HashMap<String, Node> hashMap;
 
-    public LRUByNode(int limit) {
+    public cLRUByNode(int limit) {
         this.limit = limit;
         hashMap = new HashMap<String, Node>();
     }

@@ -4,16 +4,16 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * 基于LinkedHashMap实现
- * 不重写removeEldestEntry
+ * todo 基于LinkedHashMap实现，不重写removeEldestEntry
+ * todo LinkedhashMap默认采用尾插法新增数据。
  */
-public class LRUByLinkedOne {
+public class aZZZLRUByLinkedOne {
 
 
     // https://mp.weixin.qq.com/s/pGNIEOGvOYDM5yiyMM8bRQ
 
     public static void main(String[] args) {
-        LRUByLinkedOne lruCache = new LRUByLinkedOne(10);
+        aZZZLRUByLinkedOne lruCache = new aZZZLRUByLinkedOne(10);
         for (int i = 0; i < 10; i++) {
             lruCache.map.put(i,i);
             System.out.println(lruCache.map.size());
@@ -32,7 +32,7 @@ public class LRUByLinkedOne {
      * todo 构造函数
      * @param capacity
      */
-    public LRUByLinkedOne(int capacity){
+    public aZZZLRUByLinkedOne(int capacity){
         this.capacity = capacity;
         map = new LinkedHashMap<>();
     }
@@ -70,8 +70,5 @@ public class LRUByLinkedOne {
         map.put(key,value);
         return value;
     }
-
-
-
 
 }

@@ -7,11 +7,11 @@ import java.util.Map;
  * 基于LinkedHashMap实现
  * 重写removeEldestEntry
  */
-public class LRUByLinkedTwo<K, V> {
+public class bLRUByLinkedTwo<K, V> {
 
 
     public static void main(String[] args) {
-        LRUByLinkedTwo lruCache = new LRUByLinkedTwo(10);
+        bLRUByLinkedTwo lruCache = new bLRUByLinkedTwo(10);
         for (int i = 0; i < 10; i++) {
             lruCache.cacheMap.put(i,i);
             System.out.println(lruCache.cacheMap.size());
@@ -29,7 +29,7 @@ public class LRUByLinkedTwo<K, V> {
     private int cacheSize;
     private LinkedHashMap<K, V> cacheMap;
 
-    public LRUByLinkedTwo(int cacheSize) {
+    public bLRUByLinkedTwo(int cacheSize) {
         this.cacheSize = cacheSize;
         cacheMap = new LinkedHashMap(16, 0.75F, true) {
             //
@@ -48,10 +48,12 @@ public class LRUByLinkedTwo<K, V> {
     ////////////////////////////////////////////////////////////////////////////////////
 
     public void put(K key, V value) {
+
         cacheMap.put(key, value);
     }
 
     public V get(K key) {
+
         return cacheMap.get(key);
     }
 
