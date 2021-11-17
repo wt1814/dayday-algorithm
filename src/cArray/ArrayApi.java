@@ -13,6 +13,7 @@ public class ArrayApi {
      * @return
      */
     public int[] delete2(int index, int array[]) {
+
         //todo 数组的删除其实就是覆盖前一位
         int[] arrNew = new int[array.length - 1];
         for (int i = 0; i < array.length - 1; i++) {
@@ -23,6 +24,7 @@ public class ArrayApi {
             }
         }
         return arrNew;
+
     }
 
 }
