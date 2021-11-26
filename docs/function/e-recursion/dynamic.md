@@ -22,10 +22,13 @@
 
 &emsp; 会变化的就是状态。DP数组是几维根据状态来决定。  
 &emsp; 动态规划的转移方程就是(暴力递归中)决策过程中的决策。  
-
+&emsp; 无后效性，相比于回溯这种穷举。  
 
 # 1. 动态规划
-<!-- 
+<!--
+
+
+
 动态规划到底有多难？ 
 https://mp.weixin.qq.com/s/yo1ZAY4ybic0mASB5QjQOg
 状压 DP 是什么？
@@ -34,7 +37,9 @@ https://mp.weixin.qq.com/s/ecxTTrRvUJbdWwSFbKgDiw
 https://mp.weixin.qq.com/s/afRM6owOL_KTKekmW7wzpQ
 
 无后效性
+https://mp.weixin.qq.com/s/u9xUw8ChRnWegOnZOuPFUw
 https://www.zhihu.com/question/43361359
+https://blog.csdn.net/superjunenaruto/article/details/51986163
 
 https://mp.weixin.qq.com/s/Cw39C9MY9Wr2JlcvBQZMcA
 1、到底什么才叫「最优⼦结构」，和动态规划什么关系。 2、为什么动态规划遍历 dp 数组的⽅式五花⼋门，有的正着遍历，有的倒 着遍历，有的斜着遍历。  
