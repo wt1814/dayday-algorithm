@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  * 选择排序
+ * todo 选择最小的元素进行插入
  */
 public class cSelectionSort {
 

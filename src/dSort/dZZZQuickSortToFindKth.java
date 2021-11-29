@@ -3,7 +3,7 @@ package dSort;
 /**
  * 利用快速排序寻找第K大数
  */
-public class dQuickSortToFindKth {
+public class dZZZQuickSortToFindKth {
 
 
     public static void main(String[] args) {

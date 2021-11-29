@@ -7,8 +7,8 @@ import java.util.Arrays;
  */
 public class gShellSort {
 
-
     public static void main(String[] args) {
+
         System.out.println(7/2);
 
         int[] arr = new int[] {2,5,3,7,1,8,3,9,0};
@@ -17,6 +17,7 @@ public class gShellSort {
         int[] ints = shellSort(arr);
         System.out.println("--------------------排序完成后");
         System.out.println(Arrays.toString(ints));
+
     }
 
 

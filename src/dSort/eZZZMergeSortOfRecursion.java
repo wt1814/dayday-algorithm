@@ -55,7 +55,6 @@ public class eZZZMergeSortOfRecursion {
         int j = mid+1;//右序列指针
         int t = 0;//临时数组指针
 
-
         while (i<=mid && j<=right){  //todo 两个数组合并，同时移动指针
             if (arr[i]>=arr[j]){
                 temp[t] = arr[j];
@@ -98,9 +97,6 @@ public class eZZZMergeSortOfRecursion {
         }
     }
 
-    ////////////////////////////////////////////////////////////////////////
-
-
     ////////////////////////////////////////////////////////////////////////////
 
     public static void mergeSort1(int[] array, int start, int end){
@@ -141,6 +137,7 @@ public class eZZZMergeSortOfRecursion {
         for (int i=0; i<tempArray.length; i++){
             array[i+start]=tempArray[i];
         }
+
     }
 
 

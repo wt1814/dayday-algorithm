@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
- * 703. 数据流中的第 K 大元素
+ * 703. 第 K 大元素
  *
  */
 public class jZZZKthLargest {

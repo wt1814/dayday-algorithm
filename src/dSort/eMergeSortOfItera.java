@@ -17,9 +17,11 @@ public class eMergeSortOfItera {
     }
 
     private static int[] sort(int[] data, int low, int high) {
+
         if (low == high) {
             return new int[] { data[low] };
         }
+
         int mid = (low + high) >> 1;
         int[] left = sort(data, low, mid); //(1)
         int[] right = sort(data, mid + 1, high); //(2)
@@ -42,7 +44,7 @@ public class eMergeSortOfItera {
             }
         }
         return result;
-    }
 
+    }
 
 }
