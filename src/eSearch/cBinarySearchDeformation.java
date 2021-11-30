@@ -62,6 +62,7 @@ public class cBinarySearchDeformation {
             }
         }
         return -1;
+
     }
 
     /**
@@ -88,6 +89,7 @@ public class cBinarySearchDeformation {
             return left;
         }
         return -1;
+
     }
 
 
@@ -114,6 +116,7 @@ public class cBinarySearchDeformation {
             return right;
         }
         return -1;
+
     }
 
 
@@ -124,6 +127,7 @@ public class cBinarySearchDeformation {
      * @return
      */
     public static int searchFirstEqualOrLarger(int arr[], int key) {
+
         int left=0, right=arr.length-1;
 
         while(left<=right) {
@@ -136,6 +140,7 @@ public class cBinarySearchDeformation {
         }
 
         return left;
+
     }
 
 }

@@ -14,7 +14,6 @@ package fSlidingWindow.doublePointer;
  * 示例 2：
  * 输入：height = [1,1]
  * 输出：1
- *
  */
 public class eZZZMaxArea {
 

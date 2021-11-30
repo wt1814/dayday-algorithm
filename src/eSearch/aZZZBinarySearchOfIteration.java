@@ -4,7 +4,7 @@ package eSearch;
  * todo 二分查找，前提条件是数据必须是有序的
  * todo 迭代解二分查找，双指针
  */
-public class aBinarySearchOfIteration {
+public class aZZZBinarySearchOfIteration {
 
 
     public static void main(String[] args) {
@@ -13,7 +13,10 @@ public class aBinarySearchOfIteration {
         for(int i=0; i<1000;i++){
             array[i] = i;
         }
-        System.out.println(binarySearch(array, 1110));
+
+        int i = binarySearch(array, 1110);
+        System.out.println(i);
+
     }
 
     /**
@@ -43,6 +46,7 @@ public class aBinarySearchOfIteration {
             }
         }
         return -1;
+
     }
 
 
