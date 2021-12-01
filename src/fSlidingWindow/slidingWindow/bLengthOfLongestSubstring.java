@@ -37,8 +37,9 @@ public class bLengthOfLongestSubstring {
         int max = 0;
 
         for (; i < s.length(); ++i) {
-            //如果有重复的，就修改j的值
-            // 使用一个map来存储扫描过的元素，其中i指针是一直往右移动的，如果i指向的元素在map中出现过，说明出现了重复的元素，要更新j的值。
+            // todo todo todo 更新慢指针
+            // 使用一个map来存储扫描过的元素，其中i指针是一直往右移动的，
+            // 如果i指向的元素在map中出现过，说明出现了重复的元素，要更新j的值。
             // todo 并且这个j的值只能增大不能减小，也就是说j只能往右移动，不能往左移动，所以下面代码中j取的是重复元素位置的下一个值和j这两个值的最大值。
             if (map.containsKey(s.charAt(i))) {
                 j = Math.max(j, map.get(s.charAt(i)) + 1);

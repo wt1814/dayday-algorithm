@@ -13,7 +13,7 @@ import java.util.Arrays;
  * 输出：3
  * 解释：最长子串为 "aaa" ，其中 'a' 重复了 3 次。
  */
-public class cLongestSubstringXXX {
+public class lLongestSubstringXXX {
 
 
     public static void main(String[] args) {

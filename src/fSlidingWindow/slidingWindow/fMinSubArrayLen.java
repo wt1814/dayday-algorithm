@@ -35,7 +35,7 @@ public class fMinSubArrayLen {
 
         int ans = Integer.MAX_VALUE;
         int start = 0, end = 0;
-        int sum = 0;
+        int sum = 0;  // todo 滑动数组
 
         while (end < nums.length) {
             sum += nums[end]; // 求和
