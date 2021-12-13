@@ -44,7 +44,8 @@ public class aZZZLRUByLinkedOne {
     // afterNodeInsertion方法用于移除链表中的最旧的节点对象，也就是链表头部的对象。
     // 但是在JDK1.8版本中，可以看到removeEldestEntry一直返回false，所以该方法并不生效。如果存在特定的需求，比如链表中长度固定，并保持最新的N的节点数据，可以通过重写该方法来进行实现。
 
-    public void put(int key,int value){
+    public void put(int key, int value){
+
         if (map.containsKey(key)){
             map.remove(key);
             map.put(key,value);
@@ -56,9 +57,8 @@ public class aZZZLRUByLinkedOne {
         if (map.size() > capacity){
             map.remove(map.entrySet().iterator().next().getKey()); // todo 删除最久没用的，即第一个
         }
+
     }
-
-
 
     public int get(int key){
         //如果没有找到
