@@ -22,6 +22,8 @@
 # 1. 总结
 ## 1.1. 算法建模
 <!-- 
+labuladong刷题插件
+https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247494527&idx=1&sn=c8b729bcc045cef066c4b1f36e8855bc&scene=21#wechat_redirect
 
 西法的刷题秘籍 2.0
 https://mp.weixin.qq.com/s/oL8x6cxL4WGicnhi1hZkVQ
