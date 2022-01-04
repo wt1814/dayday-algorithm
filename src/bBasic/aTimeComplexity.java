@@ -12,6 +12,7 @@ public class aTimeComplexity {
      * 常数阶   O(1)
      */
     public void constantOrder(){
+
         int i = 1;
         System.out.println(i);
 

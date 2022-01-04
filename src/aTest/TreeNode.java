@@ -31,4 +31,20 @@ public class TreeNode {
       this.right = right;
     }
 
+
+
+    public static boolean isPalindrome(int x) {
+
+        if(x<0){
+            return false;
+        }
+        String xString = String.valueOf(x);
+        int xL = 0;
+        for(int i = 0; i<=(xString.length()/2); i++){
+            if (xString.charAt(0) != xString.charAt(xString.length()-i-1)){
+                return false;
+            }
+        }
+        return true;
+    }
 }

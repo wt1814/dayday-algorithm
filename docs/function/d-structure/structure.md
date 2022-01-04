@@ -1,12 +1,25 @@
 
 
-# 数据结构  
-<!-- 
-
-拜托，别再问我什么是堆了! 
-https://mp.weixin.qq.com/s?__biz=MzI5MTU1MzM3MQ==&mid=2247484012&idx=1&sn=110dc0abffd357d5d35cf149d80fb615&scene=21#wechat_redirect
--->
-&emsp; [数组和链表](/docs/functioncture/array.md)  
-&emsp; [栈与队列](/docs/functioncture/stack.md)  
-&emsp; [哈希](/docs/functioncture/hash.md)  
-&emsp; [树](/docs/functioncture/tree.md)  
+&emsp; [数组](/docs/function/d-structure/array.md)  
+&emsp; &emsp; [前缀和](/docs/function/d-structure/prefixAnd.md)  
+&emsp; [字符串](/docs/function/d-structure/String.md)  
+&emsp; [排序算法](/docs/function/a-sort/sort.md)  
+&emsp; &emsp; [比较排序](/docs/function/a-sort/compare.md)  
+&emsp; &emsp; [非比较排序](/docs/function/a-sort/noCompare.md)  
+&emsp; &emsp; [外部排序](/docs/function/a-sort/externalSort.md)  
+&emsp; [查找算法](/docs/function/b-search/search.md)  
+&emsp; &emsp; [二分查找](/docs/function/b-search/BinarySearch.md)  
+&emsp; 【双指针与滑动窗口】  
+&emsp; &emsp; [双指针法](/docs/function/c-doublePointer/DoublePointer.md)  
+&emsp; &emsp; [滑动窗口](/docs/function/c-doublePointer/SlidingWindow.md)  
+&emsp; [链表](/docs/function/d-structure/Linked.md)  
+&emsp; [栈](/docs/function/d-structure/stack.md)  
+&emsp; [队列](/docs/function/d-structure/queue.md)  
+&emsp; &emsp; [优先级队列](/docs/function/d-structure/priorityQueue.md)  
+&emsp; [哈希](/docs/function/d-structure/hash.md)   
+&emsp; [二叉树](/docs/function/d-structure/tree.md)  
+&emsp; [二叉排序(查找)树](/docs/function/d-structure/binarySort.md)  
+&emsp; &emsp; [平衡二叉树](/docs/function/d-structure/AVL.md)  
+&emsp; &emsp; [红黑树](/docs/function/d-structure/redBlack.md)  
+&emsp; [B树](/docs/function/d-structure/BTree.md)  
+&emsp; [二叉堆](/docs/function/d-structure/binaryReactor.md)  
