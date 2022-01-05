@@ -34,6 +34,7 @@
         * [备忘录与动态规划](/docs/function/e-recursion/MemorandumAndDynamic.md)  
         * [动态规划解题](/docs/function/e-recursion/DynamicSolve.md)
     * [贪心](/docs/function/Greedy.md)  
+* [位运算](/docs/function/BitOperation.md)  
 * [其他数据结构](/docs/function/g-complexStructure/otherStructure.md)  
     * [跳跃表](/docs/function/g-complexStructure/SkipList.md)  
     * [位图](/docs/function/g-complexStructure/BitMap.md)  

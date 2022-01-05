@@ -117,9 +117,8 @@ public String commonPrefix(String left, String right) {
 &emsp; 利用二分法的思想  
 
 1. 找出最短的字符串记为m;
-2. 对字符串m进行二分,分割点记为mid，用tmp表示m\[low...high]。
+2. 对字符串m进行二分，分割点记为mid，用tmp表示m\[low...high]。
 3. 如果tmp为所有字符串的前缀，则mid右移，否则左移，直到low>high。
-
 
 &emsp; 代码如下：  
 
