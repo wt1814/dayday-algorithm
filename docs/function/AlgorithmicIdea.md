@@ -48,6 +48,9 @@ https://baijiahao.baidu.com/s?id=1672756028135592643&wfr=spider&for=pc
 <!-- 
 一文图解分治算法和思想 
 https://mp.weixin.qq.com/s/kRBAwF5xAV54AqdvmMLxAg
+一文图解分治算法
+https://mp.weixin.qq.com/s?__biz=MzkwNzI0MzQ2NQ==&mid=2247489096&idx=1&sn=6dff19c9223bdac854d5a46ccaf8dd48&source=41#wechat_redirect
+
 -->
 
 ## 1.4. 动态规划法

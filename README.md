@@ -14,7 +14,7 @@
 &emsp; &emsp; &emsp; [非比较排序](/docs/function/a-sort/noCompare.md)  
 &emsp; &emsp; &emsp; [外部排序](/docs/function/a-sort/externalSort.md)  
 &emsp; &emsp; [查找算法](/docs/function/b-search/search.md)  
-&emsp; &emsp; &emsp; [二分查找](/docs/function/b-search/BinarySearch.md)
+&emsp; &emsp; &emsp; [二分查找](/docs/function/b-search/BinarySearch.md)  
 &emsp; &emsp; &emsp; [双指针法](/docs/function/c-doublePointer/DoublePointer.md)  
 &emsp; &emsp; &emsp; [滑动窗口](/docs/function/c-doublePointer/SlidingWindow.md)  
 &emsp; &emsp; [字符串](/docs/function/d-structure/String.md)  

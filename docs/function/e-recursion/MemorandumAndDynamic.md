@@ -115,9 +115,7 @@ class Solution {
 
 
 ### 1.2.2. 带备忘录的递归解法（自顶向下）  
-一般使用一个数组或者一个哈希map充当这个备忘录。  
-
-
+&emsp; 一般使用一个数组或者一个哈希map充当这个备忘录。  
 
 ```java
 public class Solution {
@@ -145,7 +143,6 @@ public class Solution {
 ```
 
 ### 1.2.3. 自底向上的动态规划  
-
 
 ```java
 public class Solution {
@@ -231,9 +228,6 @@ https://mp.weixin.qq.com/s?__biz=MzI5MTU1MzM3MQ==&mid=2247483932&idx=1&sn=d9cd9d
 <!-- 
 https://www.cnblogs.com/wsw-seu/p/13381312.html
 -->
-
-
-
 
 
 ## 1.6. 凑零钱兑换  
