@@ -1,4 +1,4 @@
-package dSort;
+package aaSummary.dSort;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

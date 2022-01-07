@@ -21,6 +21,13 @@ public class fMergeSortOfKLists {
         return mergeKLists(lists,0,lists.size()-1);
     }
 
+    /**
+     *
+     * @param lists
+     * @param low
+     * @param high
+     * @return
+     */
     public ListNode mergeKLists(ArrayList<ListNode> lists, int low, int high){
         if(low>=high){
             return lists.get(low);
@@ -31,6 +38,12 @@ public class fMergeSortOfKLists {
         return merge(l1,l2);
     }
 
+    /**
+     *
+     * @param l1
+     * @param l2
+     * @return
+     */
     public ListNode merge(ListNode l1,ListNode l2){
         if(l1==null){
             return l2;

@@ -3,16 +3,8 @@ package bJava.LRU;
 import java.util.HashMap;
 
 /**
- * @ProjectName：java-algorithm
- * @ClassName: LRUCache
- * @Description: TODO  
- * @Author: wt 
- * @CreateDate: 2020-05-20 14:58
- * @UpdateUser: 
- * @UpdateDate:   
- * @UpdateRemark:
- * @Version: V1.0
- **/
+ *
+ */
 public class cLRUByNode {
 
 

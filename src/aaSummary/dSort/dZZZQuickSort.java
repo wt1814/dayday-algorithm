@@ -1,8 +1,9 @@
-package dSort;
+package aaSummary.dSort;
 
 import java.util.Arrays;
 
 // todo 快速排序就是个二叉树的前序遍历，归并排序就是个二叉树的后序遍历
+
 /**
  * 快速排序
  * todo *** 递归实现

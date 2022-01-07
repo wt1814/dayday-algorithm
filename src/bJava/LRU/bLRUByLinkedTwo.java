@@ -9,7 +9,6 @@ import java.util.Map;
  */
 public class bLRUByLinkedTwo<K, V> {
 
-
     public static void main(String[] args) {
         bLRUByLinkedTwo lruCache = new bLRUByLinkedTwo(10);
         for (int i = 0; i < 10; i++) {
