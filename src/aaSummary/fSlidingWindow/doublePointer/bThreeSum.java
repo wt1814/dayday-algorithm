@@ -1,4 +1,4 @@
-package fSlidingWindow.doublePointer;
+package aaSummary.fSlidingWindow.doublePointer;
 
 import java.util.ArrayList;
 import java.util.Arrays;

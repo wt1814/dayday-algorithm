@@ -1,4 +1,4 @@
-package fSlidingWindow.doublePointer.twoArray;
+package aaSummary.fSlidingWindow.doublePointer.twoArray;
 
 /**
  * 88. 合并两个有序数组，A数组长度足够长
