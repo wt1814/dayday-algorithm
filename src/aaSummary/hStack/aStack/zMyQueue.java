@@ -51,7 +51,6 @@ public class zMyQueue {
     }
 
 
-
     /**
      * todo 入队都在 stack1 中进行，出队在 stack2 中进行
      */
@@ -88,7 +87,5 @@ public class zMyQueue {
 
         return out.pop();
     }
-
-
 
 }

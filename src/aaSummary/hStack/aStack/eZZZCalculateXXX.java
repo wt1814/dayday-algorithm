@@ -14,7 +14,7 @@ import java.util.Stack;
  * 输入：s = "3+2*2"
  * 输出：7
  */
-public class eZZZCalculate {
+public class eZZZCalculateXXX {
 
     public static void main(String[] args) {
 
