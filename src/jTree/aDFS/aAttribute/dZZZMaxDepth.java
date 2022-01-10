@@ -17,7 +17,7 @@ import jTree.TreeNode;
  *    15   7
  * 返回它的最大深度 3 。
  */
-public class dMaxDepth {
+public class dZZZMaxDepth {
 
 
     public static void main(String[] args) {

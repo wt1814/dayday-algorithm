@@ -31,7 +31,7 @@ import jTree.TreeNode;
  *     输入：A = [1,2,3], B = [3,1]
  *     输出：false
  */
-public class eIsSubStructure {
+public class fIsSubStructure {
 
 
     public static void main(String[] args) {

@@ -1,8 +1,7 @@
-package iHash;
+package rBitOperation;
 
 /**
  * 260. 只出现一次的数字 III：位运算
- * todo 查看位运算
  */
 public class eTwoNotRepeatingChar {
 
