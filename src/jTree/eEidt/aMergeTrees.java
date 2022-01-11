@@ -9,7 +9,6 @@ import jTree.TreeNode;
  */
 public class aMergeTrees {
 
-
     // https://www.nowcoder.com/practice/7298353c24cc42e3bd5f0e0bd3d1d759?tpId=188&&tqId=38652&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
     /**
      *
@@ -42,13 +41,16 @@ public class aMergeTrees {
 
     }
 
-
-
-    //////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////
 
     public TreeNode mergeTrees (TreeNode t1, TreeNode t2) {
-        if (t1 == null && t2 == null) return null;
-        if (t1 == null || t2 == null) return t1 == null ? t2 : t1;
+
+        if (t1 == null && t2 == null) {
+            return null;
+        }
+        if (t1 == null || t2 == null) {
+            return t1 == null ? t2 : t1;
+        }
         // 此时 t1、t2 均不为 null
         // 合并节点的值
         t1.val = t1.val + t2.val;
@@ -57,6 +59,7 @@ public class aMergeTrees {
         // 合并右子树
         t1.right = mergeTrees(t1.right, t2.right);
         return t1;
+
     }
 
 }

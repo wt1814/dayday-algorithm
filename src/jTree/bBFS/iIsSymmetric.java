@@ -12,7 +12,6 @@ import java.util.Queue;
  */
 public class iIsSymmetric {
 
-
     public static void main(String[] args) throws Exception {
 
         TreeNode treeNode1 = new TreeNode(1);
@@ -22,7 +21,6 @@ public class iIsSymmetric {
         treeNode1.right = treeNode3;
 
         System.out.println(isSymmetric(treeNode1));
-
 
     }
 

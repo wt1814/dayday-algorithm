@@ -11,6 +11,7 @@ public class TreeNode {
     public TreeNode right = null;
 
     public TreeNode(int x) {
+
         val = x;
     }
 }

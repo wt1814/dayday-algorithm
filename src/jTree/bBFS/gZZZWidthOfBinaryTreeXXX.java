@@ -35,8 +35,10 @@ public class gZZZWidthOfBinaryTreeXXX {
      */
     public static int widthOfBinaryTree(TreeNode root) {
 
-        if (root == null)
+        if (root == null){
             return 0;
+        }
+
         //使用双端队列
         Deque<TreeNode> queue = new LinkedList<>();
         //把根节点加入到队列中

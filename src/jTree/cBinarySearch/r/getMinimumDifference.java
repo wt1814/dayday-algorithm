@@ -11,13 +11,20 @@ public class getMinimumDifference {
 
     TreeNode pre;// 记录上一个遍历的结点
     int result = Integer.MAX_VALUE;
+
     public int getMinimumDifference(TreeNode root) {
-        if(root==null)return 0;
+        if(root==null){
+            return 0;
+        }
         traversal(root);
         return result;
     }
+
     public void traversal(TreeNode root){
-        if(root==null)return;
+
+        if(root==null){
+            return;
+        }
         //左
         traversal(root.left);
         //中
