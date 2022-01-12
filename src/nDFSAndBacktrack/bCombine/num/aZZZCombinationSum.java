@@ -18,14 +18,21 @@ public class aZZZCombinationSum {
 
     }
 
-
     public static List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> result = new ArrayList<>();
         LinkedList<Integer> path = new LinkedList<>();
         combineHelper(n, k,result, path,1);
         return result;
     }
-    
+
+    /**
+     *
+     * @param n
+     * @param k
+     * @param result
+     * @param path
+     * @param startIndex
+     */
     private static void combineHelper(int n, int k,List<List<Integer>> result, LinkedList<Integer> path,int startIndex){
 
         if (path.size() == k) {

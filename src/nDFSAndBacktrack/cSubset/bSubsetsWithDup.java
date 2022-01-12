@@ -19,6 +19,7 @@ public class bSubsetsWithDup {
 
 
 
+
     // https://programmercarl.com/0090.%E5%AD%90%E9%9B%86II.html
     // todo 集合里有重复元素了，而且求取的子集要去重。
     // todo “树层去重”和“树枝去重”
@@ -38,6 +39,11 @@ public class bSubsetsWithDup {
         return result;
     }
 
+    /**
+     *
+     * @param nums
+     * @param startIndex
+     */
     private void subsetsWithDupHelper(int[] nums, int startIndex){
 
         result.add(new ArrayList<>(path));

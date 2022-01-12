@@ -51,7 +51,7 @@ public class hPrintAllSubsquenceNoRepetition {
         process1(str, index + 1, ans, path + String.valueOf(str[index]));
     }
 
-    ////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////
     public static List<String> subsNoRepeat(String s) {
         char[] str = s.toCharArray();
         String path = "";

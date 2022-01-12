@@ -21,7 +21,7 @@ package nDFSAndBacktrack.eMatrix.twoDimensional;
  * 返回值：
  * 3
  */
-public class cIslandsNum {
+public class cIslandsNumXXX {
 
 
     /////////////////////////////todo DFS解决////////////////////////

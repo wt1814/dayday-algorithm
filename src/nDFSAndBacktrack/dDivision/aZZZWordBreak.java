@@ -17,7 +17,7 @@ import java.util.Set;
  * 输出: true
  * 解释: 返回 true 因为 "leetcode" 可以被拆分成 "leet code"。
  */
-public class aWordBreak {
+public class aZZZWordBreak {
 
     public static void main(String[] args) {
 
@@ -29,6 +29,7 @@ public class aWordBreak {
         System.out.println(b);
 
     }
+
     // todo 动态规划解单词拆分 https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247491645&idx=1&sn=456bb5dd519be3fafa1bcb08d73d8944&chksm=fb42731dcc35fa0bf914ae98e51a26e6a6c5d2b8c77a90dc1abde6625daeaa6cacb3b2376bdc&scene=21#wechat_redirect
 
     ////////////////////////////////////////////////////
@@ -88,16 +89,19 @@ public class aWordBreak {
     //start表示的是从字符串s的哪个位置开始
     public boolean dfs(String s, List<String> wordDict, Set<Integer> indexSet, int start) {
         //字符串都拆分完了，返回true
-        if (start == s.length())
+        if (start == s.length()){
             return true;
+        }
         for (int i = start + 1; i <= s.length(); i++) {
             //如果已经判断过了，就直接跳过，防止重复判断
-            if (indexSet.contains(i))
+            if (indexSet.contains(i)){
                 continue;
+            }
             //截取子串，判断是否是在字典中
             if (wordDict.contains(s.substring(start, i))) {
-                if (dfs(s, wordDict, indexSet, i))
+                if (dfs(s, wordDict, indexSet, i)){
                     return true;
+                }
                 //标记为已判断过
                 indexSet.add(i);
             }

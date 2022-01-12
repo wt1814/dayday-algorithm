@@ -10,7 +10,7 @@ package nDFSAndBacktrack.dDivision;
  * 输出: true
  * 解释: 能拼成一个边长为2的正方形，每边两根火柴。
  **/
-public class gZZZMakesquare {
+public class gZZZMakesquareXXX {
 
 
     public static void main(String[] args) {

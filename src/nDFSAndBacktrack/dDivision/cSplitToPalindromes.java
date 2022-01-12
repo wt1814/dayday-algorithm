@@ -18,8 +18,6 @@ import java.util.List;
  */
 public class cSplitToPalindromes {
 
-
-
     public static void main(String[] args) {
 
         String s = "aabb";

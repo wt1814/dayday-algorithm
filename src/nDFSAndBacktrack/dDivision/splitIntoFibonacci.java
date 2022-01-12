@@ -19,5 +19,4 @@ public class splitIntoFibonacci {
     // https://mp.weixin.qq.com/s/QmaQlvTNDIgCcLcx6w-kbQ
 
 
-
 }

@@ -123,8 +123,9 @@ public class hCanPartitionKSubsets {
             //如果当前火柴放到size[i]这个边上，长度不大于target，我们就放上面
             size[i] += nums[index];
             //然后在放下一个火柴，如果最终能变成正方形，直接返回true
-            if (backtrack(nums, index - 1, target, size))
+            if (backtrack(nums, index - 1, target, size)){
                 return true;
+            }
             //如果当前火柴放到size[i]这个边上，最终不能构成正方形，我们就把他从
             //size[i]这个边上给移除，然后在试其他的边
             size[i] -= nums[index];
@@ -132,7 +133,5 @@ public class hCanPartitionKSubsets {
         //如果不能构成正k边形，直接返回false
         return false;
     }
-
-
 
 }

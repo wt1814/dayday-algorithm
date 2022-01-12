@@ -46,7 +46,6 @@ public class aPrientAllSortOfOneself {
             for (int i = 0;i<nums.length;i++){
                 list.add(nums[i]);
             }
-
             result.add(list);
         }
 
@@ -63,7 +62,6 @@ public class aPrientAllSortOfOneself {
         arr[i] = arr[j];
         arr[j] = t;
     }
-
 
 }
 

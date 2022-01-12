@@ -11,7 +11,6 @@ package nDFSAndBacktrack.eMatrix.twoDimensional;
  */
 public class bExist {
 
-
     public static void main(String[] args) {
 
     }
@@ -117,8 +116,5 @@ public class bExist {
         return res;
 
     }
-
-
-
 
 }

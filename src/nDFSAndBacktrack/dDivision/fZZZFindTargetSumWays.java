@@ -41,7 +41,7 @@ public class fZZZFindTargetSumWays {
             }
             return;
         }
-        //todo 左子树数负数，要减去
+        //todo 左子树是负数，要减去
         dfs(nums, target, sum - nums[index], index + 1);
         //todo 右子树是正数，要加上
         dfs(nums, target, sum + nums[index], index + 1);

@@ -16,8 +16,6 @@ import java.util.Queue;
  */
 public class aUpdateMatrixXXX {
 
-
-
     // https://leetcode-cn.com/problems/01-matrix/solution/01ju-zhen-by-leetcode-solution/
     static int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
