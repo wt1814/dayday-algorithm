@@ -69,5 +69,4 @@ public class aLongestPalindromicSubstringOfOther {
         return s.substring(begin, begin + maxLen);
     }
 
-
 }

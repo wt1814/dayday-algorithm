@@ -24,5 +24,4 @@ public class gMinDistance {
     // https://mp.weixin.qq.com/s/uWzSvWWI-bWAV3UANBtyOw
 
 
-
 }

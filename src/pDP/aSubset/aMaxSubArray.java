@@ -7,6 +7,7 @@ package pDP.aSubset;
 public class aMaxSubArray {
 
     public static void main(String[] args){
+
         int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
         System.out.println(maxsumofSubarray(nums));
         System.out.println(maxSubArray2(nums));
@@ -19,7 +20,8 @@ public class aMaxSubArray {
      * @param arr int整型一维数组 the array
      * @return int整型
      */
-    public  static int maxsumofSubarray (int[] arr) {
+    public static int maxsumofSubarray (int[] arr) {
+
         // write code here
         if(arr == null || arr.length == 0){
             return 0;
@@ -122,6 +124,5 @@ public class aMaxSubArray {
         }
         return maxAns;
     }
-
 
 }

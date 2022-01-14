@@ -14,8 +14,6 @@ public class cZZZLongestPalindromeSubseq {
     }
 
     // todo 理解 https://mp.weixin.qq.com/s/zNai1pzXHeB2tQE6AdOXTA
-
-    ///////////////////////////////////////////////////////////////////////////////////
     // https://mp.weixin.qq.com/s/_YznW0t4z-_bzkBGQK6jpQ
     public static int longestPalindromeSubseq3(String s) {
         int n = s.length();

@@ -19,11 +19,8 @@ package pDP.eTwoDimensional.bPath;
 public class gMinFallingPathSum {
 
 
-
-
     // https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247485163&idx=1&sn=ffe456777bcda52c036e6eb2181d1932&chksm=fd9cadf4caeb24e21a57ce47295a54ee9d591dfbb857549a57c145cdeeabf8c4324b007fc18b&scene=178&cur_album_id=1773144264147812354#rd
     int MAX = Integer.MAX_VALUE;
-
 
     public int minFallingPathSum(int[][] mat) {
 
@@ -34,28 +31,39 @@ public class gMinFallingPathSum {
             ans = Math.min(ans, find(mat, i));
         }
         return ans;
-    }
 
+    }
 
     // 返回以 (0, u) 作为起点的最小路径和
     int find(int[][] mat, int u) {
 
         int n = mat.length;
         int[][] f = new int[n][n];
-        for (int i = 0; i < n; i++) f[0][i] = i == u ? mat[0][i] : MAX;
+
+        for (int i = 0; i < n; i++) {
+            f[0][i] = i == u ? mat[0][i] : MAX;
+        }
         for (int i = 1; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 f[i][j] = MAX;
                 int val = mat[i][j];
-                if (f[i-1][j] != MAX) f[i][j] = Math.min(f[i][j], f[i-1][j] + val);
-                if (j - 1 >= 0 && f[i-1][j-1] != MAX) f[i][j] = Math.min(f[i][j], f[i-1][j-1] + val);
-                if (j + 1 < n  && f[i-1][j+1] != MAX) f[i][j] = Math.min(f[i][j], f[i-1][j+1] + val);
+                if (f[i-1][j] != MAX) {
+                    f[i][j] = Math.min(f[i][j], f[i-1][j] + val);
+                }
+                if (j - 1 >= 0 && f[i-1][j-1] != MAX) {
+                    f[i][j] = Math.min(f[i][j], f[i-1][j-1] + val);
+                }
+                if (j + 1 < n  && f[i-1][j+1] != MAX) {
+                    f[i][j] = Math.min(f[i][j], f[i-1][j+1] + val);
+                }
             }
         }
         int ans = MAX;
-        for (int i = 0; i < n; i++) ans = Math.min(ans, f[n-1][i]);
+        for (int i = 0; i < n; i++) {
+            ans = Math.min(ans, f[n-1][i]);
+        }
         return ans;
-    }
 
+    }
 
 }

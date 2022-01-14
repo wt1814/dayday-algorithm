@@ -34,7 +34,9 @@ public class iCountRoutes {
         int[][] f = new int[n][fuel + 1];
 
         // 对于本身位置就在目的地的状态，路径数为 1
-        for (int i = 0; i <= fuel; i++) f[end][i] = 1;
+        for (int i = 0; i <= fuel; i++) {
+            f[end][i] = 1;
+        }
 
         // 从状态转移方程可以发现 f[i][fuel]=f[i][fuel]+f[k][fuel-need]
         // 在计算 f[i][fuel] 的时候依赖于 f[k][fuel-need]
@@ -54,7 +56,9 @@ public class iCountRoutes {
                 }
             }
         }
+
         return f[start][fuel];
+
     }
 
 }

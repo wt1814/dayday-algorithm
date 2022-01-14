@@ -18,10 +18,12 @@ public class aLongestSubstring {
     // https://mp.weixin.qq.com/s/o6jXoYMm8QvWiJrP8Akc8w
     // 理解： https://www.cnblogs.com/fanguangdexiaoyuer/p/11281179.html
     public String LCS(String str1, String str2) {
+
         int maxLenth = 0;//记录最长公共子串的长度
         //记录最长公共子串最后一个元素在字符串str1中的位置
         int maxLastIndex = 0;
         int[][] dp = new int[str1.length() + 1][str2.length() + 1];
+
         for (int i = 0; i < str1.length(); i++) {
             for (int j = 0; j < str2.length(); j++) {
                 //递推公式，两个字符相等的情况
@@ -41,6 +43,7 @@ public class aLongestSubstring {
         }
         //最字符串进行截取，substring(a,b)中a和b分别表示截取的开始和结束位置
         return str1.substring(maxLastIndex - maxLenth + 1, maxLastIndex + 1);
+
     }
 
 

@@ -21,9 +21,9 @@ public class bLastStoneWeightIIXXX {
 
     // https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247488868&idx=1&sn=5e54a1d091a8249d3033a28fc299076d&chksm=fd9cbe7bcaeb376d1ee8a753ebc57358e5605fc1a3b51865eb0f758fb3e6e4688e1b0acfa902&scene=178&cur_album_id=1751702161341628417#rd
 
-
     // https://mp.weixin.qq.com/s/J_cv0Ut4qb6Cw6GXfKeEGg
     public static int lastStoneWeightII(int[] stones) {
+
         int length = stones.length;
         int sum = 0;
         for (int num : stones) {
@@ -50,7 +50,5 @@ public class bLastStoneWeightIIXXX {
         //capacity的取值是sum >> 1，往下取整，所以前面的肯定不小于后面的，不需要取绝对值
         return (sum - dp[length][capacity]) - dp[length][capacity];
     }
-
-
 
 }

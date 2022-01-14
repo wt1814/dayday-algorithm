@@ -23,6 +23,7 @@ public class bMaxProfit {
     //////////////////////////////动态规划
     // https://mp.weixin.qq.com/s/B6me-d3bgLNfYfY2yTyLeA
     public static int maxProfit(int[] prices, int fee) {
+
         //边界条件判断
         if (prices == null || prices.length < 2){
             return 0;

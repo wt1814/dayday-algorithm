@@ -14,7 +14,7 @@ import java.util.Arrays;
  *
  * 如果有多个答案，请输出其中 按数值(注：区别于按单个字符的ASCII码值)进行比较的 字典序最小的那个
  */
-public class cLongestIncreasingSequence {
+public class cLongestIncreasingSequenceXXX {
 
 
     public static void main(String[] args){
@@ -31,6 +31,7 @@ public class cLongestIncreasingSequence {
         if (nums == null || nums.length == 0) {
             return 0;
         }
+
         int[] dp = new int[nums.length];
         // todo 初始化数组dp的每个值为1
         Arrays.fill(dp, 1);
@@ -46,6 +47,7 @@ public class cLongestIncreasingSequence {
                 }
             }
         }
+
         return max;
 
     }

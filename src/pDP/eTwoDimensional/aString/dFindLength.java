@@ -18,7 +18,6 @@ public class dFindLength {
 
     }
 
-
     // https://mp.weixin.qq.com/s/pKqJ3NOfrCCa3axBbM3T-A
     public int findLength(int[] A, int[] B) {
         int max = 0;

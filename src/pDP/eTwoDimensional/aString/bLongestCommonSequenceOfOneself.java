@@ -14,7 +14,6 @@ package pDP.eTwoDimensional.aString;
  */
 public class bLongestCommonSequenceOfOneself {
 
-
     public static void main(String[] args){
         String s1 = "1A2C3D4B56";
         String s2 = "B1D23A456A";

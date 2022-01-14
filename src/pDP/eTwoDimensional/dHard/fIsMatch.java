@@ -14,12 +14,11 @@ package pDP.eTwoDimensional.dHard;
  */
 public class fIsMatch {
 
-
-
     // https://mp.weixin.qq.com/s/KWR93SbRQxjZdZNGiPxG5A
     // https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247484130&idx=1&sn=af3517194634dde1652ec72eb5ea9ff2&chksm=fd9ca9fdcaeb20eb1fd7509e3adf8fee6f75d77b8afbd30067ac11a56bd77b5066b0f164eb49&scene=178&cur_album_id=1748759632187047943#rd
 
     public static boolean isMatch(String s, String p) {
+
         //如果s不为空，p为空，是匹配不成功的，直接返回false
         if (s.length() != 0 && p.length() == 0) {
             return false;
@@ -28,6 +27,7 @@ public class fIsMatch {
         int slen = s.length(), plen = p.length();
         // 状态定义：f(i,j) 代表考虑 s 中以 i 为结尾的子串和 p 中的 j 为结尾的子串是否匹配。即最终我们要求的结果为 f[n][m] 。
         boolean[][] dp = new boolean[slen + 1][plen + 1];
+
         //边界条件的初始化
         dp[0][0] = true;
         for (int j = 1; j <= plen && dp[0][j - 1]; j++){
@@ -46,6 +46,7 @@ public class fIsMatch {
             }
         }
         return dp[slen][plen];
+
     }
 
 }

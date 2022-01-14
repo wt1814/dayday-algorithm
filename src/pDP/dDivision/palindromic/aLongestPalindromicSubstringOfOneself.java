@@ -24,6 +24,7 @@ public class aLongestPalindromicSubstringOfOneself {
         boolean[][] dp = getdp(chars);
         String result = generateLIS(chars,dp);
         return result;
+
     }
 
     /**

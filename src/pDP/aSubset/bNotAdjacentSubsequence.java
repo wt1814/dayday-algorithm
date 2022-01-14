@@ -5,7 +5,6 @@ package pDP.aSubset;
  */
 public class bNotAdjacentSubsequence {
 
-
     public static void main(String[] args) {
 
     }

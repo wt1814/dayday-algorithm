@@ -29,9 +29,11 @@ public class eMinPathSum {
      * @return
      */
     public static int minPathSum (int[][] matrix) {
+
         int[][]  dp = new int[matrix.length][matrix[0].length];
 
         dp[0][0] = matrix[0][0];
+
         // 第一行 只能从左往右  第一个元素 的值为 原数组的第一个元素 dp[0][0] = a[0][0]  dp[0][j] = a[0][j] + dp[0][j-1];
         for(int i =1; i< matrix.length; i++) {
             dp[i][0] =  dp[i-1][0] + matrix[i][0];
@@ -48,6 +50,7 @@ public class eMinPathSum {
             }
         }
         return dp[matrix.length-1][matrix[0].length-1];
+
     }
 
 }
