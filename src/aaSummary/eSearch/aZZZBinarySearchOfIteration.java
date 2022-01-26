@@ -36,7 +36,7 @@ public class aZZZBinarySearchOfIteration {
 
         while(start<=end){
             //mid=(start+end)/2 有可能溢出
-            mid=start+(end-start)/2;
+            mid = start+(end-start)/2;
             if(array[mid]==target){
                 return mid;
             }else if(array[mid]<target){

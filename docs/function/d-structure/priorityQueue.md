@@ -32,7 +32,7 @@ https://blog.csdn.net/cyp331203/article/details/25310733
 https://blog.csdn.net/weixin_30363263/article/details/80862578
 -->
 
-PriorityQueue默认是一个小顶堆，然而可以通过传入自定义的Comparator函数来实现大顶堆。如下代码实现了一个初始大小为11的大顶堆。这里只是简单的传入一个自定义的Comparator函数，就可以实现大顶堆了。  
+&emsp; PriorityQueue默认是一个小顶堆，然而可以通过传入自定义的Comparator函数来实现大顶堆。如下代码实现了一个初始大小为11的大顶堆。这里只是简单的传入一个自定义的Comparator函数，就可以实现大顶堆了。  
 
 ```java
 PriorityQueue<Integer> maxHeap=new PriorityQueue<Integer>((o1, o2) -> o1-o2);
@@ -40,6 +40,7 @@ PriorityQueue<Integer> maxHeap=new PriorityQueue<Integer>((o1, o2) -> o1-o2);
 
 ```java
 /**
+ * 大顶堆
  * PriorityQueue(int initialCapacity,
  *                          Comparator<? super E> comparator)
  */
