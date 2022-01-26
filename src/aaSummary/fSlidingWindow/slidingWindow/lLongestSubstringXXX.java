@@ -28,6 +28,7 @@ public class lLongestSubstringXXX {
      * @return
      */
     public static int longestSubstring(String s, int k) {
+    	
         int ans = 0;
         int n = s.length();
         char[] cs = s.toCharArray();
@@ -66,6 +67,7 @@ public class lLongestSubstringXXX {
             }
         }
         return ans;
+        
     }
 
 }

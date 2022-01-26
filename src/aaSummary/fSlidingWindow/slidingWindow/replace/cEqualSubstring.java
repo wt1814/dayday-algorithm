@@ -18,15 +18,20 @@ public class cEqualSubstring {
 
 
     public static void main(String[] args) {
+    	
+    	String s = "abcd";
+    	String t = "bcdf";
+    	int maxCost = 3; 
+    	equalSubstring(s,t,maxCost);
 
     }
 
     // https://www.cnblogs.com/huansky/p/13488234.html
     /**
-     *
+     * 求最大窗口大小
      * @param s
      * @param t
-     * @param maxCost
+     * @param maxCost 用于变更字符串的最大预算是 maxCost
      * @return
      */
     public static int equalSubstring(String s, String t, int maxCost) {
@@ -37,7 +42,7 @@ public class cEqualSubstring {
 
         // 构造窗口
         while (right < s.length()) {
-            sum += Math.abs(s.charAt(right) - t.charAt(right));
+            sum += Math.abs(s.charAt(right) - t.charAt(right)); // 变更的代价
             right++;
             // 窗口构造完成，这时候要根据条件当前的窗口调整窗口大小
             while (sum > maxCost) {
@@ -48,6 +53,7 @@ public class cEqualSubstring {
             res = Math.max(res, right -left);
         }
         return res;
+        
     }
 
 

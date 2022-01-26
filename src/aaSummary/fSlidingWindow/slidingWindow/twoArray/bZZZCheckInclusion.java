@@ -16,21 +16,24 @@ import java.util.HashMap;
 public class bZZZCheckInclusion {
 
     public static void main(String[] args) {
-
+    	
+    	
+    	
     }
-
+    
+    
     // todo https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583ad935e76e9a3f6793792e60734&chksm=9bd7f8ddaca071cbb7570b2433290e5e2628d20473022a5517271de6d6e50783961bebc3dd3b&scene=21#wechat_redirect
     // valid变量表示窗口中满足need条件的字符个数，如果valid和need.size的大小相同，则说明窗口已满足条件，已经完全覆盖了串T。
-
     //////////////////////////////
     public static boolean checkInclusion(String s1, String s2) {
+    	
         if (s2 == null || s2.length() == 0) {
             return false;
         }
 
         // 记录 s1 中的字符及其对应的个数
         HashMap<Character, Integer> need = new HashMap<>();
-        for(int i = 0; i < s1.length(); i ++){
+        for(int i = 0; i < s1.length(); i++){
             char c = s1.charAt(i);
             need.put(c, need.getOrDefault(c, 0) + 1);
         }
@@ -77,6 +80,7 @@ public class bZZZCheckInclusion {
         }
 
         return false;
+        
     }
 
 

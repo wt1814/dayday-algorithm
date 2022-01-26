@@ -25,4 +25,39 @@ public class eNumberOfArithmeticSlices {
     // https://leetcode-cn.com/problems/arithmetic-slices/solution/hua-dong-chuang-kou-dong-tai-gui-hua-jav-3vpp/
 
 
+	
+	///////////////////////////////////////////////////////////////////////////////////
+	/**
+	 * https://leetcode-cn.com/problems/arithmetic-slices/solution/hua-dong-chuang-kou-dong-tai-gui-hua-jav-3vpp/
+	 * @param nums
+	 * @return
+	 */
+    public int numberOfArithmeticSlices(int[] nums) {
+        int len = nums.length;
+        if (len < 3) {
+            return 0;
+        }
+        // 初始化
+        int preDiff = nums[1] - nums[0];
+        // 当前得到的等差数列的长度，有「差」必有两个元素，因此初始化的时候 L = 2
+        int L = 2;
+        int res = 0;
+        // 从下标 2 开始比较「当前的差」与「上一轮的差」是否相等
+        for (int i = 2; i < len; i++) {
+            int diff = nums[i] - nums[i - 1];
+            if (diff == preDiff) {
+                L++;
+            } else {
+                // 加入结果，然后重置 L 和 preDiff
+                res += (L - 1) * (L - 2) / 2;
+                L = 2;
+                preDiff = diff;
+            }
+        }
+
+        // 最后还要再计算一下结果
+        res += (L - 1) * (L - 2) / 2;
+        return res;
+    }
+	
 }

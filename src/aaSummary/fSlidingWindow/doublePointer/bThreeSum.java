@@ -43,6 +43,7 @@ public class bThreeSum {
      *         sum = 0：找到符合要求的答案，存起来
      */
     public List<List<Integer>> threeSum(int[] nums) {
+    	
         Arrays.sort(nums);
         int n = nums.length;
         List<List<Integer>> ans = new ArrayList<>();
@@ -63,6 +64,7 @@ public class bThreeSum {
             }
         }
         return ans;
+        
     }
     // todo 时间复杂度：排序的复杂度为 O(n * logn)，对于每个 i 而言，最坏的情况 j 和 k 都要扫描一遍数组的剩余部分，复杂度为O(n^2) 。整体复杂度为O(n^2)
     // todo 空间复杂度：

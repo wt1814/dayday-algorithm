@@ -1,6 +1,5 @@
 package aaSummary.fSlidingWindow.slidingWindow;
 
-import java.util.HashMap;
 
 /**
  * 滑动窗口模板

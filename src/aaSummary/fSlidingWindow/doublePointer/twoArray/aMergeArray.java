@@ -26,6 +26,7 @@ public class aMergeArray {
      * @param n
      */
     public static void merge2(int[] nums1, int m, int[] nums2, int n) {
+    	
         int p1 = m - 1, p2 = n - 1;
         int tail = m + n - 1;
         int cur;
@@ -41,6 +42,7 @@ public class aMergeArray {
             }
             nums1[tail--] = cur;
         }
+        
     }
 
     //////////////////////////////////////////////////////////////////////////////
@@ -90,6 +92,7 @@ public class aMergeArray {
         for (int i = 0; i != m + n; ++i) {
             nums1[i] = sorted[i];
         }
+        
     }
 
 }
