@@ -201,7 +201,7 @@ public static String longestPalindrome(String s) {
 ![image](https://gitee.com/wt1814/pic-host/raw/master/algorithm/function-52.png)  
 &emsp; 题解思路：  
 
-&emsp; 调用splite()方法分割为String[]，再倒叙拼接为字符串，并在拼接每个单词后拼接空格，最后trim一下。  
+&emsp; 调用splite()方法分割为String[]，再倒序拼接为字符串，并在拼接每个单词后拼接空格，最后trim一下。  
 
 ```java
 public String reverseWords(String s) {

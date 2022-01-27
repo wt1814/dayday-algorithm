@@ -16,7 +16,6 @@ package aaSummary.fSlidingWindow.slidingWindow.replace;
  */
 public class cEqualSubstring {
 
-
     public static void main(String[] args) {
     	
     	String s = "abcd";

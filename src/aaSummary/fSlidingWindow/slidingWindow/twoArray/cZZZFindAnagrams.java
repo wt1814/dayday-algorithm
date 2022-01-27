@@ -27,7 +27,6 @@ public class cZZZFindAnagrams {
     // https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583ad935e76e9a3f6793792e60734&chksm=9bd7f8ddaca071cbb7570b2433290e5e2628d20473022a5517271de6d6e50783961bebc3dd3b&scene=21#wechat_redirect
     public static List<Integer> findAnagrams(String s, String p) {
 
-
         Map<Character,Integer> need = new HashMap<>();
         Map<Character,Integer> window = new HashMap<>();
 
@@ -40,7 +39,9 @@ public class cZZZFindAnagrams {
         int left = 0, right = 0;
         int valid = 0;
         char[] chars1 = s.toCharArray();
+        
         while (right < s.length()){
+        	
             char c= chars1[right];
             right++;
             if (need.containsKey(c)){

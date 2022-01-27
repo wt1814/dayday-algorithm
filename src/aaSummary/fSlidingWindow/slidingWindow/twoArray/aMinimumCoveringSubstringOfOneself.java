@@ -26,6 +26,12 @@ public class aMinimumCoveringSubstringOfOneself {
 
     }
 
+    /**
+     * 
+     * @param S
+     * @param T
+     * @return
+     */
     public static String minWindow(String S, String T) {
 
         int left = 0;
