@@ -16,9 +16,13 @@ import gLinked.ListNode;
  * 输入: 4->2->1->3
  * 输出: 1->2->3->4
  */
-public class aZZZInsertionSortList {
+public class aZZZInsertionSortListXXX {
+	
+	
+	
 
     public ListNode insertionSortList(ListNode head) {
+    	
         if (head == null || head.next == null) {
             return head;
         }

@@ -7,7 +7,7 @@ import java.util.LinkedList;
 /**
  * NC132 环形链表的约瑟夫问题
  *
- *  编号为 1 到 n 的 n 个人围成一圈。从编号为 1 的人开始报数，报到 m 的人离开。
+ * 编号为 1 到 n 的 n 个人围成一圈。从编号为 1 的人开始报数，报到 m 的人离开。
  * 下一个人继续从 1 开始报数。
  * todo n-1 轮结束以后，只剩下一个人，问最后留下的这个人编号是多少？
  *
@@ -25,7 +25,6 @@ import java.util.LinkedList;
  */
 public class cZZZCrossJoseph {
 
-
     public static void main(String[] args){
 
         System.out.println(ysf(5,2));
@@ -40,6 +39,7 @@ public class cZZZCrossJoseph {
      * @return
      */
     public static int ysf (int n, int m) {
+    	
         // write code here
         ListNode head=new ListNode(1);
         ListNode tail=head;
@@ -66,6 +66,7 @@ public class cZZZCrossJoseph {
             index=next;
         }
         return index.val;
+        
     }
 
 
@@ -78,7 +79,7 @@ public class cZZZCrossJoseph {
      * @param m
      * @return
      */
-    public int LastRemaining(int n, int m){
+    public static int LastRemaining(int n, int m){
 
         LinkedList<Integer> list=new LinkedList<>();
         if(m<1 || n<1){

@@ -22,13 +22,11 @@ public class bAddTwoNumbers {
 
     }
 
-
-
     // https://leetcode-cn.com/problems/add-two-numbers-ii/
     // https://segmentfault.com/a/1190000022371732
     /**
-     * todo 栈
-     * 本题的主要难点在于链表中数位的顺序与我们做加法的顺序是相反的，为了逆序处理所有数位，我们可以使用栈：把所有数字压入栈中，再依次取出相加。计算过程中需要注意进位的情况。
+     * todo 栈，为了逆序处理所有数位，可以使用栈
+     * 本题的主要难点在于链表中数位的顺序与我们做加法的顺序是相反的，为了逆序处理所有数位，可以使用栈：把所有数字压入栈中，再依次取出相加。计算过程中需要注意进位的情况。
      * @param l1
      * @param l2
      * @return

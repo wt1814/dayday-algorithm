@@ -7,9 +7,6 @@ import gLinked.ListNode;
  */
 public class bZZZCrossLink {
 
-
-    //理解 链表中环的入口结点 https://blog.nowcoder.net/n/9d3ffa4b004e43d1aff512141d0d7dac
-
     public static void main(String[] args){
 /*
         bCrossLink bCrossLink = new bCrossLink();
@@ -49,11 +46,9 @@ public class bZZZCrossLink {
         while (fast != null && fast.next != null){
             fast = fast.next.next;  //todo 快指针走两步
             slow = slow.next;
-
             if (slow == fast) {
                 return slow;
             }
-
         }
         return null;
 
@@ -61,7 +56,7 @@ public class bZZZCrossLink {
 
 
     /**
-     * 找到入口结点
+     * 找到入口结点 理解，https://blog.nowcoder.net/n/9d3ffa4b004e43d1aff512141d0d7dac
      * todo (其中一个指针较特殊) 要找到入口结点，只需定义两个指针，一个指针指向head，一个指针指向快慢指向的相遇点，
      * todo 然后这两个指针不断遍历(同时走一步)，当它们指向同一个结点时即是环的入口结点
      * @return

@@ -138,8 +138,7 @@ public class bSortListXXX {
         }
 
         return head.next;
+        
     }
-
-
 
 }
