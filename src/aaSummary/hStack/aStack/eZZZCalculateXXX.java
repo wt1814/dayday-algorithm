@@ -24,8 +24,10 @@ public class eZZZCalculateXXX {
 
     // https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490373&idx=1&sn=0df0252b8a183aac5bf47b7a24173c24&chksm=fb418865cc360173d488b5a0f252423c4e020d797f75a012b33c843a8964e1754797975eda47&token=1745824839&lang=zh_CN#rd
     /**
-     * 记录每个数字前面的符号，如果是乘法和除法就直接和前面的数字运算，
-     * 然后再存放到栈中，如果是加法和减法直接存放到栈中
+     * 记录每个数字前面的符号，
+     * todo 如果是乘法和除法就直接和前面的数字运算，然后再存放到栈中，
+     * todo 如果是加法和减法直接存放到栈中
+     * todo todo 最后把栈中的所有元素都取出来，计算他们的和
      * @param s
      * @return
      */

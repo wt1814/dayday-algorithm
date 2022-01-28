@@ -1,8 +1,9 @@
 package jTree.bBFS;
 
-import jTree.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
+
+import kTree.TreeNode;
 
 /**
  * 1302. BFS和DFS解层数最深叶子节点的和

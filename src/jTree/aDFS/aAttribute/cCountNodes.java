@@ -1,6 +1,6 @@
 package jTree.aDFS.aAttribute;
 
-import jTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 222. 完全二叉树的节点个数

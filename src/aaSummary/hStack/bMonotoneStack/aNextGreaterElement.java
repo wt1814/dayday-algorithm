@@ -5,9 +5,9 @@ import java.util.Map;
 import java.util.Stack;
 
 /**
- *  519，单调栈解下一个更大元素 I
- *  todo 单调队列 + List/HashMap(记录)
- *  给你两个没有重复元素的数组nums1和nums2，其中nums1是nums2 的子集。
+ * 519 单调栈解下一个更大元素 I
+ * todo 单调队列 + List/HashMap(记录)
+ * 给你两个没有重复元素的数组nums1和nums2，其中nums1是nums2 的子集。
  * 请你找出nums1中每个元素在nums2中的下一个比其大的值。
  * nums1中数字x的下一个更大元素是指x在nums2中对应位置的右边的第一个比x大的元素。如果不存在，对应位置输出-1。
  *
@@ -33,7 +33,7 @@ public class aNextGreaterElement {
      * 二，如果栈不为空，查看栈顶元素是否小于这个遍历的元素：
      * todo 出栈并记录 1，如果小于，说明栈顶元素遇到右边第一个比他大的值，然后栈顶元素出栈，记录下这个值。如果栈还不为空，继续判断……
      * todo 2，如果不小于，把当前遍历的元素加入到栈中。
-     * 上面关键一点是怎么记录右边第一个比他大的，我们可以使用Map。
+     * 上面关键一点是怎么记录右边第一个比他大的，可以使用Map。
      * @param nums1
      * @param nums2
      * @return

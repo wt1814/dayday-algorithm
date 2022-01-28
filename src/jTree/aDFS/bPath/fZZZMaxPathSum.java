@@ -1,6 +1,6 @@
 package jTree.aDFS.bPath;
 
-import jTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 124. 二叉树中的最大路径和

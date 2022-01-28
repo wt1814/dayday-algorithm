@@ -1,6 +1,6 @@
 package jTree.aDFS.aAttribute;
 
-import jTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 111. 二叉树的最小深度

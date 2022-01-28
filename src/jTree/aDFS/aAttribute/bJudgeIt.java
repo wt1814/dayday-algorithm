@@ -1,6 +1,6 @@
 package jTree.aDFS.aAttribute;
 
-import jTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 判断一棵二叉树是否为搜索二叉树和完全二叉树

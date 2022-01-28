@@ -1,8 +1,8 @@
 package jTree.dBuild;
 
-import jTree.TreeNode;
-
 import java.util.Arrays;
+
+import kTree.TreeNode;
 
 /**
  * 重建二叉树

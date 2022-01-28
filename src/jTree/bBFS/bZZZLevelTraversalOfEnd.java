@@ -1,9 +1,9 @@
 package jTree.bBFS;
 
-import jTree.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
+
+import kTree.TreeNode;
 
 /**
  * 层序遍历，每一层结束

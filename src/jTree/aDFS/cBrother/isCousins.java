@@ -1,6 +1,6 @@
 package jTree.aDFS.cBrother;
 
-import jTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 993. 二叉树的堂兄弟节点

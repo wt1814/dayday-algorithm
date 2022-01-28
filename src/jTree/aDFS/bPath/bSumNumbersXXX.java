@@ -1,6 +1,6 @@
 package jTree.aDFS.bPath;
 
-import jTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * todo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

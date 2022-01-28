@@ -1,7 +1,8 @@
 package jTree.bBFS;
 
-import jTree.TreeNode;
 import java.util.*;
+
+import kTree.TreeNode;
 
 /**
  * 层序遍历，打印节点

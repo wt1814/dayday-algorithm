@@ -1,10 +1,10 @@
 package jTree.bBFS;
 
-import jTree.TreeNode;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+
+import kTree.TreeNode;
 
 /**
  * 层序遍历

@@ -1,6 +1,6 @@
 package jTree.aDFS.aAttribute;
 
-import jTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 剑指 Offer-树的子结构

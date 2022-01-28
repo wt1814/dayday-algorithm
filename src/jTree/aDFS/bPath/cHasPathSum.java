@@ -1,6 +1,6 @@
 package jTree.aDFS.bPath;
 
-import jTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 112. 路径总和

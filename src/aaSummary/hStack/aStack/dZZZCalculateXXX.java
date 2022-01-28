@@ -26,6 +26,7 @@ public class dZZZCalculateXXX {
      * @return
      */
     public static int calculate(String s) {
+    	
         // 计算结果，部分计算结果，括号中计算结果
         int res = 0;
         // 当前的数字，例如：1+23中的1或者23

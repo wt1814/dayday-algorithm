@@ -1,11 +1,11 @@
 package jTree.bBFS;
 
-import jTree.TreeNode;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+
+import kTree.TreeNode;
 
 /**
  * 101. 对称二叉树

@@ -1,6 +1,6 @@
 package jTree.aDFS.aAttribute;
 
-import jTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 104. 二叉树的最大深度

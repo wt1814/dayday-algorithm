@@ -1,6 +1,6 @@
 package jTree.eEidt;
 
-import jTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 226. 翻转二叉树

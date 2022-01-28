@@ -1,10 +1,10 @@
 package jTree.aDFS.aAttribute;
 
-import jTree.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
+
+import kTree.TreeNode;
 
 /**
  * 404. 左叶子之和
