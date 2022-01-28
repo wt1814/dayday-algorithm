@@ -8,7 +8,8 @@ public class aTwoSum {
      * @param target int整型
      * @return int整型一维数组
      */
-    public int[] twoSum (int[] numbers, int target) {
+    public static int[] twoSum (int[] numbers, int target) {
+    	
         // write code here
         int[] arr = new int[2];
 
@@ -22,6 +23,7 @@ public class aTwoSum {
             }
         }
         return arr;
+        
     }
 
 }

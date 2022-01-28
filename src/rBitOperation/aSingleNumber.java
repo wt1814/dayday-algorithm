@@ -21,6 +21,8 @@ public class aSingleNumber {
     // https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0NzIxMDgwNA==&action=getalbum&album_id=1990389635625091072&scene=173&from_msgid=2247484607&from_itemidx=1&count=3&nolastread=1#wechat_redirect
 
     // https://mp.weixin.qq.com/s/jQAi8gpctRR5V6gahFnHpQ
+	// https://leetcode-cn.com/problems/single-number/solution/zhi-chu-xian-yi-ci-de-shu-zi-by-leetcode-solution/https://leetcode-cn.com/problems/single-number/solution/zhi-chu-xian-yi-ci-de-shu-zi-by-leetcode-solution/
+
 
 
 }

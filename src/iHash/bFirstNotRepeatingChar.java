@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 /**
  * 387. 字符串中的第一个唯一字符
+ * https://leetcode-cn.com/problems/first-unique-character-in-a-string/solution/zi-fu-chuan-zhong-de-di-yi-ge-wei-yi-zi-x9rok/
  */
 public class bFirstNotRepeatingChar {
 

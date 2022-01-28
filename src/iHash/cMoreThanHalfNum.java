@@ -18,6 +18,7 @@ public class cMoreThanHalfNum {
     }
 
     public static int moreThanHalfNum(int[] arr){
+    	
         int result = -1;
         HashMap<Integer,Integer> hashMap = new HashMap<Integer, Integer>();
 
@@ -38,6 +39,7 @@ public class cMoreThanHalfNum {
             }
         }
         return result;
+        
     }
 
 }
