@@ -45,7 +45,7 @@ public class dZZZReverseKGroup {
      */
     public static ListNode reverseKGroup1 (ListNode head, int k) {
 
-        if(head==null||head.next==null||k==1) {
+        if(head==null || head.next==null || k==1) {
             return head;
         }
 

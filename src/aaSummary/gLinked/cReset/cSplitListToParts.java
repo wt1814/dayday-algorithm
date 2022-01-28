@@ -21,9 +21,11 @@ package aaSummary.gLinked.cReset;
  * 解释：
  * 输入被分成了几个连续的部分，并且每部分的长度相差不超过 1 。前面部分的长度大于等于后面部分的长度。
  */
-public class cSplitListToPartsXXX {
+public class cSplitListToParts {
 
-
+	/**
+	 * 其实就是简单的n个数分成m组，前面一些组多一个，n/m+1，后面的组数量是n/m
+	 */
 
 
 
