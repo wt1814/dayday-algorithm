@@ -8,6 +8,7 @@ import lTree.TreeNode;
 
 /**
  * 404. 左叶子之和
+ * todo 左叶子
  * 计算给定二叉树的所有左叶子之和。
  *
  * 示例：
@@ -20,7 +21,7 @@ import lTree.TreeNode;
  *
  * todo 左叶子的明确定义：如果左节点不为空，且左节点没有左右孩子，那么这个节点就是左叶子
  */
-public class gZZZSumOfLeftLeaves {
+public class gSumOfLeftLeaves {
 
 
     public static void main(String[] args) {

@@ -20,6 +20,24 @@ public class dMinDepth {
 
 
     //////////////////////////////////////////////////////////////////////////////////
+    // https://mp.weixin.qq.com/s/WJj7rNR8I2gT3mKllP--VQ
+    public static int minDepth(TreeNode root) {
+        if (root == null){
+            return 0;
+        }
+        //左子树的最小深度
+        int left = minDepth(root.left);
+        //右子树的最小深度
+        int right = minDepth(root.right);
+        //如果left和right都为0，我们返回1即可，
+        //如果left和right只有一个为0，说明他只有一个子结点，我们只需要返回它另一个子节点的最小深度+1即可。
+        //如果left和right都不为0，说明他有两个子节点，我们只需要返回最小深度的+1即可。
+        return (left == 0 || right == 0) ? left + right + 1 : Math.min(left, right) + 1;
+    }
+
+
+
+    //////////////////////////////////////////////////////////////////////////////////
     /**
      * 递归法，相比求MaxDepth要复杂点
      * 因为最小深度是从根节点到最近**叶子节点**的最短路径上的节点数量
@@ -39,23 +57,6 @@ public class dMinDepth {
         //如果左右子树都不为空，我们返回左右子树深度最小的那个+1
         return Math.min(minDepth2(root.left), minDepth2(root.right)) + 1;
     }
-
-    //////////////////////////////////////////////////////////////////////////////////
-    // https://mp.weixin.qq.com/s/WJj7rNR8I2gT3mKllP--VQ
-    public static int minDepth(TreeNode root) {
-        if (root == null){
-            return 0;
-        }
-        //左子树的最小深度
-        int left = minDepth(root.left);
-        //右子树的最小深度
-        int right = minDepth(root.right);
-        //如果left和right都为0，我们返回1即可，
-        //如果left和right只有一个为0，说明他只有一个子结点，我们只需要返回它另一个子节点的最小深度+1即可。
-        //如果left和right都不为0，说明他有两个子节点，我们只需要返回最小深度的+1即可。
-        return (left == 0 || right == 0) ? left + right + 1 : Math.min(left, right) + 1;
-    }
-
 
 
 
