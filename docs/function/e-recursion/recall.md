@@ -23,6 +23,9 @@
 
 
 <!-- 
+回溯算法详解
+https://mp.weixin.qq.com/s/fz9bQPGmInnaj9vvzdizJw
+
 什么时候需要startIndex，什么时候不需要startIndex。
 https://mp.weixin.qq.com/s/SrBfADlsOXjeOX4Cr4pQNg
 那么在代码里什么是切割线呢？  
@@ -50,6 +53,8 @@ https://www.bilibili.com/video/BV1cy4y167mM
 
 
 &emsp; 参考【代码随想录】、【西法的刷题秘籍】...  
+
+每一次做选择，都展开出一棵空间树，  
 
 ## 1.1. 什么是回溯？  
 回溯算法实际上一个类似枚举的搜索尝试过程，也就是一个个去试。  
