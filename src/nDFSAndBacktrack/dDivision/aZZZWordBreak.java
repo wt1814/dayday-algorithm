@@ -1,9 +1,6 @@
 package nDFSAndBacktrack.dDivision;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * 139. 单词拆分
@@ -27,6 +24,7 @@ public class aZZZWordBreak {
         wordDict.add("pen");
         boolean b = wordBreak(s, wordDict);
         System.out.println(b);
+
 
     }
 
