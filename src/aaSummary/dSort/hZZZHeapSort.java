@@ -59,6 +59,7 @@ public class hZZZHeapSort {
      * @param length 堆的有效大小
      */
     public static void downAdjust(int[] array, int parentIndex, int length) {
+
         // temp保存父节点值，用于最后的赋值
         int temp = array[parentIndex];
 
@@ -83,6 +84,7 @@ public class hZZZHeapSort {
         }
 
         array[parentIndex] = temp;
+
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////////

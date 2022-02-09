@@ -52,7 +52,7 @@ public class dZZZQuickSort {
     ///////////////
 
     //分割
-    // todo 返回的是基准元素的下标
+    //todo 返回的是基准元素的下标
     //todo 注意方法 #partition3() 与方法 #getBase() 的区别
     public static int partition3(int[] a, int left, int right){
 
