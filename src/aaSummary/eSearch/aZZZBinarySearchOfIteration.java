@@ -6,7 +6,6 @@ package aaSummary.eSearch;
  */
 public class aZZZBinarySearchOfIteration {
 
-
     public static void main(String[] args) {
 
         int[] array = new int[1000];
@@ -25,7 +24,7 @@ public class aZZZBinarySearchOfIteration {
      * @param target
      * @return
      */
-    public static int binarySearch(int []array,int target){
+    public static int binarySearch(int[] array, int target){
 
         //查找范围起点
         int start=0;

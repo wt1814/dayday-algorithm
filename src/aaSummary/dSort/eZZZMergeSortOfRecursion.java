@@ -2,6 +2,8 @@ package aaSummary.dSort;
 
 import java.util.Arrays;
 
+// todo 快速排序就是个二叉树的前序遍历，归并排序就是个二叉树的后序遍历
+
 /**
  * 归并排序
  * todo 二分 + 递归
@@ -12,9 +14,11 @@ import java.util.Arrays;
 public class eZZZMergeSortOfRecursion {
 
     public static void main(String[] args) {
+
         int[] arr = new int[] {4,7,6,5,3,2,8,1};
         mergeSort(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
+
     }
 
     /**
@@ -97,8 +101,16 @@ public class eZZZMergeSortOfRecursion {
         }
     }
 
+
+
     ////////////////////////////////////////////////////////////////////////////
 
+    /**
+     *
+     * @param array
+     * @param start
+     * @param end
+     */
     public static void mergeSort1(int[] array, int start, int end){
         if(start < end){
             //折半成两个小集合，分别进行递归
@@ -110,6 +122,13 @@ public class eZZZMergeSortOfRecursion {
         }
     }
 
+    /**
+     *
+     * @param array
+     * @param start
+     * @param mid
+     * @param end
+     */
     private static void merge1(int[] array, int start, int mid, int end){
 
         //开辟额外大集合，设置指针
@@ -137,6 +156,7 @@ public class eZZZMergeSortOfRecursion {
         for (int i=0; i<tempArray.length; i++){
             array[i+start]=tempArray[i];
         }
+
     }
 
 }

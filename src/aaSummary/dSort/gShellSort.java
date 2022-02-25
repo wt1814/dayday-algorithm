@@ -20,6 +20,7 @@ public class gShellSort {
 
     }
 
+
     /**
      * 希尔排序
      * todo 根据步长分组。步长越长，分组越少；每一步相当于插入排序；直至步长为1时，相当于冒泡排序。
@@ -51,11 +52,15 @@ public class gShellSort {
 
     }
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
     /**
      *
      * @param array
      */
-    public static void sheelSort3(int[] array){
+    public static void sheelSort2(int[] array){
+
         //增量每次都/2
         for (int step = array.length/2; step>0; step /=2){
             //从增量那组开始进行插入排序，直至完毕
@@ -72,8 +77,10 @@ public class gShellSort {
                 array[j] = temp;
             }
         }
+
     }
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public static void shellSort3(int[] a) {
 
@@ -101,6 +108,7 @@ public class gShellSort {
                 }
             }
         }
+
     }
 
 }

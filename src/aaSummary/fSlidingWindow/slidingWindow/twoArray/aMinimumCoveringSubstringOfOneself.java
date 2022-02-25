@@ -62,6 +62,7 @@ public class aMinimumCoveringSubstringOfOneself {
         return S.substring(map.get("left"),map.get("right"));
     }
 
+
     /**
      *
      * @param s

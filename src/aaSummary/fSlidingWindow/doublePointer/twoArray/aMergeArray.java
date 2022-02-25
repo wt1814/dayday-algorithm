@@ -17,7 +17,7 @@ public class aMergeArray {
     // https://leetcode-cn.com/problems/merge-sorted-array/solution/he-bing-liang-ge-you-xu-shu-zu-by-leetco-rrb0/
 
 
-    //////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * todo 逆向双指针，两数组从后往前比
      * @param nums1
@@ -47,6 +47,7 @@ public class aMergeArray {
 
     //////////////////////////////////////////////////////////////////////////////
     public static void merge3(int A[], int m, int B[], int n) {
+
         //因为题目明确说了A数组足够大，所以直接在A数组操作
         int i = m - 1;
         int j = n - 1;
