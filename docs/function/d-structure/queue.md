@@ -1,11 +1,20 @@
 
+<!-- TOC -->
 
+- [1. 队列](#1-队列)
+    - [1.1. 队列](#11-队列)
+    - [1.2. 单调队列](#12-单调队列)
+    - [1.3. 优先级队列](#13-优先级队列)
 
-# 队列
+<!-- /TOC -->
+
+# 1. 队列
 <!-- 
 https://www.cnblogs.com/ysocean/p/7921930.html
 https://www.jianshu.com/p/8439a9854932
 -->
+
+## 1.1. 队列
 &emsp; **队列的实现：** 与栈类似，队列即可以用数组实现，也可以用链表实现。  
 &emsp; **队列的基本操作：** 队列有两种操作入队(enqueue)、出队(dequeue)。  
 &emsp; 如果队列不断出队，队头左边的空间失去作用，那队列的容量越来越小。 **<font color = "red">用数组实现的队列可以采用循环队列的方式来维持队列容量的恒定。</font>**  
@@ -16,11 +25,11 @@ https://www.jianshu.com/p/8439a9854932
 &emsp; **<font color = "clime">队列通常用于对“历史”的回放，也就是按照“历史”顺序，把“历史”重演一遍。</font>**  
 
 
-## 单调队列
+## 1.2. 单调队列
 <!-- 
 https://programmercarl.com/0239.%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC.html
 -->
 
-## 优先级队列
+## 1.3. 优先级队列
 &emsp; [优先级队列](/docs/function/d-structure/priorityQueue.md)
 
