@@ -23,18 +23,18 @@ https://blog.csdn.net/cyp331203/article/details/25310733
 -->
 
 ## 1.1. 什么是优先级队列？  
-什么是优先级队列呢？  
-其实就是一个披着队列外衣的堆，因为优先级队列对外接口只是从队头取元素，从队尾添加元素，再无其他取元素的方式，看起来就是一个队列。  
-而且优先级队列内部元素是自动依照元素的权值排列。那么它是如何有序排列的呢？  
-缺省情况下priority_queue利用max-heap（大顶堆）完成对元素的排序，这个大顶堆是以vector为表现形式的complete binary tree（完全二叉树）。  
+&emsp; 什么是优先级队列呢？  
+&emsp; 其实就是一个披着队列外衣的堆，因为优先级队列对外接口只是从队头取元素，从队尾添加元素，再无其他取元素的方式，看起来就是一个队列。  
+&emsp; 而且优先级队列内部元素是自动依照元素的权值排列。那么它是如何有序排列的呢？  
+&emsp; 缺省情况下priority_queue利用max-heap（大顶堆）完成对元素的排序，这个大顶堆是以vector为表现形式的complete binary tree（完全二叉树）。  
 
 
 ## 1.2. API
-（1）add：插入一个元素，不成功会抛出异常。    
-（2）offer：插入一个元素，不能被立即执行的情况下会返回一个特殊的值（true 或者 false）。    
-（3）remove：删除一个元素，如果不成功会返回false。  
-（4）poll：删除一个元素，并返回删除的元素。  
-（5）peek：查询队顶元素。  
+&emsp; （1）add：插入一个元素，不成功会抛出异常。    
+&emsp; （2）offer：插入一个元素，不能被立即执行的情况下会返回一个特殊的值（true 或者 false）。    
+&emsp; （3）remove：删除一个元素，如果不成功会返回false。  
+&emsp; （4）poll：删除一个元素，并返回删除的元素。    
+&emsp; （5）peek：查询队顶元素。  
 
 
 ## 1.3. 构建大/小顶堆
@@ -42,7 +42,7 @@ https://blog.csdn.net/cyp331203/article/details/25310733
 https://blog.csdn.net/weixin_30363263/article/details/80862578
 -->
 
-&emsp; PriorityQueue默认是一个小顶堆，然而可以通过传入自定义的Comparator函数来实现大顶堆。如下代码实现了一个初始大小为11的大顶堆。这里只是简单的传入一个自定义的Comparator函数，就可以实现大顶堆了。  
+&emsp; `PriorityQueue默认是一个小顶堆`，然而可以通过传入自定义的Comparator函数来实现大顶堆。如下代码实现了一个初始大小为11的大顶堆。这里只是简单的传入一个自定义的Comparator函数，就可以实现大顶堆了。  
 
 ```java
 PriorityQueue<Integer> maxHeap=new PriorityQueue<Integer>((o1, o2) -> o1-o2);

@@ -17,9 +17,6 @@ import gLinked.ListNode;
  * 输出: 1->2->3->4
  */
 public class aZZZInsertionSortListXXX {
-	
-	
-	
 
     public ListNode insertionSortList(ListNode head) {
     	

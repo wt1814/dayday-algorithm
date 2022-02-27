@@ -54,7 +54,6 @@ public class bZZZCrossLink {
 
     }
 
-
     /**
      * 找到入口结点 理解，https://blog.nowcoder.net/n/9d3ffa4b004e43d1aff512141d0d7dac
      * todo (其中一个指针较特殊) 要找到入口结点，只需定义两个指针，一个指针指向head，一个指针指向快慢指向的相遇点，
@@ -83,7 +82,5 @@ public class bZZZCrossLink {
         return tmp1;
 
     }
-
-
 
 }

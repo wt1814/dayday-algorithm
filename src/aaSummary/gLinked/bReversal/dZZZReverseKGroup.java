@@ -22,7 +22,6 @@ import gLinked.ListNode;
  */
 public class dZZZReverseKGroup {
 
-
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2,node1);
@@ -34,7 +33,6 @@ public class dZZZReverseKGroup {
         System.out.println(listNode.val);
 
     }
-
 
     // https://www.nowcoder.com/practice/b49c3dc907814e9bbfa8437c251b028e?tpId=188&&tqId=38557&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
     /**

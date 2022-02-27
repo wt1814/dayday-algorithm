@@ -13,8 +13,7 @@ import java.util.Stack;
  * 输出：10
  * 解释：最大的矩形为图中红色区域，面积为 10
  */
-public class eLargestRectangleAreaXXX {
-
+public class eZZZLargestRectangleAreaXXX {
 
     public static void main(String[] args) {
         int[] hights = {1,5,6,2,3};

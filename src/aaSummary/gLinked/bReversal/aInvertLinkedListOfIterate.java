@@ -6,7 +6,7 @@ import gLinked.ListNode;
  * 不带头节点单向链表，双指针迭代反转链表
  * todo 指针反转
  */
-public class aZZZInvertLinkedListOfIterate {
+public class aInvertLinkedListOfIterate {
 
     public static void main(String[] args) {
 
@@ -15,7 +15,7 @@ public class aZZZInvertLinkedListOfIterate {
 
     /**
      * 在遍历链表时，将当前节点的 next指针改为指向前一个节点。
-     * 由于节点没有引用其前一个节点，因此必须事先存储其前一个节点。
+     * todo 由于节点没有引用其前一个节点，因此必须事先存储其前一个节点。
      * 在更改引用之前，还需要存储后一个节点。最后返回新的头引用。
      * @param head
      * @return
@@ -26,7 +26,7 @@ public class aZZZInvertLinkedListOfIterate {
         ListNode curr = head;
         while (curr != null) {
             /**
-             * 务必注意：在 cur 指向 pre 之前一定要先保留 cur 的后继结点，不然 cur 指向 pre 后就再也找不到后继结点了
+             * todo todo todo 务必注意：在 cur 指向 pre 之前一定要先保留 cur 的后继结点，不然 cur 指向 pre 后就再也找不到后继结点了
              * 也就无法对 cur 后继之后的结点进行翻转了
              */
             ListNode next = curr.next;   // todo 保存当前节点的下一节点
@@ -52,6 +52,7 @@ public class aZZZInvertLinkedListOfIterate {
      * 迭代解反转链表
      */
     public void iterationInvertLinkedList(ListNode head) {
+
         // 步骤 1
         ListNode pre = head;
         ListNode cur = pre.next;
@@ -70,6 +71,7 @@ public class aZZZInvertLinkedListOfIterate {
         }
         // 此时 pre 为头结点的后继结点
         head = pre;
+
     }
 
 }

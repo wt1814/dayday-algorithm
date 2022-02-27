@@ -13,7 +13,6 @@ import gLinked.ListNode;
  */
 public class aPartition {
 
-
     public static void main(String[] args){
     	
         ListNode listNode1 = new ListNode(4);

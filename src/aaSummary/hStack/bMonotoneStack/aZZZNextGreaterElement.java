@@ -19,7 +19,7 @@ import java.util.Stack;
  *         对于num1中的数字1，第二个数组中数字1右边的下一个较大数字是 3 。
  *         对于num1中的数字2，第二个数组中没有下一个更大的数字，因此输出-1 。
  */
-public class aNextGreaterElement {
+public class aZZZNextGreaterElement {
 
     public static void main(String[] args) {
 
@@ -44,7 +44,10 @@ public class aNextGreaterElement {
         Map<Integer, Integer> map = new HashMap<>();
         //单调栈，从栈顶到栈底是递增的
         Stack<Integer> stack = new Stack<>();
+
+
         //遍历nums2的所有元素
+        // todo 先比较，再入栈
         for (int num : nums2) {
             //todo 如果栈顶元素小于num，说明栈顶元素遇到了右边第一个比它大的值，然后栈顶元素出栈，
             // 记录下这个值。
@@ -54,12 +57,15 @@ public class aNextGreaterElement {
             //当前元素入栈
             stack.push(num);
         }
+
         //遍历nums1的所有元素，然后在map中查找，如果没有查找到，
         //说明没有遇到右边比它大的值，默认给-1。
         int[] res = new int[nums1.length];
         for (int i = 0; i < nums1.length; i++) {
             res[i] = map.getOrDefault(nums1[i], -1);
         }
+
+
         return res;
 
     }

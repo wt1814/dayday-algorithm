@@ -20,6 +20,7 @@ public class dZZZCalculateXXX {
 
     //////////////////////////////////////////////////////////////////
     // https://leetcode-cn.com/problems/basic-calculator/solution/ru-he-xiang-dao-yong-zhan-si-lu-lai-zi-y-gpca/
+    // todo 栈存储临时结果，res存储最终的结果
     /**
      *
      * @param s
@@ -33,7 +34,7 @@ public class dZZZCalculateXXX {
         int num = 0;
         // 符号，加号(+1)或者减号(-1)
         int sign = 1;
-        // 当右括号时，用于存储计算结果
+        // todo 当右括号时，用于存储计算结果
         Stack<Integer> stack = new Stack<>();
 
         char[] chars = s.toCharArray();
@@ -49,6 +50,7 @@ public class dZZZCalculateXXX {
             // 当前有可能是一个>9的数字，所以需要num = num * 10 + c - '0'
             if (c >= '0' && c <= '9') {
                 num = num * 10 + c - '0';
+
                 // 判断当前数字是否已经取完
                 // 例如：123+4，只有当取到+时，才能确定123为当前的num
                 if (i < len-1 && '0' <= chars[i+1] && chars[i+1] <= '9') {
@@ -81,7 +83,7 @@ public class dZZZCalculateXXX {
                 // 将res替换为括号前边的计算结果
                 res = stack.pop();
             }
-            // 每遍历一次，得到一个res
+            // todo 每遍历一次，得到一个res
             res += sign * num;
         }
         return res;

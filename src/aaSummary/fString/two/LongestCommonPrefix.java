@@ -7,12 +7,10 @@ package aaSummary.fString.two;
  */
 public class LongestCommonPrefix {
 
-
     public static void main(String[] args){
         String[] arr = {"baaa","baab","baac","abaa"};
         System.out.println(longestCommonPrefix(arr));
         //System.out.println(longestCommontPrefix6(arr));
-
     }
 
     ////////////////////////////todo 二分///////////////////////////////////////
