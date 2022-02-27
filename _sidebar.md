@@ -10,8 +10,7 @@
             * [非比较排序](/docs/function/a-sort/noCompare.md)  
             * [外部排序](/docs/function/a-sort/externalSort.md)  
         * [查找算法](/docs/function/b-search/search.md)  
-            * [二分查找](/docs/function/b-search/BinarySearch.md)  
-        * 双指针与滑动窗口
+            * [二分查找](/docs/function/b-search/BinarySearch.md)
             * [双指针法](/docs/function/c-doublePointer/DoublePointer.md)  
             * [滑动窗口](/docs/function/c-doublePointer/SlidingWindow.md)
         * [字符串](/docs/function/d-structure/String.md)

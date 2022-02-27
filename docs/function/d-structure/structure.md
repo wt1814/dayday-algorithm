@@ -9,7 +9,6 @@
 &emsp; &emsp; [外部排序](/docs/function/a-sort/externalSort.md)  
 &emsp; [查找算法](/docs/function/b-search/search.md)  
 &emsp; &emsp; [二分查找](/docs/function/b-search/BinarySearch.md)  
-&emsp; 【双指针与滑动窗口】  
 &emsp; &emsp; [双指针法](/docs/function/c-doublePointer/DoublePointer.md)  
 &emsp; &emsp; [滑动窗口](/docs/function/c-doublePointer/SlidingWindow.md)  
 &emsp; [链表](/docs/function/d-structure/Linked.md)  
