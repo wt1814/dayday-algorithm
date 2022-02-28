@@ -65,7 +65,6 @@ public class aZZZNextGreaterElement {
             res[i] = map.getOrDefault(nums1[i], -1);
         }
 
-
         return res;
 
     }

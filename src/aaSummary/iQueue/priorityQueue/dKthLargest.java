@@ -31,6 +31,7 @@ public class dKthLargest {
     PriorityQueue<Integer> queue;
 
     public dKthLargest(int _k, int[] _nums) {
+
         k = _k;
         queue = new PriorityQueue<>(k, (a,b)->Integer.compare(a,b));
         int n = _nums.length;
@@ -40,9 +41,11 @@ public class dKthLargest {
         for (int i = k; i < n; i++) {
             add(_nums[i]);
         }
+
     }
 
     public int add(int val) {
+
         int t = !queue.isEmpty() ? queue.peek() : Integer.MIN_VALUE;
         if (val > t || queue.size() < k) {
             if (!queue.isEmpty() && queue.size() >= k) {
@@ -50,7 +53,9 @@ public class dKthLargest {
             }
             queue.add(val);
         }
+
         return queue.peek();
+
     }
 
 }

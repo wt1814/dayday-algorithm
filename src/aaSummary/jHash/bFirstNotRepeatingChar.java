@@ -41,7 +41,9 @@ public class bFirstNotRepeatingChar {
                 break;
             }
         }
+
         return result;
+
     }
 
 

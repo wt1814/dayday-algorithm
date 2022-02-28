@@ -25,8 +25,10 @@ public class cTopKFrequent {
     // 此时要思考一下，是使用小顶堆呢，还是大顶堆？
     //有的同学一想，题目要求前 K 个高频元素，那么果断用大顶堆啊。
     //那么问题来了，定义一个大小为k的大顶堆，在每次移动更新大顶堆的时候，每次弹出都把最大的元素弹出去了，那么怎么保留下来前K个高频元素呢。
-    //todo 所以要用小顶堆，因为要统计最大前k个元素，只有小顶堆每次将最小的元素弹出，最后小顶堆里积累的才是前k个最大元素。
+    //todo 所以要用小顶堆，因为要统计最大前k个元素，只有小顶堆每次将最小的元素弹出，
+    // todo todo 最后小顶堆里积累的才是前k个最大元素。
     public static int[] topKFrequent(int[] nums, int k) {
+
         int[] result = new int[k];
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int num : nums) {
@@ -45,6 +47,7 @@ public class cTopKFrequent {
         for (int i = k - 1; i >= 0; i--) {
             result[i] = queue.poll().getKey();
         }
+
         return result;
     }
 

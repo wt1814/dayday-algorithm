@@ -16,9 +16,11 @@ public class dDailyTemperatures {
 
 
     public static void main(String[] args) {
+
         int[] temperatures = {73,74,75,71,69,72,76,73};
         int[] ints = dailyTemperatures(temperatures);
         System.out.println(ints.toString());
+
     }
 
 
@@ -58,6 +60,7 @@ public class dDailyTemperatures {
     ///////////////////////////////////////
     //https://leetcode-cn.com/problems/daily-temperatures/solution/java-739mei-ri-wen-du-dan-diao-zhan-xue-zup3o/
     public static int[] dailyTemperatures(int[] temperatures) {
+
         int[] ans = new int[temperatures.length];
 
         // 单调栈
@@ -81,6 +84,7 @@ public class dDailyTemperatures {
 
             }
         }
+
         return ans;
 
     }
