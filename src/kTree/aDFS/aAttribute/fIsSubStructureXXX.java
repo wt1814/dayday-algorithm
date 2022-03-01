@@ -31,7 +31,7 @@ import lTree.TreeNode;
  *     输入：A = [1,2,3], B = [3,1]
  *     输出：false
  */
-public class fIsSubStructure {
+public class fIsSubStructureXXX {
 
 
     public static void main(String[] args) {
@@ -57,6 +57,7 @@ public class fIsSubStructure {
     }
 
     public static boolean isSub(TreeNode A, TreeNode B) {
+
         //这里如果B为空，说明B已经访问完了，确定是A的子结构
         if (B == null){
             return true;
@@ -68,6 +69,7 @@ public class fIsSubStructure {
         }
         //当前节点比较完之后还要继续判断左右子节点
         return isSub(A.left, B.left) && isSub(A.right, B.right);
+
     }
 
 }
