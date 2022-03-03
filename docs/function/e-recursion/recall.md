@@ -40,6 +40,9 @@ https://labuladong.gitbook.io/algo/mu-lu-ye-3/mu-lu-ye/hui-su-suan-fa-xiang-jie-
 
 代码随想录
 https://blog.csdn.net/youngyangyang04/article/details/109804162
+
+ 一文秒杀排列组合问题的 9 种题型 
+ https://mp.weixin.qq.com/s/nrTpZ9b9RvfNsaEkJoHMvg
 -->
 
 
