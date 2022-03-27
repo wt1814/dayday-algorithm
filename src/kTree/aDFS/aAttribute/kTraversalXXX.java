@@ -19,6 +19,7 @@ public class kTraversalXXX {
 
     private int Deep = -1;
     private int value = 0;
+
     public int findBottomLeftValue(TreeNode root) {
         value = root.val;
         findLeftValue(root,0);
