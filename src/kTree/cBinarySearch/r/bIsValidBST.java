@@ -1,6 +1,6 @@
 package kTree.cBinarySearch.r;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 98. 验证二叉搜索树

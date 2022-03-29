@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 404. 左叶子之和
@@ -25,6 +25,7 @@ public class gSumOfLeftLeaves {
 
 
     public static void main(String[] args) {
+
         TreeNode treeNode = new TreeNode(3);
         TreeNode treeNode1 = new TreeNode(9);
         TreeNode treeNode2 = new TreeNode(20);
@@ -68,39 +69,12 @@ public class gSumOfLeftLeaves {
 
     //////////////////////////////////////////////////////////////////////////////////
     /**
-     * 迭代
-     * @param root
-     * @return
-     */
-    public static int sumOfLeftLeaves1(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
-        Stack<TreeNode> stack = new Stack<> ();
-        stack.add(root);
-        int result = 0;
-        while (!stack.isEmpty()) {
-            TreeNode node = stack.pop();
-            if (node.left != null && node.left.left == null && node.left.right == null) {
-                result += node.left.val;
-            }
-            if (node.right != null) {
-                stack.add(node.right);
-            }
-            if (node.left != null) {
-                stack.add(node.left);
-            }
-        }
-        return result;
-    }
-
-    //////////////////////////////////////////////////////////////////////////////////
-    /**
      * 层序遍历迭代法
      * @param root
      * @return
      */
     public static int sumOfLeftLeaves2(TreeNode root) {
+
         int sum = 0;
         if (root == null) {
             return 0;
@@ -123,6 +97,37 @@ public class gSumOfLeftLeaves {
             }
         }
         return sum;
+
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////
+    /**
+     * 迭代
+     * @param root
+     * @return
+     */
+    public static int sumOfLeftLeaves1(TreeNode root) {
+
+        if (root == null) {
+            return 0;
+        }
+        Stack<TreeNode> stack = new Stack<> ();
+        stack.add(root);
+        int result = 0;
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            if (node.left != null && node.left.left == null && node.left.right == null) {
+                result += node.left.val;
+            }
+            if (node.right != null) {
+                stack.add(node.right);
+            }
+            if (node.left != null) {
+                stack.add(node.left);
+            }
+        }
+        return result;
+
     }
 
 }

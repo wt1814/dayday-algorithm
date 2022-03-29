@@ -1,6 +1,6 @@
 package kTree.aDFS.aAttribute.zuo;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 判断一棵二叉树是否为搜索二叉树和完全二叉树
@@ -14,12 +14,14 @@ public class bJudgeIt {
      * @return bool布尔型一维数组
      */
     public boolean[] judgeIt (TreeNode root) {
+
         // write code here
         if(root==null){
             return new boolean[]{false,false};
         }
         Info result = judgeItInfo(root);
         return new boolean[]{result.isSearch,result.isAll};
+
     }
 
     /**

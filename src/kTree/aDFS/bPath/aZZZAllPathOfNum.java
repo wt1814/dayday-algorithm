@@ -2,16 +2,16 @@ package kTree.aDFS.bPath;
 
 import java.util.ArrayList;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 二叉树所有路径
+ * todo todo todo 前序
  * todo todo todo 回溯
  */
 public class aZZZAllPathOfNum {
 
     public static void main(String[] args) {
-
 
         TreeNode treeNode = new TreeNode(1);
         TreeNode treeNode1 = new TreeNode(2);
@@ -69,7 +69,5 @@ public class aZZZAllPathOfNum {
         nums.remove(nums.size()-1);   //todo todo todo 回溯
 
     }
-
-
 
 }

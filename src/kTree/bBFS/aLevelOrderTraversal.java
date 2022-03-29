@@ -2,7 +2,7 @@ package kTree.bBFS;
 
 import java.util.*;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 层序遍历，打印节点

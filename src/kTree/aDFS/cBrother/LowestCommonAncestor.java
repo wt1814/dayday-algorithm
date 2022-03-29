@@ -1,6 +1,6 @@
 package kTree.aDFS.cBrother;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 236. 二叉树的最近公共祖先

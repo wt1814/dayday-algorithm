@@ -1,6 +1,6 @@
 package kTree.aDFS.bPath;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 112. 路径总和
@@ -13,10 +13,9 @@ import lTree.TreeNode;
  */
 public class cHasPathSum {
 
-
-
     // https://mp.weixin.qq.com/s/7tKIHskFOGARb2Tuy43ezw
     public static boolean hasPathSum(TreeNode root, int sum) {
+
         //如果根节点为空，或者叶子节点也遍历完了也没找到这样的结果，就返回false
         if (root == null){
             return false;
@@ -28,6 +27,7 @@ public class cHasPathSum {
         //分别沿着左右子节点走下去，然后顺便把当前节点的值减掉，左右子节点只要有一个返回true，
         //说明存在这样的结果
         return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
+
     }
 
 

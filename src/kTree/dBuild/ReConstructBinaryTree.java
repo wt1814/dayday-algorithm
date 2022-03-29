@@ -2,7 +2,7 @@ package kTree.dBuild;
 
 import java.util.Arrays;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 重建二叉树

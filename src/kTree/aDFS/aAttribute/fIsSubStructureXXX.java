@@ -1,6 +1,6 @@
 package kTree.aDFS.aAttribute;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 剑指 Offer-树的子结构
@@ -32,7 +32,6 @@ import lTree.TreeNode;
  *     输出：false
  */
 public class fIsSubStructureXXX {
-
 
     public static void main(String[] args) {
 

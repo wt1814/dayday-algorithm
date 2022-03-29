@@ -1,6 +1,6 @@
 package kTree.aDFS.aAttribute;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 111. 二叉树的最小深度
@@ -17,7 +17,6 @@ public class dMinDepth {
     public static void main(String[] args) {
 
     }
-
 
     //////////////////////////////////////////////////////////////////////////////////
     // https://mp.weixin.qq.com/s/WJj7rNR8I2gT3mKllP--VQ
@@ -45,6 +44,7 @@ public class dMinDepth {
      * 因为最小深度是从根节点到最近**叶子节点**的最短路径上的节点数量
      */
     public static int minDepth2(TreeNode root) {
+
         if (root == null){
             return 0;
         }
@@ -58,6 +58,7 @@ public class dMinDepth {
         }
         //如果左右子树都不为空，我们返回左右子树深度最小的那个+1
         return Math.min(minDepth2(root.left), minDepth2(root.right)) + 1;
+
     }
 
 

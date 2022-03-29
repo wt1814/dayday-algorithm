@@ -3,7 +3,7 @@ package kTree.aDFS.bPath;
 import java.util.ArrayList;
 import java.util.List;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 257. 二叉树的所有路径
@@ -41,9 +41,11 @@ public class aAllPath {
      * @return
      */
     public static List<String> binaryTreePaths(TreeNode root) {
+
         List<String> paths = new ArrayList<String>();
         constructPaths(root, "", paths);
         return paths;
+
     }
 
     /**

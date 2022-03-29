@@ -4,7 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 113. 路径总和 II

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 二叉树的最大距离。两种方式：二叉树递归套路、动态规划

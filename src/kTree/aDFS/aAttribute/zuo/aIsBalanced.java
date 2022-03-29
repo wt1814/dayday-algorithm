@@ -1,6 +1,6 @@
 package kTree.aDFS.aAttribute.zuo;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 110. 平衡二叉树
@@ -11,7 +11,6 @@ public class aIsBalanced {
     public static void main(String[] args) {
 
     }
-
 
     ////////////////////////////////////////////////////////////////////
     public static boolean isBalanced2(TreeNode head) {

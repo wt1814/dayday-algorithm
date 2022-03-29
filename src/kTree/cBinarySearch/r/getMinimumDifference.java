@@ -1,6 +1,6 @@
 package kTree.cBinarySearch.r;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 530.二叉搜索树的最小绝对差

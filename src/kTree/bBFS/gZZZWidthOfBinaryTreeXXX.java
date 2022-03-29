@@ -3,7 +3,7 @@ package kTree.bBFS;
 import java.util.Deque;
 import java.util.LinkedList;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 662. 二叉树最大宽度

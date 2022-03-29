@@ -1,6 +1,6 @@
 package kTree.aDFS.bPath;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 543. 二叉树的直径

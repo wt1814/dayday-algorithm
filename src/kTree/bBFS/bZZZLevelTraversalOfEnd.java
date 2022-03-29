@@ -3,7 +3,7 @@ package kTree.bBFS;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 层序遍历，每一层结束

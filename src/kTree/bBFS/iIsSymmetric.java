@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 101. 对称二叉树

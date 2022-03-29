@@ -1,6 +1,6 @@
 package kTree.eEidt;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 617. 合并二叉树

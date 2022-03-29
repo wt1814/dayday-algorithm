@@ -1,6 +1,6 @@
 package kTree.cBinarySearch.c;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * 108. 将有序数组转换为二叉搜索树

@@ -2,7 +2,7 @@ package kTree.aDFS;
 
 import java.util.Stack;
 
-import lTree.TreeNode;
+import kTree.TreeNode;
 
 /**
  * todo 《左神课程》
