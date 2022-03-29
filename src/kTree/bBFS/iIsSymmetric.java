@@ -30,6 +30,8 @@ public class iIsSymmetric {
      * @return bool布尔型
      */
     public static boolean isSymmetric (TreeNode root) {
+
+
         // write code here
         boolean result = true;
 
@@ -65,7 +67,6 @@ public class iIsSymmetric {
                 queue.add(null);
                 continue;
             }
-
 
             if (cur.left != null){
                 queue.add(cur.left);

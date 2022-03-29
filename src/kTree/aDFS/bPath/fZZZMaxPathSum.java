@@ -44,8 +44,10 @@ public class fZZZMaxPathSum {
     int result = Integer.MIN_VALUE;
 
     public int maxPathSum2(TreeNode root) {
+
         maxSum(root);
         return result;
+
     }
 
     private int maxSum(TreeNode root){  //求包含root根节点的最大路径和
@@ -57,7 +59,6 @@ public class fZZZMaxPathSum {
         int data = root.val;
         int maxL = maxSum(root.left);
         int maxR = maxSum(root.right);
-
 
         // todo 最终结果可以使用全局变量，此处流程便是求最终结果的流程。
         if(maxL > 0){

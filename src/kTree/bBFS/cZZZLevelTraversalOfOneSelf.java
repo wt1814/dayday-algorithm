@@ -38,6 +38,7 @@ public class cZZZLevelTraversalOfOneSelf {
      * @return
      */
     public static ArrayList<ArrayList<Integer>> zigzagLevelOrder (TreeNode root) {
+
         // write code here
         ArrayList<ArrayList<Integer>> result = new ArrayList();
 
@@ -73,6 +74,7 @@ public class cZZZLevelTraversalOfOneSelf {
         }
         result.add(list);
         return result;
+
     }
 
 }

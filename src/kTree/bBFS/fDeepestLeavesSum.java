@@ -22,6 +22,7 @@ public class fDeepestLeavesSum {
     // https://mp.weixin.qq.com/s/BOyoiVOrGWnemnBA357LFg
     //todo 可以把每一层所有节点的值都相加，下一层会把上一次的给覆盖掉，最后一层下面没有了，所以没法覆盖，直接返回即可。
     public static int deepestLeavesSum(TreeNode root) {
+
         //每层节点的和
         int res = 0;
         //队列
@@ -47,6 +48,7 @@ public class fDeepestLeavesSum {
             }
         }
         return res;
+
     }
     /**
      * 时间复杂度：O(N)，N是节点的个数，所有节点都要访问一遍

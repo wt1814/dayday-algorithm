@@ -10,6 +10,7 @@ import kTree.TreeNode;
 public class aLevelOrderTraversal {
 
     public static void main(String[] args){
+
         TreeNode treeNode1 = new TreeNode(1);
         TreeNode treeNode2 = new TreeNode(2);
         TreeNode treeNode3 = new TreeNode(3);
@@ -28,6 +29,7 @@ public class aLevelOrderTraversal {
         System.out.println("------------------------------");
 
         level(treeNode1);
+
     }
 
     /** todo
@@ -73,6 +75,7 @@ public class aLevelOrderTraversal {
      * @return
      */
     public static List<List<Integer>> levelOrder(TreeNode root) {
+
         // 结果集
         List result = new ArrayList();
         // 待遍历的层级节点列表
@@ -106,6 +109,7 @@ public class aLevelOrderTraversal {
             result.add(item);
         }
         return result;
+
     }
 
 

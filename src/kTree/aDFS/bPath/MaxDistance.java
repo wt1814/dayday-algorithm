@@ -15,13 +15,13 @@ public class MaxDistance {
 
     }
 
-
     public static int maxDistance(TreeNode head) {
 
         return process(head).maxDistance;
     }
 
     public static Info process(TreeNode x) {
+
         if (x == null) {
             return new Info(0, 0);
         }
@@ -33,9 +33,11 @@ public class MaxDistance {
         int p3 = leftInfo.height + rightInfo.height + 1;
         int maxDistance = Math.max(Math.max(p1, p2), p3);
         return new Info(maxDistance, height);
+
     }
 
     public static class Info {
+
         public int maxDistance;
         public int height;
 
@@ -48,6 +50,7 @@ public class MaxDistance {
 
     ///////////////////////////////递归求解/////////////////////////////////////////
     public static int maxDistance1(TreeNode head) {
+
         if (head == null) {
             return 0;
         }
@@ -60,6 +63,7 @@ public class MaxDistance {
             }
         }
         return max;
+
     }
 
     public static ArrayList<TreeNode> getPrelist(TreeNode head) {

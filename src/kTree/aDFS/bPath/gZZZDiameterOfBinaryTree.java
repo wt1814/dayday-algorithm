@@ -21,7 +21,6 @@ import kTree.TreeNode;
  */
 public class gZZZDiameterOfBinaryTree {
 
-
     public static void main(String[] args) {
 
     }
@@ -32,12 +31,15 @@ public class gZZZDiameterOfBinaryTree {
     static int ans; // todo 全局变量
 
     public static int diameterOfBinaryTree(TreeNode root) {
+
         ans = 1;
         depth(root);
         return ans - 1;
+
     }
 
     public static int depth(TreeNode node) {
+
         if (node == null) {
             return 0; // 访问到空节点了，返回0
         }
@@ -49,6 +51,7 @@ public class gZZZDiameterOfBinaryTree {
         int sum = Math.max(L, R) + 1; // todo 返回该节点为根的子树的深度
 
         return sum;
+
     }
 
 }

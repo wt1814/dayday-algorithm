@@ -47,6 +47,7 @@ public class isCousins {
      * @param parent
      */
     public void dfs(TreeNode node, int depth, TreeNode parent) {
+
         if (node == null) {
             return;
         }
@@ -74,6 +75,7 @@ public class isCousins {
         }
 
         dfs(node.right, depth + 1, node);
+
     }
 
     ///////////////////////

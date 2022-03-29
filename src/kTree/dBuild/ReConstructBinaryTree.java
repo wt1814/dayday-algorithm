@@ -10,10 +10,12 @@ import kTree.TreeNode;
 public class ReConstructBinaryTree {
 
     public static void main(String[] args){
+
         int[] pre = {};
         int[] in = {};
         TreeNode treeNode = reConstructBinaryTree(pre, in);
         System.out.println(treeNode.val);
+
     }
 
 
@@ -40,6 +42,7 @@ public class ReConstructBinaryTree {
      * @return
      */
     public static TreeNode reConstructBinaryTree(int [] pre, int [] in) {
+
         if (pre.length == 0 || in.length == 0) {
             return null;
         }
@@ -55,6 +58,7 @@ public class ReConstructBinaryTree {
             }
         }
         return root;
+
     }
 
 }

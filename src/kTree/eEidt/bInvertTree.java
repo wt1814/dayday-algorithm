@@ -10,6 +10,7 @@ public class bInvertTree {
 
     // 将整棵树的节点翻转
     public static TreeNode invertTree(TreeNode root) {
+
         // base case
         if (root == null) {
             return null;
@@ -26,6 +27,7 @@ public class bInvertTree {
         invertTree(root.right);
 
         return root;
+
     }
 
 }

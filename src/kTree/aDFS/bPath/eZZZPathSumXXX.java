@@ -4,6 +4,7 @@ import kTree.TreeNode;
 
 /**
  * 437. 路径总和 III
+ * todo 双层递归
  * https://leetcode-cn.com/problems/path-sum-iii/
  * 给定一个二叉树的根节点 root ，和一个整数 targetSum ，
  * todo 求该二叉树里节点值之和等于 targetSum 的 路径 的数目。
@@ -22,15 +23,16 @@ public class eZZZPathSumXXX {
 
     // https://leetcode-cn.com/problems/path-sum-iii/solution/lu-jing-zong-he-iii-by-leetcode-solution-z9td/
     /**
-     * 首先定义 rootSum(p,val)表示以节点 ppp 为起点向下且满足路径总和为 valvalval 的路径数目。我们对二叉树上每个节点 ppp 求出 rootSum(p,targetSum)，然后对这些路径数目求和即为返回结果。
-     * 对节点 ppp 求 rootSum(p,targetSum) 时，以当前节点 ppp 为目标路径的起点递归向下进行搜索。假设当前的节点 ppp 的值为 val，我们对左子树和右子树进行递归搜索，对节点 ppp 的左孩子节点 plp_{l}pl​ 求出rootSum(pl​,targetSum−val)，以及对右孩子节点 prp_{r}pr​ 求出rootSum(pr​,targetSum−val)。
-     * 节点 ppp 的 rootSum(p,targetSum) 即等于rootSum(pl​,targetSum−val) 与 rootSum(pr​,targetSum−val) 之和，同时我们还需要判断一下当前节点 ppp 的值是否刚好等于 targetSum。
-     * 采用递归遍历二叉树的每个节点 ppp，对节点 ppp 求 rootSum(p,val)\textit{rootSum}(p,\textit{val})rootSum(p,val)，然后将每个节点所有求的值进行相加求和返回。
+     * 首先定义 rootSum(p,val)表示以节点 p 为起点向下且满足路径总和为 valvalval 的路径数目。我们对二叉树上每个节点 p 求出 rootSum(p,targetSum)，然后对这些路径数目求和即为返回结果。
+     * 对节点 p 求 rootSum(p,targetSum) 时，以当前节点 p 为目标路径的起点递归向下进行搜索。假设当前的节点 p 的值为 val，我们对左子树和右子树进行递归搜索，对节点 p 的左孩子节点 plp_{l}pl​ 求出rootSum(pl​,targetSum−val)，以及对右孩子节点 prp_{r}pr​ 求出rootSum(pr​,targetSum−val)。
+     * 节点 p 的 rootSum(p,targetSum) 即等于rootSum(pl​,targetSum−val) 与 rootSum(pr​,targetSum−val) 之和，同时我们还需要判断一下当前节点 p 的值是否刚好等于 targetSum。
+     * 采用递归遍历二叉树的每个节点 p，对节点 p 求 rootSum(p,val)\textit{rootSum}(p,\textit{val})rootSum(p,val)，然后将每个节点所有求的值进行相加求和返回。
      * @param root
      * @param targetSum
      * @return
      */
     public static int pathSum(TreeNode root, int targetSum) {
+
         if (root == null) {
             return 0;
         }
@@ -39,9 +41,11 @@ public class eZZZPathSumXXX {
         ret += pathSum(root.left, targetSum);
         ret += pathSum(root.right, targetSum);
         return ret;
+
     }
 
     public static int rootSum(TreeNode root, int targetSum) {
+
         int ret = 0;
 
         if (root == null) {
@@ -55,6 +59,7 @@ public class eZZZPathSumXXX {
         ret += rootSum(root.left, targetSum - val);
         ret += rootSum(root.right, targetSum - val);
         return ret;
+
     }
 
 }

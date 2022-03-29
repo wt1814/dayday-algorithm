@@ -14,6 +14,7 @@ public class aSearchBST {
     // https://programmercarl.com/0700.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%90%9C%E7%B4%A2.html#java
     // 递归，普通二叉树
     public static TreeNode searchBST(TreeNode root, int val) {
+
         if (root == null || root.val == val) {
             return root;
         }
@@ -22,10 +23,12 @@ public class aSearchBST {
             return left;
         }
         return searchBST(root.right, val);
+
     }
 
     // 递归，利用二叉搜索树特点，优化
     public static TreeNode searchBST1(TreeNode root, int val) {
+
         if (root == null || root.val == val) {
             return root;
         }
@@ -34,6 +37,7 @@ public class aSearchBST {
         } else {
             return searchBST(root.right, val);
         }
+
     }
 
 }
