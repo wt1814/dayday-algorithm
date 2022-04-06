@@ -2,6 +2,7 @@
 * [Java基础语法](/docs/function/a-basic/JavaBasics.md)  
 * [算法基本概念](/docs/function/a-basic/notion.md)  
     * [时间复杂度](/docs/function/a-basic/TimeComplexity.md)  
+    * [空间复杂度](/docs/function/a-basic/SpaceComplexity.md)  
 * [数据结构](/docs/function/d-structure/structure.md)  
     * [数组](/docs/function/d-structure/array.md)  
         * [前缀和](/docs/function/d-structure/prefixAnd.md)
