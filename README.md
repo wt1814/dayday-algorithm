@@ -27,6 +27,10 @@
                 - [1.2.7.4.1. 快慢指针](#12741-快慢指针)
                 - [1.2.7.4.2. 两个数组](#12742-两个数组)
             - [1.2.7.5. 排序](#1275-排序)
+        - [1.2.8. 栈](#128-栈)
+            - [1.2.8.1. 栈](#1281-栈)
+            - [1.2.8.2. 单调栈](#1282-单调栈)
+        - [1.2.9. 队列](#129-队列)
 
 <!-- /TOC -->
 
@@ -115,6 +119,7 @@
 [旋转数组中的最小数字](src/eSearch/eMinNumberInRotateArray.java)  
 [求平方根](src/eSearch/gMySqrtXXX.java)  
 
+
 ### 1.2.5. 双指针和滑动窗口  
 #### 1.2.5.1. 双指针
 [26. 双指针解删除有序数组中的重复项](src/fSlidingWindow/doublePointer/aRemoveDuplicates.java)  
@@ -126,6 +131,7 @@
 ##### 1.2.5.1.1. 两个数组  
 [88. 合并两个有序数组，A数组长度足够长](src/fSlidingWindow/doublePointer/twoArray/aMergeArray.java)  
 [在两个长度相等的排序数组中找到上中位数](src/fSlidingWindow/doublePointer/twoArray/bFindMedianinTwoSortedAray.java)  
+
 
 #### 1.2.5.2. 滑动窗口  
 [★★★滑动窗口模板](src/fSlidingWindow/slidingWindow/aModel.java)  
@@ -151,6 +157,7 @@
 [1044. 最长【重复】子串](src/fSlidingWindow/slidingWindow/twoArray/dLongestDupSubstringXXX.java)  
 [407，动态规划和滑动窗口解决最长重复子数组](src/fSlidingWindow/slidingWindow/twoArray/zFindLengthXXXXX.java)  
 
+
 ### 1.2.6. 字符串  
 #### 1.2.6.1. 单字符串  
 [反转字符串-不考虑字符串开头有空格](src/fString/single/aStringReverse.java)  
@@ -159,9 +166,9 @@
 [回文子串的个数](src/fString/single/dPalindromeSubstring.java)  
 [8. 字符串转换整数](src/fString/single/eZZZStringToNumber.java)  
 
-
 #### 1.2.6.2. 双字符串  
 [14. 最长公共前缀](src/fString/two/LongestCommonPrefix.java)  
+
 
 ### 1.2.7. 链表  
 #### 1.2.7.1. 删除链表节点
@@ -198,6 +205,29 @@
 #### 1.2.7.5. 排序 
 [147. 对链表进行插入排序](src/gLinked/eSort/aZZZInsertionSortList.java)  
 [148. 排序链表](src/gLinked/eSort/bSortListXXX.java)  
+
+
+### 1.2.8. 栈  
+#### 1.2.8.1. 栈  
+[946. 验证栈序列](src/hStack/aStack/aValidateStackSequences.java)  
+[利用栈实现字符串逆序](src/hStack/aStack/bStringReversal.java)  
+[20. 有效的括号](src/hStack/aStack/cStringMatch.java)  
+[224. 基本计算器](src/hStack/aStack/dZZZCalculate.java)  
+[227. 使用栈解基本计算器 II](src/hStack/aStack/eZZZCalculate.java)  
+[150. 逆波兰表达式求值](src/hStack/aStack/fZZZEvalRPN.java)  
+[232. 用栈实现队列](src/hStack/aStack/zMyQueue.java)  
+
+#### 1.2.8.2. 单调栈  
+[519，单调栈解下一个更大元素 I](src/hStack/bMonotoneStack/aNextGreaterElement.java)  
+[单调栈解下一个更大元素 II - 循环数组](src/hStack/bMonotoneStack/bNextGreaterElements.java)  
+[1019. 链表中的下一个更大节点](src/hStack/bMonotoneStack/cNextLargerNodes.java)  
+[739. 温度](src/hStack/bMonotoneStack/dDailyTemperatures.java)  
+[84. 柱状图中最大的矩形（难）](src/hStack/bMonotoneStack/eLargestRectangleAreaXXX.java)  
+[42. 接雨水问题](src/hStack/bMonotoneStack/fTrap.java)  
+[3250. 看到的牛](src/hStack/bMonotoneStack/gGetSeeLowSum.java)  
+
+
+### 1.2.9. 队列  
 
 
 

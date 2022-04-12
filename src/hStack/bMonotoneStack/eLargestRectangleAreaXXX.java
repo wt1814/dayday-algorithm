@@ -15,7 +15,6 @@ import java.util.Stack;
  */
 public class eLargestRectangleAreaXXX {
 
-
     public static void main(String[] args) {
         int[] hights = {1,5,6,2,3};
         int i = largestRectangleArea(hights);
@@ -29,6 +28,7 @@ public class eLargestRectangleAreaXXX {
      * @return
      */
     public static int largestRectangleArea(int[] heights) {
+
         int length = heights.length;
         Stack<Integer> stack = new Stack<>();
         int maxArea = 0;
@@ -46,11 +46,9 @@ public class eLargestRectangleAreaXXX {
             }
         }
         return maxArea;
+
     }
 
-
     // https://leetcode-cn.com/problems/largest-rectangle-in-histogram/solution/zhu-zhuang-tu-zhong-zui-da-de-ju-xing-by-leetcode-/
-
-
 
 }
