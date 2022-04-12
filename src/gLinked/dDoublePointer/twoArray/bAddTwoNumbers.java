@@ -22,8 +22,6 @@ public class bAddTwoNumbers {
 
     }
 
-
-
     // https://leetcode-cn.com/problems/add-two-numbers-ii/
     // https://segmentfault.com/a/1190000022371732
     /**

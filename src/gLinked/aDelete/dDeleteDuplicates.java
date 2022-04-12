@@ -36,6 +36,7 @@ public class dDeleteDuplicates {
      * @return
      */
     public static ListNode deleteDuplicates(ListNode head) {
+
         if (head == null) {
             return head;
         }

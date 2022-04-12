@@ -67,6 +67,7 @@ public class dMergeOrderedList {
      * @return
      */
     public static ListNode mergeTwoListsBy(ListNode l1, ListNode l2) {
+
         if (l1 == null) {
             return l2;
         } else if (l2 == null) {
@@ -78,6 +79,7 @@ public class dMergeOrderedList {
             l2.next = mergeTwoListsBy(l1, l2.next);
             return l2;
         }
+
     }
 
 

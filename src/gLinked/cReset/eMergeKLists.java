@@ -22,7 +22,6 @@ import java.util.ArrayList;
  */
 public class eMergeKLists {
 
-
     public ListNode mergeKLists(ArrayList<ListNode> lists) {
 
         return merge(lists,0,lists.size()-1);

@@ -7,11 +7,9 @@ import gLinked.ListNode;
  */
 public class bRemoveNthFromEnd {
 
-
     public static void main(String[] args) {
 
     }
-
 
     ////////////////////////////////////////////////////////////////////////////////////
 
@@ -21,6 +19,7 @@ public class bRemoveNthFromEnd {
      * @return
      */
     public ListNode removeNthFromEnd(ListNode head, int n){
+
         ListNode dummy = new ListNode(0); //todo 哑节点
         dummy.next = head;
         int length = getLength(head);
@@ -31,6 +30,7 @@ public class bRemoveNthFromEnd {
         cur.next = cur.next.next;
         ListNode ans = dummy.next;
         return ans;
+
     }
 
     /**

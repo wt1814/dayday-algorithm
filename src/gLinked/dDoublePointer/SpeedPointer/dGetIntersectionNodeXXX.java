@@ -20,8 +20,6 @@ import gLinked.ListNode;
  */
 public class dGetIntersectionNodeXXX {
 
-
-
     /**
      * 求出两个链表的长度，并求出两个链表长度的差值，
      * todo 然后让curA移动到，和curB 末尾对齐的位置。
@@ -30,6 +28,7 @@ public class dGetIntersectionNodeXXX {
      * @return
      */
     public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+
         ListNode curA = headA;
         ListNode curB = headB;
         int lenA = 0, lenB = 0;
@@ -69,6 +68,7 @@ public class dGetIntersectionNodeXXX {
             curB = curB.next;
         }
         return null;
+
     }
 
 }

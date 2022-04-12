@@ -46,6 +46,7 @@ public class bZZZCrossLink {
 
         ListNode fast = head;
         ListNode slow = head;
+
         while (fast != null && fast.next != null){
             fast = fast.next.next;  //todo 快指针走两步
             slow = slow.next;

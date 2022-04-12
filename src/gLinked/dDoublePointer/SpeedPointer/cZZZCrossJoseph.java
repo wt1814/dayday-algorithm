@@ -25,7 +25,6 @@ import java.util.LinkedList;
  */
 public class cZZZCrossJoseph {
 
-
     public static void main(String[] args){
 
         System.out.println(ysf(5,2));
@@ -40,21 +39,21 @@ public class cZZZCrossJoseph {
      * @return
      */
     public static int ysf (int n, int m) {
+
         // write code here
-        ListNode head=new ListNode(1);
-        ListNode tail=head;
-        for(int i=2;i<=n;i++){
+        ListNode head = new ListNode(1);
+        ListNode tail = head;
+        for(int i=2; i<=n; i++){
             tail.next=new ListNode(i);
             tail=tail.next;
         }
         tail.next=head;
 
-        ListNode index=head;
-        ListNode pre=tail;
+        ListNode index = head;
+        ListNode pre = tail;
         int k=0;
 
         while(index.next!=null && index.next != index){ // todo 最后只留下一个节点
-
             k++;
             ListNode next=index.next;
 
@@ -66,6 +65,7 @@ public class cZZZCrossJoseph {
             index=next;
         }
         return index.val;
+
     }
 
 

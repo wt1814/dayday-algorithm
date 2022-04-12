@@ -10,7 +10,6 @@ public class aZZZInvertLinkedListOfIterate {
 
     public static void main(String[] args) {
 
-
     }
 
     /**
@@ -24,6 +23,7 @@ public class aZZZInvertLinkedListOfIterate {
 
         ListNode prev = null;
         ListNode curr = head;
+
         while (curr != null) {
             /**
              * 务必注意：在 cur 指向 pre 之前一定要先保留 cur 的后继结点，不然 cur 指向 pre 后就再也找不到后继结点了

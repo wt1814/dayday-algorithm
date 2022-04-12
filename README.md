@@ -17,6 +17,16 @@
                 - [1.2.5.2.1. 替换](#12521-替换)
                 - [1.2.5.2.2. 两个数组](#12522-两个数组)
         - [1.2.6. 字符串](#126-字符串)
+            - [1.2.6.1. 单字符串](#1261-单字符串)
+            - [1.2.6.2. 双字符串](#1262-双字符串)
+        - [1.2.7. 链表](#127-链表)
+            - [1.2.7.1. 删除链表节点](#1271-删除链表节点)
+            - [1.2.7.2. 反转链表](#1272-反转链表)
+            - [1.2.7.3. 重置链表](#1273-重置链表)
+            - [1.2.7.4. 双指针](#1274-双指针)
+                - [1.2.7.4.1. 快慢指针](#12741-快慢指针)
+                - [1.2.7.4.2. 两个数组](#12742-两个数组)
+            - [1.2.7.5. 排序](#1275-排序)
 
 <!-- /TOC -->
 
@@ -142,7 +152,7 @@
 [407，动态规划和滑动窗口解决最长重复子数组](src/fSlidingWindow/slidingWindow/twoArray/zFindLengthXXXXX.java)  
 
 ### 1.2.6. 字符串  
-#### 单字符串  
+#### 1.2.6.1. 单字符串  
 [反转字符串-不考虑字符串开头有空格](src/fString/single/aStringReverse.java)  
 [反转字符串-考虑字符串开头有空格](src/fString/single/bStringReverse.java)  
 [验证回文串](src/fString/single/cValidPalindrome.java)  
@@ -150,10 +160,44 @@
 [8. 字符串转换整数](src/fString/single/eZZZStringToNumber.java)  
 
 
-#### 双字符串  
+#### 1.2.6.2. 双字符串  
 [14. 最长公共前缀](src/fString/two/LongestCommonPrefix.java)  
 
-### 链表  
+### 1.2.7. 链表  
+#### 1.2.7.1. 删除链表节点
+[链表删除节点的两种方式](src/gLinked/aDelete/aZZZDeleteNode.java)  
+[19. 删除链表的倒数第 N 个结点](src/gLinked/aDelete/bRemoveNthFromEnd.java)  
+[83. 删除排序链表中的重复元素](src/gLinked/aDelete/cDeleteDuplicates2.java)  
+[82. 删除排序链表中的重复元素 II](src/gLinked/aDelete/dDeleteDuplicates.java)  
+
+#### 1.2.7.2. 反转链表  
+[不带头节点单向链表，双指针迭代反转链表](src/gLinked/bReversal/aZZZInvertLinkedListOfIterate.java)  
+[~~不带头节点单向链表，递归反转链表~~](src/gLinked/bReversal/bInvertLinkedListOfRecursion.java)  
+[链表内指定区间反转](src/gLinked/bReversal/cZZZReverseBetween.java)  
+[K 个一组翻转链表](src/gLinked/bReversal/dZZZReverseKGroup.java)  
+[是否回文链表](src/gLinked/bReversal/lIsPail.java)  
+
+#### 1.2.7.3. 重置链表  
+[86. 分隔链表](src/gLinked/cReset/aPartition.java)  
+[328. 奇偶链表](src/gLinked/cReset/bOddEvenList.java)  
+[725. 分隔链表](src/gLinked/cReset/cSplitListToPartsXXX.java)  
+[合并两个有序链表](src/gLinked/cReset/dMergeOrderedList.java)  
+[23. 合并K个升序链表](src/gLinked/cReset/eMergeKLists.java)  
+
+#### 1.2.7.4. 双指针  
+##### 1.2.7.4.1. 快慢指针  
+[链表快慢指针找到单链表中间节点](src/gLinked/dDoublePointer/SpeedPointer/aSpeedPointer.java)  
+[链表环](src/gLinked/dDoublePointer/SpeedPointer/bZZZCrossLink.java)  
+[NC132 环形链表的约瑟夫问题](src/gLinked/dDoublePointer/SpeedPointer/cZZZCrossJoseph.java)  
+[160. 相交链表](src/gLinked/dDoublePointer/SpeedPointer/dGetIntersectionNodeXXX.java)  
+
+##### 1.2.7.4.2. 两个数组  
+[160. 相交链表](src/gLinked/dDoublePointer/twoArray/aAddTwoNumbers.java)  
+[445. 两数相加 II](src/gLinked/dDoublePointer/twoArray/bAddTwoNumbers.java)  
+
+#### 1.2.7.5. 排序 
+[147. 对链表进行插入排序](src/gLinked/eSort/aZZZInsertionSortList.java)  
+[148. 排序链表](src/gLinked/eSort/bSortListXXX.java)  
 
 
 

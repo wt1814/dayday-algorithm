@@ -89,7 +89,6 @@ public class bSortListXXX {
     }
 
 
-
     /////////////////////////////////////////////////////////////////////////////////
     public ListNode sortList1(ListNode head) {
         // 归并排序
