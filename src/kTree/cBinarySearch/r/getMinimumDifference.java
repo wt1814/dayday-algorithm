@@ -13,11 +13,13 @@ public class getMinimumDifference {
     int result = Integer.MAX_VALUE;
 
     public int getMinimumDifference(TreeNode root) {
+
         if(root==null){
             return 0;
         }
         traversal(root);
         return result;
+
     }
 
     public void traversal(TreeNode root){
@@ -34,6 +36,7 @@ public class getMinimumDifference {
         pre = root;
         //右
         traversal(root.right);
+
     }
 
 }

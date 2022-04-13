@@ -34,6 +34,7 @@ public class eTreeMaxWidth {
         if (head == null) {
             return 0;
         }
+
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(head);
 
@@ -78,6 +79,7 @@ public class eTreeMaxWidth {
      * @return
      */
     public static int maxWidthNoMap(TreeNode head) {
+
         if (head == null) {
             return 0;
         }
@@ -105,6 +107,7 @@ public class eTreeMaxWidth {
             }
         }
         return max;
+
     }
 
 }

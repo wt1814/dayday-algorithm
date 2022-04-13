@@ -15,7 +15,6 @@ import kTree.TreeNode;
  */
 public class isCousins {
 
-
     public static void main(String[] args) {
 
     }
@@ -90,6 +89,7 @@ public class isCousins {
     }
 
     public void dfs(TreeNode root, TreeNode parent, int x, int y, int depth) {
+
         if (root == null){
             return;
         }
@@ -108,7 +108,7 @@ public class isCousins {
         }
         dfs(root.left, root, x, y, depth + 1);
         dfs(root.right, root, x, y, depth + 1);
-    }
 
+    }
 
 }

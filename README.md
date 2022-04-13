@@ -34,6 +34,18 @@
             - [1.2.9.1. 单调队列](#1291-单调队列)
             - [1.2.9.2. 优先级队列](#1292-优先级队列)
         - [1.2.10. Hash](#1210-hash)
+        - [1.2.11. 树](#1211-树)
+            - [1.2.11.1. DFS](#12111-dfs)
+                - [1.2.11.1.1. 属性](#121111-属性)
+                - [1.2.11.1.2. 路径](#121112-路径)
+                - [1.2.11.1.3. 兄弟](#121113-兄弟)
+            - [1.2.11.2. BFS](#12112-bfs)
+            - [1.2.11.3. 搜索二叉树](#12113-搜索二叉树)
+                - [1.2.11.3.1. 创建](#121131-创建)
+                - [1.2.11.3.2. 查询](#121132-查询)
+                - [1.2.11.3.3. 修改](#121133-修改)
+            - [1.2.11.4. 建立](#12114-建立)
+            - [1.2.11.5. 修改](#12115-修改)
 
 <!-- /TOC -->
 
@@ -248,9 +260,73 @@
 [数组中出现次数超过一半的数字](src/jHash/cMoreThanHalfNum.java)   
 
 
+### 1.2.11. 树  
+#### 1.2.11.1. DFS  
+[深度优先遍历](src/kTree/aDFS/aDepthOrderTraversal.java)  
+[深度优先遍历-递归](src/kTree/aDFS/bDepthOrderTraveralWithStack.java)  
+[987. 二叉树的垂序遍历](src/kTree/aDFS/verticalTraversal.java)  
+
+##### 1.2.11.1.1. 属性  
+[110. 平衡二叉树](src/kTree/aDFS/aAttribute/zuo/aIsBalanced.java)  
+[是否为搜索二叉树和完全二叉树](src/kTree/aDFS/aAttribute/zuo/bJudgeIt.java)  
+[222. 完全二叉树的节点个数](src/kTree/aDFS/aAttribute/cCountNodes.java)  
+[111. 二叉树的最小深度](src/kTree/aDFS/aAttribute/dMinDepth.java)  
+[104. 二叉树的最大深度](src/kTree/aDFS/aAttribute/dZZZMaxDepth.java)  
+[559. N叉树的最大深度](src/kTree/aDFS/aAttribute/eMaxDepthOfN)  
+[剑指Offer-树的子结构](src/kTree/aDFS/aAttribute/cCountNodes.java)  
+[404. 左叶子之和](src/kTree/aDFS/aAttribute/fIsSubStructureXXX.java)  
+[513.找树左下角的值](src/kTree/aDFS/aAttribute/kTraversalXXX.java)  
+
+##### 1.2.11.1.2. 路径  
+[257. 二叉树的所有路径](src/kTree/aDFS/bPath/aAllPath.java)  
+[二叉树所有路径-数字](src/kTree/aDFS/bPath/aZZZAllPathOfNum.java)  
+[129. DFS和BFS解求根到叶子节点数字之和](src/kTree/aDFS/bPath/bSumNumbersXXX.java)  
+[112. 路径总和](src/kTree/aDFS/bPath/cHasPathSum.java)  
+[113. 路径总和 II](src/kTree/aDFS/bPath/dPathSum.java)  
+[437. 路径总和 III](src/kTree/aDFS/bPath/eZZZPathSumXXX.java)  
+[124. 二叉树中的最大路径和](src/kTree/aDFS/bPath/fZZZMaxPathSum.java)  
+[543. 二叉树的直径](src/kTree/aDFS/bPath/gZZZDiameterOfBinaryTree.java)  
+[二叉树的最大距离](src/kTree/aDFS/bPath/MaxDistance.java)  
+
+##### 1.2.11.1.3. 兄弟
+[993. 二叉树的堂兄弟节点](src/kTree/aDFS/cBrother/isCousins.java)  
+[236. 二叉树的最近公共祖先](src/kTree/aDFS/cBrother/LowestCommonAncestor.java)  
+
+#### 1.2.11.2. BFS  
+[层序遍历](src/kTree/bBFS/aLevelOrderTraversal.java)  
+[层序遍历，每一层结束](src/kTree/bBFS/bZZZLevelTraversalOfEnd.java)  
+[104. 二叉树的最大深度](src/kTree/bBFS/eTreeMaxWidth.java)  
+[1302. BFS和DFS解层数最深叶子节点的和](src/kTree/bBFS/fDeepestLeavesSum.java)  
+[662. 二叉树最大宽度](src/kTree/bBFS/gZZZWidthOfBinaryTreeXXX.java)  
+[101. 对称二叉树](src/kTree/bBFS/iIsSymmetric.java)  
+[1609. BFS和DFS解奇偶树](src/kTree/bBFS/jIsEvenOddTree.java)  
+
+#### 1.2.11.3. 搜索二叉树  
+##### 1.2.11.3.1. 创建  
+[701. 二叉搜索树中的插入操作](src/kTree/cBinarySearch/c/aInsertIntoBST.java)  
+[108. 将有序数组转换为二叉搜索树](src/kTree/cBinarySearch/c/bSortedArrayToBST.java)  
+[538. 把二叉搜索树转换为累加树](src/kTree/cBinarySearch/c/cConvertBST.java)  
+
+##### 1.2.11.3.2. 查询  
+[700. 二叉搜索树中的搜索](src/kTree/cBinarySearch/r/aSearchBST.java)  
+[98. 验证二叉搜索树](src/kTree/cBinarySearch/r/bIsValidBST.java)  
+[235. 二叉搜索树的最近公共祖先](src/kTree/cBinarySearch/r/cLowestCommonAncestor.java)  
+[剑指 Offer-二叉搜索树的后序遍历序列](src/kTree/cBinarySearch/r/dVerifyPostorder.java)  
+[501.二叉搜索树中的众数](src/kTree/cBinarySearch/r/findMode.java)  
+[530.二叉搜索树的最小绝对差](src/kTree/cBinarySearch/r/getMinimumDifference.java)  
+[230. 二叉搜索树中第K小的元素](src/kTree/cBinarySearch/r/kthSmallest.java)  
+[二叉搜索树的范围和](src/kTree/cBinarySearch/r/rangeSumBST.java)  
 
 
+##### 1.2.11.3.3. 修改  
+[450. 删除二叉搜索树中的节点](src/kTree/cBinarySearch/u/deleteNode.java)  
+[669. 修剪二叉搜索树](src/kTree/cBinarySearch/u/trimBST.java)  
 
+
+#### 1.2.11.4. 建立  
+
+
+#### 1.2.11.5. 修改  
 
 
 

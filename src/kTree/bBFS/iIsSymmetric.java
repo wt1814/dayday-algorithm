@@ -31,7 +31,6 @@ public class iIsSymmetric {
      */
     public static boolean isSymmetric (TreeNode root) {
 
-
         // write code here
         boolean result = true;
 
@@ -46,6 +45,7 @@ public class iIsSymmetric {
         queue.add(root);
         queue.add(null);
         int level = 1;
+
         while(!queue.isEmpty()){
             TreeNode cur = queue.poll();
             /*if(null != cur){
@@ -83,6 +83,7 @@ public class iIsSymmetric {
         }
 
         return result;
+
     }
 
     public static boolean isHuiwen(List<Integer> list,int levle){

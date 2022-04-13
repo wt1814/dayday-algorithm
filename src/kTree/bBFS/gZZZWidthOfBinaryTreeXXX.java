@@ -39,14 +39,15 @@ public class gZZZWidthOfBinaryTreeXXX {
             return 0;
         }
 
+        //记录最大的宽度
+        int maxWide = 0;
         //使用双端队列
         Deque<TreeNode> queue = new LinkedList<>();
         //把根节点加入到队列中
         queue.offer(root);
         //根节点的值我们把它修改为1
         root.val = 1;
-        //记录最大的宽度
-        int maxWide = 0;
+
         while (!queue.isEmpty()) {
             //当前层节点的数量
             int levelCount = queue.size();
