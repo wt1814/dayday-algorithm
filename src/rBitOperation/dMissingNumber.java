@@ -36,5 +36,27 @@ package rBitOperation;
 public class dMissingNumber {
 
     // https://mp.weixin.qq.com/s?__biz=Mzk0NzIxMDgwNA==&mid=2247484607&idx=1&sn=0aef15175101b8f67c32272f8fcbcc89&chksm=c37b1be4f40c92f260b673c64314d5598f922d9d21ac47b7703494e2a607f71723cc8aae862a&scene=178&cur_album_id=1990389635625091072#rd
+    // https://mp.weixin.qq.com/s/jQAi8gpctRR5V6gahFnHpQ
+
+    public static void main(String[] args) {
+
+    }
+
+    /**
+     * todo 转化为只出现一次的数字
+     * @param nums
+     * @return
+     */
+    public static int missingNumber(int[] nums) {
+        int xor = 0;
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            xor ^= nums[i];
+        }
+        for (int i = 0; i <= n; i++) {
+            xor ^= i;
+        }
+        return xor;
+    }
 
 }

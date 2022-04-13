@@ -46,6 +46,7 @@
                 - [1.2.11.3.3. 修改](#121133-修改)
             - [1.2.11.4. 建立](#12114-建立)
             - [1.2.11.5. 修改](#12115-修改)
+        - [1.2.12. 位运算](#1212-位运算)
 
 <!-- /TOC -->
 
@@ -335,4 +336,9 @@
 [226. 翻转二叉树](src/kTree/eEidt/bInvertTree.java)  
 
 
+### 1.2.12. 位运算  
+[136. 只出现一次的数字](src/rBitOperation/aSingleNumber.java)  
+[260. 只出现一次的数字 III：位运算](src/rBitOperation/cSingleNumberIII.java)  
+[268. 丢失的数字](src/rBitOperation/dMissingNumber.java)  
+[389. 寻找不同](src/rBitOperation/eFindTheDifference.java)  
 
