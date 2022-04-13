@@ -31,6 +31,9 @@
             - [1.2.8.1. 栈](#1281-栈)
             - [1.2.8.2. 单调栈](#1282-单调栈)
         - [1.2.9. 队列](#129-队列)
+            - [1.2.9.1. 单调队列](#1291-单调队列)
+            - [1.2.9.2. 优先级队列](#1292-优先级队列)
+        - [1.2.10. Hash](#1210-hash)
 
 <!-- /TOC -->
 
@@ -228,8 +231,21 @@
 
 
 ### 1.2.9. 队列  
+[225. 用队列实现栈](src/iQueue/MyStack.java)  
+
+#### 1.2.9.1. 单调队列  
+[239. 滑动窗口最大值](src/iQueue/monotonous/MaxSlidingWindowXXX.java)  
+
+#### 1.2.9.2. 优先级队列  
+[优先级队列](src/iQueue/priorityQueue/aPriorityQueue.java)  
+[215. 数组中的第K个最大元素](src/iQueue/priorityQueue/bFindKthLargest.java)  
+[347.前 K 个高频元素](src/iQueue/priorityQueue/cTopKFrequent.java)  
+[703. 数据流中的第 K 大元素](src/iQueue/priorityQueue/dKthLargest.java)  
 
 
+### 1.2.10. Hash  
+[387. 字符串中的第一个唯一字符](src/jHash/bFirstNotRepeatingChar.java)  
+[数组中出现次数超过一半的数字](src/jHash/cMoreThanHalfNum.java)   
 
 
 
