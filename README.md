@@ -324,10 +324,15 @@
 
 
 #### 1.2.11.4. 建立  
-
+[106. 从中序与后序遍历序列构造二叉树](src/kTree/dBuild/buildTree.java)  
+[从前序与中序遍历序列构造二叉树](src/kTree/dBuild/buildTree1.java)  
+[654.最大二叉树](src/kTree/dBuild/constructMaximumBinaryTree.java)  
+[重建二叉树](src/kTree/dBuild/ReConstructBinaryTree.java)  
+[1028. 从先序遍历还原二叉树](src/kTree/dBuild/recoverFromPreorder.java)  
 
 #### 1.2.11.5. 修改  
-
+[617. 合并二叉树](src/kTree/eEidt/aMergeTrees.java)  
+[226. 翻转二叉树](src/kTree/eEidt/bInvertTree.java)  
 
 
 
