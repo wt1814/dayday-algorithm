@@ -16,10 +16,12 @@ import java.util.List;
 public class bCombinationSum2 {
 
     public static void main(String[] args) {
+
         int[] candidates = {2,3,5,7};
         int target = 5;
         List<List<Integer>> lists = combinationSum(candidates, target);
         System.out.println(lists);
+
     }
 
 

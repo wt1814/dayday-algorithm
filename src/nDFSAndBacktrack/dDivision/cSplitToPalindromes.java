@@ -23,11 +23,11 @@ public class cSplitToPalindromes {
         String s = "aabb";
         List<List<String>> partition = partition2(s);
         System.out.println(partition);
+
     }
 
 
     // *** 131. 分割回文串 动态规划 + 回溯算法  https://mp.weixin.qq.com/s/pCAuQmSwqNSF2roIXcqtWg
-
 
     ///////////////////////////////////////////////////////////////////////
     // *** https://mp.weixin.qq.com/s/SrBfADlsOXjeOX4Cr4pQNg
@@ -37,11 +37,14 @@ public class cSplitToPalindromes {
     Deque<String> deque = new LinkedList<>();
 
     public List<List<String>> partition(String s) {
+
         backTracking(s, 0);
         return lists;
+
     }
 
     private void backTracking(String s, int startIndex) {
+
         //如果起始位置大于s的大小，说明找到了一组分割方案
         if (startIndex >= s.length()) {
             lists.add(new ArrayList(deque));
@@ -59,15 +62,18 @@ public class cSplitToPalindromes {
             backTracking(s, i + 1);
             deque.removeLast();
         }
+
     }
     //判断是否是回文串
     private boolean isPalindrome(String s, int startIndex, int end) {
+
         for (int i = startIndex, j = end; i < j; i++, j--) {
             if (s.charAt(i) != s.charAt(j)) {
                 return false;
             }
         }
         return true;
+
     }
 
 

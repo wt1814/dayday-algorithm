@@ -46,7 +46,20 @@
                 - [1.2.11.3.3. 修改](#121133-修改)
             - [1.2.11.4. 建立](#12114-建立)
             - [1.2.11.5. 修改](#12115-修改)
-        - [1.2.12. 位运算](#1212-位运算)
+        - [1.2.12. 深度优先遍历和回溯](#1212-深度优先遍历和回溯)
+            - [1.2.12.1. 排列](#12121-排列)
+                - [1.2.12.1.1. 数字](#121211-数字)
+                - [1.2.12.1.2. 字符串](#121212-字符串)
+            - [1.2.12.2. 组合](#12122-组合)
+                - [1.2.12.2.1. 数字](#121221-数字)
+                - [1.2.12.2.2. 字符串](#121222-字符串)
+                - [1.2.12.2.3. 两个数组](#121223-两个数组)
+            - [1.2.12.3. 子集](#12123-子集)
+            - [1.2.12.4. 切割](#12124-切割)
+            - [1.2.12.5. 矩阵](#12125-矩阵)
+                - [1.2.12.5.1. 一维](#121251-一维)
+                - [1.2.12.5.2. 二维](#121252-二维)
+        - [1.2.13. 位运算](#1213-位运算)
 
 <!-- /TOC -->
 
@@ -335,8 +348,69 @@
 [617. 合并二叉树](src/kTree/eEidt/aMergeTrees.java)  
 [226. 翻转二叉树](src/kTree/eEidt/bInvertTree.java)  
 
+### 1.2.12. 深度优先遍历和回溯  
+[生成括号](src/nDFSAndBacktrack/bGenerateParenthesis.java)  
 
-### 1.2.12. 位运算  
+#### 1.2.12.1. 排列  
+##### 1.2.12.1.1. 数字  
+[46. 数组全排列-自己](src/nDFSAndBacktrack/aRandk/num/aPrientAllSortOfOneself.java)  
+[46. 数组全排列-其他](src/nDFSAndBacktrack/aRandk/num/bPrientAllSortOfOther.java)  
+[47. 一个可包含重复数字的序列](src/nDFSAndBacktrack/aRandk/num/cZZZPrientAllSortTwo.java)  
+
+##### 1.2.12.1.2. 字符串    
+[字符串全排列-自己](src/nDFSAndBacktrack/aRandk/str/aPrientAllSortOfOneself.java)  
+[字符串全排列-其他](src/nDFSAndBacktrack/aRandk/str/bPrientAllSortOfOther.java)  
+[字符串去重全排列](src/nDFSAndBacktrack/aRandk/str/cPrintAllSortNoRepetition.java)  
+
+#### 1.2.12.2. 组合  
+##### 1.2.12.2.1. 数字  
+[77.组合](src/nDFSAndBacktrack/bCombine/num/aZZZCombinationSum.java)  
+[40.组合总和](src/nDFSAndBacktrack/bCombine/num/bCombinationSum2.java)  
+[39. 组合总和，candidates 中的数字可以无限制重复被选取](src/nDFSAndBacktrack/bCombine/num/cZZZCombinationSum.java)  
+[216.组合总和III](src/nDFSAndBacktrack/bCombine/num/eCombinationSum3.java)  
+
+##### 1.2.12.2.2. 字符串  
+[字符串组合-自己](src/nDFSAndBacktrack/bCombine/str/gPrintAllSubsquenceOfOneself.java)  
+[字符串组合-其他](src/nDFSAndBacktrack/bCombine/str/gPrintAllSubsquenceOfother.java)  
+[字符串的所有子序列(字符串的组合) 去重](src/nDFSAndBacktrack/bCombine/str/hPrintAllSubsquenceNoRepetition.java)  
+
+##### 1.2.12.2.3. 两个数组  
+[17.电话号码的字母组合](src/nDFSAndBacktrack/bCombine/twoArry/letterCombinations.java)  
+
+#### 1.2.12.3. 子集  
+[78. 子集](src/nDFSAndBacktrack/cSubset/aZZZSubsets.java)  
+[90. 子集II](src/nDFSAndBacktrack/cSubset/bSubsetsWithDup.java)  
+
+#### 1.2.12.4. 切割  
+[139. 单词拆分](src/nDFSAndBacktrack/dDivision/aZZZWordBreak.java)  
+[140. 回溯算法和DFS解 单词拆分 II](src/nDFSAndBacktrack/dDivision/bWordBreakTwo.java)  
+[131，回溯算法解分割回文串](src/nDFSAndBacktrack/dDivision/cSplitToPalindromes.java)  
+[132. 分割回文串 II](src/nDFSAndBacktrack/dDivision/cSplitToPalindromesII.java)  
+[93.复原IP地址](src/nDFSAndBacktrack/dDivision/dRestoreIpAddresses.java)  
+[282. 给表达式添加运算符（回溯算法解决）](src/nDFSAndBacktrack/dDivision/eAddOperators.java)  
+[494. DFS解目标和问题](src/nDFSAndBacktrack/dDivision/fZZZFindTargetSumWays.java)  
+[473. 火柴拼正方形](src/nDFSAndBacktrack/dDivision/gZZZMakesquareXXX.java)  
+[698 回溯算法解划分为k个相等的子集](src/nDFSAndBacktrack/dDivision/hCanPartitionKSubsets.java)  
+[473. 火柴拼正方形](src/nDFSAndBacktrack/dDivision/gZZZMakesquareXXX.java)  
+[842. 将数组拆分成斐波那契序列](src/nDFSAndBacktrack/dDivision/splitIntoFibonacci.java)  
+
+#### 1.2.12.5. 矩阵  
+##### 1.2.12.5.1. 一维  
+[剑指 Offer-使用DFS和BFS解机器人的运动范围](src/nDFSAndBacktrack/eMatrix/oneDimensional/aMovingCount.java)  
+[51. 九皇后](src/nDFSAndBacktrack/eMatrix/oneDimensional/NineQueens.java)  
+
+##### 1.2.12.5.2. 二维  
+[01 矩阵](src/nDFSAndBacktrack/eMatrix/twoDimensional/aUpdateMatrixXXX.java)  
+[79. 单词搜索](src/nDFSAndBacktrack/eMatrix/twoDimensional/bExist.java)  
+[212. 单词搜索 II](src/nDFSAndBacktrack/eMatrix/twoDimensional/bExistII.java)  
+[NC109 岛屿数量](src/nDFSAndBacktrack/eMatrix/twoDimensional/cIslandsNumXXX.java)  
+[求岛屿的最大面积](src/nDFSAndBacktrack/eMatrix/twoDimensional/dMaxAreaOfIsland.java)  
+[1219. 黄金矿工](src/nDFSAndBacktrack/eMatrix/twoDimensional/eGetMaximumGold.java)  
+[37. 解数独](src/nDFSAndBacktrack/eMatrix/twoDimensional/solveSudoku.java)  
+
+
+
+### 1.2.13. 位运算  
 [136. 只出现一次的数字](src/rBitOperation/aSingleNumber.java)  
 [260. 只出现一次的数字 III：位运算](src/rBitOperation/cSingleNumberIII.java)  
 [268. 丢失的数字](src/rBitOperation/dMissingNumber.java)  

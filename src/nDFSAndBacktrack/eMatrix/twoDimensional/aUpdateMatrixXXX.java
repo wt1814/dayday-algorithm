@@ -20,6 +20,7 @@ public class aUpdateMatrixXXX {
     static int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
     public int[][] updateMatrix(int[][] matrix) {
+
         int m = matrix.length, n = matrix[0].length;
         int[][] dist = new int[m][n];
         boolean[][] seen = new boolean[m][n];
@@ -48,8 +49,8 @@ public class aUpdateMatrixXXX {
                 }
             }
         }
-
         return dist;
+
     }
 
 }

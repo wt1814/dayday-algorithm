@@ -23,11 +23,14 @@ public class hCanPartitionKSubsets {
 
 
     public static void main(String[] args) {
+
         int[] nums = {4, 3, 2, 3, 5, 2, 1};
         System.out.println(canPartitionKSubsets(nums,4));
+
     }
 
     public static boolean canPartitionKSubsets(int[] nums, int k) {
+
         //因为题目限制条件不用担心溢出
         int sum = 0;
         for(int i = 0; i < nums.length; i++) {
@@ -55,9 +58,11 @@ public class hCanPartitionKSubsets {
         Arrays.fill(arr, sum);
         //从数组最后一个数开始进行递归
         return dfs(nums, nums.length - 1, arr, k);
+
     }
 
     public static boolean dfs(int[] nums, int cur, int[] arr, int k) {
+
         //已经遍历到了-1, 说明前面的所有数都正好可以放入桶里，那所有桶的值此时都为0，说明找到了结果，返回true
         if(cur < 0) {
             return true;
@@ -79,6 +84,7 @@ public class hCanPartitionKSubsets {
             }
         }
         return false;
+
     }
 
 

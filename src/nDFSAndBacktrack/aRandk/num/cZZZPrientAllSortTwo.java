@@ -29,6 +29,43 @@ public class cZZZPrientAllSortTwo {
     // https://mp.weixin.qq.com/s/sm9v4SIkVwXVjSfu5rtW_A
     // xxx https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247484533&idx=1&sn=22984489d3cad93e5b40a218672bb204&chksm=fb419755cc361e43c112901c6d7a90d25bd9a37c60aba319f7acd0a07aaffbafe1949e87403c&scene=21#wechat_redirect
     // XXX 全排列1 https://programmercarl.com/0046.%E5%85%A8%E6%8E%92%E5%88%97.html#%E5%9B%9E%E6%BA%AF%E4%B8%89%E9%83%A8%E6%9B%B2
+
+    /**
+     *
+     * @param nums
+     * @return
+     */
+    public static List<List<Integer>> permute1(int[] nums) {
+        List<List<Integer>> list = new ArrayList<>();
+        backtrack1(list, new ArrayList<>(), nums);
+        return list;
+    }
+
+    /**
+     *
+     * @param list
+     * @param tempList
+     * @param nums
+     */
+    private static void backtrack1(List<List<Integer>> list, List<Integer> tempList, int[] nums) {
+
+        if (tempList.size() == nums.length) {
+            list.add(new ArrayList<>(tempList));
+            return;
+        }
+        // todo 输入数字有重复，下标从 0 开始
+        for (int i = 0; i < nums.length; i++) {
+            if (tempList.contains(nums[i])) {  // todo
+                continue;
+            }
+            tempList.add(nums[i]);
+            backtrack1(list, tempList, nums);
+            tempList.remove(tempList.size() - 1);
+        }
+
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * todo 剪枝
      * todo 排序：怎么剪呢？因为要过滤掉重复的，只有重复的数字才会造成重复的结果。所以第一步要做的就是对数组进行排序，排序之后相同的数字肯定是挨着的。
@@ -93,39 +130,5 @@ public class cZZZPrientAllSortTwo {
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    /**
-     *
-     * @param nums
-     * @return
-     */
-    public static List<List<Integer>> permute1(int[] nums) {
-        List<List<Integer>> list = new ArrayList<>();
-        backtrack1(list, new ArrayList<>(), nums);
-        return list;
-    }
-
-    /**
-     *
-     * @param list
-     * @param tempList
-     * @param nums
-     */
-    private static void backtrack1(List<List<Integer>> list, List<Integer> tempList, int[] nums) {
-
-        if (tempList.size() == nums.length) {
-            list.add(new ArrayList<>(tempList));
-            return;
-        }
-        // todo 输入数字有重复，下标从 0 开始
-        for (int i = 0; i < nums.length; i++) {
-            if (tempList.contains(nums[i])) {  // todo
-                continue;
-            }
-            tempList.add(nums[i]);
-            backtrack1(list, tempList, nums);
-            tempList.remove(tempList.size() - 1);
-        }
-
-    }
 
 }
