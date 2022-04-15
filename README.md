@@ -430,16 +430,32 @@
 
 #### 1.2.13.2. 组合  
 ##### 1.2.13.2.1. ~~背包~~  
+[背包问题汇总](src/pDP/bCombinate/bKnapsack/aKnapsack.java)  
 
+###### 01背包  
+[01背包](src/pDP/bCombinate/bKnapsack/a01Knapsack/aKnappsack.java)  
+[最后一块石头的重量 II](src/pDP/bCombinate/bKnapsack/a01Knapsack/bLastStoneWeightIIXXX.java)  
+[416. 分割等和子集](src/pDP/bCombinate/bKnapsack/a01Knapsack/cCanPartition.java)  
+[494. 目标和](src/pDP/bCombinate/bKnapsack/a01Knapsack/eFindTargetSumWays.java)  
+
+###### 完全背包  
+[完全背包-每件物品可以选择多次](src/pDP/bCombinate/bKnapsack/bCompletelyKnapsack/aCompletelyKnapsack.java)  
+[322. 零钱兑换](src/pDP/bCombinate/bKnapsack/bCompletelyKnapsack/cCoinChange.java)  
+[518. 零钱兑换 II-方案数量](src/pDP/bCombinate/bKnapsack/bCompletelyKnapsack/dChange.java)  
+[1449. 数位成本和为目标值的最大数字](src/pDP/bCombinate/bKnapsack/bCompletelyKnapsack/eLargestNumberXXX.java)  
+[279. 完全平方数](src/pDP/bCombinate/bKnapsack/bCompletelyKnapsack/fNumSquares.java)  
+
+###### 其他背包  
+&emsp; 待总结  
 
 ##### 1.2.13.2.2. 股票  
 [股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
-[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
-[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
-[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
-[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
-[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
-[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
+[121. 买卖股票的最佳时机](src/pDP/bCombinate/cStockTrading/bMaxProfit.java)  
+[122. 买卖股票的最佳时机 II](src/pDP/bCombinate/cStockTrading/cMaxProfit.java)  
+[123. 最多可以完成 两笔 交易](src/pDP/bCombinate/cStockTrading/dMaxProfit.java)  
+[188. 买卖股票的最佳时机 IV](src/pDP/bCombinate/cStockTrading/eMaxProfit.java)  
+[309. 最佳买卖股票时机含冷冻期](src/pDP/bCombinate/cStockTrading/fMaxProfit.java)  
+[714. 买卖股票的最佳时机含手续费](src/pDP/bCombinate/cStockTrading/gMaxProfit.java)  
 
 #### 1.2.13.3. 拆分
 [279.几个完全平方数相加](src/pDP/dDivision/aNumSquaresXXX.java)  
