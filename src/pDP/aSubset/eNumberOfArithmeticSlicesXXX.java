@@ -28,6 +28,7 @@ public class eNumberOfArithmeticSlicesXXX {
      * @return
      */
     public static int numberOfArithmeticSlices(int[] nums) {
+
         int len = nums.length;
         if (len < 3) {
             return 0;

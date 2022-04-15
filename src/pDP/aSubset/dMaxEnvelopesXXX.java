@@ -26,6 +26,7 @@ public class dMaxEnvelopesXXX {
     // https://leetcode-cn.com/problems/russian-doll-envelopes/solution/e-luo-si-tao-wa-xin-feng-wen-ti-by-leetc-wj68/
     // todo 同时控制 www 和 hhh 两个维度并不是那么容易，因此我们考虑固定一个维度，再在另一个维度上进行选择。
     public static int maxEnvelopes(int[][] envelopes) {
+
         if (envelopes.length == 0) {
             return 0;
         }
@@ -54,6 +55,7 @@ public class dMaxEnvelopesXXX {
             ans = Math.max(ans, f[i]);
         }
         return ans;
+
     }
 
     ////////////////////////////// XXXXXX ///////////

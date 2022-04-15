@@ -59,7 +59,18 @@
             - [1.2.12.5. 矩阵](#12125-矩阵)
                 - [1.2.12.5.1. 一维](#121251-一维)
                 - [1.2.12.5.2. 二维](#121252-二维)
-        - [1.2.13. 位运算](#1213-位运算)
+        - [1.2.13. 动态规划](#1213-动态规划)
+            - [1.2.13.1. 子集](#12131-子集)
+            - [1.2.13.2. 组合](#12132-组合)
+                - [1.2.13.2.1. 背包](#121321-背包)
+                - [1.2.13.2.2. 股票](#121322-股票)
+            - [1.2.13.3. 拆分](#12133-拆分)
+            - [1.2.13.4. 二维](#12134-二维)
+                - [1.2.13.4.1. 字符串](#121341-字符串)
+                - [1.2.13.4.2. 路径](#121342-路径)
+                - [1.2.13.4.3. 矩阵](#121343-矩阵)
+                - [1.2.13.4.4. 困难](#121344-困难)
+        - [1.2.14. 位运算](#1214-位运算)
 
 <!-- /TOC -->
 
@@ -408,11 +419,79 @@
 [1219. 黄金矿工](src/nDFSAndBacktrack/eMatrix/twoDimensional/eGetMaximumGold.java)  
 [37. 解数独](src/nDFSAndBacktrack/eMatrix/twoDimensional/solveSudoku.java)  
 
+### 1.2.13. 动态规划  
+#### 1.2.13.1. 子集  
+[53. 最大子序和](src/pDP/aSubset/aMaxSubArray.java)  
+[不相邻最大子序列和](src/pDP/aSubset/bNotAdjacentSubsequence.java)  
+[300. 最长递增子序列](src/pDP/aSubset/cLongestIncreasingSequenceXXX.java)  
+[354. 俄罗斯套娃信封问题](src/pDP/aSubset/dMaxEnvelopesXXX.java)  
+[413. 等差数列划分](src/pDP/aSubset/eNumberOfArithmeticSlicesXXX.java)  
+[等差数列划分 II - 子序列](src/pDP/aSubset/fNumberOfArithmeticSlicesXXX.java)  
+
+#### 1.2.13.2. 组合  
+##### 1.2.13.2.1. ~~背包~~  
 
 
-### 1.2.13. 位运算  
+##### 1.2.13.2.2. 股票  
+[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
+[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
+[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
+[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
+[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
+[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
+[股票交易问题汇总](src/pDP/bCombinate/cStockTrading/aStockTrading.java)  
+
+#### 1.2.13.3. 拆分
+[279.几个完全平方数相加](src/pDP/dDivision/aNumSquaresXXX.java)  
+[91. 动态规划解解码（有多少种不同的字符串等价于这个数字串）](src/pDP/dDivision/bNumDecodings.java)  
+[原字符串分割后的子字符串都可以在集合内](src/pDP/dDivision/cWordBreak.java)  
+[416. 动态规划解分割等和子集](src/pDP/dDivision/eCanPartition.java)  
+[动态规划解目标和](src/pDP/dDivision/fFindTargetSumWays.java)  
+
+[5. 最长回文子串-自己](src/pDP/dDivision/palindromic/aLongestPalindromicSubstringOfOneself.java)  
+[5. 最长回文子串-其他](src/pDP/dDivision/palindromic/aLongestPalindromicSubstringOfOther.java)  
+[132. 动态规划解分割回文串 II](src/pDP/dDivision/palindromic/bMinCut.java)  
+[动态规划解回文串分割 IV](src/pDP/dDivision/palindromic/cCheckPartitioning.java)  
+
+#### 1.2.13.4. 二维  
+[1035. 动态规划解不相交的线](src/pDP/eTwoDimensional/maxUncrossedLines.java)  
+
+##### 1.2.13.4.1. 字符串  
+[两个字符串的最长公共子串](src/pDP/eTwoDimensional/aString/aLongestSubstring.java)  
+[1143. 最长公共子序列-自己](src/pDP/eTwoDimensional/aString/bLongestCommonSequenceOfOneself.java)  
+[最长公共子序列](src/pDP/eTwoDimensional/aString/bLongestCommonSequenceOfOther.java)  
+[516. 最长回文子序列](src/pDP/eTwoDimensional/aString/cZZZLongestPalindromeSubseq.java)  
+[718. 最长重复子数组](src/pDP/eTwoDimensional/aString/dFindLength.java)  
+[KMP算法](src/pDP/eTwoDimensional/aString/eZZZKMP.java)  
+
+##### 1.2.13.4.2. 路径  
+[路径问题汇总](src/pDP/eTwoDimensional/bPath/aPath.java)  
+[62. 不同路径](src/pDP/eTwoDimensional/bPath/bUniquePaths.java)  
+[63. 不同路径 II](src/pDP/eTwoDimensional/bPath/cUniquePathsWithObstacles.java)  
+[980.四个方向](src/pDP/eTwoDimensional/bPath/dUniquePathsIIIXXX.java)  
+[64. 矩阵的最小路径和](src/pDP/eTwoDimensional/bPath/eMinPathSum.java)  
+[120. 三角形最小路径和](src/pDP/eTwoDimensional/bPath/fMinimumTotal.java)  
+[931. 下降路径最小和](src/pDP/eTwoDimensional/bPath/gMinFallingPathSum.java)  
+[1289. 下降路径最小和  II](src/pDP/eTwoDimensional/bPath/hMinFallingPathSum.java)  
+[1575. 统计所有可行路径](src/pDP/eTwoDimensional/bPath/iCountRoutes.java)  
+[576. 出界的路径数](src/pDP/eTwoDimensional/bPath/jFindPaths.java)  
+[1301. 最大得分的路径数目](src/pDP/eTwoDimensional/bPath/kPathsWithMaxScore.java)  
+
+##### 1.2.13.4.3. 矩阵  
+[01矩阵](src/pDP/eTwoDimensional/cMatrix/dUpdateMatrix.java)    
+[最大正方形面积](src/pDP/eTwoDimensional/cMatrix/eMaximalSquare.java)    
+[正方形的个数](src/pDP/eTwoDimensional/cMatrix/fCountSquares.java)    
+
+##### 1.2.13.4.4. 困难  
+[10. 正则表达式匹配](src/pDP/eTwoDimensional/dHard/fIsMatch.java)  
+[正则表达式匹配2](src/pDP/eTwoDimensional/dHard/fIsMatch2.java)  
+[44. 通配符匹配](src/pDP/eTwoDimensional/dHard/fIsMatch3.java)  
+[72. 编辑距离](src/pDP/eTwoDimensional/dHard/gMinDistance.java)  
+[650. 只有两个键的键盘](src/pDP/eTwoDimensional/dHard/hMinSteps.java)  
+
+
+### 1.2.14. 位运算  
 [136. 只出现一次的数字](src/rBitOperation/aSingleNumber.java)  
 [260. 只出现一次的数字 III：位运算](src/rBitOperation/cSingleNumberIII.java)  
 [268. 丢失的数字](src/rBitOperation/dMissingNumber.java)  
 [389. 寻找不同](src/rBitOperation/eFindTheDifference.java)  
-
