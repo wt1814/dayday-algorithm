@@ -44,6 +44,7 @@ public class bNotAdjacentSubsequence {
 
     //////////////////////////////////////////////////////////
     public static long subsequence1 (int n, int[] array) {
+
         // write code here
         int len = array.length;
         if(len == 0){
@@ -60,8 +61,8 @@ public class bNotAdjacentSubsequence {
         if(result<0){
             result = 0;
         }
-
         return result;
+
     }
 
     public static long[] getDp(int[] array){

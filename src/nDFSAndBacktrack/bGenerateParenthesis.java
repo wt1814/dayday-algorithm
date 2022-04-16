@@ -20,6 +20,7 @@ public class bGenerateParenthesis {
         while (iterator.hasNext()){
             System.out.println(iterator.next());
         }
+
     }
 
 
@@ -49,7 +50,7 @@ public class bGenerateParenthesis {
 
     }
 
-    //////////////////////////////
+    ////////////////////////////////////////////////////////////////////////
 
     //count1统计“(”的个数，count2统计“)”的个数
     public void generate(List<String> res , String ans, int leftCount, int rightCount, int n){

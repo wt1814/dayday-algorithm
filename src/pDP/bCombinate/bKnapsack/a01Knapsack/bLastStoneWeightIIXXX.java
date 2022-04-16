@@ -49,6 +49,7 @@ public class bLastStoneWeightIIXXX {
         //sum - dp[length][capacity]是一部分，dp[length][capacity]是另一部分，上面
         //capacity的取值是sum >> 1，往下取整，所以前面的肯定不小于后面的，不需要取绝对值
         return (sum - dp[length][capacity]) - dp[length][capacity];
+
     }
 
 }

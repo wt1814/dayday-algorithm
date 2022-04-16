@@ -23,6 +23,7 @@ public class dChange {
 
     // https://mp.weixin.qq.com/s/zGJZpsGVMlk-Vc2PEY4RPw
     public static int change(int amount, int[] coins) {
+
         int n = coins.length;
         int[][] dp = new int[n + 1][amount + 1];
 
