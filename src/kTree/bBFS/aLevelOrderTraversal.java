@@ -78,7 +78,7 @@ public class aLevelOrderTraversal {
 
         // 结果集
         List result = new ArrayList();
-        // 待遍历的层级节点列表
+        // todo 待遍历的层级节点列表
         LinkedList<TreeNode> list = new LinkedList();
 
         if (root != null) {
@@ -87,7 +87,7 @@ public class aLevelOrderTraversal {
 
         int size = list.size();
         while (size > 0) {
-            // 创建保存当前层序的结果集列表
+            // todo 创建保存当前层序的结果集列表
             List item = new ArrayList();
             // 遍历当前层序，加入结果集及获取下一层级的节点
             for (int i = 0; i < size; i++) {
