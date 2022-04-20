@@ -11,6 +11,7 @@ public class aMergeArray {
 
     public static void main(String[] args) {
 
+
     }
 
     // https://www.nowcoder.com/practice/89865d4375634fc484f3a24b7fe65665?tpId=188&&tqId=38585&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking

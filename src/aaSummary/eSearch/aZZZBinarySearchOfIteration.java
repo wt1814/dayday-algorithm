@@ -27,9 +27,9 @@ public class aZZZBinarySearchOfIteration {
     public static int binarySearch(int[] array, int target){
 
         //查找范围起点
-        int start=0;
+        int start = 0;
         //查找范围终点
-        int end=array.length-1;
+        int end = array.length-1;
         //查找范围中位数
         int mid;
 

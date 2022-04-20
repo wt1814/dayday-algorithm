@@ -31,7 +31,7 @@ public class eZZZMaxAreaGGG {
     /**
      * 在初始时，左右指针分别指向数组的左右两端
      * todo 此时需要移动一个指针。移动哪一个呢？直觉告诉我们，
-     * todo todo todo 应该移动对应数字较小的那个指针（即此时的左指针）。
+     * todo todo todo 应该移动对应数字较小的那个指针。
      * 这是因为，由于容纳的水量是由两个指针指向的数字中较小值∗指针之间的距离
      */
     public static int maxArea(int[] height) {

@@ -10,7 +10,8 @@ package aaSummary.fSlidingWindow.slidingWindow.replace;
  * 输出：4
  * 解释：用两个'A'替换为两个'B',反之亦然。
  */
-public class dZZZCharacterReplacement {
+public class
+dZZZCharacterReplacement {
 
     public static void main(String[] args) {
     	

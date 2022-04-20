@@ -15,13 +15,16 @@ import java.util.Queue;
 public class bFindKthLargest {
 
     public static void main(String[] args) {
+
         int[] nums = {3,2,1,5,6,4};
         int kthLargest = findKthLargest(nums, 2);
         System.out.println(kthLargest);
+
     }
 
     /**
      * todo 优先级队列
+     * todo 基本操作：add poll peek
      * @param nums
      * @param k
      * @return
@@ -37,6 +40,7 @@ public class bFindKthLargest {
             }
         }
         return queue.peek();
+
     }
 
     // 基于堆排序的选择方法
