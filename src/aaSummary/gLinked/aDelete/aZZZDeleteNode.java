@@ -19,7 +19,6 @@ public class aZZZDeleteNode {
     // 且当要删除的结点为最后一个结点时，必须用第一种方法，顺序遍历后找到最后一结点的上一结点，然后删除，
     // 但此方法的平均时间复杂度仍然为O(1).
 
-
     // https://www.cnblogs.com/guohai-stronger/p/11981565.html
 
     /**
@@ -28,11 +27,13 @@ public class aZZZDeleteNode {
      * @param node 要删除的节点
      */
     public static void deleteNode(ListNode node) {
+
         if (node == null) {
             return;
         }
         node.val = node.next.val;
         node.next = node.next.next;
+
     }
 
 }

@@ -41,6 +41,10 @@ package aaSummary.fString.single;
  *     s 由英文字母（大写和小写）、数字（0-9）、' '、'+'、'-' 和 '.' 组成
  *
  */
+
+/**
+ * int digit = str.charAt(index) - '0'; //todo todo todo 字母转化为数字
+ */
 public class eZZZStringToNumber {
 
     public static void main(String[] args) {
@@ -52,8 +56,8 @@ public class eZZZStringToNumber {
 
         int i = atoi2("words and 987");
         System.out.println(i);
-    }
 
+    }
 
     //https://www.nowcoder.com/practice/44d8c152c38f43a1b10e168018dcc13f?tpId=188&&tqId=38578&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
     /**
@@ -72,7 +76,7 @@ public class eZZZStringToNumber {
         }
 
         int res = 0;//最终结果
-        int index = 0;//遍历字符串中字符的位置
+        int index = 0;//todo 遍历字符串中字符的位置（提前定义）
         int sign = 1;//符号，1是正数，-1是负数，默认为正数
 
         //判断符号
@@ -84,7 +88,7 @@ public class eZZZStringToNumber {
             //取出字符串中字符，然后转化为数字
             int digit = str.charAt(index) - '0'; //todo todo todo 转化为数字
             //按照题中的要求，读入下一个字符，直到到达下一个非数字字符或到达输入的结尾。字符串的其余部分将被忽略。
-            //todo 如果读取了非数字，后面的都要忽略
+            // 如果读取了非数字，后面的都要忽略
             if (digit < 0 || digit > 9){
                 break;
             }
@@ -157,6 +161,7 @@ public class eZZZStringToNumber {
             }
         }
         return value;
+
     }
 
 }

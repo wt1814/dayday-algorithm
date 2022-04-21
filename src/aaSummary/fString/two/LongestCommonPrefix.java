@@ -3,38 +3,44 @@ package aaSummary.fString.two;
 /**
  * 14. 最长公共前缀
  * https://leetcode-cn.com/problems/longest-common-prefix/solution/zui-chang-gong-gong-qian-zhui-by-leetcode-solution/
- * // todo XXXX
  */
 public class LongestCommonPrefix {
 
     public static void main(String[] args){
+
         String[] arr = {"baaa","baab","baac","abaa"};
         System.out.println(longestCommonPrefix(arr));
         //System.out.println(longestCommontPrefix6(arr));
+
     }
 
     ////////////////////////////todo 二分///////////////////////////////////////
     // https://leetcode-cn.com/problems/longest-common-prefix/solution/zui-chang-gong-gong-qian-zhui-by-leetcode-solution/
     public String longestCommonPrefix2(String[] strs) {
+
         if (strs == null || strs.length == 0) {
             return "";
         } else {
             return longestCommonPrefix(strs, 0, strs.length - 1);
         }
+
     }
 
     public String longestCommonPrefix(String[] strs, int start, int end) {
+
         if (start == end) {
             return strs[start];
-        } else {
-            int mid = (end - start) / 2 + start;
-            String lcpLeft = longestCommonPrefix(strs, start, mid);
-            String lcpRight = longestCommonPrefix(strs, mid + 1, end);
-            return commonPrefix(lcpLeft, lcpRight);
         }
+
+        int mid = (end - start) / 2 + start;
+        String lcpLeft = longestCommonPrefix(strs, start, mid);
+        String lcpRight = longestCommonPrefix(strs, mid + 1, end);
+        return commonPrefix(lcpLeft, lcpRight);
+
     }
 
     public String commonPrefix(String lcpLeft, String lcpRight) {
+
         int minLength = Math.min(lcpLeft.length(), lcpRight.length());
         for (int i = 0; i < minLength; i++) {
             if (lcpLeft.charAt(i) != lcpRight.charAt(i)) {
@@ -42,6 +48,7 @@ public class LongestCommonPrefix {
             }
         }
         return lcpLeft.substring(0, minLength);
+
     }
 
 
