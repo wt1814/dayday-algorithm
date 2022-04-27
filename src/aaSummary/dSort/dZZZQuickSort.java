@@ -14,9 +14,11 @@ import java.util.Arrays;
 public class dZZZQuickSort {
 
     public static void main(String[] args) {
+
         int[] arr = new int[] {4,4,6,5,3,2,8,1};
         quickSort2(arr, 0, arr.length-1);
         System.out.println(Arrays.toString(arr));
+
     }
 
     /**
@@ -43,7 +45,7 @@ public class dZZZQuickSort {
         count++;
 
         // 递归，继续向基准的左右两边执行和上面同样的操作
-        // todo i的索引处为上面已确定好的基准值的位置，无需再处理， 所以左边界i-1，右边界i+1
+        // todo i的索引处为上面已确定好的基准值的位置，无需再处理，所以左边界i-1，右边界i+1
         quickSort2(array, left, i - 1);
         quickSort2(array, i + 1, right);
 
