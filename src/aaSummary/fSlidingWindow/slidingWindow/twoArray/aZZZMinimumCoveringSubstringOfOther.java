@@ -15,7 +15,6 @@ public class aZZZMinimumCoveringSubstringOfOther {
         System.out.println(minWindow(s,t));
 
     }
-
     
     // todo labuladong https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583ad935e76e9a3f6793792e60734&chksm=9bd7f8ddaca071cbb7570b2433290e5e2628d20473022a5517271de6d6e50783961bebc3dd3b&scene=21#wechat_redirect
     // new https://mp.weixin.qq.com/s?__biz=MzU0ODMyNDk0Mw==&mid=2247490774&idx=1&sn=cdada4b7ff9e1bfed0de8104541d9d11&chksm=fb418ff6cc3606e0b0d264a07f0730d04e9516b8eebb7421da81c93e8fd7f1b0582b739bc74e&scene=21#wechat_redirect
@@ -61,7 +60,7 @@ public class aZZZMinimumCoveringSubstringOfOther {
             if(need.containsKey(c)){
                 window.put(c,window.getOrDefault(c,0) + 1);
 
-                if(window.get(c).equals(need.get(c))){ // todo 进行比较
+                if(window.get(c).equals(need.get(c))){ // todo todo todo 进行比较
                     valid++;
                 }
             }

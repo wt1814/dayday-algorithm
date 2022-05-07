@@ -10,8 +10,7 @@ package aaSummary.fSlidingWindow.slidingWindow.replace;
  * 输出：4
  * 解释：用两个'A'替换为两个'B',反之亦然。
  */
-public class
-dZZZCharacterReplacement {
+public class dZZZCharacterReplacementXXX {
 
     public static void main(String[] args) {
     	
@@ -45,6 +44,7 @@ dZZZCharacterReplacement {
         int right = 0;//窗口右边的位置
         //满足条件的最大窗口，也就是可以替换的最长子串的长度
         int maxWindow = 0;
+
         //窗口的左边先不动，移动右边的位置
         for (; right < length; right++) {  // todo for循环的使用
             //统计窗口内曾经出现过相同字母最多的数量

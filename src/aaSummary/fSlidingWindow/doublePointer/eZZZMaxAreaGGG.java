@@ -36,8 +36,9 @@ public class eZZZMaxAreaGGG {
      */
     public static int maxArea(int[] height) {
 
+        int ans = 0; // todo 最终结果
         int l = 0, r = height.length - 1;  // 定义左右指针
-        int ans = 0;
+
         while (l < r) {
             int area = Math.min(height[l], height[r]) * (r - l);
             ans = Math.max(ans, area);

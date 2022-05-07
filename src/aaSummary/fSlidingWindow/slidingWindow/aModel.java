@@ -2,6 +2,7 @@ package aaSummary.fSlidingWindow.slidingWindow;
 
 
 /**
+ * todo 向右移动，更新窗口；达到窗口条件，左边移动
  * 滑动窗口模板
  * todo ★★★求满足一定条件的 “连续子串” 一般用滑动窗口
  * todo 当窗口不满足要求的时候，向右拓宽边界
