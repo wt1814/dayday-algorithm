@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  * 插入排序
+ * todo 默认第一个元素有序
  */
 public class bInsertionSort {
 

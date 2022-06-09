@@ -18,6 +18,7 @@ public class aBubbleSort {
      * @param arr
      */
     public static void BubbleSort(int[] arr) {
+
         int temp;//定义一个临时变量
         for(int i=0;i<arr.length-1;i++){   //冒泡趟数
             for(int j=0;j<arr.length-i-1;j++){ //todo 最后的xxx不需要再次比较了
@@ -28,6 +29,7 @@ public class aBubbleSort {
                 }
             }
         }
+
     }
 
     /**
@@ -35,6 +37,7 @@ public class aBubbleSort {
      * @param array
      */
     public static void sort(int array[]) {
+
         int tmp  = 0;
         //记录最后一次交换的位置
         int lastExchangeIndex = 0;

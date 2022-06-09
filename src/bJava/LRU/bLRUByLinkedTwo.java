@@ -18,6 +18,7 @@ public class bLRUByLinkedTwo<K, V> {
         System.out.println(lruCache.cacheMap);
         lruCache.put(10,10);
         System.out.println(lruCache.cacheMap);
+
     }
 
     ////////////////////////////////////////////////////////////////////////////////////

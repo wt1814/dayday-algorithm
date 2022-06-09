@@ -7,7 +7,6 @@ import java.util.HashMap;
  */
 public class cLRUByNode {
 
-
     public static void main(String[] args) {
         cLRUByNode lruCache = new cLRUByNode(5);
         lruCache.put("001", "用户1信息");

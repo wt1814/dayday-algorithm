@@ -31,6 +31,7 @@ public class dZZZSubarraySum {
      * @return
      */
     public int subarraySum(int[] nums, int k) {
+
         //先计算前缀和，pre[i]表示数组nums中前i个元素的和
         int[] pre = new int[nums.length + 1];
         for (int i = 0; i < nums.length; i++) {
@@ -50,6 +51,8 @@ public class dZZZSubarraySum {
             //pre[j]的个数加1在放到map中
             map.put(pre[j], map.getOrDefault(pre[j], 0) + 1);
         }
+
         return count;
     }
+
 }
